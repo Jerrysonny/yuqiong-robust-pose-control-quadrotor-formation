@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "release_date": "2026-07-16",
+  "deliverable": "A8 competition complete source files",
+  "formal_algorithm": {
+    "short_name": "RA-GCA-CGHTE",
+    "version": "1.0.0",
+    "controller_class": "A8FormalRAGCACGHTE_20260715",
+    "scope": "reduced-attitude yawless"
+  },
+  "historical_baseline": {
+    "engineering_id": "RA_GCA_V8",
+    "role": "historical_regression_and_engineering_rollback_only"
+  },
+  "included_submission_item": "complete source files",
+  "report_evidence": {
+    "path": "04_results/report_evidence",
+    "structured_artifact_count": 14,
+    "final_report_static_figure_count": 28,
+    "final_report_numbered_table_count": 26,
+    "final_report_numbering_assigned": true,
+    "asset_index": "08_provenance/FINAL_REPORT_ASSET_INDEX.csv"
+  },
+  "deferred_items": [
+    "simulation report",
+    "user manual",
+    "demonstration video",
+    "registration materials",
+    "quick runtime package",
+    "zip archive"
+  ]
+}

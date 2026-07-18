@@ -1,0 +1,1585 @@
+{
+  "schema_version": 1,
+  "algorithm": "RA-GCA-CGHTE",
+  "generated_utc": "2026-07-16T09:42:25.762448Z",
+  "self_excluded": true,
+  "file_count": 315,
+  "total_bytes": 449517441,
+  "files": [
+    {
+      "path": "00_START_HERE/ALGORITHM_REGISTRY.csv",
+      "size": 1031,
+      "sha256": "6EE8A7C55E6DE4544C4F18ABAB8ED95E23BDBEB97F909F3A878941750ED8E5F1"
+    },
+    {
+      "path": "00_START_HERE/EVIDENCE_INDEX.csv",
+      "size": 1742,
+      "sha256": "6A563B6DD964C2EA9977C2017AA34ADBCF92C470B2CF660876662056316C5237"
+    },
+    {
+      "path": "00_START_HERE/README_项目总览与使用入口.md",
+      "size": 5315,
+      "sha256": "B3E36528CEABD09DCDC9A8B1FBE5837B04B08993CCF1BEEF46277533BF947D83"
+    },
+    {
+      "path": "00_START_HERE/RELEASE.json",
+      "size": 965,
+      "sha256": "1826065E9A4D3E753171D57D10E055AF9C87BB5E278A310DF4E1C5CFAEABC290"
+    },
+    {
+      "path": "00_START_HERE/SCENE_INDEX.csv",
+      "size": 1982,
+      "sha256": "9FAF2A4749AA0700EFE7E31F1476C676A1CC689A6990380024C56F89404445B3"
+    },
+    {
+      "path": "01_models/baseline/A8FormalSO3V8PX4AllocV1A_20260712.mo",
+      "size": 31271,
+      "sha256": "BBBD64CEBE0A580337EF634B2F455B9A43627990B5E7A2A752D9CB219DDF8A6A"
+    },
+    {
+      "path": "01_models/baselines/pid_standard_steps/PID_X/package.mo",
+      "size": 5118,
+      "sha256": "2016B932D95D332987752361E0A08FD84F0EF9BC0896B38B209DA7BDADD55322"
+    },
+    {
+      "path": "01_models/baselines/pid_standard_steps/PID_Y/package.mo",
+      "size": 5118,
+      "sha256": "3C2FFA7FB5702BB90BD97956ACE7E9ED064EFE576B30E7E62F19DA4F1E10BB42"
+    },
+    {
+      "path": "01_models/baselines/pid_standard_steps/PID_Z/package.mo",
+      "size": 5121,
+      "sha256": "3B6EB0B9A8FAB60EDAADB8DF1BB546FC9093B11662C76CEEE62761F6D135D35D"
+    },
+    {
+      "path": "01_models/baselines/ra_gca_v8_public_scenes/package.mo",
+      "size": 15217,
+      "sha256": "6CC12B332B4399F2AAE745E6E8F99B3A8DCC6BCFFFD569ABA3DD861A69D6CC20"
+    },
+    {
+      "path": "01_models/comparators/cap_adrc/A8FormalADRCV11PX4AllocV1A_20260712.mo",
+      "size": 47759,
+      "sha256": "62D9ED18FDBF89CE24F66DC795847CB65510C05A1D926BB8948E5CB29316E8E1"
+    },
+    {
+      "path": "01_models/comparators/cap_adrc/package.mo",
+      "size": 15732,
+      "sha256": "C7EA74D4D2CDEDF3DDC0EC63CED9D8D7C25AA63B6C9B74B4450C8DB33A1CA465"
+    },
+    {
+      "path": "01_models/comparators/cp_indi/A8FormalINDICommandProxyV1A_20260712.mo",
+      "size": 41200,
+      "sha256": "E71A911BDD353BFF74C1DDC831B0D3354058B42973A66125F3ABDBBB1794E7F4"
+    },
+    {
+      "path": "01_models/comparators/cp_indi/package.mo",
+      "size": 15738,
+      "sha256": "7DF7566B7C6CF4E297786076A42C2BB76FE9081992BEC469EC99ED164FDBC512"
+    },
+    {
+      "path": "01_models/comparators/ra_gca_base/A8FormalSO3V1F_20260711.mo",
+      "size": 23118,
+      "sha256": "857769FDC72CCE61B5D38A034A5E7DF62188F375B11562F113C3E94A656C8C3E"
+    },
+    {
+      "path": "01_models/comparators/ra_gca_base/plant/package.mo",
+      "size": 13913,
+      "sha256": "EFFEAC7B201248DC259BCEC712F016BCAE02CDE8115690D41C8D305FC9F0EB1C"
+    },
+    {
+      "path": "01_models/dependencies/A8FormalPidTwin/package.mo",
+      "size": 4016,
+      "sha256": "27C075BD15521B234E710025AB7484E0BA7E1B23733664B0BFAECF33E45DA28D"
+    },
+    {
+      "path": "01_models/dependencies/formation/A8FormalFormationNominalSupervisorV1A_20260712.mo",
+      "size": 59540,
+      "sha256": "1EB76EAED07321CC6351DEC82F6AEA594765212DB94CABB9C38FFF55063C5B24"
+    },
+    {
+      "path": "01_models/dependencies/formation/A8FormationScene07COffV1Plant20260712/package.mo",
+      "size": 12819,
+      "sha256": "AD88E6DFC86B9FDAD660089EDFE5539846C1ED7810601CEACE71E9D00ED82672"
+    },
+    {
+      "path": "01_models/dependencies/formation/A8FormationScene07COnRobustV3Plant20260712/package.mo",
+      "size": 12845,
+      "sha256": "48400A0D59DCC225BFF15F35D01F4A784249AE8C639D94C3EB3B744AD7FB7FE8"
+    },
+    {
+      "path": "01_models/dependencies/formation/A8FormationScene07V1Plant20260712/package.mo",
+      "size": 13002,
+      "sha256": "06063CC94D529507B289B788F66ABE2A1C9D5BBA0DDAF6EBF9287F336D2E5AFF"
+    },
+    {
+      "path": "01_models/modelica/A8RAGCACGHTEFormationValidationPlant20260715/package.mo",
+      "size": 14070,
+      "sha256": "9CDD9AB9CA70A481D236096BF79A409F7D4494F244D6E1CD9EDE0123B20FF848"
+    },
+    {
+      "path": "01_models/modelica/A8RAGCACGHTEPhaseValidationPlant20260715/package.mo",
+      "size": 17063,
+      "sha256": "A6CFE2D9483D5DD5263AACF258249E7FF732FB55E7E048CE32C8419EDD4B5C14"
+    },
+    {
+      "path": "01_models/modelica/A8RAGCACGHTEPlant20260715/package.mo",
+      "size": 17086,
+      "sha256": "54BBDD79E1884AC5FF50A92D12F4AADC9E0E0699631BED9A32B610A42EACF280"
+    },
+    {
+      "path": "01_models/modelica/A8RAGCACGHTEStepPlant20260715/package.mo",
+      "size": 3887,
+      "sha256": "29936B8E0BB8CF41B1F5FE25CEEEC931D4829E78584BC0E227CBDBADB21C4D55"
+    },
+    {
+      "path": "01_models/official/QuadrotorModel/package.mo",
+      "size": 129303,
+      "sha256": "B39A8B23665A3B05CF3FAD406744021F0E65541A02D1EF052D2BD10BA7E76352"
+    },
+    {
+      "path": "01_models/official/QuadrotorModel/Resources/Images/Dronepic.jpg",
+      "size": 55328,
+      "sha256": "9B5B71B3FB2FC26B0CE9AA05F13EB749EA887D79A8CCE4D75DE7E8E90EA3FB4A"
+    },
+    {
+      "path": "01_models/official/QuadrotorModel/Resources/Images/Joystick.png",
+      "size": 51332,
+      "sha256": "09BBAE53542EC157FC708C018E0A94B1452E0F8A88A106ABAE72E4FAF5D499AF"
+    },
+    {
+      "path": "01_models/official/QuadrotorModel/Resources/Images/Quadpic - 副本.png",
+      "size": 782012,
+      "sha256": "60EBA90A8E8954CB3AF53A1B3F4B916DB6B38038CA4AD4A64C2357B1AD585FFD"
+    },
+    {
+      "path": "01_models/official/QuadrotorModel/Resources/Images/Quadpic 2.png",
+      "size": 785217,
+      "sha256": "870563E1F62FD3423E23BD877029C8283D9F0701936D4AE806882A7A88F59BD7"
+    },
+    {
+      "path": "01_models/official/QuadrotorModel/Resources/Images/Quadpic 5.png",
+      "size": 708535,
+      "sha256": "3B9A225E4250E2D8742BD3B900CD11BB2478886A2DF31888F7F688C8448837DC"
+    },
+    {
+      "path": "01_models/official/QuadrotorModel/Resources/Images/Quadpic.png",
+      "size": 761544,
+      "sha256": "54267D0D48504511719279727E126D2AC165BFDAAEE8C50A4FB3A0317D829A09"
+    },
+    {
+      "path": "01_models/official/QuadrotorModel/Resources/Images/图片1.png",
+      "size": 399079,
+      "sha256": "EEEB9196430F2C60899548A5F953A906C8B922950CAA6B3B174267C341696AE9"
+    },
+    {
+      "path": "01_models/official/QuadrotorModel/Resources/Visualization/DroneBlade.hsf",
+      "size": 6233,
+      "sha256": "BB4708210A1BAB2D7A625ED9A75666C2E93BE54CF5082092F9A8B3BBE8ECC263"
+    },
+    {
+      "path": "01_models/official/QuadrotorModel/Resources/Visualization/DroneBlade.stl",
+      "size": 90284,
+      "sha256": "E8AB49DEE09207D328358E457A1320F5622F3284675BF71D196D5B1330FC91D1"
+    },
+    {
+      "path": "01_models/official/QuadrotorModel/Resources/Visualization/DroneBody.hsf",
+      "size": 250300,
+      "sha256": "C36CE8C4CB65950BEDF910BDA2D954C30B9EDA4E361F5ECDF40843307C75C9AB"
+    },
+    {
+      "path": "01_models/official/QuadrotorModel/Resources/Visualization/DroneBody.stl",
+      "size": 2861584,
+      "sha256": "C16359AC994E556E4E13F2F33E9CD8997B7EEA1413FBF56F84EE950487F67C0A"
+    },
+    {
+      "path": "01_models/official/QuadrotorModel/Resources/Visualization/Jichang1.dxf",
+      "size": 28368179,
+      "sha256": "BB8909BEC2C91C2577D279ED0F0A68EC85046312C21BD702D2D4C9A9E5D7A245"
+    },
+    {
+      "path": "01_models/official/QuadrotorModel/Resources/Visualization/Jichang1.hsf",
+      "size": 221828,
+      "sha256": "839A55DB7873472B5FD36B54FC58BD9DB937B4DCFBC0DF232639A710C60E581E"
+    },
+    {
+      "path": "01_models/official/QuadrotorModel/Resources/Visualization/Jichang1.mtl",
+      "size": 1261,
+      "sha256": "6F8DD8253B3D99345F2DB031B043AAAE100F1D3C6372932EBED273CCCE0EAF05"
+    },
+    {
+      "path": "01_models/official/QuadrotorModel/Resources/Visualization/Jichang1.obj",
+      "size": 8208819,
+      "sha256": "45C1FAA5159416DA1241E601BC070E11065297B5A5397729EB2B751C282A8D4C"
+    },
+    {
+      "path": "01_models/official/QuadrotorModel/Resources/Visualization/Jichang1.stl",
+      "size": 5417184,
+      "sha256": "F905EBD7B6C73D5A37BA76B3424250087C19B3C5355398C87256D9D564D1B9BD"
+    },
+    {
+      "path": "01_models/official/QuadrotorModel/Resources/Visualization/jijia.stl",
+      "size": 14532434,
+      "sha256": "219FE7F87ECFCD431C36EC630349B75EB6218734D9448D8CDE13E4B9913E5713"
+    },
+    {
+      "path": "01_models/official/QuadrotorModel/Resources/Visualization/QuadBody.hsf",
+      "size": 372955,
+      "sha256": "CC8683BC3DA3F059B72FF16101F1AF7262E0EEDF51A0424A9D8ECFA13CDE51C3"
+    },
+    {
+      "path": "01_models/official/QuadrotorModel/Resources/Visualization/QuadBody.stl",
+      "size": 3798584,
+      "sha256": "4595E6BF3F71E6E0142947FFBE5FA8F10A7069E481BA75E8EA8533FE8F6A14BA"
+    },
+    {
+      "path": "01_models/official/QuadrotorModel/Resources/Visualization/QuadPropeller.hsf",
+      "size": 40672,
+      "sha256": "E41F80C18B58AEBFD7272195DC96B77B925CD1D0F68BE3774F47A0D6AB37F74F"
+    },
+    {
+      "path": "01_models/official/QuadrotorModel/Resources/Visualization/QuadPropeller.stl",
+      "size": 1008584,
+      "sha256": "661388217EBEECBD39AA5585CC07CFC00817F50D05AE60F71EF0686F725E0D5D"
+    },
+    {
+      "path": "01_models/sysblock/A8FormalRAGCACGHTE_20260715.mo",
+      "size": 61977,
+      "sha256": "0BADB8524026CA8EFF93BEC55C56AB91866D2E7363DC69697407C234116E1BCA"
+    },
+    {
+      "path": "01_models/sysblock/formation/A8CBFPairProjectorPredictiveV5C_20260712.mo",
+      "size": 18296,
+      "sha256": "34728783FFBD701A96E6AA912721565F49C79A1B9AA6B86EA7EE09BC04857DFD"
+    },
+    {
+      "path": "01_models/sysblock/formation/A8CBFPredictiveKernelV5C_20260712.mo",
+      "size": 81632,
+      "sha256": "E45E6F614D7F12B2AC57A0FCC128DDC6BDD507DAAEBBA5163319BDE485BF8973"
+    },
+    {
+      "path": "01_models/sysblock/formation/A8FormalFormationPredictiveCBFV5C_20260712.mo",
+      "size": 108586,
+      "sha256": "FA47DF1C51D5656D14F372929B95AE16321B8E28878ED5931364CEFBBF7336BD"
+    },
+    {
+      "path": "02_scripts/audit/build_manifest.py",
+      "size": 1623,
+      "sha256": "490FD2F00A22195B7C6C29BD17CAD8BA430ADFC1EBA49AC93BDA7D1BE8A75961"
+    },
+    {
+      "path": "02_scripts/audit/package_audit.py",
+      "size": 14223,
+      "sha256": "6B8515F6EE74E7F70D1B66105F1886B2B1752EA8857A11C424265231E25F4C77"
+    },
+    {
+      "path": "02_scripts/builders/build_cap_adrc.py",
+      "size": 14197,
+      "sha256": "8E23F7EC60B738A8FD6822487191BD8155B91A37A49009A2A68DE46C437C5194"
+    },
+    {
+      "path": "02_scripts/builders/build_cp_indi.py",
+      "size": 10913,
+      "sha256": "88EC21A758B2DE15F0F9728AA3CF07BC1E7DCB2285E0E6FC7745E4D63C1D9573"
+    },
+    {
+      "path": "02_scripts/builders/build_ra_gca_base.py",
+      "size": 6922,
+      "sha256": "2D020112AFCDC6172E3A431FC015D3BA584D8FA4DB37C65D5EAFCA1642ADF772"
+    },
+    {
+      "path": "02_scripts/builders/build_ra_gca_v8.py",
+      "size": 8208,
+      "sha256": "09F07371A9A3778295C7E9577A1FB6F77B1F76E4F956A158A0E6A45545A76CB6"
+    },
+    {
+      "path": "02_scripts/evaluation/build_report_evidence.py",
+      "size": 53433,
+      "sha256": "9BCFCE0ECF26989E7F569BD0D2193BCF9F3D1C108FFC6D70F77C4A3EFBBACE10"
+    },
+    {
+      "path": "02_scripts/evaluation/evaluate_manifest_campaign.py",
+      "size": 58022,
+      "sha256": "F20C65870D59BBCF19BC4DCBC1FDEEB03A0C417A17171A3F0E8426BE9F5E76E1"
+    },
+    {
+      "path": "02_scripts/evaluation/verify_release_results.py",
+      "size": 3175,
+      "sha256": "827EBE2F052B87960A966CE43FB9CC95A333C0F15EFFA1F8E2849169A91B6AE6"
+    },
+    {
+      "path": "02_scripts/powershell/A8RuntimeResolver.ps1",
+      "size": 4488,
+      "sha256": "98097BCC13E56242D5E03AD18D2AC689E28EF285C1CC91C526E996CF58E1E2CB"
+    },
+    {
+      "path": "02_scripts/syslab/build_five_scene_comparison.jl",
+      "size": 3901,
+      "sha256": "C720D54A2F6DE41ACF1626F2867BA1E57F9DC7DD8F0D95C5282FE2D87F97BC35"
+    },
+    {
+      "path": "02_scripts/syslab/CampaignMetrics.jl",
+      "size": 52412,
+      "sha256": "E569760D2FDC12CDC331E31E884D7ED019A314CEE6EE3DE9364A82C5C11BE0BE"
+    },
+    {
+      "path": "02_scripts/syslab/CanonicalMetricsV7.jl",
+      "size": 23879,
+      "sha256": "94F74C8952E2748C793DDD8D3452D87D45CCB6C397A2D499CFA2C7C3C0B19549"
+    },
+    {
+      "path": "02_scripts/syslab/CanonicalMetricsV8.jl",
+      "size": 5920,
+      "sha256": "E72416BC439220F4BB5C57F0C05E9FA714EBC70EA1D879545313008A9B7D1BDC"
+    },
+    {
+      "path": "02_scripts/syslab/comparator_canonical_metrics_v1.jl",
+      "size": 12609,
+      "sha256": "89CA2A97E3C2F621C00187C24B0FD73EFC555515CE2E3418AB9474B286A77838"
+    },
+    {
+      "path": "02_scripts/syslab/FormationMetricsV8.jl",
+      "size": 15802,
+      "sha256": "D98576BE6BB34E18E3F9978F2E797BE65E080FEA41477FB355131CBF43FF5E61"
+    },
+    {
+      "path": "02_scripts/syslab/run_campaign_evaluation.jl",
+      "size": 5091,
+      "sha256": "ABABBB75F8BA7DF43A48089DA68284BC8EE157482B43028A642E99F12726DBED"
+    },
+    {
+      "path": "02_scripts/syslab/TransientMetricsV7.jl",
+      "size": 13696,
+      "sha256": "983C4012C5931F1ACB363E913A0EBE8A390905024B9F68C14A9D2F2232C6BAB9"
+    },
+    {
+      "path": "02_scripts/syslab/V9DevelopmentMetrics.jl",
+      "size": 10667,
+      "sha256": "ED4AA40BC292E7BFEF6A860A1289FBA0989DDF3066B70E22389C03F8285E650F"
+    },
+    {
+      "path": "02_scripts/sysplorer/export_comparator_common_scenes.py",
+      "size": 2991,
+      "sha256": "89B072A4E644338EFACAE16A79781EA5B496999742EC59C530A6415D3FCEE4A6"
+    },
+    {
+      "path": "02_scripts/sysplorer/run_main_controller.py",
+      "size": 45845,
+      "sha256": "3DBA848C4C7DB74ECE222F8DD68EC1B23783664627F620253715EAC947EB330D"
+    },
+    {
+      "path": "04_results/package_representative_scene04.json",
+      "size": 1139,
+      "sha256": "E2C1E89920B4B90D261C57DAEA8626C3B1B429799CBC743510302A034C46236E"
+    },
+    {
+      "path": "04_results/README_核心结果与复算说明.md",
+      "size": 1060,
+      "sha256": "2F8FFC4031A2C029068743D005B00A0CA795E55FF31D3287303F71C9043055DD"
+    },
+    {
+      "path": "04_results/release_regression_6/release_reproduction.json",
+      "size": 2680,
+      "sha256": "76E9CDF11D7DBA2D612F7666296FB322349C61596976BCEB3BAE45C0167BECA3"
+    },
+    {
+      "path": "04_results/report_evidence/01_five_controller_scene_coverage.csv",
+      "size": 1731,
+      "sha256": "090B052D56E29A4D81EFB92B8191CE7C4434E70538AF72363A7E73A6EDC929DB"
+    },
+    {
+      "path": "04_results/report_evidence/02_standard_step_pid_vs_main.csv",
+      "size": 827,
+      "sha256": "4139CD3B2D59417A57357C57788E6F64A831F4A3B51562A1517759DFCC88F81C"
+    },
+    {
+      "path": "04_results/report_evidence/03_five_controller_common_scenes.csv",
+      "size": 3009,
+      "sha256": "9A1CE6B8E6EB24F709BEEFF1EC518E150CE9C976A955B79FB57FE058FCB2F933"
+    },
+    {
+      "path": "04_results/report_evidence/04_algorithm_evolution_ablation.csv",
+      "size": 2223,
+      "sha256": "8F982590302A0F5C20EB04D08E88389402A020F605361017EA85C0815763FCDD"
+    },
+    {
+      "path": "04_results/report_evidence/05_parameter_11_paired.csv",
+      "size": 4543,
+      "sha256": "E634E9C08E8A83D20099D35ADCDEE7F5FF5867D095E2A12B7021E090D47B61CF"
+    },
+    {
+      "path": "04_results/report_evidence/06_project_regression_32_summary.json",
+      "size": 1625,
+      "sha256": "1E55A65407E87FFCE39382E8E91C4508935CF3AA21B1D40E6D6436EE3EE2F8FF"
+    },
+    {
+      "path": "04_results/report_evidence/07_disturbance_tradeoff.csv",
+      "size": 791,
+      "sha256": "F979BB16840F278D589A3B8597085E13AD8CD26B061098AB9A8E766B6ED2FD3D"
+    },
+    {
+      "path": "04_results/report_evidence/08_compound_stress_tradeoff.csv",
+      "size": 2179,
+      "sha256": "E937D4BA3E399DFC244F8E0EB1797DDDE3679FC559B560D514FF1CD91407C7DE"
+    },
+    {
+      "path": "04_results/report_evidence/09_formation_pp_cbf.csv",
+      "size": 1137,
+      "sha256": "4FEE3DBD92BA567557FC8B9FB08703327477218EC5D437C099D87200FE491AAB"
+    },
+    {
+      "path": "04_results/report_evidence/10_claim_evidence_index.csv",
+      "size": 3911,
+      "sha256": "BD4BE1B9833CF06A6CE32702BFDE79A942AEDB0EAE5562DDB82324CE18EB0EC0"
+    },
+    {
+      "path": "04_results/report_evidence/README_报告证据使用边界.md",
+      "size": 2537,
+      "sha256": "1A66F3E0072B5F243DF70655A56DA2C6D6E7032EB83852650AE90BBE2469BFAF"
+    },
+    {
+      "path": "04_results/report_evidence/REPORT_EVIDENCE_MANIFEST.json",
+      "size": 4753,
+      "sha256": "DA511024B0FC07ECF9A68C21485C7B579381CD0F6D8CB8376D5DD2BAA32DDC3F"
+    },
+    {
+      "path": "04_results/report_evidence/source_snapshots/chapter6_metrics_normalized.json",
+      "size": 4057,
+      "sha256": "23C060D7E9EDC2E8712D3B3DFC13FF745F72E3973A383EA50F2682CDEC6183BF"
+    },
+    {
+      "path": "04_results/report_evidence/source_snapshots/compound_stress_formal_algorithm.csv",
+      "size": 2890,
+      "sha256": "027E3C2F62887DEA965D8809EE1AD3862984ED8A2AD95B2897CE26C5DAB22FF4"
+    },
+    {
+      "path": "05_visuals/assets/gif/01_参数_高度跟踪.gif",
+      "size": 1384387,
+      "sha256": "FEAB49D60D6E5F8B40ABAD5BB16C6B3CBDF74DEB72D51CA399F9FC38E2EFB8AD"
+    },
+    {
+      "path": "05_visuals/assets/gif/02_参数_推力尺度.gif",
+      "size": 1315133,
+      "sha256": "C59BE499BF87866AEBFABDFEF05BD81B3B5841F74D931E814EAD280F5E8A4A74"
+    },
+    {
+      "path": "05_visuals/assets/gif/03_编队_队形变换.gif",
+      "size": 1554429,
+      "sha256": "6B4B1E7F5470E055F28CA55FE0890F74EDB9193D72C5F12C6C4E4653840558A4"
+    },
+    {
+      "path": "05_visuals/assets/gif/04_编队_最近机间距.gif",
+      "size": 1286494,
+      "sha256": "8E0F45BD6948502F62B717C752D681DBFA57DF72DC1576F0E88A5B585C9B3D4B"
+    },
+    {
+      "path": "05_visuals/assets/gif/05_PP-CBF_队形安全.gif",
+      "size": 1606409,
+      "sha256": "A07944818924210DCF1DBA9F57DAE844ED8475324F9E4F4E433A62D351A1E6ED"
+    },
+    {
+      "path": "05_visuals/assets/gif/06_PP-CBF_距离曲线.gif",
+      "size": 1308544,
+      "sha256": "7502E8C93CBFC08890478205E66C10AC5777BB742CC1EC0CE1D587148DEFAF78"
+    },
+    {
+      "path": "05_visuals/assets/report_sources/data/FIG_1-1__openalex_control_works_2015_2025.csv",
+      "size": 1596897,
+      "sha256": "D9B223355EBD6D58CFD09CC2D9240191BC40385739EF7E6D62C140FBC33BA174"
+    },
+    {
+      "path": "05_visuals/assets/report_sources/data/FIG_1-1__openalex_query_protocol.json",
+      "size": 1828,
+      "sha256": "792D72D7F371E865257EF11716C0DEECEEC68335DCDEE94E19E890BA8A8280DB"
+    },
+    {
+      "path": "05_visuals/assets/report_sources/data/FIG_2-3__chapter2_pid_baseline_audit.json",
+      "size": 1551,
+      "sha256": "DF0C547B78750017994EACF1B04ADB3F8C7460C1DC2028768773A7FBA690D8BF"
+    },
+    {
+      "path": "05_visuals/assets/report_sources/data/FIG_2-3__chapter2_pid_baseline_metrics.csv",
+      "size": 1619,
+      "sha256": "4A1D492995C9370B008BCB51E2DD43F45057849522286C4334010D0546287318"
+    },
+    {
+      "path": "05_visuals/assets/report_sources/data/FIG_2-3__chapter2_pid_plot_data.csv",
+      "size": 340039,
+      "sha256": "53E985679C9A16F6CA8F8CF115E14346F36A6CC9276984A9CBD8ECDF4EF43948"
+    },
+    {
+      "path": "05_visuals/assets/report_sources/data/FIG_5-3__chapter5_data_lineage.csv",
+      "size": 3185,
+      "sha256": "9C29D1EF0EB7F79948B1C593087F2B8B49AAE2115F9434FFD780202E5C05C7DE"
+    },
+    {
+      "path": "05_visuals/assets/report_sources/data/FIG_6-1__figure_6_1_step_timeseries.csv",
+      "size": 144787,
+      "sha256": "B511A935DBA5D3B80F715276A3550883F52870AD04B41B0C7B9AD0823885E269"
+    },
+    {
+      "path": "05_visuals/assets/report_sources/data/FIG_6-2__figure_6_2_step_hover_timeseries.csv",
+      "size": 142508,
+      "sha256": "16E654AFF0A724871CB4E2C799E8BFC213E014A073983863EC854427A6BC2123"
+    },
+    {
+      "path": "05_visuals/assets/report_sources/data/FIG_6-3__figure_6_3_continuous_trajectories.csv",
+      "size": 150282,
+      "sha256": "ABDDABD7CB3B2174B335DB65BD558CA2FC587360E2F40B5467EDBD1261CEB3DD"
+    },
+    {
+      "path": "05_visuals/assets/report_sources/data/FIG_6-4__figure_6_4_five_controller_common.csv",
+      "size": 3013,
+      "sha256": "DF59E873483AF761340E08A14374985F5FECD01C9AD339B9661E3A227F9AA7EA"
+    },
+    {
+      "path": "05_visuals/assets/report_sources/data/FIG_6-5__figure_6_5_parameter_results.csv",
+      "size": 754,
+      "sha256": "574555045E9BDB3ECFC4BCFE1B32E8426D1480FC1025D6BA40DA15E5A5881327"
+    },
+    {
+      "path": "05_visuals/assets/report_sources/data/FIG_6-6__figure_6_6_disturbance_tradeoff.csv",
+      "size": 793,
+      "sha256": "3D9388250A1305DDB65ED6545041C4451B55F8DB1857D9C574C079EF39C1053A"
+    },
+    {
+      "path": "05_visuals/assets/report_sources/data/FIG_6-7__figure_6_7_environment_transparency.csv",
+      "size": 363,
+      "sha256": "367DBE8BADDDF43634D75D3113CDC166D2843FD4C5D9D6156C9F68CB3CA6C1CD"
+    },
+    {
+      "path": "05_visuals/assets/report_sources/data/FIG_6-8__figure_6_8_cghte_diagnostics_corrected.csv",
+      "size": 135413,
+      "sha256": "A63440C6A09403342287ADCA4A92D34484791BA0303C4B8A51C88D891855780D"
+    },
+    {
+      "path": "05_visuals/assets/report_sources/data/FIG_7-1__figure_7_1_source.csv",
+      "size": 2992126,
+      "sha256": "F42AB9BB78DF03FD7B08489D4DD4E728706B6B6BB2D7FF691D9844ADB281FCE5"
+    },
+    {
+      "path": "05_visuals/assets/report_sources/data/FIG_7-2__figure_7_2_source.csv",
+      "size": 256457,
+      "sha256": "853EF71FC2BB61608E5E7B2D8B5EE6B36203D007A53FDAEAC11E68C544D5C0AF"
+    },
+    {
+      "path": "05_visuals/assets/report_sources/data/FIG_D-1__figure_a_1_compound_stress.csv",
+      "size": 457,
+      "sha256": "A287FC3C4F0E0F6937CF35AB356817F4526FD27264E5C15EBFCAAA368A74D693"
+    },
+    {
+      "path": "05_visuals/assets/report_sources/data/FIG_E-1__figure_A_1_source.csv",
+      "size": 425091,
+      "sha256": "D55B0B0BF862AF2B83A4AD1852545AEBC66509C614D0682D654097402D0B0BB9"
+    },
+    {
+      "path": "05_visuals/assets/report_sources/vectors/FIG_1-1.pdf",
+      "size": 48111,
+      "sha256": "208CE9ED81954133A058647A23646F885F77963238FE4D8393CD1FCC2A9E353C"
+    },
+    {
+      "path": "05_visuals/assets/report_sources/vectors/FIG_1-1.svg",
+      "size": 46126,
+      "sha256": "E5C09F552D5D88B74CD310C04D97D4DDDC5DE367676022818C2B9C80E0F18E1E"
+    },
+    {
+      "path": "05_visuals/assets/report_sources/vectors/FIG_2-1.svg",
+      "size": 7467,
+      "sha256": "E6C06852526084AF0F8CB3DC8CB0ACB1D38DC3EBF0A251E01622071DA8AF7A18"
+    },
+    {
+      "path": "05_visuals/assets/report_sources/vectors/FIG_2-2.svg",
+      "size": 16692,
+      "sha256": "842FC1AE1DBD446864FD8EC37864B3F61BA4B6C2C2BD4E752A04EDD7B91262ED"
+    },
+    {
+      "path": "05_visuals/assets/report_sources/vectors/FIG_2-3.pdf",
+      "size": 28863,
+      "sha256": "9776B4A356C661BC6518290E94AEB79420CD6F8FA243ADBE7B81F8B18E971BFF"
+    },
+    {
+      "path": "05_visuals/assets/report_sources/vectors/FIG_2-3.svg",
+      "size": 35679,
+      "sha256": "E6E2C542D0531BB8C18B3A33C3D0001ABD2B3A660127D45762DF792E03C4FD16"
+    },
+    {
+      "path": "05_visuals/assets/report_sources/vectors/FIG_3-1.pdf",
+      "size": 64135,
+      "sha256": "4C5A8F24685B3F9BE0AC946053528B7A5F4D8131C5B17299C4D710547E166751"
+    },
+    {
+      "path": "05_visuals/assets/report_sources/vectors/FIG_3-1.svg",
+      "size": 18894,
+      "sha256": "9C47DB605ED697E1D84CBBBE0818E4E40FC7C6C534BAD4DB6AE666E8E462B3CC"
+    },
+    {
+      "path": "05_visuals/assets/report_sources/vectors/FIG_3-3.pdf",
+      "size": 57877,
+      "sha256": "69574888F9F707F43DC5D4385BDB5A7DF6822348F8291B461FA88C17D4F68DEE"
+    },
+    {
+      "path": "05_visuals/assets/report_sources/vectors/FIG_3-3.svg",
+      "size": 17072,
+      "sha256": "0DE485DACE284936C47A4F4E130100039BB08E09191C632F4247AEED9EE6B7EC"
+    },
+    {
+      "path": "05_visuals/assets/report_sources/vectors/FIG_4-1.pdf",
+      "size": 56594,
+      "sha256": "72BE1A4A429FEA67EBF3719D84B40B1DA99ED8DE0BE6BBFEAA36BB04559397F9"
+    },
+    {
+      "path": "05_visuals/assets/report_sources/vectors/FIG_4-1.svg",
+      "size": 26173,
+      "sha256": "1DC6AD2F704A1BE124DE7AA825336E00BC039DDDAC3F27FB46ABB382E1B795CC"
+    },
+    {
+      "path": "05_visuals/assets/report_sources/vectors/FIG_5-1.pdf",
+      "size": 36436,
+      "sha256": "7BB975640832D66E990ABE60654B575E0AFD9CCCC39E76ECDFF00C2DEEF21480"
+    },
+    {
+      "path": "05_visuals/assets/report_sources/vectors/FIG_5-1.svg",
+      "size": 111759,
+      "sha256": "3E700A7E9F1F46F7BCA6FF374A090482889C3895BD80984911DD155C075BAF9E"
+    },
+    {
+      "path": "05_visuals/assets/report_sources/vectors/FIG_5-2.pdf",
+      "size": 31194,
+      "sha256": "C1629CD6D4DEA8FE103ECF3A7724908CEC0EA18F6CDFE92B92A7D464F72EAC57"
+    },
+    {
+      "path": "05_visuals/assets/report_sources/vectors/FIG_5-2.svg",
+      "size": 75915,
+      "sha256": "F6DE4E085520443381958869201266AB4BD6EB31C992BA828CFDBF2EA5EDD8ED"
+    },
+    {
+      "path": "05_visuals/assets/report_sources/vectors/FIG_5-3.pdf",
+      "size": 56943,
+      "sha256": "1B4F09BBDA35E12BCE92CF7F90799CF39F1BA41E0220C05FB3E787BBDB5DBBCB"
+    },
+    {
+      "path": "05_visuals/assets/report_sources/vectors/FIG_5-3.svg",
+      "size": 109866,
+      "sha256": "A0086AC928F272995BBA2D94F2FB5325295DAB73FF04B1B74DE0C0E4CE8ADD02"
+    },
+    {
+      "path": "05_visuals/assets/report_sources/vectors/FIG_6-1.pdf",
+      "size": 28356,
+      "sha256": "475BC94666FE93AACE221E2F6B1FC8669571D8E2F08684FB582D0148DBC8BACB"
+    },
+    {
+      "path": "05_visuals/assets/report_sources/vectors/FIG_6-1.svg",
+      "size": 48850,
+      "sha256": "B3C5C751D065B13F00ED11D25C71D0581425E5A27E07470505CA8CE33D086995"
+    },
+    {
+      "path": "05_visuals/assets/report_sources/vectors/FIG_6-2.pdf",
+      "size": 30177,
+      "sha256": "C602170C19B880F4C4E45F34D0DC5E0A512F97124D57D30B2DDF18AF4F24651B"
+    },
+    {
+      "path": "05_visuals/assets/report_sources/vectors/FIG_6-2.svg",
+      "size": 33691,
+      "sha256": "C698C1A83C262EA2677A051DF8A82B4FE611A700C2A0BCD9B1735CFFB2834688"
+    },
+    {
+      "path": "05_visuals/assets/report_sources/vectors/FIG_6-3.pdf",
+      "size": 41918,
+      "sha256": "6727E5B8C027EC8B6774AED311F9B635E83D519D85271969E5CF007197FD95A6"
+    },
+    {
+      "path": "05_visuals/assets/report_sources/vectors/FIG_6-3.svg",
+      "size": 73628,
+      "sha256": "7911E9AC8E9C4B88DE7EB896FFB2E210466BD20944C2706C2015A94D24950754"
+    },
+    {
+      "path": "05_visuals/assets/report_sources/vectors/FIG_6-4.pdf",
+      "size": 31964,
+      "sha256": "1E13475F85DFB7320E50AE424A78C916D745D853C30FCAB3D270304D5C5F38AA"
+    },
+    {
+      "path": "05_visuals/assets/report_sources/vectors/FIG_6-4.svg",
+      "size": 47482,
+      "sha256": "258FF80D906BDD2C0FF5CC2806D2C01F8F65D7B8E7292950FF688CA1615F101F"
+    },
+    {
+      "path": "05_visuals/assets/report_sources/vectors/FIG_6-5.pdf",
+      "size": 27347,
+      "sha256": "0E310F6EA4ECBD40EBB5446349E6AEA4D36D7E8333CF7823161F6CF720969546"
+    },
+    {
+      "path": "05_visuals/assets/report_sources/vectors/FIG_6-5.svg",
+      "size": 21904,
+      "sha256": "05A068F368283343AFB0DD94D0838C1D408A8AA57B18AFABB3856D563E36D4E5"
+    },
+    {
+      "path": "05_visuals/assets/report_sources/vectors/FIG_6-6.pdf",
+      "size": 28277,
+      "sha256": "1C2E8CD42BE67B488D8889EE40BD5E674CC5023A4A19812A023C4DFF00FAE5DD"
+    },
+    {
+      "path": "05_visuals/assets/report_sources/vectors/FIG_6-6.svg",
+      "size": 24819,
+      "sha256": "7B75320A57C06C0205831EFC6903E3DC72BE324072993FF0DDE3D8947AEF146D"
+    },
+    {
+      "path": "05_visuals/assets/report_sources/vectors/FIG_6-7.pdf",
+      "size": 24838,
+      "sha256": "0C672767360140263CB22EC06D66D4F97BCA1E324EEFEE5D48C3D4499F877B5C"
+    },
+    {
+      "path": "05_visuals/assets/report_sources/vectors/FIG_6-7.svg",
+      "size": 22602,
+      "sha256": "CDD2A95E09C0227C10E4E9570F90A6D470162CF570ED6976AE0EC51E1F0D6DD9"
+    },
+    {
+      "path": "05_visuals/assets/report_sources/vectors/FIG_6-8.pdf",
+      "size": 40186,
+      "sha256": "D50AF3F9ACF193E7EE0EE4028B00C2088A74623CBAC290A9D30B23AFBE165250"
+    },
+    {
+      "path": "05_visuals/assets/report_sources/vectors/FIG_6-8.svg",
+      "size": 47996,
+      "sha256": "8911F0733E25A004968FE74CBCDDC05460FADF2E48293013C74108A2AD01661B"
+    },
+    {
+      "path": "05_visuals/assets/report_sources/vectors/FIG_7-1.pdf",
+      "size": 130985,
+      "sha256": "86BF904F3BC68CF33A7C29CD238F1C4DE306273B5CF51B8F4CCCF05BAB12A960"
+    },
+    {
+      "path": "05_visuals/assets/report_sources/vectors/FIG_7-1.svg",
+      "size": 418341,
+      "sha256": "91BDDEF3843AA36EDDA3B9C642039C4CB15A42E83B3D0BCAA09AF9BE1F8BC270"
+    },
+    {
+      "path": "05_visuals/assets/report_sources/vectors/FIG_7-2.pdf",
+      "size": 77613,
+      "sha256": "65A427287CA27BDD45D41643549A352E3104433675DA33E20D0F516C62973F51"
+    },
+    {
+      "path": "05_visuals/assets/report_sources/vectors/FIG_7-2.svg",
+      "size": 246992,
+      "sha256": "2E3DF2FC4DC7E432DF260450169E39EC6A2341CD6EAB875E995F846AEEC0936B"
+    },
+    {
+      "path": "05_visuals/assets/report_sources/vectors/FIG_8-1.pdf",
+      "size": 28922,
+      "sha256": "9A24E367BBEF5979374DD5632F0280A748DF260637A011A59AB6C28B37A3AB5D"
+    },
+    {
+      "path": "05_visuals/assets/report_sources/vectors/FIG_A-1.pdf",
+      "size": 292454,
+      "sha256": "001AC0C945070485EDEC4D116ABB9DBBDCADEA52124240940D247762C48E560F"
+    },
+    {
+      "path": "05_visuals/assets/report_sources/vectors/FIG_A-1.svg",
+      "size": 949698,
+      "sha256": "191C2986A400228C3DC354D938FD0E45634D48D4F923C3A83E06869804847120"
+    },
+    {
+      "path": "05_visuals/assets/report_sources/vectors/FIG_C-1.pdf",
+      "size": 62174,
+      "sha256": "1E51A744C90EAAB76F186161BB7387BE900B910A61ECD9917C51E6DDA804D1D7"
+    },
+    {
+      "path": "05_visuals/assets/report_sources/vectors/FIG_C-1.svg",
+      "size": 19268,
+      "sha256": "38010D6957C84D970CDE90368059BBDCABACB46489BC43E2E58D2E8FF128DA7D"
+    },
+    {
+      "path": "05_visuals/assets/report_sources/vectors/FIG_D-1.pdf",
+      "size": 26749,
+      "sha256": "F5BB25C784201EBD3E6E9C3A5A5F92AC337CB41C50557BAA1343F022571A5977"
+    },
+    {
+      "path": "05_visuals/assets/report_sources/vectors/FIG_D-1.svg",
+      "size": 26655,
+      "sha256": "B522068F3A3FF6C14C5F14335B5FB069B49FFE4693901EDC06986E8BDB678F25"
+    },
+    {
+      "path": "05_visuals/assets/report_sources/vectors/FIG_E-1.pdf",
+      "size": 87437,
+      "sha256": "F6E161173B77FA71B4E8CE1B701B19B6C3D5B72C6307DC859B8EB53AF8A42D11"
+    },
+    {
+      "path": "05_visuals/assets/report_sources/vectors/FIG_E-1.svg",
+      "size": 274495,
+      "sha256": "F38B686387FFE029D4D124EBB184ED1314E1EB61DF8BD7517AAE72E0FEBAC515"
+    },
+    {
+      "path": "05_visuals/assets/report_static/FIG_1-1.png",
+      "size": 194848,
+      "sha256": "183640445BCBED1C692FB90B7FBAC15A4B7E27EA71BEE303A111C29CF57632E9"
+    },
+    {
+      "path": "05_visuals/assets/report_static/FIG_2-1.png",
+      "size": 10636,
+      "sha256": "A92A180E1556CC60B641DD4373C6B488309255593134A55BA93F594DD5D0CC75"
+    },
+    {
+      "path": "05_visuals/assets/report_static/FIG_2-2.png",
+      "size": 23289,
+      "sha256": "28AEE5C9B095E369671760F5A20E853F92FB6EC30D9BA626F0E5FE75D6AC3F62"
+    },
+    {
+      "path": "05_visuals/assets/report_static/FIG_2-3.png",
+      "size": 175694,
+      "sha256": "3F51D659357EA21CA4752634755FA601B22F108B7E0F65F1D4D046B7AAF65482"
+    },
+    {
+      "path": "05_visuals/assets/report_static/FIG_3-1.png",
+      "size": 288105,
+      "sha256": "E4F74BBFC2067DFAEB7CF85C32BDBBA6F12238D5CEAB36CE324AF40D4C40416B"
+    },
+    {
+      "path": "05_visuals/assets/report_static/FIG_3-2.png",
+      "size": 219573,
+      "sha256": "A80662979CB86D00D80A21C9E4AD47DDDF00BAAE4FB9D78F225801C9B17B83D3"
+    },
+    {
+      "path": "05_visuals/assets/report_static/FIG_3-3.png",
+      "size": 239404,
+      "sha256": "AB53F356E74DC55D4AFCAC2CE34B07DF4F8E717352461E9274833A948444029A"
+    },
+    {
+      "path": "05_visuals/assets/report_static/FIG_4-1.png",
+      "size": 321072,
+      "sha256": "530EDC223B9AF08F889DAFB9A8655A5CCBABE8B21EC0F34382B3EBE465A021DA"
+    },
+    {
+      "path": "05_visuals/assets/report_static/FIG_5-1.png",
+      "size": 518567,
+      "sha256": "6A5997D1CF5033160326890B9E9F23BAB29455BF9BD67523BE7C7111A0DF4F20"
+    },
+    {
+      "path": "05_visuals/assets/report_static/FIG_5-2.png",
+      "size": 362868,
+      "sha256": "1204BE5C8FD1D8B8B1A1BA95FB7C9F9F5596F998E578B44B9264FC3691844E98"
+    },
+    {
+      "path": "05_visuals/assets/report_static/FIG_5-3.png",
+      "size": 174703,
+      "sha256": "98A1E141C34F8EFD7551BFF254CF8F826F3E1CFDC91D697F50C5A02E796CD153"
+    },
+    {
+      "path": "05_visuals/assets/report_static/FIG_6-1.png",
+      "size": 338923,
+      "sha256": "75E91D1873DC828B7305B5F271EA68F0A81F11605730BC99D659CB171C4518CB"
+    },
+    {
+      "path": "05_visuals/assets/report_static/FIG_6-2.png",
+      "size": 295443,
+      "sha256": "6F926D3034FCA750589698E6FF8A54F0AD56B86BD417913D9DDA3D9EA5C3E45A"
+    },
+    {
+      "path": "05_visuals/assets/report_static/FIG_6-3.png",
+      "size": 698676,
+      "sha256": "29DED7495F7B2533BBD56A231DB7F48E3C0A2E1EE4CC40613B7D0CE1D94C612E"
+    },
+    {
+      "path": "05_visuals/assets/report_static/FIG_6-4.png",
+      "size": 316443,
+      "sha256": "5164B91DF71392CB668F8D5F0B59A5ED07C42F83A9354160E550C60D8E5C60DC"
+    },
+    {
+      "path": "05_visuals/assets/report_static/FIG_6-5.png",
+      "size": 343572,
+      "sha256": "D71FA62F9D3C9716B170049F8F27306A55DD6AE5606B1B6B1854E39BBA213499"
+    },
+    {
+      "path": "05_visuals/assets/report_static/FIG_6-6.png",
+      "size": 228752,
+      "sha256": "AFA5AF3F0D5836F438534FE1BB4916676F6E4158375B28F799113A3F5FEDC9B7"
+    },
+    {
+      "path": "05_visuals/assets/report_static/FIG_6-7.png",
+      "size": 175327,
+      "sha256": "576AA4BAE5DB2CAABE1E9D01090553F7D8C343ED30557AAA62E74FA3D932A958"
+    },
+    {
+      "path": "05_visuals/assets/report_static/FIG_6-8.png",
+      "size": 429104,
+      "sha256": "7D16FF065F5287F9B1B56A4AFA84EE1FF979B1E0792AE6B160027750CFD3CFC4"
+    },
+    {
+      "path": "05_visuals/assets/report_static/FIG_7-1.png",
+      "size": 392439,
+      "sha256": "4EA950076F93DBEFBCE6289FC485AF46EDE98A20FB55CE41040F8D914605F99F"
+    },
+    {
+      "path": "05_visuals/assets/report_static/FIG_7-2.png",
+      "size": 196186,
+      "sha256": "61B51C401974732B257F6D7DD53217933EC88A8533F74774244CB3D37C539095"
+    },
+    {
+      "path": "05_visuals/assets/report_static/FIG_8-1.png",
+      "size": 227661,
+      "sha256": "0736A57B22800434343709AF6528E4488BA63986F13297AA215497B77198DB30"
+    },
+    {
+      "path": "05_visuals/assets/report_static/FIG_A-1.png",
+      "size": 186514,
+      "sha256": "3FB78DE2F5310A2F8F61DCF4D5299CE0F97E4B86340872C897948CD0F7FAC7A5"
+    },
+    {
+      "path": "05_visuals/assets/report_static/FIG_C-1.png",
+      "size": 360115,
+      "sha256": "CB0CCAB083CD9D881DABE452C18F6FF3C1EE63DFDEEB0C677F81299B3A205F8E"
+    },
+    {
+      "path": "05_visuals/assets/report_static/FIG_C-2.png",
+      "size": 788395,
+      "sha256": "67009EEF87D331F41637F58C0934CE41DA946C6C3893D01B1E569632601E5C35"
+    },
+    {
+      "path": "05_visuals/assets/report_static/FIG_C-3.png",
+      "size": 652631,
+      "sha256": "6FFE14B9D535FB32847266A0D52BFBEFC0D624AF4826A2E7C51709BC90AD9687"
+    },
+    {
+      "path": "05_visuals/assets/report_static/FIG_D-1.png",
+      "size": 208554,
+      "sha256": "CDA8169CF56EB57B97E7A7F31CE28A1948236E55675467FBD78629D37ACE5D46"
+    },
+    {
+      "path": "05_visuals/assets/report_static/FIG_E-1.png",
+      "size": 194312,
+      "sha256": "5B3EB4556F50ACEA9E60F76B920342E25E17CDB75FBEFEC12DC275D5B7015750"
+    },
+    {
+      "path": "05_visuals/assets/static/01_典型任务.png",
+      "size": 99586,
+      "sha256": "C07DFEF1A85D15CBE9F71C5609B7C105D7B84C00B108B59DC11A1D51EACC969B"
+    },
+    {
+      "path": "05_visuals/assets/static/02_参数鲁棒核心优势.png",
+      "size": 88856,
+      "sha256": "D5B2176CBA85D85F50D3ED6A9A2DE9E7342A1530DC3D1F9384FE8E49EE6937D3"
+    },
+    {
+      "path": "05_visuals/assets/static/03_编队PP-CBF.png",
+      "size": 81505,
+      "sha256": "F297422914682B5980B586F8496DED7F7AE7DA18BA7B78B05D336AE958306DE4"
+    },
+    {
+      "path": "05_visuals/encode_gifs_pillow.py",
+      "size": 3284,
+      "sha256": "843D8C8224CC05B8216DFC78369350509F17213A5100F3E975505E2AE7ED6D5C"
+    },
+    {
+      "path": "05_visuals/generate_visuals.js",
+      "size": 18068,
+      "sha256": "296D58344CABA5DD3AA19D1D3E8BF7384B3D0534D518450DAD7A2D2DA51EA587"
+    },
+    {
+      "path": "05_visuals/lib/render.js",
+      "size": 47873,
+      "sha256": "D18EA097C789109775763FF314A0D1E022E8E3B6F2B21E21C62EF7ABD0109DFC"
+    },
+    {
+      "path": "05_visuals/qa/final_report_static_qa.json",
+      "size": 17268,
+      "sha256": "E3719BA1824DB508230CA5F18B0AE3A8975715E68A8B770948C8582D07BF4D73"
+    },
+    {
+      "path": "05_visuals/qa/GIF首中末帧联系表.png",
+      "size": 162851,
+      "sha256": "19E788186CF7CE12986803EA42B4328D6EFEED41F2EF39BCA115155D3264EF7F"
+    },
+    {
+      "path": "05_visuals/qa/pillow_encoding_report.json",
+      "size": 1565,
+      "sha256": "4D263D33166CF887EBB7BCBA80D7B19785F3EE61F2E7572DF52083847159C4EA"
+    },
+    {
+      "path": "05_visuals/qa/qa_report.json",
+      "size": 5348,
+      "sha256": "D67E94C2B9ACCC6FDCC4F2E696C20BD0540F66EEEC1112AA175696F9A8520839"
+    },
+    {
+      "path": "05_visuals/qa/最终报告28图联系表.png",
+      "size": 1569566,
+      "sha256": "36C7D973949B36911B95EDF43986C916B65F2CABAC502520412B3D7DD5BC7F50"
+    },
+    {
+      "path": "05_visuals/qa/静态图联系表.png",
+      "size": 125508,
+      "sha256": "406EBA3374D4C481F9594FA3E05FADF44235C5D69F09BE0F91CDCA50AECFD2A1"
+    },
+    {
+      "path": "05_visuals/README_可视化说明.md",
+      "size": 1314,
+      "sha256": "E2E1289014EB1801CAB7B61B68868B3A83658C28776ACB137A0BFC86A58C748F"
+    },
+    {
+      "path": "05_visuals/README_生成与独立验收.md",
+      "size": 2619,
+      "sha256": "C38ABC3B4B4934CA18800E3083DB322554D391529435AA9E4FAA35047CFEDD3C"
+    },
+    {
+      "path": "05_visuals/source_data_sha256.json",
+      "size": 17370,
+      "sha256": "0171AFC4790874B200A1AB9BBD36A926124414BC102D3754A1AF2A891B42CAB8"
+    },
+    {
+      "path": "05_visuals/verify_assets.js",
+      "size": 8792,
+      "sha256": "EE484144EA77EAFDCC385DE853C628F10BAA1CBCF6E27DFCC9A7F56156D68B82"
+    },
+    {
+      "path": "05_visuals/verify_final_report_assets.py",
+      "size": 5433,
+      "sha256": "917E3B934D69CCDB1037739D9FE90421184F284B183EBEA62629101B27F71AA6"
+    },
+    {
+      "path": "05_visuals/visual_generation_helpers.js",
+      "size": 37934,
+      "sha256": "98AA5A49D3CE44301BECCADD5E8694F0C33A13F244377A448FF3FDB4EE745F0C"
+    },
+    {
+      "path": "05_visuals/VISUAL_MANIFEST.json",
+      "size": 51055,
+      "sha256": "23BC452A792CB3F5803CF4AE608520A2E924625D7D2B5D2ABFEED96FEE5E1067"
+    },
+    {
+      "path": "06_supplementary_evidence/campaign_cases.csv",
+      "size": 16101,
+      "sha256": "1D92A601936059D281834CB1A23689F4B31F8CD4C42F299882089B063E7BBBAF"
+    },
+    {
+      "path": "06_supplementary_evidence/campaign_gates.csv",
+      "size": 316,
+      "sha256": "C762582251608D2A63514553FDA0965E0181B50BA33F12AE9C2C8A5A9DFB5E85"
+    },
+    {
+      "path": "06_supplementary_evidence/campaign_pairs.csv",
+      "size": 3879,
+      "sha256": "4AD23C57B025024862075E1F86A97BC56D7072294FC0AD8E37B08DF41013A49F"
+    },
+    {
+      "path": "06_supplementary_evidence/ra_gca_cg_hte_32_raw/Scene01.csv",
+      "size": 4451952,
+      "sha256": "D1CB6F64BC2920225629A0C1C5AED867A4C8CBF31F34683D7E1A2835AE327BC1"
+    },
+    {
+      "path": "06_supplementary_evidence/ra_gca_cg_hte_32_raw/Scene01S_X.csv",
+      "size": 2642463,
+      "sha256": "E27C24A970455CF8E5E48B5DB46DBB3BAEF65D44894A2B2A45466B3C8E19B43E"
+    },
+    {
+      "path": "06_supplementary_evidence/ra_gca_cg_hte_32_raw/Scene01S_Y.csv",
+      "size": 2643275,
+      "sha256": "ED6858BCEFC4F864DD098E0584917B1613FB55BDE9255802F8E827B1BBBF8B2B"
+    },
+    {
+      "path": "06_supplementary_evidence/ra_gca_cg_hte_32_raw/Scene01S_Z.csv",
+      "size": 2640744,
+      "sha256": "BDEC6D2BF7265D1076698BA5E38369E4B7BA67FF1A7D7831ED911E2BE32A179F"
+    },
+    {
+      "path": "06_supplementary_evidence/ra_gca_cg_hte_32_raw/Scene02.csv",
+      "size": 4888910,
+      "sha256": "D0B4937C57656B372C16F2CBF9D864EADCCD06E69DA8EAD0E02732486B0C4B2B"
+    },
+    {
+      "path": "06_supplementary_evidence/ra_gca_cg_hte_32_raw/Scene03.csv",
+      "size": 11713472,
+      "sha256": "F5EA7FC2F015DE43F2B38D51A7FD30B52D9741970DCF0C1D0E39B00E2635A295"
+    },
+    {
+      "path": "06_supplementary_evidence/ra_gca_cg_hte_32_raw/Scene04.csv",
+      "size": 2654132,
+      "sha256": "A95BE2B543A3808DA8CF26797CDB44B0B1FEA13DF4786E6F8C273A39FEC4534C"
+    },
+    {
+      "path": "06_supplementary_evidence/ra_gca_cg_hte_32_raw/Scene05B_C000.csv",
+      "size": 4900180,
+      "sha256": "08014396136938BADD6D63CC58B6E61E39995A731EAA75EE9F97580CBB52DEF7"
+    },
+    {
+      "path": "06_supplementary_evidence/ra_gca_cg_hte_32_raw/Scene05B_C001.csv",
+      "size": 4913476,
+      "sha256": "DA6EA604C7A88100A1D001FB63DE221DE8BECD1E9540EC15AF30C477B1F36189"
+    },
+    {
+      "path": "06_supplementary_evidence/ra_gca_cg_hte_32_raw/Scene05B_C010.csv",
+      "size": 4906134,
+      "sha256": "0943328A25A413591FF278070ADA915D6E78CF4B08AE830E08340A8AD8DF963D"
+    },
+    {
+      "path": "06_supplementary_evidence/ra_gca_cg_hte_32_raw/Scene05B_C011.csv",
+      "size": 4915481,
+      "sha256": "8425E8E52EAA8C7B6F67CAD60C482CFA833B39D873B967D0903499F297BD4C36"
+    },
+    {
+      "path": "06_supplementary_evidence/ra_gca_cg_hte_32_raw/Scene05B_C100.csv",
+      "size": 4909831,
+      "sha256": "C37C51168BB7E41EF51470247928FE835F59D7F472F140BE06298391E91030CE"
+    },
+    {
+      "path": "06_supplementary_evidence/ra_gca_cg_hte_32_raw/Scene05B_C101.csv",
+      "size": 4942911,
+      "sha256": "20E5280094D1638A930891D534040499EFE294700D12AA0E167E21CCE5375633"
+    },
+    {
+      "path": "06_supplementary_evidence/ra_gca_cg_hte_32_raw/Scene05B_C110.csv",
+      "size": 4845596,
+      "sha256": "C924927B6E6361828A3EC27CD9830965470838587A41ABC3FA8C3E15CAD43665"
+    },
+    {
+      "path": "06_supplementary_evidence/ra_gca_cg_hte_32_raw/Scene05B_C111.csv",
+      "size": 4847878,
+      "sha256": "315A406A7E8AE25BEA9033B841935C4ED7467D4DD21483C15A073EAF06A75580"
+    },
+    {
+      "path": "06_supplementary_evidence/ra_gca_cg_hte_32_raw/Scene05B_LiftMinus10.csv",
+      "size": 4975062,
+      "sha256": "1C3C4FA55464E5A1E7C61262893D17D528BF7CB33CEF6449D390FF2647EE4375"
+    },
+    {
+      "path": "06_supplementary_evidence/ra_gca_cg_hte_32_raw/Scene05B_Nominal.csv",
+      "size": 4935405,
+      "sha256": "04B0413E716C03B271CBD6A9D04568147871C1C20B4299C8530E8191E29B446C"
+    },
+    {
+      "path": "06_supplementary_evidence/ra_gca_cg_hte_32_raw/Scene05B_PayloadPlus10.csv",
+      "size": 5002775,
+      "sha256": "C3BE2459C2E4BFB6C695333BFAA583BCDACAE8ADD1B8CEBABE8B4B42F6479CF5"
+    },
+    {
+      "path": "06_supplementary_evidence/ra_gca_cg_hte_32_raw/Scene06b.csv",
+      "size": 2676320,
+      "sha256": "BF89CBD3AE9BDDE4BB6A991C87A98853B1D310A79787B6E2F19668BC3FA02A1F"
+    },
+    {
+      "path": "06_supplementary_evidence/ra_gca_cg_hte_32_raw/Scene07B.csv",
+      "size": 19568830,
+      "sha256": "50DBF50B8C05F538D5DDF2F9027EB0BC4424DCA30055CBBFC4BDE5F838B7B87B"
+    },
+    {
+      "path": "06_supplementary_evidence/ra_gca_cg_hte_32_raw/Scene07COff.csv",
+      "size": 12656686,
+      "sha256": "D9EDACC8337B2014E6ACBE0CE3431AC4ADA4C5E876C5CD5DAE5F41F838D7C7B5"
+    },
+    {
+      "path": "06_supplementary_evidence/ra_gca_cg_hte_32_raw/Scene07COnPredictiveV5C.csv",
+      "size": 12729441,
+      "sha256": "D5C327B45C835608DA3975F9401E2CE7FDC5ED9E20EF41772DB16A835294C2CE"
+    },
+    {
+      "path": "06_supplementary_evidence/ra_gca_cg_hte_32_raw/Scene08_P0.csv",
+      "size": 4534683,
+      "sha256": "F2EE4C65706F74DFBA115043ABE16C6E1D3550A7D0E9CB7572B4801739BEBBDB"
+    },
+    {
+      "path": "06_supplementary_evidence/ra_gca_cg_hte_32_raw/Scene08_P1.csv",
+      "size": 4518729,
+      "sha256": "389B839866574ED35920F73C04C021BEEDFDD201F21C7B632F6B1598DD03DE62"
+    },
+    {
+      "path": "06_supplementary_evidence/ra_gca_cg_hte_32_raw/Scene08_P2.csv",
+      "size": 4522589,
+      "sha256": "6A747CA6D7ADC13AC80E627E2817A2A4702283ECB39E4E0659F0E148CDD2BA23"
+    },
+    {
+      "path": "06_supplementary_evidence/ra_gca_cg_hte_32_raw/Scene08_P3.csv",
+      "size": 4532495,
+      "sha256": "31E5AADFC409915F614ED71E9C77270D24AD71322E60DBF443169C1D1E5130A6"
+    },
+    {
+      "path": "06_supplementary_evidence/ra_gca_cg_hte_32_raw/Scene08_P4.csv",
+      "size": 4524171,
+      "sha256": "DDE48C9998E43E0C74EB027988ECCBA82A987CED68CF6A52931801465041097F"
+    },
+    {
+      "path": "06_supplementary_evidence/ra_gca_cg_hte_32_raw/Scene10_P0.csv",
+      "size": 4736927,
+      "sha256": "19F84C1E922576EF77FAA23F222C01495373E52866BDFC2DBC8D0DCB12515451"
+    },
+    {
+      "path": "06_supplementary_evidence/ra_gca_cg_hte_32_raw/Scene10_P1.csv",
+      "size": 4737128,
+      "sha256": "23DA784317D0C31415DEBBD64B88DB7660B91289643761E0765C4A8CC52C5A1E"
+    },
+    {
+      "path": "06_supplementary_evidence/ra_gca_cg_hte_32_raw/Scene10_P2.csv",
+      "size": 4737471,
+      "sha256": "F5E544FF2519D4A2B7A460BDDD31FB91EFC3F9D1EDE6CBECB13F3B16AD3BF7DC"
+    },
+    {
+      "path": "06_supplementary_evidence/ra_gca_cg_hte_32_raw/Scene10_P3.csv",
+      "size": 4736883,
+      "sha256": "1BC96873FD7DE2DC4856EBE5E50A363CD4EB59048F198750551A37F2F0F837B4"
+    },
+    {
+      "path": "06_supplementary_evidence/ra_gca_cg_hte_32_raw/Scene10_P4.csv",
+      "size": 4737045,
+      "sha256": "A20A6DDAC7AE7BA0C7699F080B6F1C3AE14A94DDFA3EA2FE7FB3850A129CA6AC"
+    },
+    {
+      "path": "06_supplementary_evidence/ra_gca_v8_32_raw/Scene01.csv",
+      "size": 4233805,
+      "sha256": "CFEC3D972581E33BFF004F89D7E7214DA1E86A2E1BD6B1BBBD9B667CD28BBE8A"
+    },
+    {
+      "path": "06_supplementary_evidence/ra_gca_v8_32_raw/Scene01S_X.csv",
+      "size": 2220672,
+      "sha256": "ED49B6BCF1A059BA3A0C839435601F5285145A342E97DC75193BE7160DB54D20"
+    },
+    {
+      "path": "06_supplementary_evidence/ra_gca_v8_32_raw/Scene01S_Y.csv",
+      "size": 2208859,
+      "sha256": "D332E41DA7EEC702B85D5B165E161480CE435519617AFF19C652B1A88F8D3AE1"
+    },
+    {
+      "path": "06_supplementary_evidence/ra_gca_v8_32_raw/Scene01S_Z.csv",
+      "size": 2182353,
+      "sha256": "E83F3CA21EF11E155DD833A60D95054C1A4844C1436B30731B334D0AD14EC5CB"
+    },
+    {
+      "path": "06_supplementary_evidence/ra_gca_v8_32_raw/Scene02.csv",
+      "size": 4614199,
+      "sha256": "A4DC81B75B986010661D361FA12BDAB301AA4AC96D13B1164695740321F0B05A"
+    },
+    {
+      "path": "06_supplementary_evidence/ra_gca_v8_32_raw/Scene03.csv",
+      "size": 11066076,
+      "sha256": "C585AAF9DEBB466E17D2824F86773CE18841D7A1FE0C74BE9A19E358A345E796"
+    },
+    {
+      "path": "06_supplementary_evidence/ra_gca_v8_32_raw/Scene04.csv",
+      "size": 2476746,
+      "sha256": "B820D564293B1DE1AB3E93E4B8DECD713BC743974319EE1236B0C36A4C162C2A"
+    },
+    {
+      "path": "06_supplementary_evidence/ra_gca_v8_32_raw/Scene05B_C000.csv",
+      "size": 4562592,
+      "sha256": "95555C089CE30BFCCFD931A3C0E9A5DD594ACF7494F667C636E444C454E5ABE9"
+    },
+    {
+      "path": "06_supplementary_evidence/ra_gca_v8_32_raw/Scene05B_C001.csv",
+      "size": 4684125,
+      "sha256": "DE05ADA746E62FDDF282C99308751404EF558639547DD730E9332AA40C7706C0"
+    },
+    {
+      "path": "06_supplementary_evidence/ra_gca_v8_32_raw/Scene05B_C010.csv",
+      "size": 4653088,
+      "sha256": "185D59852E144965D6FB1FC7B5242208CD470C9E764C66A3A4D94A3B643752B5"
+    },
+    {
+      "path": "06_supplementary_evidence/ra_gca_v8_32_raw/Scene05B_C011.csv",
+      "size": 4646536,
+      "sha256": "9D3885F572C1E8A4C2D60004E603BA10296AF5C819EE42A874630212A05BDB0E"
+    },
+    {
+      "path": "06_supplementary_evidence/ra_gca_v8_32_raw/Scene05B_C100.csv",
+      "size": 4696555,
+      "sha256": "2F3A1178E42345A1549DA43F817F77F289835A1A623F2AE763720CF6C7FDFE0A"
+    },
+    {
+      "path": "06_supplementary_evidence/ra_gca_v8_32_raw/Scene05B_C101.csv",
+      "size": 4668838,
+      "sha256": "433C02DD309DF0D6CD36505F9DBAC7C263F327CE142338DD7DBE0B9016CF3377"
+    },
+    {
+      "path": "06_supplementary_evidence/ra_gca_v8_32_raw/Scene05B_C110.csv",
+      "size": 4562481,
+      "sha256": "36DD9FEC9994F42C1A948D6D338340A8AE04FFF6F2CBFFD7E0661DC2FA6F224C"
+    },
+    {
+      "path": "06_supplementary_evidence/ra_gca_v8_32_raw/Scene05B_C111.csv",
+      "size": 4569576,
+      "sha256": "F4B798E021D83A28C22E11DDF016C1E13AB2C33524D1E720A7B331AF3336F71B"
+    },
+    {
+      "path": "06_supplementary_evidence/ra_gca_v8_32_raw/Scene05B_LiftMinus10.csv",
+      "size": 4548619,
+      "sha256": "F4014CCEE071B61F5B9337C8DE0FF092EF8BE8312AE0142BD5CD21259A312A85"
+    },
+    {
+      "path": "06_supplementary_evidence/ra_gca_v8_32_raw/Scene05B_Nominal.csv",
+      "size": 4641769,
+      "sha256": "1FFAAC107D5E83CCCD449198283A689B8E33C6949CDEC7F1FF1BADB2C8BF50DD"
+    },
+    {
+      "path": "06_supplementary_evidence/ra_gca_v8_32_raw/Scene05B_PayloadPlus10.csv",
+      "size": 4594348,
+      "sha256": "7D74CB6840588C68598BE0F09B6A1A6080DA4BFB10B42A8386D298746DDD790D"
+    },
+    {
+      "path": "06_supplementary_evidence/ra_gca_v8_32_raw/Scene06b.csv",
+      "size": 2527333,
+      "sha256": "7E19BBF6BA877B07D47178BF1DD57B258C31295EF0F5F4241D055DA65B24FF36"
+    },
+    {
+      "path": "06_supplementary_evidence/ra_gca_v8_32_raw/Scene07B.csv",
+      "size": 18504189,
+      "sha256": "FC562397F58D4910797CA5775F6EF72F7B9CE48C75F06788CA81DCC90BE6B06A"
+    },
+    {
+      "path": "06_supplementary_evidence/ra_gca_v8_32_raw/Scene07COff.csv",
+      "size": 12023363,
+      "sha256": "6BE8300B8D1B3F34ED1540921A5EEA94F65FE4EB81AAB97A4C27FF4A9BA72C40"
+    },
+    {
+      "path": "06_supplementary_evidence/ra_gca_v8_32_raw/Scene07COnPredictiveV5C.csv",
+      "size": 12094035,
+      "sha256": "6C935E85BF77AAE79DF52078DA46D21B14CEC2E613C6291F99C9A324830C0AB1"
+    },
+    {
+      "path": "06_supplementary_evidence/ra_gca_v8_32_raw/Scene08_P0.csv",
+      "size": 4382913,
+      "sha256": "6EAFE7BBC0322F57C84637BE46F768EBFBC3365E88F61D601B9F10FE919CC6F7"
+    },
+    {
+      "path": "06_supplementary_evidence/ra_gca_v8_32_raw/Scene08_P1.csv",
+      "size": 4366069,
+      "sha256": "14656B669DF2030FE683BE99A7835A23523698309C29EF422C4AD93FC7CA6EAD"
+    },
+    {
+      "path": "06_supplementary_evidence/ra_gca_v8_32_raw/Scene08_P2.csv",
+      "size": 4372477,
+      "sha256": "E3FC201E61CDE2862D6B0450F1E48D03888C8D03B0283B1E586D77D92F5236A6"
+    },
+    {
+      "path": "06_supplementary_evidence/ra_gca_v8_32_raw/Scene08_P3.csv",
+      "size": 4381876,
+      "sha256": "4B561BB629454BBD1DDF980A307DEAE573CEC0A1D507137749BAE95013DE7CFF"
+    },
+    {
+      "path": "06_supplementary_evidence/ra_gca_v8_32_raw/Scene08_P4.csv",
+      "size": 4371799,
+      "sha256": "D15ADE004CE6EE63E058868458969447FEF8A3A258200EBC23521EAF035A62B3"
+    },
+    {
+      "path": "06_supplementary_evidence/ra_gca_v8_32_raw/Scene10_P0.csv",
+      "size": 4586204,
+      "sha256": "7E7F6C0263A94741701F1F53FB066E843820992850F086EBB6057F9EA0A76B44"
+    },
+    {
+      "path": "06_supplementary_evidence/ra_gca_v8_32_raw/Scene10_P1.csv",
+      "size": 4586034,
+      "sha256": "8388F008CEB564BEFBBE8DAD53E3366ED5FF4AC132228870EB58BC4021F4EFD3"
+    },
+    {
+      "path": "06_supplementary_evidence/ra_gca_v8_32_raw/Scene10_P2.csv",
+      "size": 4586132,
+      "sha256": "7BDF20FE878A5561A7C876F45CC5A07B7B3C5595BCD15B560DA750E1B3389D5F"
+    },
+    {
+      "path": "06_supplementary_evidence/ra_gca_v8_32_raw/Scene10_P3.csv",
+      "size": 4586540,
+      "sha256": "A86B53D2726BCFD55C3C88DAF0832A588D3854FDC8A6AC6452316C1358CD3656"
+    },
+    {
+      "path": "06_supplementary_evidence/ra_gca_v8_32_raw/Scene10_P4.csv",
+      "size": 4585973,
+      "sha256": "CB1B10BF70589F6AC6B01FF60259B0C777C3A01B7D21E6E2814B8827C586CD87"
+    },
+    {
+      "path": "06_supplementary_evidence/RAW_MANIFEST.json",
+      "size": 16955,
+      "sha256": "94294D1749D3F5C80C93CEF67DFA7A15EAC3EECC0911137B0568B68C352F782D"
+    },
+    {
+      "path": "06_supplementary_evidence/README_32项完整配对数据说明.md",
+      "size": 1148,
+      "sha256": "670F41A6E27A8C75E1405AF811546B4DB44D85574ACE45F29CFF6AC297995177"
+    },
+    {
+      "path": "08_provenance/DEPENDENCY_MANIFEST.csv",
+      "size": 1985,
+      "sha256": "7569F4022AA5F5C4DB1F0DEF91D77A3687D64E67A19979955306C4B32C77507C"
+    },
+    {
+      "path": "08_provenance/FINAL_MATERIAL_ADMISSION.csv",
+      "size": 5075,
+      "sha256": "A6728082AA5814C0629122FA2C477F4828F6964C81FE48895977EF368A4B150D"
+    },
+    {
+      "path": "08_provenance/FINAL_REPORT_ASSET_INDEX.csv",
+      "size": 21842,
+      "sha256": "0DD844A7098FB4B08D4A7BB0281AE885D16517EA7637AF38E4FAF7B77BA63942"
+    },
+    {
+      "path": "08_provenance/FINAL_REPORT_FREEZE.json",
+      "size": 675,
+      "sha256": "C43B12F9E987AA78971C15D214CC1A17B7171066ED9DEC6BC689C0F20E36446A"
+    },
+    {
+      "path": "08_provenance/PACKAGE_BUILD_INFO.json",
+      "size": 5465,
+      "sha256": "7B3E4BB41831073FA135EBEDCEC91DD3A5C068B2B1978BB2E53065D2E9E6CC28"
+    },
+    {
+      "path": "08_provenance/report_generation_sources/scripts/annotate_sysblock.py",
+      "size": 2457,
+      "sha256": "2350DBA8BF56ACC792DE44E3DC74200A8F75920707D3F80A99F691B49A0BF712"
+    },
+    {
+      "path": "08_provenance/report_generation_sources/scripts/chapter1_figures.py",
+      "size": 6968,
+      "sha256": "52EA0F679E88A7F5B4A886EC8862E2E4877DE47F3104981C0BE66098A0DCE399"
+    },
+    {
+      "path": "08_provenance/report_generation_sources/scripts/chapter2_pid_audit.jl",
+      "size": 8797,
+      "sha256": "C3BF02CD9C13594F1AA87E2CE9EC8FB37D2E749D5A73554AA7EA153DB1C91053"
+    },
+    {
+      "path": "08_provenance/report_generation_sources/scripts/chapter2_pid_plot.py",
+      "size": 6072,
+      "sha256": "5D0F03D0EF305E6CD2DD40210A81E0620365B6365AF871D709FF4DCFE9FB68CB"
+    },
+    {
+      "path": "08_provenance/report_generation_sources/scripts/chapter2_visio.ps1",
+      "size": 8189,
+      "sha256": "1E6051A1B97F33077EECDED441174A90E40E47719A139A8FC242493071158244"
+    },
+    {
+      "path": "08_provenance/report_generation_sources/scripts/chapter34_figures.py",
+      "size": 14253,
+      "sha256": "A0BACE458EF175EEF634F3CD922C4864A6BB2156936B7A33F6B6F5BA2E8EEE1A"
+    },
+    {
+      "path": "08_provenance/report_generation_sources/scripts/chapter34_r11_figures.py",
+      "size": 8171,
+      "sha256": "02D09C900F94DB0DFEB447A0F5DD3A6747AD88A0C97336B9C2F6CAC1D70E07FE"
+    },
+    {
+      "path": "08_provenance/report_generation_sources/scripts/chapter5_figures.py",
+      "size": 57089,
+      "sha256": "92AD985380B27CEEC6ED83E04B084BC4DEB3AB12CA727B91A4D8E61C10BA1104"
+    },
+    {
+      "path": "08_provenance/report_generation_sources/scripts/chapter6_figures.py",
+      "size": 70736,
+      "sha256": "AB697796851E7D68EB0AC77625B68F0AAF159B7E36E5E027C1324AEFB9F65121"
+    },
+    {
+      "path": "08_provenance/report_generation_sources/scripts/chapter7_figures.py",
+      "size": 13933,
+      "sha256": "372F715914CE879D1C5402486FCE4CC1759CC8FE386725554DA728AD529CF270"
+    },
+    {
+      "path": "08_provenance/report_generation_sources/scripts/chapter7_metrics.jl",
+      "size": 14292,
+      "sha256": "F9719395F00930F1D59E8E4EFE8BE6AB320B9C974967B95D60E761ADE06AA43D"
+    },
+    {
+      "path": "08_provenance/report_generation_sources/scripts/chapter8_figure.py",
+      "size": 36663,
+      "sha256": "F9B6AA9861F14D50A52F2BB38AE32C72CA870690006C335147C11D434D142F9F"
+    },
+    {
+      "path": "08_provenance/report_generation_sources/scripts/figure6_8_correction.py",
+      "size": 7603,
+      "sha256": "6BEB6C35E750F511D26B3C1F64784FD3029395751316C25FB3F00121DD94C6EB"
+    },
+    {
+      "path": "08_provenance/report_generation_sources/scripts/openalex_landscape.py",
+      "size": 36676,
+      "sha256": "01D207255C4C9D51E78F2FF873DB90507F9C172107964434BCE9DB6291115058"
+    },
+    {
+      "path": "08_provenance/SOURCE_COPY_MANIFEST.csv",
+      "size": 94590,
+      "sha256": "D128F7916EC2C1905533A7BD392456E3AE8AB1433CB6CFF408FA6977BF05962F"
+    },
+    {
+      "path": "08_provenance/SOURCE_PROVENANCE.csv",
+      "size": 2711,
+      "sha256": "0D7105C7710D58AF067CDEF3F80FBA939C2B8B93826B7391CB884C7715EEA6FB"
+    },
+    {
+      "path": "08_provenance/源文件包报告证据升级记录_20260715.md",
+      "size": 1656,
+      "sha256": "B758536E253C3BD2102C644A0734E3F8B56660D527DD51AA151188EE18F41AC2"
+    },
+    {
+      "path": "08_provenance/版权与许可证状态.md",
+      "size": 625,
+      "sha256": "C7272B3E2804E32014541A09679C5470E03B4018B401250D3BCC1F6BA1A582DD"
+    },
+    {
+      "path": "08_provenance/第三方依赖与来源说明.md",
+      "size": 752,
+      "sha256": "1572EE011ABDF39AE70D05E22BC7B6B3D7EB770E51761AB0E2B80E2CF515381C"
+    },
+    {
+      "path": "config/campaign.toml",
+      "size": 4725,
+      "sha256": "07098C250E0E08C5D80A5EBDF42585B1BD8D5BE38A764F20E67FA1AA3873BF84"
+    },
+    {
+      "path": "config/comparator_hard_gates.toml",
+      "size": 2106,
+      "sha256": "716758643A5E1544F92AE8B30EA99444BE42F1C4EF74457E5E7CFBDD0A7D6FCB"
+    },
+    {
+      "path": "config/main_controller.toml",
+      "size": 1896,
+      "sha256": "D7148BFE996969B95186DB7926C947BEF1A88E9BC4400A968704E124B4EF3532"
+    },
+    {
+      "path": "MAIN_ALGORITHM.json",
+      "size": 3167,
+      "sha256": "787D6FB4581C85CC5FC835570AA8B756A625E13779965C94189DF6F5530FA6D9"
+    },
+    {
+      "path": "PACKAGE_AUDIT.json",
+      "size": 240,
+      "sha256": "B6039B96E0B2BFFBDC38635E10C44521E529469699234D0B3F8DDB88DE92221E"
+    },
+    {
+      "path": "README.md",
+      "size": 684,
+      "sha256": "2B04761286B10EE923E03103423984F9D7070BE1F937F5A17DD1A956A6127A84"
+    },
+    {
+      "path": "RECOMPUTE_REPORT_EVIDENCE.ps1",
+      "size": 1659,
+      "sha256": "658F45425273208AE67EE93B7617A93C89E987AF716F16977CE7E2451BF4F01B"
+    },
+    {
+      "path": "RUN_ALL.ps1",
+      "size": 2441,
+      "sha256": "799DFF7A5542C624D2DE7D702320B762BAFE150634E2BD93AF7F10A961CDD44D"
+    },
+    {
+      "path": "RUN_QUICK_VERIFY.ps1",
+      "size": 1759,
+      "sha256": "F2FED1DA58CE11D1CDD6E42BBCA849723610ED4B4C976A404D5DA05E46E6C4D5"
+    },
+    {
+      "path": "test/test_campaign_package.jl",
+      "size": 907,
+      "sha256": "A4E04BDF7840E247344D55DE589A3CF3E65200C55D5B741A970E9B781966AE81"
+    },
+    {
+      "path": "test/test_evidence_entrypoints.py",
+      "size": 4442,
+      "sha256": "14AE23D513E46B22DD3BDEA89888B1104B3EB77D56587CA04543C4CF04B67CB8"
+    },
+    {
+      "path": "test/test_release_static.py",
+      "size": 6301,
+      "sha256": "BC259BA22865FA92027FCC9A6E79113F735D0C57E14A9D7C18FC812C1498866A"
+    },
+    {
+      "path": "test/test_report_evidence.py",
+      "size": 11293,
+      "sha256": "175F5600711D595B3821F361CE7159A164FD0198BFDBAA694E7F4F5C59C4025E"
+    },
+    {
+      "path": "test/test_report_visuals.py",
+      "size": 3698,
+      "sha256": "710EE23D50F67C68045DF4E1DB6F5150E36E250178EB455383999EA534A6F649"
+    },
+    {
+      "path": "test/test_runtime_resolution.ps1",
+      "size": 3907,
+      "sha256": "44EEF0CF8CB7E6CB6859A3E90D0585C4188093D2B322513E8EBDEFA3A4EEF610"
+    }
+  ]
+}

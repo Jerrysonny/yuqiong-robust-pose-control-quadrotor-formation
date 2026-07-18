@@ -1,0 +1,410 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-07-15T07:33:49.620Z",
+  "hash_algorithm": "SHA-256",
+  "algorithm": "RA-GCA-CGHTE",
+  "source_policy": "read-only; source files are not copied or modified",
+  "total_file_count": 64,
+  "sets": [
+    {
+      "id": "formal_main_full32",
+      "role": "RA-GCA-CGHTE formal evidence",
+      "count": 32,
+      "aggregate_sha256": "bdb25ecb022a97708520130685b0ebb99a8a50185055804188eb960ff0e3fd8a",
+      "files": [
+        {
+          "case_id": "Scene01",
+          "path": "06_supplementary_evidence/ra_gca_cg_hte_32_raw/Scene01.csv",
+          "size_bytes": 4451952,
+          "sha256": "d1cb6f64bc2920225629a0c1c5aed867a4c8cbf31f34683d7e1a2835ae327bc1"
+        },
+        {
+          "case_id": "Scene01S_X",
+          "path": "06_supplementary_evidence/ra_gca_cg_hte_32_raw/Scene01S_X.csv",
+          "size_bytes": 2642463,
+          "sha256": "e27c24a970455cf8e5e48b5db46dbb3baef65d44894a2b2a45466b3c8e19b43e"
+        },
+        {
+          "case_id": "Scene01S_Y",
+          "path": "06_supplementary_evidence/ra_gca_cg_hte_32_raw/Scene01S_Y.csv",
+          "size_bytes": 2643275,
+          "sha256": "ed6858bcefc4f864dd098e0584917b1613fb55bde9255802f8e827b1bbbf8b2b"
+        },
+        {
+          "case_id": "Scene01S_Z",
+          "path": "06_supplementary_evidence/ra_gca_cg_hte_32_raw/Scene01S_Z.csv",
+          "size_bytes": 2640744,
+          "sha256": "bdec6d2bf7265d1076698ba5e38369e4b7ba67ff1a7d7831ed911e2be32a179f"
+        },
+        {
+          "case_id": "Scene02",
+          "path": "06_supplementary_evidence/ra_gca_cg_hte_32_raw/Scene02.csv",
+          "size_bytes": 4888910,
+          "sha256": "d0b4937c57656b372c16f2cbf9d864eadccd06e69da8ead0e02732486b0c4b2b"
+        },
+        {
+          "case_id": "Scene03",
+          "path": "06_supplementary_evidence/ra_gca_cg_hte_32_raw/Scene03.csv",
+          "size_bytes": 11713472,
+          "sha256": "f5ea7fc2f015de43f2b38d51a7fd30b52d9741970dcf0c1d0e39b00e2635a295"
+        },
+        {
+          "case_id": "Scene04",
+          "path": "06_supplementary_evidence/ra_gca_cg_hte_32_raw/Scene04.csv",
+          "size_bytes": 2654132,
+          "sha256": "a95be2b543a3808da8cf26797cdb44b0b1fea13df4786e6f8c273a39fec4534c"
+        },
+        {
+          "case_id": "Scene05B_C000",
+          "path": "06_supplementary_evidence/ra_gca_cg_hte_32_raw/Scene05B_C000.csv",
+          "size_bytes": 4900180,
+          "sha256": "08014396136938badd6d63cc58b6e61e39995a731eaa75ee9f97580cbb52def7"
+        },
+        {
+          "case_id": "Scene05B_C001",
+          "path": "06_supplementary_evidence/ra_gca_cg_hte_32_raw/Scene05B_C001.csv",
+          "size_bytes": 4913476,
+          "sha256": "da6ea604c7a88100a1d001fb63de221de8becd1e9540ec15af30c477b1f36189"
+        },
+        {
+          "case_id": "Scene05B_C010",
+          "path": "06_supplementary_evidence/ra_gca_cg_hte_32_raw/Scene05B_C010.csv",
+          "size_bytes": 4906134,
+          "sha256": "0943328a25a413591ff278070ada915d6e78cf4b08ae830e08340a8ad8df963d"
+        },
+        {
+          "case_id": "Scene05B_C011",
+          "path": "06_supplementary_evidence/ra_gca_cg_hte_32_raw/Scene05B_C011.csv",
+          "size_bytes": 4915481,
+          "sha256": "8425e8e52eaa8c7b6f67cad60c482cfa833b39d873b967d0903499f297bd4c36"
+        },
+        {
+          "case_id": "Scene05B_C100",
+          "path": "06_supplementary_evidence/ra_gca_cg_hte_32_raw/Scene05B_C100.csv",
+          "size_bytes": 4909831,
+          "sha256": "c37c51168bb7e41ef51470247928fe835f59d7f472f140be06298391e91030ce"
+        },
+        {
+          "case_id": "Scene05B_C101",
+          "path": "06_supplementary_evidence/ra_gca_cg_hte_32_raw/Scene05B_C101.csv",
+          "size_bytes": 4942911,
+          "sha256": "20e5280094d1638a930891d534040499efe294700d12aa0e167e21cce5375633"
+        },
+        {
+          "case_id": "Scene05B_C110",
+          "path": "06_supplementary_evidence/ra_gca_cg_hte_32_raw/Scene05B_C110.csv",
+          "size_bytes": 4845596,
+          "sha256": "c924927b6e6361828a3ec27cd9830965470838587a41abc3fa8c3e15cad43665"
+        },
+        {
+          "case_id": "Scene05B_C111",
+          "path": "06_supplementary_evidence/ra_gca_cg_hte_32_raw/Scene05B_C111.csv",
+          "size_bytes": 4847878,
+          "sha256": "315a406a7e8ae25bea9033b841935c4ed7467d4dd21483c15a073eaf06a75580"
+        },
+        {
+          "case_id": "Scene05B_LiftMinus10",
+          "path": "06_supplementary_evidence/ra_gca_cg_hte_32_raw/Scene05B_LiftMinus10.csv",
+          "size_bytes": 4975062,
+          "sha256": "1c3c4fa55464e5a1e7c61262893d17d528bf7cb33cef6449d390ff2647ee4375"
+        },
+        {
+          "case_id": "Scene05B_Nominal",
+          "path": "06_supplementary_evidence/ra_gca_cg_hte_32_raw/Scene05B_Nominal.csv",
+          "size_bytes": 4935405,
+          "sha256": "04b0413e716c03b271cbd6a9d04568147871c1c20b4299c8530e8191e29b446c"
+        },
+        {
+          "case_id": "Scene05B_PayloadPlus10",
+          "path": "06_supplementary_evidence/ra_gca_cg_hte_32_raw/Scene05B_PayloadPlus10.csv",
+          "size_bytes": 5002775,
+          "sha256": "c3be2459c2e4bfb6c695333bfaa583bcdacae8add1b8cebabe8b4b42f6479cf5"
+        },
+        {
+          "case_id": "Scene06b",
+          "path": "06_supplementary_evidence/ra_gca_cg_hte_32_raw/Scene06b.csv",
+          "size_bytes": 2676320,
+          "sha256": "bf89cbd3ae9bdde4bb6a991c87a98853b1d310a79787b6e2f19668bc3fa02a1f"
+        },
+        {
+          "case_id": "Scene07B",
+          "path": "06_supplementary_evidence/ra_gca_cg_hte_32_raw/Scene07B.csv",
+          "size_bytes": 19568830,
+          "sha256": "50dbf50b8c05f538d5ddf2f9027eb0bc4424dca30055cbbfc4bde5f838b7b87b"
+        },
+        {
+          "case_id": "Scene07COff",
+          "path": "06_supplementary_evidence/ra_gca_cg_hte_32_raw/Scene07COff.csv",
+          "size_bytes": 12656686,
+          "sha256": "d9edacc8337b2014e6acbe0ce3431ac4ada4c5e876c5cd5dae5f41f838d7c7b5"
+        },
+        {
+          "case_id": "Scene07COnPredictiveV5C",
+          "path": "06_supplementary_evidence/ra_gca_cg_hte_32_raw/Scene07COnPredictiveV5C.csv",
+          "size_bytes": 12729441,
+          "sha256": "d5c327b45c835608da3975f9401e2ce7fdc5ed9e20ef41772db16a835294c2ce"
+        },
+        {
+          "case_id": "Scene08_P0",
+          "path": "06_supplementary_evidence/ra_gca_cg_hte_32_raw/Scene08_P0.csv",
+          "size_bytes": 4534683,
+          "sha256": "f2ee4c65706f74dfba115043abe16c6e1d3550a7d0e9cb7572b4801739bebbdb"
+        },
+        {
+          "case_id": "Scene08_P1",
+          "path": "06_supplementary_evidence/ra_gca_cg_hte_32_raw/Scene08_P1.csv",
+          "size_bytes": 4518729,
+          "sha256": "389b839866574ed35920f73c04c021beedfdd201f21c7b632f6b1598dd03de62"
+        },
+        {
+          "case_id": "Scene08_P2",
+          "path": "06_supplementary_evidence/ra_gca_cg_hte_32_raw/Scene08_P2.csv",
+          "size_bytes": 4522589,
+          "sha256": "6a747ca6d7adc13ac80e627e2817a2a4702283ecb39e4e0659f0e148cdd2ba23"
+        },
+        {
+          "case_id": "Scene08_P3",
+          "path": "06_supplementary_evidence/ra_gca_cg_hte_32_raw/Scene08_P3.csv",
+          "size_bytes": 4532495,
+          "sha256": "31e5aadfc409915f614ed71e9c77270d24ad71322e60dbf443169c1d1e5130a6"
+        },
+        {
+          "case_id": "Scene08_P4",
+          "path": "06_supplementary_evidence/ra_gca_cg_hte_32_raw/Scene08_P4.csv",
+          "size_bytes": 4524171,
+          "sha256": "dde48c9998e43e0c74eb027988eccba82a987ced68cf6a52931801465041097f"
+        },
+        {
+          "case_id": "Scene10_P0",
+          "path": "06_supplementary_evidence/ra_gca_cg_hte_32_raw/Scene10_P0.csv",
+          "size_bytes": 4736927,
+          "sha256": "19f84c1e922576ef77faa23f222c01495373e52866bdfc2dbc8d0dcb12515451"
+        },
+        {
+          "case_id": "Scene10_P1",
+          "path": "06_supplementary_evidence/ra_gca_cg_hte_32_raw/Scene10_P1.csv",
+          "size_bytes": 4737128,
+          "sha256": "23da784317d0c31415debbd64b88db7660b91289643761e0765c4a8cc52c5a1e"
+        },
+        {
+          "case_id": "Scene10_P2",
+          "path": "06_supplementary_evidence/ra_gca_cg_hte_32_raw/Scene10_P2.csv",
+          "size_bytes": 4737471,
+          "sha256": "f5e544ff2519d4a2b7a460bddd31fb91efc3f9d1ede6cbecb13f3b16ad3bf7dc"
+        },
+        {
+          "case_id": "Scene10_P3",
+          "path": "06_supplementary_evidence/ra_gca_cg_hte_32_raw/Scene10_P3.csv",
+          "size_bytes": 4736883,
+          "sha256": "1bc96873fd7de2dc4856ebe5e50a363cd4eb59048f198750551a37f2f0f837b4"
+        },
+        {
+          "case_id": "Scene10_P4",
+          "path": "06_supplementary_evidence/ra_gca_cg_hte_32_raw/Scene10_P4.csv",
+          "size_bytes": 4737045,
+          "sha256": "a20a6ddac7ae7ba0c7699f080b6f1c3ae14a94ddfa3ea2fe7fb3850a129ca6ac"
+        }
+      ]
+    },
+    {
+      "id": "v8_accepted_full32",
+      "role": "RA-GCA/V8 accepted comparison set",
+      "count": 32,
+      "aggregate_sha256": "f46458b1a7f56a89e267a2b29fd99ff0c2c5c608fb148da4f88b9964abe03001",
+      "files": [
+        {
+          "case_id": "Scene01",
+          "path": "06_supplementary_evidence/ra_gca_v8_32_raw/Scene01.csv",
+          "size_bytes": 4233805,
+          "sha256": "cfec3d972581e33bff004f89d7e7214da1e86a2e1bd6b1bbbd9b667cd28bbe8a"
+        },
+        {
+          "case_id": "Scene01S_X",
+          "path": "06_supplementary_evidence/ra_gca_v8_32_raw/Scene01S_X.csv",
+          "size_bytes": 2220672,
+          "sha256": "ed49b6bcf1a059ba3a0c839435601f5285145a342e97dc75193be7160db54d20"
+        },
+        {
+          "case_id": "Scene01S_Y",
+          "path": "06_supplementary_evidence/ra_gca_v8_32_raw/Scene01S_Y.csv",
+          "size_bytes": 2208859,
+          "sha256": "d332e41da7eec702b85d5b165e161480ce435519617aff19c652b1a88f8d3ae1"
+        },
+        {
+          "case_id": "Scene01S_Z",
+          "path": "06_supplementary_evidence/ra_gca_v8_32_raw/Scene01S_Z.csv",
+          "size_bytes": 2182353,
+          "sha256": "e83f3ca21ef11e155dd833a60d95054c1a4844c1436b30731b334d0ad14ec5cb"
+        },
+        {
+          "case_id": "Scene02",
+          "path": "06_supplementary_evidence/ra_gca_v8_32_raw/Scene02.csv",
+          "size_bytes": 4614199,
+          "sha256": "a4dc81b75b986010661d361fa12bdab301aa4ac96d13b1164695740321f0b05a"
+        },
+        {
+          "case_id": "Scene03",
+          "path": "06_supplementary_evidence/ra_gca_v8_32_raw/Scene03.csv",
+          "size_bytes": 11066076,
+          "sha256": "c585aaf9debb466e17d2824f86773ce18841d7a1fe0c74be9a19e358a345e796"
+        },
+        {
+          "case_id": "Scene04",
+          "path": "06_supplementary_evidence/ra_gca_v8_32_raw/Scene04.csv",
+          "size_bytes": 2476746,
+          "sha256": "b820d564293b1de1ab3e93e4b8decd713bc743974319ee1236b0c36a4c162c2a"
+        },
+        {
+          "case_id": "Scene05B_C000",
+          "path": "06_supplementary_evidence/ra_gca_v8_32_raw/Scene05B_C000.csv",
+          "size_bytes": 4562592,
+          "sha256": "95555c089ce30bfccfd931a3c0e9a5dd594acf7494f667c636e444c454e5abe9"
+        },
+        {
+          "case_id": "Scene05B_C001",
+          "path": "06_supplementary_evidence/ra_gca_v8_32_raw/Scene05B_C001.csv",
+          "size_bytes": 4684125,
+          "sha256": "de05ada746e62fddf282c99308751404ef558639547dd730e9332aa40c7706c0"
+        },
+        {
+          "case_id": "Scene05B_C010",
+          "path": "06_supplementary_evidence/ra_gca_v8_32_raw/Scene05B_C010.csv",
+          "size_bytes": 4653088,
+          "sha256": "185d59852e144965d6fb1fc7b5242208cd470c9e764c66a3a4d94a3b643752b5"
+        },
+        {
+          "case_id": "Scene05B_C011",
+          "path": "06_supplementary_evidence/ra_gca_v8_32_raw/Scene05B_C011.csv",
+          "size_bytes": 4646536,
+          "sha256": "9d3885f572c1e8a4c2d60004e603ba10296af5c819ee42a874630212a05bdb0e"
+        },
+        {
+          "case_id": "Scene05B_C100",
+          "path": "06_supplementary_evidence/ra_gca_v8_32_raw/Scene05B_C100.csv",
+          "size_bytes": 4696555,
+          "sha256": "2f3a1178e42345a1549da43f817f77f289835a1a623f2ae763720cf6c7fdfe0a"
+        },
+        {
+          "case_id": "Scene05B_C101",
+          "path": "06_supplementary_evidence/ra_gca_v8_32_raw/Scene05B_C101.csv",
+          "size_bytes": 4668838,
+          "sha256": "433c02dd309df0d6cd36505f9dbac7c263f327ce142338dd7dbe0b9016cf3377"
+        },
+        {
+          "case_id": "Scene05B_C110",
+          "path": "06_supplementary_evidence/ra_gca_v8_32_raw/Scene05B_C110.csv",
+          "size_bytes": 4562481,
+          "sha256": "36dd9fec9994f42c1a948d6d338340a8ae04fff6f2cbffd7e0661dc2fa6f224c"
+        },
+        {
+          "case_id": "Scene05B_C111",
+          "path": "06_supplementary_evidence/ra_gca_v8_32_raw/Scene05B_C111.csv",
+          "size_bytes": 4569576,
+          "sha256": "f4b798e021d83a28c22e11ddf016c1e13ab2c33524d1e720a7b331af3336f71b"
+        },
+        {
+          "case_id": "Scene05B_LiftMinus10",
+          "path": "06_supplementary_evidence/ra_gca_v8_32_raw/Scene05B_LiftMinus10.csv",
+          "size_bytes": 4548619,
+          "sha256": "f4014ccee071b61f5b9337c8de0ff092ef8be8312ae0142bd5cd21259a312a85"
+        },
+        {
+          "case_id": "Scene05B_Nominal",
+          "path": "06_supplementary_evidence/ra_gca_v8_32_raw/Scene05B_Nominal.csv",
+          "size_bytes": 4641769,
+          "sha256": "1ffaac107d5e83cccd449198283a689b8e33c6949cdec7f1ff1badb2c8bf50dd"
+        },
+        {
+          "case_id": "Scene05B_PayloadPlus10",
+          "path": "06_supplementary_evidence/ra_gca_v8_32_raw/Scene05B_PayloadPlus10.csv",
+          "size_bytes": 4594348,
+          "sha256": "7d74cb6840588c68598be0f09b6a1a6080da4bfb10b42a8386d298746ddd790d"
+        },
+        {
+          "case_id": "Scene06b",
+          "path": "06_supplementary_evidence/ra_gca_v8_32_raw/Scene06b.csv",
+          "size_bytes": 2527333,
+          "sha256": "7e19bbf6ba877b07d47178bf1dd57b258c31295ef0f5f4241d055da65b24ff36"
+        },
+        {
+          "case_id": "Scene07B",
+          "path": "06_supplementary_evidence/ra_gca_v8_32_raw/Scene07B.csv",
+          "size_bytes": 18504189,
+          "sha256": "fc562397f58d4910797ca5775f6ef72f7b9ce48c75f06788ca81dcc90be6b06a"
+        },
+        {
+          "case_id": "Scene07COff",
+          "path": "06_supplementary_evidence/ra_gca_v8_32_raw/Scene07COff.csv",
+          "size_bytes": 12023363,
+          "sha256": "6be8300b8d1b3f34ed1540921a5eea94f65fe4eb81aab97a4c27ff4a9ba72c40"
+        },
+        {
+          "case_id": "Scene07COnPredictiveV5C",
+          "path": "06_supplementary_evidence/ra_gca_v8_32_raw/Scene07COnPredictiveV5C.csv",
+          "size_bytes": 12094035,
+          "sha256": "6c935e85bf77aae79df52078da46d21b14cec2e613c6291f99c9a324830c0ab1"
+        },
+        {
+          "case_id": "Scene08_P0",
+          "path": "06_supplementary_evidence/ra_gca_v8_32_raw/Scene08_P0.csv",
+          "size_bytes": 4382913,
+          "sha256": "6eafe7bbc0322f57c84637be46f768ebfbc3365e88f61d601b9f10fe919cc6f7"
+        },
+        {
+          "case_id": "Scene08_P1",
+          "path": "06_supplementary_evidence/ra_gca_v8_32_raw/Scene08_P1.csv",
+          "size_bytes": 4366069,
+          "sha256": "14656b669df2030fe683be99a7835a23523698309c29ef422c4ad93fc7ca6ead"
+        },
+        {
+          "case_id": "Scene08_P2",
+          "path": "06_supplementary_evidence/ra_gca_v8_32_raw/Scene08_P2.csv",
+          "size_bytes": 4372477,
+          "sha256": "e3fc201e61cde2862d6b0450f1e48d03888c8d03b0283b1e586d77d92f5236a6"
+        },
+        {
+          "case_id": "Scene08_P3",
+          "path": "06_supplementary_evidence/ra_gca_v8_32_raw/Scene08_P3.csv",
+          "size_bytes": 4381876,
+          "sha256": "4b561bb629454bbd1ddf980a307deae573cec0a1d507137749bae95013de7cff"
+        },
+        {
+          "case_id": "Scene08_P4",
+          "path": "06_supplementary_evidence/ra_gca_v8_32_raw/Scene08_P4.csv",
+          "size_bytes": 4371799,
+          "sha256": "d15ade004ce6ee63e058868458969447fef8a3a258200ebc23521eaf035a62b3"
+        },
+        {
+          "case_id": "Scene10_P0",
+          "path": "06_supplementary_evidence/ra_gca_v8_32_raw/Scene10_P0.csv",
+          "size_bytes": 4586204,
+          "sha256": "7e7f6c0263a94741701f1f53fb066e843820992850f086ebb6057f9ea0a76b44"
+        },
+        {
+          "case_id": "Scene10_P1",
+          "path": "06_supplementary_evidence/ra_gca_v8_32_raw/Scene10_P1.csv",
+          "size_bytes": 4586034,
+          "sha256": "8388f008ceb564befbbe8dad53e3366ed5ff4ac132228870eb58bc4021f4efd3"
+        },
+        {
+          "case_id": "Scene10_P2",
+          "path": "06_supplementary_evidence/ra_gca_v8_32_raw/Scene10_P2.csv",
+          "size_bytes": 4586132,
+          "sha256": "7bdf20fe878a5561a7c876f45cc5a07b7b3c5595bcd15b560da750e1b3389d5f"
+        },
+        {
+          "case_id": "Scene10_P3",
+          "path": "06_supplementary_evidence/ra_gca_v8_32_raw/Scene10_P3.csv",
+          "size_bytes": 4586540,
+          "sha256": "a86b53d2726bcfd55c3c88daf0832a588d3854fdc8a6ac6452316c1358cd3656"
+        },
+        {
+          "case_id": "Scene10_P4",
+          "path": "06_supplementary_evidence/ra_gca_v8_32_raw/Scene10_P4.csv",
+          "size_bytes": 4585973,
+          "sha256": "cb1b10bf70589f6ac6b01ff60259b0c777c3a01b7d21e6e2814b8827c586cd87"
+        }
+      ]
+    }
+  ]
+}

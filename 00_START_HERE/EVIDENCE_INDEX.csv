@@ -1,0 +1,14 @@
+evidence_id,tier,path,purpose,boundary
+E01,core,MAIN_ALGORITHM.json,formal algorithm identity,no performance claim
+E02,core,04_results/release_regression_6/release_reproduction.json,6 representative clean-session byte-identical reproduction,summary references supplementary raw
+E03,core,02_scripts/syslab,metric implementation and result reproduction,uses frozen metric contracts
+E04,supplementary,06_supplementary_evidence/campaign_pairs.csv,32 matched-scene comparison matrix,pair gates are not the complete selection gate
+E05,supplementary,06_supplementary_evidence/RAW_MANIFEST.json,64 raw CSV hashes and pairing,32 is a project regression count
+E06,supplementary,05_visuals,3 release static figures 6 GIF and 28 final report figures,release assets and report figures use separate QA records
+E07,provenance,08_provenance/SOURCE_COPY_MANIFEST.csv,source-to-package mapping,source paths are provenance only
+E08,provenance,SHA256_MANIFEST.json,complete package integrity,manifest excludes itself by definition
+E09,core,04_results/report_evidence,report-ready structured evidence and claim index,unfinished V30 H60 Wilson and bootstrap are explicitly excluded
+E10,core,05_visuals/assets/report_static,28 final report static figures,each figure has a unique asset id and frozen source mapping
+E11,provenance,08_provenance/FINAL_REPORT_ASSET_INDEX.csv,28 figures and 26 numbered tables source mapping,formula layout tables are excluded
+E12,provenance,08_provenance/FINAL_MATERIAL_ADMISSION.csv,central material admission decisions,chapter drafts backups and failed candidates are excluded
+E13,provenance,08_provenance/FINAL_REPORT_FREEZE.json,formal report hash page and figure-table counts,report DOCX and PDF remain separate submission items

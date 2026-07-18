@@ -1,0 +1,10 @@
+gate,pass
+all_pass,false
+required_all_paired_case_gates,true
+required_all_physical_gates,true
+required_formation_tracking_cost,true
+required_full_suite_coverage,true
+required_parameter_mismatch_improvement,true
+required_parameter_retention,false
+required_sensor_mean_pair_gate,true
+required_wind_mean_pair_gate,true

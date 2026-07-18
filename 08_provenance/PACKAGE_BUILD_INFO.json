@@ -1,0 +1,79 @@
+{
+    "schema_version":  3,
+    "generated_utc":  "2026-07-16T09:38:30.3950507Z",
+    "package_name":  "A8比赛作品完整源文件_20260716_可移植增强版",
+    "formal_algorithm":  "RA-GCA-CGHTE",
+    "status":  "verified_portable_release",
+    "source_copy_record_count":  260,
+    "source_map_sha256":  "D128F7916EC2C1905533A7BD392456E3AE8AB1433CB6CFF408FA6977BF05962F",
+    "report_evidence":  {
+                            "artifact_count":  14,
+                            "manifest_sha256":  "DA511024B0FC07ECF9A68C21485C7B579381CD0F6D8CB8376D5DD2BAA32DDC3F",
+                            "final_report_referenced_artifact_count":  8,
+                            "project_regression_pair_count":  32,
+                            "paired_raw_hashes_verified":  64,
+                            "unfinished_statistics_claimed":  false
+                        },
+    "visual_assets":  {
+                          "release_static_png":  3,
+                          "final_report_static_png":  28,
+                          "single_topic_gif":  6,
+                          "vector_source_svg":  24,
+                          "print_source_pdf":  23,
+                          "visual_manifest_sha256":  "23BC452A792CB3F5803CF4AE608520A2E924625D7D2B5D2ABFEED96FEE5E1067",
+                          "final_report_qa_sha256":  "E3719BA1824DB508230CA5F18B0AE3A8975715E68A8B770948C8582D07BF4D73",
+                          "final_report_numbering_assigned":  true
+                      },
+    "final_report_freeze":  {
+                                "docx_sha256":  "BB70BAF844C0172B997E0E04FDC7906D2F09E163A3FE8D88BDA2B01E53CA6D10",
+                                "pdf_sha256":  "1E03A8FB54AA1D4397BB43C46E4F41DF78AAA935D67D4AFBE75F1606F7765FD3",
+                                "pdf_pages":  53,
+                                "numbered_figures":  28,
+                                "numbered_tables":  26,
+                                "formula_layout_tables_excluded":  7,
+                                "report_files_packaged":  false
+                            },
+    "historical_evidence":  {
+                                "v8_raw_count":  32,
+                                "role":  "historical_regression_and_engineering_rollback_only",
+                                "reader_entry_expanded":  false
+                            },
+    "verification":  {
+                         "formal_release_static_tests":  "10/10 passed",
+                         "report_evidence_tests":  "10/10 passed",
+                         "final_report_visual_tests":  "5/5 passed",
+                         "evidence_entrypoint_tests":  "3/3 passed",
+                         "package_campaign_metric_tests":  "9/9 passed",
+                         "five_controller_evidence":  "5 controllers, 4 common scenes passed",
+                         "paired_raw_hashes":  "64/64 passed",
+                         "representative_clean_session_reproduction":  "3/3 byte-identical",
+                         "package_manifest":  "passed; final read-only result recorded in PACKAGE_AUDIT.json"
+                     },
+    "portability_validation":  {
+                                    "runtime_resolution_unit_tests":  "passed",
+                                    "registry_discovery":  "passed on current workstation",
+                                    "fixed_drive_standard_path_resolution":  "passed with isolated test fixture",
+                                    "visual_asset_reproduction":  "3 PNG and 6 GIF byte-identical in isolated staging",
+                                    "c_drive_package_migration":  "passed at C:\\A8_Demo\\A8作品源文件_可移植性测试_20260716",
+                                    "package_internal_output_rejection":  "passed",
+                                    "scene04_migration_simulation":  {
+                                                                             "status":  "execution_pass",
+                                                                             "rows":  3001,
+                                                                             "columns":  57,
+                                                                             "start_time_s":  0.0,
+                                                                             "stop_time_s":  30.0,
+                                                                             "raw_sha256":  "A95BE2B543A3808DA8CF26797CDB44B0B1FEA13DF4786E6F8C273A39FEC4534C",
+                                                                             "position_tracking_rmse_m":  0.018967257630034328,
+                                                                             "byte_identical_to_packaged_scene04":  true
+                                                                         },
+                                    "physical_non_d_drive_mworks_installation":  "not tested"
+                                },
+    "evidence_boundaries":  {
+                                "project_32_is_official_requirement":  false,
+                                "required_parameter_retention":  false,
+                                "v30_completed":  false,
+                                "h60_completed":  false,
+                                "wilson_lower_bound_computed":  false,
+                                "paired_bootstrap_completed":  false
+                            }
+}

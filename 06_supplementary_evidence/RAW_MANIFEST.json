@@ -1,0 +1,432 @@
+{
+  "schema_version": 1,
+  "evidence_tier": "supplementary",
+  "official_required_case_count": null,
+  "project_regression_case_count": 32,
+  "paired_csv_file_count": 64,
+  "formal_algorithm": "RA-GCA-CGHTE",
+  "baseline": "RA-GCA/V8",
+  "source_alias_visibility": "provenance_only",
+  "pair_gate_pass_count": 32,
+  "pair_gate_total": 32,
+  "overall_selection_gate_pass": false,
+  "overall_selection_gate_boundary": "pre-registered parameter-retention target was not met",
+  "entries": [
+    {
+      "case_file": "Scene01.csv",
+      "formal_algorithm": {
+        "path": "06_supplementary_evidence/ra_gca_cg_hte_32_raw/Scene01.csv",
+        "size": 4451952,
+        "sha256": "D1CB6F64BC2920225629A0C1C5AED867A4C8CBF31F34683D7E1A2835AE327BC1"
+      },
+      "v8_baseline": {
+        "path": "06_supplementary_evidence/ra_gca_v8_32_raw/Scene01.csv",
+        "size": 4233805,
+        "sha256": "CFEC3D972581E33BFF004F89D7E7214DA1E86A2E1BD6B1BBBD9B667CD28BBE8A"
+      }
+    },
+    {
+      "case_file": "Scene01S_X.csv",
+      "formal_algorithm": {
+        "path": "06_supplementary_evidence/ra_gca_cg_hte_32_raw/Scene01S_X.csv",
+        "size": 2642463,
+        "sha256": "E27C24A970455CF8E5E48B5DB46DBB3BAEF65D44894A2B2A45466B3C8E19B43E"
+      },
+      "v8_baseline": {
+        "path": "06_supplementary_evidence/ra_gca_v8_32_raw/Scene01S_X.csv",
+        "size": 2220672,
+        "sha256": "ED49B6BCF1A059BA3A0C839435601F5285145A342E97DC75193BE7160DB54D20"
+      }
+    },
+    {
+      "case_file": "Scene01S_Y.csv",
+      "formal_algorithm": {
+        "path": "06_supplementary_evidence/ra_gca_cg_hte_32_raw/Scene01S_Y.csv",
+        "size": 2643275,
+        "sha256": "ED6858BCEFC4F864DD098E0584917B1613FB55BDE9255802F8E827B1BBBF8B2B"
+      },
+      "v8_baseline": {
+        "path": "06_supplementary_evidence/ra_gca_v8_32_raw/Scene01S_Y.csv",
+        "size": 2208859,
+        "sha256": "D332E41DA7EEC702B85D5B165E161480CE435519617AFF19C652B1A88F8D3AE1"
+      }
+    },
+    {
+      "case_file": "Scene01S_Z.csv",
+      "formal_algorithm": {
+        "path": "06_supplementary_evidence/ra_gca_cg_hte_32_raw/Scene01S_Z.csv",
+        "size": 2640744,
+        "sha256": "BDEC6D2BF7265D1076698BA5E38369E4B7BA67FF1A7D7831ED911E2BE32A179F"
+      },
+      "v8_baseline": {
+        "path": "06_supplementary_evidence/ra_gca_v8_32_raw/Scene01S_Z.csv",
+        "size": 2182353,
+        "sha256": "E83F3CA21EF11E155DD833A60D95054C1A4844C1436B30731B334D0AD14EC5CB"
+      }
+    },
+    {
+      "case_file": "Scene02.csv",
+      "formal_algorithm": {
+        "path": "06_supplementary_evidence/ra_gca_cg_hte_32_raw/Scene02.csv",
+        "size": 4888910,
+        "sha256": "D0B4937C57656B372C16F2CBF9D864EADCCD06E69DA8EAD0E02732486B0C4B2B"
+      },
+      "v8_baseline": {
+        "path": "06_supplementary_evidence/ra_gca_v8_32_raw/Scene02.csv",
+        "size": 4614199,
+        "sha256": "A4DC81B75B986010661D361FA12BDAB301AA4AC96D13B1164695740321F0B05A"
+      }
+    },
+    {
+      "case_file": "Scene03.csv",
+      "formal_algorithm": {
+        "path": "06_supplementary_evidence/ra_gca_cg_hte_32_raw/Scene03.csv",
+        "size": 11713472,
+        "sha256": "F5EA7FC2F015DE43F2B38D51A7FD30B52D9741970DCF0C1D0E39B00E2635A295"
+      },
+      "v8_baseline": {
+        "path": "06_supplementary_evidence/ra_gca_v8_32_raw/Scene03.csv",
+        "size": 11066076,
+        "sha256": "C585AAF9DEBB466E17D2824F86773CE18841D7A1FE0C74BE9A19E358A345E796"
+      }
+    },
+    {
+      "case_file": "Scene04.csv",
+      "formal_algorithm": {
+        "path": "06_supplementary_evidence/ra_gca_cg_hte_32_raw/Scene04.csv",
+        "size": 2654132,
+        "sha256": "A95BE2B543A3808DA8CF26797CDB44B0B1FEA13DF4786E6F8C273A39FEC4534C"
+      },
+      "v8_baseline": {
+        "path": "06_supplementary_evidence/ra_gca_v8_32_raw/Scene04.csv",
+        "size": 2476746,
+        "sha256": "B820D564293B1DE1AB3E93E4B8DECD713BC743974319EE1236B0C36A4C162C2A"
+      }
+    },
+    {
+      "case_file": "Scene05B_C000.csv",
+      "formal_algorithm": {
+        "path": "06_supplementary_evidence/ra_gca_cg_hte_32_raw/Scene05B_C000.csv",
+        "size": 4900180,
+        "sha256": "08014396136938BADD6D63CC58B6E61E39995A731EAA75EE9F97580CBB52DEF7"
+      },
+      "v8_baseline": {
+        "path": "06_supplementary_evidence/ra_gca_v8_32_raw/Scene05B_C000.csv",
+        "size": 4562592,
+        "sha256": "95555C089CE30BFCCFD931A3C0E9A5DD594ACF7494F667C636E444C454E5ABE9"
+      }
+    },
+    {
+      "case_file": "Scene05B_C001.csv",
+      "formal_algorithm": {
+        "path": "06_supplementary_evidence/ra_gca_cg_hte_32_raw/Scene05B_C001.csv",
+        "size": 4913476,
+        "sha256": "DA6EA604C7A88100A1D001FB63DE221DE8BECD1E9540EC15AF30C477B1F36189"
+      },
+      "v8_baseline": {
+        "path": "06_supplementary_evidence/ra_gca_v8_32_raw/Scene05B_C001.csv",
+        "size": 4684125,
+        "sha256": "DE05ADA746E62FDDF282C99308751404EF558639547DD730E9332AA40C7706C0"
+      }
+    },
+    {
+      "case_file": "Scene05B_C010.csv",
+      "formal_algorithm": {
+        "path": "06_supplementary_evidence/ra_gca_cg_hte_32_raw/Scene05B_C010.csv",
+        "size": 4906134,
+        "sha256": "0943328A25A413591FF278070ADA915D6E78CF4B08AE830E08340A8AD8DF963D"
+      },
+      "v8_baseline": {
+        "path": "06_supplementary_evidence/ra_gca_v8_32_raw/Scene05B_C010.csv",
+        "size": 4653088,
+        "sha256": "185D59852E144965D6FB1FC7B5242208CD470C9E764C66A3A4D94A3B643752B5"
+      }
+    },
+    {
+      "case_file": "Scene05B_C011.csv",
+      "formal_algorithm": {
+        "path": "06_supplementary_evidence/ra_gca_cg_hte_32_raw/Scene05B_C011.csv",
+        "size": 4915481,
+        "sha256": "8425E8E52EAA8C7B6F67CAD60C482CFA833B39D873B967D0903499F297BD4C36"
+      },
+      "v8_baseline": {
+        "path": "06_supplementary_evidence/ra_gca_v8_32_raw/Scene05B_C011.csv",
+        "size": 4646536,
+        "sha256": "9D3885F572C1E8A4C2D60004E603BA10296AF5C819EE42A874630212A05BDB0E"
+      }
+    },
+    {
+      "case_file": "Scene05B_C100.csv",
+      "formal_algorithm": {
+        "path": "06_supplementary_evidence/ra_gca_cg_hte_32_raw/Scene05B_C100.csv",
+        "size": 4909831,
+        "sha256": "C37C51168BB7E41EF51470247928FE835F59D7F472F140BE06298391E91030CE"
+      },
+      "v8_baseline": {
+        "path": "06_supplementary_evidence/ra_gca_v8_32_raw/Scene05B_C100.csv",
+        "size": 4696555,
+        "sha256": "2F3A1178E42345A1549DA43F817F77F289835A1A623F2AE763720CF6C7FDFE0A"
+      }
+    },
+    {
+      "case_file": "Scene05B_C101.csv",
+      "formal_algorithm": {
+        "path": "06_supplementary_evidence/ra_gca_cg_hte_32_raw/Scene05B_C101.csv",
+        "size": 4942911,
+        "sha256": "20E5280094D1638A930891D534040499EFE294700D12AA0E167E21CCE5375633"
+      },
+      "v8_baseline": {
+        "path": "06_supplementary_evidence/ra_gca_v8_32_raw/Scene05B_C101.csv",
+        "size": 4668838,
+        "sha256": "433C02DD309DF0D6CD36505F9DBAC7C263F327CE142338DD7DBE0B9016CF3377"
+      }
+    },
+    {
+      "case_file": "Scene05B_C110.csv",
+      "formal_algorithm": {
+        "path": "06_supplementary_evidence/ra_gca_cg_hte_32_raw/Scene05B_C110.csv",
+        "size": 4845596,
+        "sha256": "C924927B6E6361828A3EC27CD9830965470838587A41ABC3FA8C3E15CAD43665"
+      },
+      "v8_baseline": {
+        "path": "06_supplementary_evidence/ra_gca_v8_32_raw/Scene05B_C110.csv",
+        "size": 4562481,
+        "sha256": "36DD9FEC9994F42C1A948D6D338340A8AE04FFF6F2CBFFD7E0661DC2FA6F224C"
+      }
+    },
+    {
+      "case_file": "Scene05B_C111.csv",
+      "formal_algorithm": {
+        "path": "06_supplementary_evidence/ra_gca_cg_hte_32_raw/Scene05B_C111.csv",
+        "size": 4847878,
+        "sha256": "315A406A7E8AE25BEA9033B841935C4ED7467D4DD21483C15A073EAF06A75580"
+      },
+      "v8_baseline": {
+        "path": "06_supplementary_evidence/ra_gca_v8_32_raw/Scene05B_C111.csv",
+        "size": 4569576,
+        "sha256": "F4B798E021D83A28C22E11DDF016C1E13AB2C33524D1E720A7B331AF3336F71B"
+      }
+    },
+    {
+      "case_file": "Scene05B_LiftMinus10.csv",
+      "formal_algorithm": {
+        "path": "06_supplementary_evidence/ra_gca_cg_hte_32_raw/Scene05B_LiftMinus10.csv",
+        "size": 4975062,
+        "sha256": "1C3C4FA55464E5A1E7C61262893D17D528BF7CB33CEF6449D390FF2647EE4375"
+      },
+      "v8_baseline": {
+        "path": "06_supplementary_evidence/ra_gca_v8_32_raw/Scene05B_LiftMinus10.csv",
+        "size": 4548619,
+        "sha256": "F4014CCEE071B61F5B9337C8DE0FF092EF8BE8312AE0142BD5CD21259A312A85"
+      }
+    },
+    {
+      "case_file": "Scene05B_Nominal.csv",
+      "formal_algorithm": {
+        "path": "06_supplementary_evidence/ra_gca_cg_hte_32_raw/Scene05B_Nominal.csv",
+        "size": 4935405,
+        "sha256": "04B0413E716C03B271CBD6A9D04568147871C1C20B4299C8530E8191E29B446C"
+      },
+      "v8_baseline": {
+        "path": "06_supplementary_evidence/ra_gca_v8_32_raw/Scene05B_Nominal.csv",
+        "size": 4641769,
+        "sha256": "1FFAAC107D5E83CCCD449198283A689B8E33C6949CDEC7F1FF1BADB2C8BF50DD"
+      }
+    },
+    {
+      "case_file": "Scene05B_PayloadPlus10.csv",
+      "formal_algorithm": {
+        "path": "06_supplementary_evidence/ra_gca_cg_hte_32_raw/Scene05B_PayloadPlus10.csv",
+        "size": 5002775,
+        "sha256": "C3BE2459C2E4BFB6C695333BFAA583BCDACAE8ADD1B8CEBABE8B4B42F6479CF5"
+      },
+      "v8_baseline": {
+        "path": "06_supplementary_evidence/ra_gca_v8_32_raw/Scene05B_PayloadPlus10.csv",
+        "size": 4594348,
+        "sha256": "7D74CB6840588C68598BE0F09B6A1A6080DA4BFB10B42A8386D298746DDD790D"
+      }
+    },
+    {
+      "case_file": "Scene06b.csv",
+      "formal_algorithm": {
+        "path": "06_supplementary_evidence/ra_gca_cg_hte_32_raw/Scene06b.csv",
+        "size": 2676320,
+        "sha256": "BF89CBD3AE9BDDE4BB6A991C87A98853B1D310A79787B6E2F19668BC3FA02A1F"
+      },
+      "v8_baseline": {
+        "path": "06_supplementary_evidence/ra_gca_v8_32_raw/Scene06b.csv",
+        "size": 2527333,
+        "sha256": "7E19BBF6BA877B07D47178BF1DD57B258C31295EF0F5F4241D055DA65B24FF36"
+      }
+    },
+    {
+      "case_file": "Scene07B.csv",
+      "formal_algorithm": {
+        "path": "06_supplementary_evidence/ra_gca_cg_hte_32_raw/Scene07B.csv",
+        "size": 19568830,
+        "sha256": "50DBF50B8C05F538D5DDF2F9027EB0BC4424DCA30055CBBFC4BDE5F838B7B87B"
+      },
+      "v8_baseline": {
+        "path": "06_supplementary_evidence/ra_gca_v8_32_raw/Scene07B.csv",
+        "size": 18504189,
+        "sha256": "FC562397F58D4910797CA5775F6EF72F7B9CE48C75F06788CA81DCC90BE6B06A"
+      }
+    },
+    {
+      "case_file": "Scene07COff.csv",
+      "formal_algorithm": {
+        "path": "06_supplementary_evidence/ra_gca_cg_hte_32_raw/Scene07COff.csv",
+        "size": 12656686,
+        "sha256": "D9EDACC8337B2014E6ACBE0CE3431AC4ADA4C5E876C5CD5DAE5F41F838D7C7B5"
+      },
+      "v8_baseline": {
+        "path": "06_supplementary_evidence/ra_gca_v8_32_raw/Scene07COff.csv",
+        "size": 12023363,
+        "sha256": "6BE8300B8D1B3F34ED1540921A5EEA94F65FE4EB81AAB97A4C27FF4A9BA72C40"
+      }
+    },
+    {
+      "case_file": "Scene07COnPredictiveV5C.csv",
+      "formal_algorithm": {
+        "path": "06_supplementary_evidence/ra_gca_cg_hte_32_raw/Scene07COnPredictiveV5C.csv",
+        "size": 12729441,
+        "sha256": "D5C327B45C835608DA3975F9401E2CE7FDC5ED9E20EF41772DB16A835294C2CE"
+      },
+      "v8_baseline": {
+        "path": "06_supplementary_evidence/ra_gca_v8_32_raw/Scene07COnPredictiveV5C.csv",
+        "size": 12094035,
+        "sha256": "6C935E85BF77AAE79DF52078DA46D21B14CEC2E613C6291F99C9A324830C0AB1"
+      }
+    },
+    {
+      "case_file": "Scene08_P0.csv",
+      "formal_algorithm": {
+        "path": "06_supplementary_evidence/ra_gca_cg_hte_32_raw/Scene08_P0.csv",
+        "size": 4534683,
+        "sha256": "F2EE4C65706F74DFBA115043ABE16C6E1D3550A7D0E9CB7572B4801739BEBBDB"
+      },
+      "v8_baseline": {
+        "path": "06_supplementary_evidence/ra_gca_v8_32_raw/Scene08_P0.csv",
+        "size": 4382913,
+        "sha256": "6EAFE7BBC0322F57C84637BE46F768EBFBC3365E88F61D601B9F10FE919CC6F7"
+      }
+    },
+    {
+      "case_file": "Scene08_P1.csv",
+      "formal_algorithm": {
+        "path": "06_supplementary_evidence/ra_gca_cg_hte_32_raw/Scene08_P1.csv",
+        "size": 4518729,
+        "sha256": "389B839866574ED35920F73C04C021BEEDFDD201F21C7B632F6B1598DD03DE62"
+      },
+      "v8_baseline": {
+        "path": "06_supplementary_evidence/ra_gca_v8_32_raw/Scene08_P1.csv",
+        "size": 4366069,
+        "sha256": "14656B669DF2030FE683BE99A7835A23523698309C29EF422C4AD93FC7CA6EAD"
+      }
+    },
+    {
+      "case_file": "Scene08_P2.csv",
+      "formal_algorithm": {
+        "path": "06_supplementary_evidence/ra_gca_cg_hte_32_raw/Scene08_P2.csv",
+        "size": 4522589,
+        "sha256": "6A747CA6D7ADC13AC80E627E2817A2A4702283ECB39E4E0659F0E148CDD2BA23"
+      },
+      "v8_baseline": {
+        "path": "06_supplementary_evidence/ra_gca_v8_32_raw/Scene08_P2.csv",
+        "size": 4372477,
+        "sha256": "E3FC201E61CDE2862D6B0450F1E48D03888C8D03B0283B1E586D77D92F5236A6"
+      }
+    },
+    {
+      "case_file": "Scene08_P3.csv",
+      "formal_algorithm": {
+        "path": "06_supplementary_evidence/ra_gca_cg_hte_32_raw/Scene08_P3.csv",
+        "size": 4532495,
+        "sha256": "31E5AADFC409915F614ED71E9C77270D24AD71322E60DBF443169C1D1E5130A6"
+      },
+      "v8_baseline": {
+        "path": "06_supplementary_evidence/ra_gca_v8_32_raw/Scene08_P3.csv",
+        "size": 4381876,
+        "sha256": "4B561BB629454BBD1DDF980A307DEAE573CEC0A1D507137749BAE95013DE7CFF"
+      }
+    },
+    {
+      "case_file": "Scene08_P4.csv",
+      "formal_algorithm": {
+        "path": "06_supplementary_evidence/ra_gca_cg_hte_32_raw/Scene08_P4.csv",
+        "size": 4524171,
+        "sha256": "DDE48C9998E43E0C74EB027988ECCBA82A987CED68CF6A52931801465041097F"
+      },
+      "v8_baseline": {
+        "path": "06_supplementary_evidence/ra_gca_v8_32_raw/Scene08_P4.csv",
+        "size": 4371799,
+        "sha256": "D15ADE004CE6EE63E058868458969447FEF8A3A258200EBC23521EAF035A62B3"
+      }
+    },
+    {
+      "case_file": "Scene10_P0.csv",
+      "formal_algorithm": {
+        "path": "06_supplementary_evidence/ra_gca_cg_hte_32_raw/Scene10_P0.csv",
+        "size": 4736927,
+        "sha256": "19F84C1E922576EF77FAA23F222C01495373E52866BDFC2DBC8D0DCB12515451"
+      },
+      "v8_baseline": {
+        "path": "06_supplementary_evidence/ra_gca_v8_32_raw/Scene10_P0.csv",
+        "size": 4586204,
+        "sha256": "7E7F6C0263A94741701F1F53FB066E843820992850F086EBB6057F9EA0A76B44"
+      }
+    },
+    {
+      "case_file": "Scene10_P1.csv",
+      "formal_algorithm": {
+        "path": "06_supplementary_evidence/ra_gca_cg_hte_32_raw/Scene10_P1.csv",
+        "size": 4737128,
+        "sha256": "23DA784317D0C31415DEBBD64B88DB7660B91289643761E0765C4A8CC52C5A1E"
+      },
+      "v8_baseline": {
+        "path": "06_supplementary_evidence/ra_gca_v8_32_raw/Scene10_P1.csv",
+        "size": 4586034,
+        "sha256": "8388F008CEB564BEFBBE8DAD53E3366ED5FF4AC132228870EB58BC4021F4EFD3"
+      }
+    },
+    {
+      "case_file": "Scene10_P2.csv",
+      "formal_algorithm": {
+        "path": "06_supplementary_evidence/ra_gca_cg_hte_32_raw/Scene10_P2.csv",
+        "size": 4737471,
+        "sha256": "F5E544FF2519D4A2B7A460BDDD31FB91EFC3F9D1EDE6CBECB13F3B16AD3BF7DC"
+      },
+      "v8_baseline": {
+        "path": "06_supplementary_evidence/ra_gca_v8_32_raw/Scene10_P2.csv",
+        "size": 4586132,
+        "sha256": "7BDF20FE878A5561A7C876F45CC5A07B7B3C5595BCD15B560DA750E1B3389D5F"
+      }
+    },
+    {
+      "case_file": "Scene10_P3.csv",
+      "formal_algorithm": {
+        "path": "06_supplementary_evidence/ra_gca_cg_hte_32_raw/Scene10_P3.csv",
+        "size": 4736883,
+        "sha256": "1BC96873FD7DE2DC4856EBE5E50A363CD4EB59048F198750551A37F2F0F837B4"
+      },
+      "v8_baseline": {
+        "path": "06_supplementary_evidence/ra_gca_v8_32_raw/Scene10_P3.csv",
+        "size": 4586540,
+        "sha256": "A86B53D2726BCFD55C3C88DAF0832A588D3854FDC8A6AC6452316C1358CD3656"
+      }
+    },
+    {
+      "case_file": "Scene10_P4.csv",
+      "formal_algorithm": {
+        "path": "06_supplementary_evidence/ra_gca_cg_hte_32_raw/Scene10_P4.csv",
+        "size": 4737045,
+        "sha256": "A20A6DDAC7AE7BA0C7699F080B6F1C3AE14A94DDFA3EA2FE7FB3850A129CA6AC"
+      },
+      "v8_baseline": {
+        "path": "06_supplementary_evidence/ra_gca_v8_32_raw/Scene10_P4.csv",
+        "size": 4585973,
+        "sha256": "CB1B10BF70589F6AC6B01FF60259B0C777C3A01B7D21E6E2814B8827C586CD87"
+      }
+    }
+  ]
+}

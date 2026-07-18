@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "verification_date": "2026-07-15",
+  "formal_algorithm": "RA-GCA-CGHTE",
+  "source_package": "A8比赛作品完整源文件_20260715",
+  "case": {
+    "case_id": "Scene04",
+    "formal_name": "定点悬停",
+    "model": "A8RAGCACGHTEPlant20260715.Scene04",
+    "check": true,
+    "translate": true,
+    "simulate": true,
+    "read_result": true,
+    "rows": 3001,
+    "columns": 57,
+    "start_time_s": 0.0,
+    "stop_time_s": 30.0,
+    "raw_sha256": "A95BE2B543A3808DA8CF26797CDB44B0B1FEA13DF4786E6F8C273A39FEC4534C",
+    "accepted_raw_sha256": "A95BE2B543A3808DA8CF26797CDB44B0B1FEA13DF4786E6F8C273A39FEC4534C",
+    "byte_identical_to_accepted": true
+  },
+  "source_integrity": {
+    "model_source_count": 25,
+    "post_shutdown_match_count": 25,
+    "formal_controller_sha256": "1D30F358C8314D6B9560E439CA2074E5F7585286717E7F35590EC0B8D9007976",
+    "delayed_platform_serialization_detected": true,
+    "frozen_source_restored": true
+  },
+  "session": {
+    "single_sysplorer_instance": true,
+    "sysplorer_closed_after_verification": true,
+    "forbidden_api_calls_used": false
+  },
+  "status": "passed"
+}

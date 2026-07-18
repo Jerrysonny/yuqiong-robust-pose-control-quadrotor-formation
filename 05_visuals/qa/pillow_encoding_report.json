@@ -1,0 +1,53 @@
+{
+  "status": "passed",
+  "outputs": {
+    "assets/gif/01_参数_高度跟踪.gif": {
+      "width": 1280,
+      "height": 720,
+      "frame_count": 36,
+      "frame_delay_ms": 120,
+      "duration_s": 4.32,
+      "encoder": "Pillow 9.5.0 adaptive palette, disposal=2, optimize=false"
+    },
+    "assets/gif/02_参数_推力尺度.gif": {
+      "width": 1280,
+      "height": 720,
+      "frame_count": 36,
+      "frame_delay_ms": 120,
+      "duration_s": 4.32,
+      "encoder": "Pillow 9.5.0 adaptive palette, disposal=2, optimize=false"
+    },
+    "assets/gif/03_编队_队形变换.gif": {
+      "width": 1280,
+      "height": 720,
+      "frame_count": 36,
+      "frame_delay_ms": 120,
+      "duration_s": 4.32,
+      "encoder": "Pillow 9.5.0 adaptive palette, disposal=2, optimize=false"
+    },
+    "assets/gif/04_编队_最近机间距.gif": {
+      "width": 1280,
+      "height": 720,
+      "frame_count": 36,
+      "frame_delay_ms": 120,
+      "duration_s": 4.32,
+      "encoder": "Pillow 9.5.0 adaptive palette, disposal=2, optimize=false"
+    },
+    "assets/gif/05_PP-CBF_队形安全.gif": {
+      "width": 1280,
+      "height": 720,
+      "frame_count": 36,
+      "frame_delay_ms": 120,
+      "duration_s": 4.32,
+      "encoder": "Pillow 9.5.0 adaptive palette, disposal=2, optimize=false"
+    },
+    "assets/gif/06_PP-CBF_距离曲线.gif": {
+      "width": 1280,
+      "height": 720,
+      "frame_count": 36,
+      "frame_delay_ms": 120,
+      "duration_s": 4.32,
+      "encoder": "Pillow 9.5.0 adaptive palette, disposal=2, optimize=false"
+    }
+  }
+}

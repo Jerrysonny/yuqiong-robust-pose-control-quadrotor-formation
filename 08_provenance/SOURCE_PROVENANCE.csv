@@ -1,0 +1,15 @@
+component,category,package_path,origin,package_role,claim_boundary
+QuadrotorModel,official_competition_model,01_models/official/QuadrotorModel,A8 competition supplied material,official physical plant and resources,retained without claiming team authorship
+RA-GCA-CGHTE,team_engineering,01_models/sysblock/A8FormalRAGCACGHTE_20260715.mo,team implementation,formal main controller,validated for reduced-attitude yawless scope
+Main scenario wrappers,team_engineering,01_models/modelica,team implementation,32 registered project regression scenes,32 is not an official required count
+Official PID,official_baseline,01_models/dependencies/A8FormalPidTwin and 01_models/baselines/pid_standard_steps,official controller plus team wrappers,official baseline and standardized steps,wrapper results do not change official controller identity
+RA-GCA/V8,team_previous_version,01_models/baseline/A8FormalSO3V8PX4AllocV1A_20260712.mo,team implementation,comparison and rollback only,not the default main controller
+RA-GCA/Base,team_ablation,01_models/comparators/ra_gca_base,team implementation,auxiliary ablation,only four directly verified public scenes
+CAP-ADRC,team_comparator,01_models/comparators/cap_adrc,team implementation based on ADRC method,auxiliary comparator,only five directly verified public single-UAV scenes
+CP-INDI,team_comparator,01_models/comparators/cp_indi,team implementation based on INDI method,auxiliary comparator,only five directly verified public single-UAV scenes
+PP-CBF,team_engineering,01_models/sysblock/formation,team implementation based on CBF method,independent formation safety supervisor,does not rename or replace the low-level controller
+Paired raw,team_experiment,06_supplementary_evidence,Sysplorer exports from frozen project regression,transparent comparison evidence,supplementary evidence only
+Report evidence,team_analysis,04_results/report_evidence,deterministic normalization from packaged raw and minimal authority snapshots,report-ready metrics and claim index,unfinished validation and holdout statistics remain excluded
+Release visual assets,team_visualization,05_visuals/assets/static and 05_visuals/assets/gif,offline rendering from paired raw,selected engineering visualization,registered by VISUAL_MANIFEST.json
+Final report figures,team_visualization,05_visuals/assets/report_static,central admission from chapter original figures and frozen evidence,28 figures used by the final report,source mapping is recorded in FINAL_REPORT_ASSET_INDEX.csv
+Final report tables,team_analysis,08_provenance/FINAL_REPORT_ASSET_INDEX.csv,final report table inventory and packaged authority sources,26 numbered tables with data or model sources,formula layout tables are excluded

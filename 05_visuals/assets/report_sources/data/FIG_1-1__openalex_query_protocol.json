@@ -1,0 +1,56 @@
+{
+  "title": "OpenAlex quadrotor-control research landscape protocol",
+  "retrieved_at_utc": "2026-07-13T13:53:15.509870+00:00",
+  "source": "OpenAlex Works API",
+  "endpoint": "https://api.openalex.org/works",
+  "year_start": 2015,
+  "year_end": 2025,
+  "title_search_terms": [
+    "quadrotor",
+    "quadcopter",
+    "multirotor"
+  ],
+  "included_types": [
+    "article",
+    "conference-paper",
+    "proceedings-article",
+    "review"
+  ],
+  "scope_rule": "vehicle term in title plus control-related term in title or OpenAlex keyword with score >= 0.35",
+  "deduplication": "OpenAlex ID union followed by DOI deduplication",
+  "raw_unique_works": 13355,
+  "clean_in_scope_works": 6153,
+  "canonical_term_count": 26,
+  "selected_network_terms": [
+    "attitude_control",
+    "sliding_mode",
+    "pid_control",
+    "nonlinear_control",
+    "trajectory_tracking",
+    "adaptive_control",
+    "robust_control",
+    "state_estimation",
+    "neural_control",
+    "obstacle_avoidance",
+    "mpc",
+    "fault_tolerant",
+    "path_planning",
+    "optimal_control",
+    "formation_control",
+    "disturbance_observer",
+    "reinforcement_learning",
+    "adrc",
+    "system_identification",
+    "wind_disturbance",
+    "sensor_fusion",
+    "multi_agent"
+  ],
+  "minimum_term_count": 25,
+  "limitations": [
+    "High-precision title search may omit relevant works that mention the vehicle only in abstracts.",
+    "OpenAlex coverage and keyword assignment vary by venue and language.",
+    "Broad OpenAlex topics and primary topics are excluded from term extraction to reduce thematic inflation.",
+    "Canonical synonym mapping is domain-led and is archived in the plotting script.",
+    "Counts describe the indexed corpus and are not an official census of all publications."
+  ]
+}

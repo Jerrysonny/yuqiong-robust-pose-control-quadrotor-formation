@@ -1,0 +1,21 @@
+{
+  "boundary": "PID tracking RMSE is retained only as the standalone Chapter 2 baseline metric; the frozen cross-controller CSV leaves PID RMSE empty.",
+  "case_count": 3,
+  "evaluation_window": "30 s raw; step at 10 s; plot window 8-20 s",
+  "generated_utc": "2026-07-15T10:53:26.762Z",
+  "input_hashes": {
+    "canonical_evaluator": "4FABCF67A1C12AF7F7C705D8860D55A31CB7183107DC0382169F488E6870A565",
+    "config": "11222D5AF50C48D8179B5D8947FEE025B8CE76AB7476FC1728FD3B39FF024691",
+    "frozen_step_evidence": "4139CD3B2D59417A57357C57788E6F64A831F4A3B51562A1517759DFCC88F81C",
+    "historical_summary": "7D347776520FBC6384B899C7B51E0E686F4E888FB83971DC8F4EBE441F9DCDFD",
+    "official_model": "B39A8B23665A3B05CF3FAD406744021F0E65541A02D1EF052D2BD10BA7E76352",
+    "transient_evaluator": "FFA1142FAF4E84236AB57E91B6F56F6695660EAC41B91CC0822029D45B9C6E83"
+  },
+  "metric_contract": "TransientMetricsV7.evaluate_standard_step",
+  "metrics_csv": "D:\\Users\\admin\\Desktop\\A8-四旋翼无人机位姿控制系统设计优化\\A8赛题核心工作区\\仿真报告规划_20260712\\02_第二章冻结内容\\20260715_第二次交接改稿\\02_analysis\\chapter2_pid_baseline_metrics.csv",
+  "plot_csv": "D:\\Users\\admin\\Desktop\\A8-四旋翼无人机位姿控制系统设计优化\\A8赛题核心工作区\\仿真报告规划_20260712\\02_第二章冻结内容\\20260715_第二次交接改稿\\02_analysis\\chapter2_pid_plot_data.csv",
+  "plot_row_count": 3603,
+  "runtime": "Syslab julia-ty 1.10.10+4",
+  "schema_version": 1,
+  "status": "pass"
+}

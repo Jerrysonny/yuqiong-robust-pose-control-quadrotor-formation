@@ -1,0 +1,156 @@
+{
+  "schema_version": 1,
+  "source_id": "historical_authority_chapter6_metrics_summary",
+  "source_sha256": "FCC0892D868CDC73C65115C1F62195E062E0835BE4798557E62B1CD7991EDB36",
+  "normalization": "historical main-controller label normalized to RA-GCA/V8",
+  "standard_step_overshoot_percent": {
+    "PID": {
+      "X": 24.294545760087004,
+      "Y": 24.279734961142,
+      "Z": 23.806225400229984
+    },
+    "RA-GCA/V8": {
+      "X": 0.0,
+      "Y": 0.0,
+      "Z": 1.982926444680011
+    }
+  },
+  "public_scene_metrics": [
+    {
+      "controller": "PID",
+      "source_scene_label": "step",
+      "tracking_rmse_m": 0.27525353771149313,
+      "peak_m": 1.369402136655734
+    },
+    {
+      "controller": "PID",
+      "source_scene_label": "hover",
+      "tracking_rmse_m": 0.21601287678034678,
+      "peak_m": 0.8640112726378584
+    },
+    {
+      "controller": "PID",
+      "source_scene_label": "spiral",
+      "tracking_rmse_m": 0.48714776968519247,
+      "peak_m": 3.0050118614286996
+    },
+    {
+      "controller": "PID",
+      "source_scene_label": "figure8",
+      "tracking_rmse_m": 0.17231095524209727,
+      "peak_m": 1.2170335882688277
+    },
+    {
+      "controller": "RA-GCA/V8",
+      "source_scene_label": "step",
+      "tracking_rmse_m": 0.1550402231263067,
+      "peak_m": 0.5230968102428699
+    },
+    {
+      "controller": "RA-GCA/V8",
+      "source_scene_label": "hover",
+      "tracking_rmse_m": 0.018967257636812944,
+      "peak_m": 0.07407654766840444
+    },
+    {
+      "controller": "RA-GCA/V8",
+      "source_scene_label": "spiral",
+      "tracking_rmse_m": 0.36546962953510226,
+      "peak_m": 3.0023237920992925
+    },
+    {
+      "controller": "RA-GCA/V8",
+      "source_scene_label": "figure8",
+      "tracking_rmse_m": 0.05173739984886751,
+      "peak_m": 0.5990567413777262
+    },
+    {
+      "controller": "CAP-ADRC",
+      "source_scene_label": "step",
+      "tracking_rmse_m": 0.18049289678898675,
+      "peak_m": 0.618837157883229
+    },
+    {
+      "controller": "CAP-ADRC",
+      "source_scene_label": "hover",
+      "tracking_rmse_m": 0.019418012844236193,
+      "peak_m": 0.07809746774267556
+    },
+    {
+      "controller": "CAP-ADRC",
+      "source_scene_label": "spiral",
+      "tracking_rmse_m": 0.3818194838218155,
+      "peak_m": 3.0025230578047744
+    },
+    {
+      "controller": "CAP-ADRC",
+      "source_scene_label": "figure8",
+      "tracking_rmse_m": 0.06927825581281563,
+      "peak_m": 0.727735266004797
+    },
+    {
+      "controller": "CP-INDI",
+      "source_scene_label": "step",
+      "tracking_rmse_m": 0.15505875914125683,
+      "peak_m": 0.5230968102390164
+    },
+    {
+      "controller": "CP-INDI",
+      "source_scene_label": "hover",
+      "tracking_rmse_m": 0.018967257626960825,
+      "peak_m": 0.07407654758841953
+    },
+    {
+      "controller": "CP-INDI",
+      "source_scene_label": "spiral",
+      "tracking_rmse_m": 0.365406035328557,
+      "peak_m": 3.002206768792471
+    },
+    {
+      "controller": "CP-INDI",
+      "source_scene_label": "figure8",
+      "tracking_rmse_m": 0.05177533577841479,
+      "peak_m": 0.5995196042363135
+    }
+  ],
+  "disturbance_metrics": [
+    {
+      "controller": "PID",
+      "tracking_rmse_m": 0.3068112031847071
+    },
+    {
+      "controller": "RA-GCA/V8",
+      "tracking_rmse_m": 0.2949037614733056
+    },
+    {
+      "controller": "CAP-ADRC",
+      "tracking_rmse_m": 0.2388388719807406
+    },
+    {
+      "controller": "CP-INDI",
+      "tracking_rmse_m": 0.0621232821298252
+    }
+  ],
+  "base_anchor_metrics": [
+    {
+      "controller": "RA-GCA/Base",
+      "source_scene_label": "step",
+      "tracking_rmse_m": 0.1626863068406143
+    },
+    {
+      "controller": "RA-GCA/Base",
+      "source_scene_label": "hover",
+      "tracking_rmse_m": 0.0194180128399794
+    },
+    {
+      "controller": "RA-GCA/Base",
+      "source_scene_label": "figure8",
+      "tracking_rmse_m": 0.0551150668557355
+    },
+    {
+      "controller": "RA-GCA/Base",
+      "source_scene_label": "disturbance",
+      "tracking_rmse_m": 0.3480683179044796
+    }
+  ]
+}

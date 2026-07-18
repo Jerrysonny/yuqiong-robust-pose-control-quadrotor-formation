@@ -1,0 +1,6 @@
+﻿controller,case_id,tracking_rmse_m,relative_to_formal_percent,evidence_basis,interpretation_zh
+PID,Scene06b,0.3068112031847071,4.037738159659288,normalized_historical_snapshot,公共合同下的辅助比较，不外推到其他场景
+RA-GCA/Base,Scene06b,0.3480683179044796,18.027764774999856,normalized_historical_snapshot,公共合同下的辅助比较，不外推到其他场景
+RA-GCA-CGHTE,Scene06b,0.294903761473424,0.0,direct_package,正式主算法直接包内结果
+CAP-ADRC,Scene06b,0.2388388719807406,-19.011249369138984,normalized_historical_snapshot,公共合同下的辅助比较，不外推到其他场景
+CP-INDI,Scene06b,0.0621232821298252,-78.93438801206217,normalized_historical_snapshot,该场景RMSE显著低于正式主算法，属于必须保留的局部优势

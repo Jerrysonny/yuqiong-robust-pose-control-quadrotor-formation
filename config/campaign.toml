@@ -1,0 +1,160 @@
+schema_version = 1
+campaign = "v8_ra_gca_cghte_project_regression"
+created_date = "2026-07-14"
+sample_time_s = 0.01
+solver = "Dassl"
+solver_tolerance = 1.0e-4
+single_sysplorer_instance = true
+formal_results_may_tune_controller = false
+legacy_inputs_read_only = true
+delivery_package_read_only = true
+internal_score_used_for_selection = false
+forbidden_api_calls = ["ClearAll", "ChangeDirectory"]
+
+[identity]
+v8_id = "RA-GCA/V8"
+v8_class = "A8FormalSO3V8PX4AllocV1A_20260712"
+formal_id = "RA-GCA-CGHTE"
+formal_class = "A8FormalRAGCACGHTE_20260715"
+formal_diagnostic_version = 914
+
+[runtime]
+syslab_home = "environment:SYSLAB_HOME"
+julia_ty = "environment:JULIA_TY"
+sysplorer_home = "environment:SYSLAB_HOME"
+maximum_identical_platform_attempts = 3
+
+[suite]
+standard_steps = ["Scene01S_X", "Scene01S_Y", "Scene01S_Z"]
+main_single = ["Scene04", "Scene01", "Scene02", "Scene03", "Scene06b"]
+parameter = [
+  "Scene05B_Nominal",
+  "Scene05B_LiftMinus10",
+  "Scene05B_PayloadPlus10",
+  "Scene05B_C000",
+  "Scene05B_C001",
+  "Scene05B_C010",
+  "Scene05B_C011",
+  "Scene05B_C100",
+  "Scene05B_C101",
+  "Scene05B_C110",
+  "Scene05B_C111",
+]
+wind = ["Scene08_P0", "Scene08_P1", "Scene08_P2", "Scene08_P3", "Scene08_P4"]
+sensor = ["Scene10_P0", "Scene10_P1", "Scene10_P2", "Scene10_P3", "Scene10_P4"]
+formation = ["Scene07B", "Scene07COff", "Scene07COnPredictiveV5C"]
+
+[physical_gates]
+rotation_orthogonality_tolerance = 1.0e-6
+rotation_determinant_tolerance = 1.0e-6
+max_yawless_tilt_rad = 1.20
+max_body_rate_radps = 20.0
+motor_limit_tolerance = 1.0e-8
+v8_allocator_q_max_contract = 3600.0
+v8_allocator_source_sha256 = "BBBD64CEBE0A580337EF634B2F455B9A43627990B5E7A2A752D9CB219DDF8A6A"
+
+[comparison_gates]
+nominal_rmse_ratio_vs_v8_max = 1.02
+main_task_broad_regression_ratio = 1.10
+disturbance_recovery_max_s = 5.0
+disturbance_recovery_ratio_vs_v8_max = 1.10
+wind_mean_rmse_ratio_vs_v8_max = 1.05
+sensor_mean_rmse_ratio_vs_v8_max = 1.05
+formation_minimum_distance_m = 0.60
+formation_rmse_max_m = 0.15
+formation_recovery_max_s = 5.0
+formation_tracking_cost_increase_max = 0.35
+formation_require_zero_violation = true
+formation_require_active_cbf = true
+formation_hocbf_residual_min = -1.0e-6
+
+[hte_diagnostics]
+# Section name is retained for metric API compatibility.
+dimension = 16
+scale_estimate_index = 11
+scale_applied_index = 12
+fusion_valid_index = 13
+normalized_innovation_index = 14
+allocator_qmax_index = 15
+version_index = 16
+formal_version_code = 914
+terminal_nominal_scale_deviation_max = 0.02
+false_activation_deviation = 0.04
+false_activation_continuous_duration_max_s = 1.0
+
+[parameter_gates]
+retention_excellence_max = 2.0
+peak_error_m_max = 0.50
+steady_abs_error_m_max = 0.05
+terminal_scale_relative_error_max = 0.03
+per_case_rmse_ratio_vs_v8_max = 1.02
+mismatch_median_rmse_improvement_min = 0.50
+
+[formal_fixed_parameters]
+activation_covariance_max = 0.00253218969247675
+activation_persistence_s = 0.10
+scale_rate_limit_per_s = 0.868
+scale_rate_limit_per_step = 0.00868
+
+[development_tuning_bounds]
+formal_values_are_in = "formal_fixed_parameters"
+development_initial_activation_covariance_max = 0.0025
+activation_covariance_max_lower = 0.00125
+activation_covariance_max_upper = 0.005
+activation_covariance_log_scale = true
+development_initial_activation_persistence_s = 0.25
+activation_persistence_s_lower = 0.10
+activation_persistence_s_upper = 0.30
+activation_persistence_quantization_s = 0.01
+development_initial_scale_rate_limit_per_s = 0.4
+scale_rate_limit_per_s_lower = 0.4
+scale_rate_limit_per_s_upper = 1.0
+
+[optimizer]
+algorithm = "TyGlobalOptimization.surrogateopt"
+seed = "A8-20260714-HTE"
+initial_lhs_points = 7
+adaptive_points = 16
+maximum_candidates = 24
+minimum_candidates = 16
+stagnation_candidates = 6
+minimum_relative_improvement = 0.01
+screen_cases = [
+  "Scene04",
+  "Scene01S_Z",
+  "Scene05B_LiftMinus10",
+  "Scene05B_PayloadPlus10",
+  "Scene05B_C010",
+  "Scene05B_C100",
+]
+full_development_finalists = 2
+
+[split]
+development_seed = "A8-20260714-HTE-D"
+development_nominal_count = 6
+development_parameter_count = 12
+development_compound_count = 6
+development_parameter_lower = 0.92
+development_parameter_upper = 1.08
+validation_count = 30
+validation_seed = "A8-20260714-HTE-V"
+holdout_count = 60
+holdout_seed_after_finalist_freeze = true
+
+[validation_gates]
+physical_required = 30
+performance_required = 29
+
+[holdout_gates]
+physical_required = 60
+performance_required = 58
+wilson_one_sided_confidence = 0.95
+wilson_lower_bound_min = 0.90
+bootstrap_samples = 10000
+bootstrap_rmse_ratio_upper_max = 1.0
+
+[equivalence]
+cases = ["Scene04", "Scene01S_Z", "Scene05B_LiftMinus10"]
+rmse_relative_difference_max = 1.0e-8
+critical_series_max_abs_difference = 1.0e-8
+require_identical_gate_decisions = true

@@ -1,0 +1,54 @@
+schema_version = 1
+release_date = "2026-07-15"
+release_status = "formal_main_controller"
+
+[algorithm]
+chinese_name = "置信门控悬停推力估计增强的约化姿态几何控制与约束感知分配算法"
+english_name = "Reduced-Attitude Geometric Control with Constraint-Aware Allocation Enhanced by Confidence-Gated Hover-Thrust Estimation"
+short_name = "RA-GCA-CGHTE"
+engineering_id = "RA_GCA_CG_HTE"
+version = "1.0.0"
+scope = "reduced-attitude yawless"
+
+[controller]
+class = "A8FormalRAGCACGHTE_20260715"
+path = "01_models/sysblock/A8FormalRAGCACGHTE_20260715.mo"
+sha256 = "0BADB8524026CA8EFF93BEC55C56AB91866D2E7363DC69697407C234116E1BCA"
+diagnostic_version_code = 914
+sample_time_s = 0.01
+reference_dimension = 11
+state_dimension = 18
+allocator_limit_dimension = 2
+motor_output_dimension = 4
+diagnostic_dimension = 16
+
+[fixed_parameters]
+activation_covariance_max = 0.00253218969247675
+activation_persistence_s = 0.10
+scale_rate_per_s = 0.868
+scale_rate_per_step = 0.00868
+
+[provenance]
+optimization_value_activation_covariance_max = "0.0025321896924767467"
+candidate_manifest_sha256 = "D365524EAE80BD080342377E8D247B755CE15F14ED04C6D6F43BB87E49BA3428"
+candidate_runtime_source_sha256 = "C71520246E00132501EAF5BD321DCE5405C75BFE81CB523B333583F7D20A0B79"
+selection_workspace = "正式V8_V9HTE主算法决选_20260714"
+
+[formation]
+supervisor = "PP-CBF"
+relationship = "independent_upper_safety_supervisor"
+retuning_allowed = false
+
+[baseline]
+controller_id = "RA-GCA/V8"
+class = "A8FormalSO3V8PX4AllocV1A_20260712"
+path = "01_models/baseline/A8FormalSO3V8PX4AllocV1A_20260712.mo"
+sha256 = "BBBD64CEBE0A580337EF634B2F455B9A43627990B5E7A2A752D9CB219DDF8A6A"
+role = "comparison_and_rollback_only"
+
+[release_policy]
+default_controller = "RA-GCA-CGHTE"
+runtime_parameter_override_allowed = false
+historical_evidence_mutation_allowed = false
+report_and_manual_update_in_this_release = false
+

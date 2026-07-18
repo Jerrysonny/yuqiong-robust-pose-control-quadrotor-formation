@@ -1,0 +1,42 @@
+{
+  "schema_version": 1,
+  "scope": "project_regression_set_not_an_official_required_32_case_set",
+  "formal_algorithm": "RA-GCA-CGHTE",
+  "baseline": "RA-GCA/V8",
+  "project_regression_case_count": 32,
+  "paired_raw_file_count": 64,
+  "verified_raw_sha256_count": 64,
+  "suite_case_counts": {
+    "formation": 3,
+    "main_single": 5,
+    "parameter": 11,
+    "sensor": 5,
+    "standard_steps": 3,
+    "wind": 5
+  },
+  "pair_gate_pass_count": 32,
+  "pair_gate_total": 32,
+  "all_physical_gates_pass": true,
+  "all_paired_case_gates_pass": true,
+  "required_parameter_mismatch_improvement": true,
+  "required_parameter_retention": false,
+  "overall_selection_gate_pass": false,
+  "parameter_case_count": 11,
+  "parameter_improved_case_count": 6,
+  "parameter_equivalent_case_count": 5,
+  "parameter_rmse_ratio_median": 0.06674514697713632,
+  "non_parameter_max_abs_rmse_ratio_deviation_from_one": 1.3425636891106763e-07,
+  "validation_boundaries": {
+    "v30_completed": false,
+    "h60_completed": false,
+    "wilson_lower_bound_computed": false,
+    "paired_bootstrap_completed": false,
+    "formal_replacement_decision_source": "engineering decision plus completed project evidence; unfinished statistical tests are not claimed"
+  },
+  "interpretation_zh": [
+    "32项是项目内部回归集数量，不是赛题官方规定的32项测试。",
+    "32项逐项配对门通过，参数工况为6项改善、5项基本等效。",
+    "预注册参数保持目标未通过，因此required_parameter_retention保持为false。",
+    "V30、H60、Wilson下界和配对bootstrap尚未完成，不得写成已通过。"
+  ]
+}

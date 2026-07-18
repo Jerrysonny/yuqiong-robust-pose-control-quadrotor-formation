@@ -1,0 +1,7 @@
+axis,controller,overshoot_percent,tracking_rmse_m,evidence_basis,raw_path,raw_sha256
+X,PID,24.294545760087004,,normalized_historical_snapshot,,
+X,RA-GCA-CGHTE,0,0.1865622289309737,direct_package_raw,06_supplementary_evidence/ra_gca_cg_hte_32_raw/Scene01S_X.csv,E27C24A970455CF8E5E48B5DB46DBB3BAEF65D44894A2B2A45466B3C8E19B43E
+Y,PID,24.279734961142001,,normalized_historical_snapshot,,
+Y,RA-GCA-CGHTE,0,0.18656222874117714,direct_package_raw,06_supplementary_evidence/ra_gca_cg_hte_32_raw/Scene01S_Y.csv,ED6858BCEFC4F864DD098E0584917B1613FB55BDE9255802F8E827B1BBBF8B2B
+Z,PID,23.806225400229984,,normalized_historical_snapshot,,
+Z,RA-GCA-CGHTE,1.9829264447200234,0.16170511679655325,direct_package_raw,06_supplementary_evidence/ra_gca_cg_hte_32_raw/Scene01S_Z.csv,BDEC6D2BF7265D1076698BA5E38369E4B7BA67FF1A7D7831ED911E2BE32A179F

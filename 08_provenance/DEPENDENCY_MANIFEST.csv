@@ -1,0 +1,15 @@
+dependency,required,provided_in_package,version_or_contract,purpose,source_boundary
+MWORKS Sysplorer,true,false,2026a,Modelica and Sysblock model loading translation and simulation,commercial runtime supplied separately
+MWORKS Syslab,true,false,2026a,Julia metric calculation and result processing,commercial runtime supplied separately
+julia-ty,true,false,Syslab 2026a bound runtime,execute package Syslab scripts,located through JULIA_TY or Syslab installation
+Modelica Standard Library,true,false,MWORKS compatible version,physical and mathematical base classes,loaded by Sysplorer
+Windows PowerShell,true,false,5.1 or later,root orchestration scripts,operating system component
+MWORKS Python,true,false,Sysplorer 2026a External python64,run Sysplorer automation and static tests,located through MWORKS_PYTHON or standard installation
+matplotlib,false,false,3.7 compatible,optional regeneration of report and publication figures,not required by the default quick verification
+Pillow,true,false,9.5 compatible,final report PNG QA GIF encoding and contact sheets,required by test_report_visuals.py and final asset verification
+numpy,false,false,MWORKS Python compatible,optional numerical processing in retained report-generation sources,not required by the default quick verification
+pandas,false,false,MWORKS Python compatible,optional use by retained chapter report-generation sources,not required by the default quick verification
+python-docx,false,false,MWORKS Python compatible,optional use by retained chapter document-generation sources,not required by the default quick verification
+Node.js,false,false,20 or later recommended,offline visual regeneration only,not required for controller simulation
+playwright-core,false,false,compatible with installed Chromium,visual rendering and GIF frame QA only,not required for controller simulation
+Chromium or Google Chrome,false,false,current local installation,headless visual rendering only,not required for controller simulation

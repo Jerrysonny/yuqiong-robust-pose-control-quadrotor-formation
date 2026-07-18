@@ -1,0 +1,137 @@
+{
+  "schema_version": 1,
+  "formal_algorithm": "RA-GCA-CGHTE",
+  "scope": "report_evidence_layer",
+  "generated_file_count_excluding_manifest": 13,
+  "manifest_self_hash_included": false,
+  "verified_raw_sha256_count": 64,
+  "inputs": [
+    {
+      "path": "00_START_HERE/ALGORITHM_REGISTRY.csv",
+      "sha256": "6EE8A7C55E6DE4544C4F18ABAB8ED95E23BDBEB97F909F3A878941750ED8E5F1"
+    },
+    {
+      "path": "00_START_HERE/SCENE_INDEX.csv",
+      "sha256": "9FAF2A4749AA0700EFE7E31F1476C676A1CC689A6990380024C56F89404445B3"
+    },
+    {
+      "path": "02_scripts/evaluation/build_report_evidence.py",
+      "sha256": "9BCFCE0ECF26989E7F569BD0D2193BCF9F3D1C108FFC6D70F77C4A3EFBBACE10"
+    },
+    {
+      "path": "06_supplementary_evidence/RAW_MANIFEST.json",
+      "sha256": "94294D1749D3F5C80C93CEF67DFA7A15EAC3EECC0911137B0568B68C352F782D"
+    },
+    {
+      "path": "06_supplementary_evidence/campaign_cases.csv",
+      "sha256": "1D92A601936059D281834CB1A23689F4B31F8CD4C42F299882089B063E7BBBAF"
+    },
+    {
+      "path": "06_supplementary_evidence/campaign_gates.csv",
+      "sha256": "C762582251608D2A63514553FDA0965E0181B50BA33F12AE9C2C8A5A9DFB5E85"
+    },
+    {
+      "path": "06_supplementary_evidence/campaign_pairs.csv",
+      "sha256": "4AD23C57B025024862075E1F86A97BC56D7072294FC0AD8E37B08DF41013A49F"
+    },
+    {
+      "path": "RECOMPUTE_REPORT_EVIDENCE.ps1",
+      "sha256": "658F45425273208AE67EE93B7617A93C89E987AF716F16977CE7E2451BF4F01B"
+    },
+    {
+      "path": "04_results/report_evidence/source_snapshots/chapter6_metrics_normalized.json",
+      "sha256": "23C060D7E9EDC2E8712D3B3DFC13FF745F72E3973A383EA50F2682CDEC6183BF"
+    },
+    {
+      "path": "04_results/report_evidence/source_snapshots/compound_stress_formal_algorithm.csv",
+      "sha256": "027E3C2F62887DEA965D8809EE1AD3862984ED8A2AD95B2897CE26C5DAB22FF4"
+    }
+  ],
+  "files": [
+    {
+      "path": "01_five_controller_scene_coverage.csv",
+      "size": 1731,
+      "sha256": "090B052D56E29A4D81EFB92B8191CE7C4434E70538AF72363A7E73A6EDC929DB"
+    },
+    {
+      "path": "02_standard_step_pid_vs_main.csv",
+      "size": 827,
+      "sha256": "4139CD3B2D59417A57357C57788E6F64A831F4A3B51562A1517759DFCC88F81C"
+    },
+    {
+      "path": "03_five_controller_common_scenes.csv",
+      "size": 3009,
+      "sha256": "9A1CE6B8E6EB24F709BEEFF1EC518E150CE9C976A955B79FB57FE058FCB2F933"
+    },
+    {
+      "path": "04_algorithm_evolution_ablation.csv",
+      "size": 2223,
+      "sha256": "8F982590302A0F5C20EB04D08E88389402A020F605361017EA85C0815763FCDD"
+    },
+    {
+      "path": "05_parameter_11_paired.csv",
+      "size": 4543,
+      "sha256": "E634E9C08E8A83D20099D35ADCDEE7F5FF5867D095E2A12B7021E090D47B61CF"
+    },
+    {
+      "path": "06_project_regression_32_summary.json",
+      "size": 1625,
+      "sha256": "1E55A65407E87FFCE39382E8E91C4508935CF3AA21B1D40E6D6436EE3EE2F8FF"
+    },
+    {
+      "path": "07_disturbance_tradeoff.csv",
+      "size": 791,
+      "sha256": "F979BB16840F278D589A3B8597085E13AD8CD26B061098AB9A8E766B6ED2FD3D"
+    },
+    {
+      "path": "08_compound_stress_tradeoff.csv",
+      "size": 2179,
+      "sha256": "E937D4BA3E399DFC244F8E0EB1797DDDE3679FC559B560D514FF1CD91407C7DE"
+    },
+    {
+      "path": "09_formation_pp_cbf.csv",
+      "size": 1137,
+      "sha256": "4FEE3DBD92BA567557FC8B9FB08703327477218EC5D437C099D87200FE491AAB"
+    },
+    {
+      "path": "10_claim_evidence_index.csv",
+      "size": 3911,
+      "sha256": "BD4BE1B9833CF06A6CE32702BFDE79A942AEDB0EAE5562DDB82324CE18EB0EC0"
+    },
+    {
+      "path": "README_报告证据使用边界.md",
+      "size": 2537,
+      "sha256": "1A66F3E0072B5F243DF70655A56DA2C6D6E7032EB83852650AE90BBE2469BFAF"
+    },
+    {
+      "path": "source_snapshots/chapter6_metrics_normalized.json",
+      "size": 4057,
+      "sha256": "23C060D7E9EDC2E8712D3B3DFC13FF745F72E3973A383EA50F2682CDEC6183BF"
+    },
+    {
+      "path": "source_snapshots/compound_stress_formal_algorithm.csv",
+      "size": 2890,
+      "sha256": "027E3C2F62887DEA965D8809EE1AD3862984ED8A2AD95B2897CE26C5DAB22FF4"
+    }
+  ],
+  "final_report_usage": {
+    "status": "frozen_reference",
+    "report_docx_sha256": "BB70BAF844C0172B997E0E04FDC7906D2F09E163A3FE8D88BDA2B01E53CA6D10",
+    "referenced_files": [
+      "01_five_controller_scene_coverage.csv",
+      "02_standard_step_pid_vs_main.csv",
+      "03_five_controller_common_scenes.csv",
+      "05_parameter_11_paired.csv",
+      "07_disturbance_tradeoff.csv",
+      "08_compound_stress_tradeoff.csv",
+      "09_formation_pp_cbf.csv",
+      "10_claim_evidence_index.csv"
+    ],
+    "supplementary_only_files": [
+      "04_algorithm_evolution_ablation.csv",
+      "06_project_regression_32_summary.json"
+    ],
+    "numbered_figures": 28,
+    "numbered_tables": 26
+  }
+}

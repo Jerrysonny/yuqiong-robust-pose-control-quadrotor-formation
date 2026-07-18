@@ -1,0 +1,52 @@
+{
+    "schema_version":  1,
+    "release_date":  "2026-07-15",
+    "release_status":  "formal_main_controller",
+    "algorithm":  {
+                      "chinese_name":  "置信门控悬停推力估计增强的约化姿态几何控制与约束感知分配算法",
+                      "english_name":  "Reduced-Attitude Geometric Control with Constraint-Aware Allocation Enhanced by Confidence-Gated Hover-Thrust Estimation",
+                      "short_name":  "RA-GCA-CGHTE",
+                      "engineering_id":  "RA_GCA_CG_HTE",
+                      "version":  "1.0.0"
+                  },
+    "controller":  {
+                       "class":  "A8FormalRAGCACGHTE_20260715",
+                       "path":  "01_models/sysblock/A8FormalRAGCACGHTE_20260715.mo",
+                       "sha256":  "0BADB8524026CA8EFF93BEC55C56AB91866D2E7363DC69697407C234116E1BCA",
+                       "diagnostic_version_code":  914
+                   },
+    "runner":  {
+                   "path":  "02_scripts/sysplorer/run_main_controller.py",
+                   "sha256":  "3DBA848C4C7DB74ECE222F8DD68EC1B23783664627F620253715EAC947EB330D",
+                   "registered_case_count":  32,
+                   "runtime_parameter_override_allowed":  false
+               },
+    "fixed_parameters":  {
+                             "activation_covariance_max":  0.00253218969247675,
+                             "activation_persistence_s":  0.1,
+                             "scale_rate_per_s":  0.868,
+                             "scale_rate_per_step":  0.00868
+                         },
+    "release_verification":  {
+                                 "static_test_count":  8,
+                                 "static_test_pass_count":  8,
+                                 "representative_simulation_count":  6,
+                                 "representative_simulation_pass_count":  6,
+                                 "byte_identical_reference_count":  6,
+                                 "source_execution_status_sha256":  "082B17339D5E8480CC3404AB160E78891382A31EC8A0280F10D62ED650F68109",
+                                 "source_reproduction_report_sha256":  "64F8F406FB0425E05750F159FBE2C600BEEB70708D00E237663E00A31257C364",
+                                 "package_reproduction_path":  "04_results/release_regression_6/release_reproduction.json",
+                                 "package_reproduction_sha256":  "76E9CDF11D7DBA2D612F7666296FB322349C61596976BCEB3BAE45C0167BECA3"
+                             },
+    "baseline":  {
+                     "algorithm_id":  "RA-GCA/V8",
+                     "role":  "comparison_and_rollback_only",
+                     "controller_sha256":  "BBBD64CEBE0A580337EF634B2F455B9A43627990B5E7A2A752D9CB219DDF8A6A"
+                 },
+    "documentation_scope":  {
+                                "simulation_report_updated":  false,
+                                "user_manual_updated":  false,
+                                "engineering_release_updated":  true
+                            },
+    "provenance_record":  "08_provenance/SOURCE_COPY_MANIFEST.csv"
+}

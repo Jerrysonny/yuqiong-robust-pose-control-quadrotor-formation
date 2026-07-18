@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- 由 Microsoft Visio, SVG Export 生成 figure_2_1_official_closed_loop.svg Page-1 -->
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:ev="http://www.w3.org/2001/xml-events"
+		xmlns:v="http://schemas.microsoft.com/visio/2003/SVGExtensions/" width="11.4in" height="4.1in" viewBox="0 0 820.8 295.2"
+		xml:space="preserve" color-interpolation-filters="sRGB" class="st13">
+	<v:documentProperties v:langID="2052" v:viewMarkup="false"/>
+
+	<style type="text/css">
+	<![CDATA[
+		.st1 {fill:#dcf2ef;stroke:#374151;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.9}
+		.st2 {fill:#191e26;font-family:微软雅黑;font-size:0.900009em}
+		.st3 {font-size:1em}
+		.st4 {fill:#e1ebf8;stroke:#374151;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.9}
+		.st5 {font-family:Microsoft Sans Serif;font-size:1em}
+		.st6 {fill:#faeed2;stroke:#374151;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.9}
+		.st7 {fill:#e2f1e0;stroke:#374151;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.9}
+		.st8 {marker-end:url(#mrkr13-28);stroke:#374151;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.9}
+		.st9 {fill:#374151;fill-opacity:1;stroke:#374151;stroke-opacity:1;stroke-width:0.26315789473684}
+		.st10 {stroke:#374151;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.9}
+		.st11 {fill:none;stroke:none;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.75}
+		.st12 {fill:#495057;font-family:微软雅黑;font-size:0.800011em}
+		.st13 {fill:none;fill-rule:evenodd;font-size:12px;overflow:visible;stroke-linecap:square;stroke-miterlimit:3}
+	]]>
+	</style>
+
+	<defs id="Markers">
+		<g id="lend13">
+			<path d="M 3 1 L 0 0 L 3 -1 L 3 1 " style="stroke:none"/>
+		</g>
+		<marker id="mrkr13-28" class="st9" v:arrowType="13" v:arrowSize="2" v:setback="11.4" refX="-11.4" orient="auto"
+				markerUnits="strokeWidth" overflow="visible">
+			<use xlink:href="#lend13" transform="scale(-3.8,-3.8) "/>
+		</marker>
+	</defs>
+	<g v:mID="0" v:index="1" v:groupContext="foregroundPage">
+		<title>页-1</title>
+		<v:pageProperties v:drawingScale="1" v:pageScale="1" v:drawingUnits="19" v:shadowOffsetX="9" v:shadowOffsetY="-9"/>
+		<g id="shape1-1" v:mID="1" v:groupContext="shape" transform="translate(10.08,-150.48)">
+			<title>工作表.1</title>
+			<desc>位置参考 期望位置向量</desc>
+			<v:textBlock v:margins="rect(4,4,4,4)"/>
+			<v:textRect cx="65.52" cy="254.88" width="131.04" height="80.64"/>
+			<rect x="0" y="214.56" width="131.04" height="80.64" rx="5.76" ry="5.76" class="st1"/>
+			<text x="43.92" y="251.6" class="st2" v:langID="2052"><v:paragraph v:horizAlign="1"/><v:tabList/>位置参考<v:newlineChar/><tspan
+						x="33.12" dy="1.216em" class="st3">期望位置向量</tspan></text>		</g>
+		<g id="shape2-5" v:mID="2" v:groupContext="shape" transform="translate(163.8,-150.48)">
+			<title>工作表.2</title>
+			<desc>赛题PID控制器 位置、姿态与混控</desc>
+			<v:textBlock v:margins="rect(4,4,4,4)"/>
+			<v:textRect cx="70.2" cy="254.88" width="140.4" height="80.64"/>
+			<rect x="0" y="214.56" width="140.4" height="80.64" rx="5.76" ry="5.76" class="st4"/>
+			<text x="34.2" y="251.6" class="st2" v:langID="2052"><v:paragraph v:horizAlign="1"/><v:tabList/>赛题<tspan class="st5">PID</tspan>控制器<v:newlineChar/><tspan
+						x="27" dy="1.216em" class="st3">位置</tspan>、姿态与混控</text>		</g>
+		<g id="shape3-10" v:mID="3" v:groupContext="shape" transform="translate(329.4,-150.48)">
+			<title>工作表.3</title>
+			<desc>四路电机与旋翼 电机指令</desc>
+			<v:textBlock v:margins="rect(4,4,4,4)"/>
+			<v:textRect cx="70.2" cy="254.88" width="140.4" height="80.64"/>
+			<rect x="0" y="214.56" width="140.4" height="80.64" rx="5.76" ry="5.76" class="st6"/>
+			<text x="32.4" y="251.6" class="st2" v:langID="2052"><v:paragraph v:horizAlign="1"/><v:tabList/>四路电机与旋翼<v:newlineChar/><tspan
+						x="48.6" dy="1.216em" class="st3">电机指令</tspan></text>		</g>
+		<g id="shape4-14" v:mID="4" v:groupContext="shape" transform="translate(495,-150.48)">
+			<title>工作表.4</title>
+			<desc>刚体机架 气动力与地面接触</desc>
+			<v:textBlock v:margins="rect(4,4,4,4)"/>
+			<v:textRect cx="70.2" cy="254.88" width="140.4" height="80.64"/>
+			<rect x="0" y="214.56" width="140.4" height="80.64" rx="5.76" ry="5.76" class="st6"/>
+			<text x="48.6" y="251.6" class="st2" v:langID="2052"><v:paragraph v:horizAlign="1"/><v:tabList/>刚体机架<v:newlineChar/><tspan
+						x="27" dy="1.216em" class="st3">气动力与地面接触</tspan></text>		</g>
+		<g id="shape5-18" v:mID="5" v:groupContext="shape" transform="translate(666,-150.48)">
+			<title>工作表.5</title>
+			<desc>位置与姿态传感器 p, φ, θ, ψ</desc>
+			<v:textBlock v:margins="rect(4,4,4,4)"/>
+			<v:textRect cx="64.8" cy="254.88" width="129.6" height="80.64"/>
+			<rect x="0" y="214.56" width="129.6" height="80.64" rx="5.76" ry="5.76" class="st7"/>
+			<text x="21.6" y="251.68" class="st2" v:langID="2052"><v:paragraph v:horizAlign="1"/><v:tabList/>位置与姿态传感器<v:newlineChar/><tspan
+						x="42.76" dy="1.204em" class="st5">p, </tspan><tspan class="st5">φ, θ, ψ</tspan></text>		</g>
+		<g id="shape6-23" v:mID="6" v:groupContext="shape" transform="translate(141.12,-190.8)">
+			<title>工作表.6</title>
+			<path d="M0 295.2 L12.06 295.2" class="st8"/>
+		</g>
+		<g id="shape7-29" v:mID="7" v:groupContext="shape" transform="translate(304.56,-190.8)">
+			<title>工作表.7</title>
+			<path d="M0 295.2 L14.22 295.2" class="st8"/>
+		</g>
+		<g id="shape8-34" v:mID="8" v:groupContext="shape" transform="translate(470.16,-190.8)">
+			<title>工作表.8</title>
+			<path d="M0 295.2 L14.22 295.2" class="st8"/>
+		</g>
+		<g id="shape9-39" v:mID="9" v:groupContext="shape" transform="translate(635.76,-190.8)">
+			<title>工作表.9</title>
+			<path d="M0 295.2 L19.26 295.2" class="st8"/>
+		</g>
+		<g id="shape10-44" v:mID="10" v:groupContext="shape" transform="translate(1026,142.56) rotate(90)">
+			<title>工作表.10</title>
+			<path d="M0 295.2 L86.4 295.2" class="st10"/>
+		</g>
+		<g id="shape11-47" v:mID="11" v:groupContext="shape" transform="translate(730.8,524.16) rotate(180)">
+			<title>工作表.11</title>
+			<path d="M0 295.2 L496.8 295.2" class="st10"/>
+		</g>
+		<g id="shape12-50" v:mID="12" v:groupContext="shape" transform="translate(-61.2,228.96) rotate(-90)">
+			<title>工作表.12</title>
+			<path d="M0 295.2 L73.26 295.2" class="st8"/>
+		</g>
+		<g id="shape13-55" v:mID="13" v:groupContext="shape" transform="translate(360,-26.64)">
+			<title>工作表.13</title>
+			<desc>位置 p 与姿态角 φ、θ、ψ 反馈</desc>
+			<v:textBlock v:margins="rect(4,4,4,4)"/>
+			<v:textRect cx="122.4" cy="280.08" width="244.8" height="30.24"/>
+			<rect x="0" y="264.96" width="244.8" height="30.24" class="st11"/>
+			<text x="57.53" y="283" class="st12" v:langID="2052"><v:paragraph v:horizAlign="1"/><v:tabList/>位置<tspan class="st5"> </tspan><tspan
+						class="st5">p </tspan>与姿态角<tspan class="st5"> </tspan><tspan class="st5">φ</tspan>、<tspan class="st5">θ</tspan>、<tspan
+						class="st5">ψ </tspan>反馈</text>		</g>
+	</g>
+</svg>

@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "status": "frozen",
+  "generated_utc": "2026-07-15T21:37:31.945070Z",
+  "report_docx": "A8 四旋翼无人机位姿控制系统设计优化仿真报告2.0.docx",
+  "report_docx_sha256": "BB70BAF844C0172B997E0E04FDC7906D2F09E163A3FE8D88BDA2B01E53CA6D10",
+  "report_pdf": "A8 四旋翼无人机位姿控制系统设计优化仿真报告2.0.pdf",
+  "report_pdf_sha256": "1E03A8FB54AA1D4397BB43C46E4F41DF78AAA935D67D4AFBE75F1606F7765FD3",
+  "pdf_pages": 53,
+  "numbered_figures": 28,
+  "numbered_tables": 26,
+  "word_table_objects": 33,
+  "word_equations": 24,
+  "automatic_toc_count": 1,
+  "embedded_images_are_reference_only": true
+}

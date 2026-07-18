@@ -1,0 +1,238 @@
+{
+  "schema_version": 2,
+  "generated_at": "2026-07-15T07:34:11.483Z",
+  "status": "passed",
+  "checks": {
+    "exclusive_write_root": "05_visuals",
+    "sysplorer_started": false,
+    "source_sets": {
+      "formal_main_raw": 32,
+      "v8_accepted_raw": 32
+    },
+    "source_hash_count": 64,
+    "static_asset_count": 3,
+    "gif_asset_count": 6,
+    "expected_dimensions_px": [
+      1280,
+      720
+    ],
+    "expected_frame_count": 36,
+    "expected_frame_delay_cs": 12,
+    "algorithm_label": "RA-GCA-CGHTE",
+    "language": "zh-CN",
+    "text_overflow_count": 0,
+    "text_overlap_count": 0,
+    "standard_encoder": true,
+    "pillow_report": "pillow_encoding_report.json"
+  },
+  "static": {
+    "typical": {
+      "width": 1280,
+      "height": 720,
+      "sampled_color_bins": 303,
+      "luminance_variance": 1490.6896147775624,
+      "text_layout": {
+        "text_count": 37,
+        "overflow": [],
+        "overlaps": []
+      }
+    },
+    "parameter": {
+      "width": 1280,
+      "height": 720,
+      "sampled_color_bins": 291,
+      "luminance_variance": 1704.1334873187443,
+      "text_layout": {
+        "text_count": 58,
+        "overflow": [],
+        "overlaps": []
+      }
+    },
+    "formation": {
+      "width": 1280,
+      "height": 720,
+      "sampled_color_bins": 307,
+      "luminance_variance": 1619.697473235523,
+      "text_layout": {
+        "text_count": 30,
+        "overflow": [],
+        "overlaps": []
+      }
+    }
+  },
+  "gif": {
+    "parameter_altitude": {
+      "width": 1280,
+      "height": 720,
+      "frame_count": 36,
+      "frame_delay_cs": 12,
+      "duration_s": 4.32,
+      "text_layout_samples": [
+        {
+          "frame": 0,
+          "text_count": 25,
+          "overflow": [],
+          "overlaps": []
+        },
+        {
+          "frame": 18,
+          "text_count": 25,
+          "overflow": [],
+          "overlaps": []
+        },
+        {
+          "frame": 35,
+          "text_count": 25,
+          "overflow": [],
+          "overlaps": []
+        }
+      ]
+    },
+    "parameter_scale": {
+      "width": 1280,
+      "height": 720,
+      "frame_count": 36,
+      "frame_delay_cs": 12,
+      "duration_s": 4.32,
+      "text_layout_samples": [
+        {
+          "frame": 0,
+          "text_count": 26,
+          "overflow": [],
+          "overlaps": []
+        },
+        {
+          "frame": 18,
+          "text_count": 26,
+          "overflow": [],
+          "overlaps": []
+        },
+        {
+          "frame": 35,
+          "text_count": 26,
+          "overflow": [],
+          "overlaps": []
+        }
+      ]
+    },
+    "formation_trajectory": {
+      "width": 1280,
+      "height": 720,
+      "frame_count": 36,
+      "frame_delay_cs": 12,
+      "duration_s": 4.32,
+      "text_layout_samples": [
+        {
+          "frame": 0,
+          "text_count": 19,
+          "overflow": [],
+          "overlaps": []
+        },
+        {
+          "frame": 18,
+          "text_count": 19,
+          "overflow": [],
+          "overlaps": []
+        },
+        {
+          "frame": 35,
+          "text_count": 19,
+          "overflow": [],
+          "overlaps": []
+        }
+      ]
+    },
+    "formation_distance": {
+      "width": 1280,
+      "height": 720,
+      "frame_count": 36,
+      "frame_delay_cs": 12,
+      "duration_s": 4.32,
+      "text_layout_samples": [
+        {
+          "frame": 0,
+          "text_count": 25,
+          "overflow": [],
+          "overlaps": []
+        },
+        {
+          "frame": 18,
+          "text_count": 25,
+          "overflow": [],
+          "overlaps": []
+        },
+        {
+          "frame": 35,
+          "text_count": 25,
+          "overflow": [],
+          "overlaps": []
+        }
+      ]
+    },
+    "cbf_geometry": {
+      "width": 1280,
+      "height": 720,
+      "frame_count": 36,
+      "frame_delay_cs": 12,
+      "duration_s": 4.32,
+      "text_layout_samples": [
+        {
+          "frame": 0,
+          "text_count": 19,
+          "overflow": [],
+          "overlaps": []
+        },
+        {
+          "frame": 18,
+          "text_count": 19,
+          "overflow": [],
+          "overlaps": []
+        },
+        {
+          "frame": 35,
+          "text_count": 19,
+          "overflow": [],
+          "overlaps": []
+        }
+      ]
+    },
+    "cbf_distance": {
+      "width": 1280,
+      "height": 720,
+      "frame_count": 36,
+      "frame_delay_cs": 12,
+      "duration_s": 4.32,
+      "text_layout_samples": [
+        {
+          "frame": 0,
+          "text_count": 25,
+          "overflow": [],
+          "overlaps": []
+        },
+        {
+          "frame": 18,
+          "text_count": 25,
+          "overflow": [],
+          "overlaps": []
+        },
+        {
+          "frame": 35,
+          "text_count": 25,
+          "overflow": [],
+          "overlaps": []
+        }
+      ]
+    }
+  },
+  "metric_cross_checks": {
+    "parameter_median_rmse_reduction_percent": 95.2732457585684,
+    "lift_minus_10_target_scale": 1.1111111111111112,
+    "lift_minus_10_scale_at_12s": 1.1109384245845455,
+    "formation_scene07b_minimum_distance_m": 0.8529542369908109,
+    "formation_scene07b_global_rmse_m": 0.028713635176544905,
+    "cbf_off_minimum_distance_m": 0.3831758291349348,
+    "cbf_on_minimum_distance_m": 0.6113274026131268,
+    "cbf_off_violation_seconds": 2.04,
+    "cbf_on_violation_seconds": 0
+  }
+}
