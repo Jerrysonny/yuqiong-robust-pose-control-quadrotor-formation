@@ -1,0 +1,380 @@
+{
+  "schema_version": "v936_j03_local_candidate_screen_v1",
+  "candidate_id": "v936-ARDG1-L06",
+  "numeric_version": 97406,
+  "parent_id": "v936-ARDG1-J03",
+  "parameters": {
+    "Kc": 0.8989438715289305,
+    "Cmax_nm": 0.0003295328449663131,
+    "Rmax_nm_per_sample": 4.195751028483854e-05
+  },
+  "scenarios": [
+    {
+      "scenario_id": "BODY_ROLL_POS",
+      "hard_passed": true,
+      "gates": {
+        "v914": {
+          "complete": true,
+          "passed": true,
+          "checks": {
+            "identity": true,
+            "feasibility_evidence_valid": true,
+            "allocation_residual_feasible_only": true,
+            "unexpected_clipping": true,
+            "torque_bounds": true,
+            "motor_q_bound": true,
+            "motor_abs_bound": true,
+            "motor_step_bound": true
+          },
+          "classification": "PASS",
+          "feasible_sample_count": 5001,
+          "infeasible_sample_count": 0,
+          "allocation_residual_feasible_abs_max": 5.66968347270926e-14,
+          "motor_step_abs_max": 0.596511505190982,
+          "motor_q_bound_excess": -3383.0572217953677
+        },
+        "v936-ARDG1-J03": {
+          "complete": true,
+          "passed": true,
+          "checks": {
+            "identity": true,
+            "feasibility_evidence_valid": true,
+            "allocation_residual_feasible_only": true,
+            "unexpected_clipping": true,
+            "torque_bounds": true,
+            "motor_q_bound": true,
+            "motor_abs_bound": true,
+            "motor_step_bound": true
+          },
+          "classification": "PASS",
+          "feasible_sample_count": 5001,
+          "infeasible_sample_count": 0,
+          "allocation_residual_feasible_abs_max": 6.632080185540515e-14,
+          "motor_step_abs_max": 0.596511505190982,
+          "motor_q_bound_excess": -3383.0572217953677
+        },
+        "v936-ARDG1-L06": {
+          "complete": true,
+          "passed": true,
+          "checks": {
+            "identity": true,
+            "feasibility_evidence_valid": true,
+            "allocation_residual_feasible_only": true,
+            "unexpected_clipping": true,
+            "torque_bounds": true,
+            "motor_q_bound": true,
+            "motor_abs_bound": true,
+            "motor_step_bound": true
+          },
+          "classification": "PASS",
+          "feasible_sample_count": 5001,
+          "infeasible_sample_count": 0,
+          "allocation_residual_feasible_abs_max": 6.611963590531333e-14,
+          "motor_step_abs_max": 0.596511505190982,
+          "motor_q_bound_excess": -3383.0572217953677
+        }
+      },
+      "behavior": {
+        "v936-ARDG1-J03": {
+          "available": true,
+          "evidence_complete": true,
+          "missing": [],
+          "torque_mode_max": 1.0,
+          "active_max": 1.0,
+          "blend_max": 1.0,
+          "correction_abs_max_nm": 0.0003295328,
+          "pre_event_strict_bypass": true,
+          "angular_causal_activation": true,
+          "nominal_strict_bypass": true,
+          "center_force_strict_bypass": true
+        },
+        "v936-ARDG1-L06": {
+          "available": true,
+          "evidence_complete": true,
+          "missing": [],
+          "torque_mode_max": 1.0,
+          "active_max": 1.0,
+          "blend_max": 1.0,
+          "correction_abs_max_nm": 0.0003295328,
+          "pre_event_strict_bypass": true,
+          "angular_causal_activation": true,
+          "nominal_strict_bypass": true,
+          "center_force_strict_bypass": true
+        }
+      },
+      "metrics": {
+        "v914": {
+          "attitude_iae": 0.02452125755168331,
+          "attitude_peak_rad": 0.029292037887896784,
+          "motor_tv_full": 8.25293999472302,
+          "motor_tv_event": 0.6536160941395632
+        },
+        "v936-ARDG1-J03": {
+          "attitude_iae": 0.01391725233440526,
+          "attitude_peak_rad": 0.018194070596005592,
+          "motor_tv_full": 8.525807702174145,
+          "motor_tv_event": 0.9265418565704202
+        },
+        "v936-ARDG1-L06": {
+          "attitude_iae": 0.013903151030139076,
+          "attitude_peak_rad": 0.018157513719114095,
+          "motor_tv_full": 8.525639752926832,
+          "motor_tv_event": 0.9263739843493966
+        }
+      },
+      "direct_effect_percent": {
+        "attitude_iae_vs_v914": 43.30163940068944,
+        "attitude_iae_vs_j03": 0.1013224731962638,
+        "motor_tv_full_vs_j03": 0.0019698925096583593,
+        "motor_tv_event_vs_j03": 0.018118147586449414
+      },
+      "provenance": {
+        "v914_raw": {
+          "path": "D:\\Users\\admin\\Desktop\\A8-\u56db\u65cb\u7ffc\u65e0\u4eba\u673a\u4f4d\u59ff\u63a7\u5236\u7cfb\u7edf\u8bbe\u8ba1\u4f18\u5316\\A8\u51b3\u8d5b\u9636\u6bb5\u5347\u7ea7\u7814\u53d1\\60_v936_ardg1_fast_qualification\\03_results\\fixed_l1_20260813\\BODY_ROLL_POS\\v914\\output\\raw.csv",
+          "sha256": "EA407EE723481D88107427B9F913E3430C4C1D15C3C2D0AC3F9C0FE517071F44",
+          "rows": 5001,
+          "columns": 67,
+          "schema_sha256": "A22850BC529875118BDE4466ACABA22D6E87DF7F854A57CC25D909201229DAB4"
+        },
+        "j03_raw": {
+          "path": "D:\\Users\\admin\\Desktop\\A8-\u56db\u65cb\u7ffc\u65e0\u4eba\u673a\u4f4d\u59ff\u63a7\u5236\u7cfb\u7edf\u8bbe\u8ba1\u4f18\u5316\\A8\u51b3\u8d5b\u9636\u6bb5\u5347\u7ea7\u7814\u53d1\\73_v936_ardg1_joint_parameter_optimization\\03_results\\lhs8_v2_20260814\\v936-ARDG1-J03\\BODY_ROLL_POS\\output\\raw.csv",
+          "sha256": "BAF2D2908C33F9EE79056BD93ABF80EC7BB0A646E65F094117CF7FA9987743DF",
+          "rows": 5001,
+          "columns": 67,
+          "schema_sha256": "A22850BC529875118BDE4466ACABA22D6E87DF7F854A57CC25D909201229DAB4"
+        },
+        "j03_diagnostics": {
+          "path": "D:\\Users\\admin\\Desktop\\A8-\u56db\u65cb\u7ffc\u65e0\u4eba\u673a\u4f4d\u59ff\u63a7\u5236\u7cfb\u7edf\u8bbe\u8ba1\u4f18\u5316\\A8\u51b3\u8d5b\u9636\u6bb5\u5347\u7ea7\u7814\u53d1\\73_v936_ardg1_joint_parameter_optimization\\03_results\\lhs8_v2_20260814\\v936-ARDG1-J03\\BODY_ROLL_POS\\output\\ardg1_diagnostics.csv",
+          "sha256": "B6E50302BBAA90D2D1FB8DA59ABEFD81FA944D153C33697D8926420A9AE701BA",
+          "rows": 5001,
+          "columns": 11,
+          "schema_sha256": "F030DD83CB804375A713B5184B645D65EBDA81BD494803DE75A8D8078564C0B5"
+        },
+        "candidate": {
+          "status": {
+            "path": "D:\\Users\\admin\\Desktop\\A8-\u56db\u65cb\u7ffc\u65e0\u4eba\u673a\u4f4d\u59ff\u63a7\u5236\u7cfb\u7edf\u8bbe\u8ba1\u4f18\u5316\\A8\u51b3\u8d5b\u9636\u6bb5\u5347\u7ea7\u7814\u53d1\\74_v936_ardg1_final_local_search\\03_results\\local8_retry_20260814T113552Z\\v936-ARDG1-L06\\BODY_ROLL_POS\\output\\execution_status.json",
+            "sha256": "9288A3972CE2DFDCE3685D3E1B07C14A47BC6A163979DC6FBBA02F4AD7BFB972",
+            "bytes": 1845
+          },
+          "raw": {
+            "path": "D:\\Users\\admin\\Desktop\\A8-\u56db\u65cb\u7ffc\u65e0\u4eba\u673a\u4f4d\u59ff\u63a7\u5236\u7cfb\u7edf\u8bbe\u8ba1\u4f18\u5316\\A8\u51b3\u8d5b\u9636\u6bb5\u5347\u7ea7\u7814\u53d1\\74_v936_ardg1_final_local_search\\03_results\\local8_retry_20260814T113552Z\\v936-ARDG1-L06\\BODY_ROLL_POS\\output\\raw.csv",
+            "sha256": "AD25944A278599263417CDCECFB3CC25A8CC999C7A364D6B5969841E70FD9531",
+            "rows": 5001,
+            "columns": 67,
+            "schema_sha256": "A22850BC529875118BDE4466ACABA22D6E87DF7F854A57CC25D909201229DAB4"
+          },
+          "diagnostics": {
+            "path": "D:\\Users\\admin\\Desktop\\A8-\u56db\u65cb\u7ffc\u65e0\u4eba\u673a\u4f4d\u59ff\u63a7\u5236\u7cfb\u7edf\u8bbe\u8ba1\u4f18\u5316\\A8\u51b3\u8d5b\u9636\u6bb5\u5347\u7ea7\u7814\u53d1\\74_v936_ardg1_final_local_search\\03_results\\local8_retry_20260814T113552Z\\v936-ARDG1-L06\\BODY_ROLL_POS\\output\\ardg1_diagnostics.csv",
+            "sha256": "894CC4B6115358F46B205E108E443FA2FEE67B10225844182EA741B4A8B5B3C7",
+            "rows": 5001,
+            "columns": 11,
+            "schema_sha256": "F030DD83CB804375A713B5184B645D65EBDA81BD494803DE75A8D8078564C0B5"
+          }
+        }
+      }
+    },
+    {
+      "scenario_id": "BODY_PITCH_NEG",
+      "hard_passed": true,
+      "gates": {
+        "v914": {
+          "complete": true,
+          "passed": true,
+          "checks": {
+            "identity": true,
+            "feasibility_evidence_valid": true,
+            "allocation_residual_feasible_only": true,
+            "unexpected_clipping": true,
+            "torque_bounds": true,
+            "motor_q_bound": true,
+            "motor_abs_bound": true,
+            "motor_step_bound": true
+          },
+          "classification": "PASS",
+          "feasible_sample_count": 5001,
+          "infeasible_sample_count": 0,
+          "allocation_residual_feasible_abs_max": 5.6698027376319136e-14,
+          "motor_step_abs_max": 0.596511506324946,
+          "motor_q_bound_excess": -3383.0572217953613
+        },
+        "v936-ARDG1-J03": {
+          "complete": true,
+          "passed": true,
+          "checks": {
+            "identity": true,
+            "feasibility_evidence_valid": true,
+            "allocation_residual_feasible_only": true,
+            "unexpected_clipping": true,
+            "torque_bounds": true,
+            "motor_q_bound": true,
+            "motor_abs_bound": true,
+            "motor_step_bound": true
+          },
+          "classification": "PASS",
+          "feasible_sample_count": 5001,
+          "infeasible_sample_count": 0,
+          "allocation_residual_feasible_abs_max": 6.631267031560642e-14,
+          "motor_step_abs_max": 0.596511506324946,
+          "motor_q_bound_excess": -3383.0572217953613
+        },
+        "v936-ARDG1-L06": {
+          "complete": true,
+          "passed": true,
+          "checks": {
+            "identity": true,
+            "feasibility_evidence_valid": true,
+            "allocation_residual_feasible_only": true,
+            "unexpected_clipping": true,
+            "torque_bounds": true,
+            "motor_q_bound": true,
+            "motor_abs_bound": true,
+            "motor_step_bound": true
+          },
+          "classification": "PASS",
+          "feasible_sample_count": 5001,
+          "infeasible_sample_count": 0,
+          "allocation_residual_feasible_abs_max": 6.611952739181953e-14,
+          "motor_step_abs_max": 0.596511506324946,
+          "motor_q_bound_excess": -3383.0572217953613
+        }
+      },
+      "behavior": {
+        "v936-ARDG1-J03": {
+          "available": true,
+          "evidence_complete": true,
+          "missing": [],
+          "torque_mode_max": 1.0,
+          "active_max": 1.0,
+          "blend_max": 1.0,
+          "correction_abs_max_nm": 0.0003295328,
+          "pre_event_strict_bypass": true,
+          "angular_causal_activation": true,
+          "nominal_strict_bypass": true,
+          "center_force_strict_bypass": true
+        },
+        "v936-ARDG1-L06": {
+          "available": true,
+          "evidence_complete": true,
+          "missing": [],
+          "torque_mode_max": 1.0,
+          "active_max": 1.0,
+          "blend_max": 1.0,
+          "correction_abs_max_nm": 0.0003295328,
+          "pre_event_strict_bypass": true,
+          "angular_causal_activation": true,
+          "nominal_strict_bypass": true,
+          "center_force_strict_bypass": true
+        }
+      },
+      "metrics": {
+        "v914": {
+          "attitude_iae": 0.024521259181268736,
+          "attitude_peak_rad": 0.029292043097732822,
+          "motor_tv_full": 8.252940211584374,
+          "motor_tv_event": 0.6536163168081401
+        },
+        "v936-ARDG1-J03": {
+          "attitude_iae": 0.013917255972560568,
+          "attitude_peak_rad": 0.018194070099004585,
+          "motor_tv_full": 8.52580666557785,
+          "motor_tv_event": 0.9265408284721062
+        },
+        "v936-ARDG1-L06": {
+          "attitude_iae": 0.013903155359895853,
+          "attitude_peak_rad": 0.018157513223257357,
+          "motor_tv_full": 8.525638654193042,
+          "motor_tv_event": 0.9263728928619024
+        }
+      },
+      "direct_effect_percent": {
+        "attitude_iae_vs_v914": 43.301625511481994,
+        "attitude_iae_vs_j03": 0.10131747732826288,
+        "motor_tv_full_vs_j03": 0.001970621565774926,
+        "motor_tv_event_vs_j03": 0.01812500917857179
+      },
+      "provenance": {
+        "v914_raw": {
+          "path": "D:\\Users\\admin\\Desktop\\A8-\u56db\u65cb\u7ffc\u65e0\u4eba\u673a\u4f4d\u59ff\u63a7\u5236\u7cfb\u7edf\u8bbe\u8ba1\u4f18\u5316\\A8\u51b3\u8d5b\u9636\u6bb5\u5347\u7ea7\u7814\u53d1\\60_v936_ardg1_fast_qualification\\03_results\\fixed_l1_20260813\\BODY_PITCH_NEG\\v914\\output\\raw.csv",
+          "sha256": "11EDA83B12CD1E80AB0A177D443D5ACAF3F5A30ED0F82884314B151CCDB1E4BA",
+          "rows": 5001,
+          "columns": 67,
+          "schema_sha256": "A22850BC529875118BDE4466ACABA22D6E87DF7F854A57CC25D909201229DAB4"
+        },
+        "j03_raw": {
+          "path": "D:\\Users\\admin\\Desktop\\A8-\u56db\u65cb\u7ffc\u65e0\u4eba\u673a\u4f4d\u59ff\u63a7\u5236\u7cfb\u7edf\u8bbe\u8ba1\u4f18\u5316\\A8\u51b3\u8d5b\u9636\u6bb5\u5347\u7ea7\u7814\u53d1\\73_v936_ardg1_joint_parameter_optimization\\03_results\\lhs8_v2_20260814\\v936-ARDG1-J03\\BODY_PITCH_NEG\\output\\raw.csv",
+          "sha256": "7F0C768D579EF307DB560A36F1BF3BC060C31FA10B050950DC667D8990719A6F",
+          "rows": 5001,
+          "columns": 67,
+          "schema_sha256": "A22850BC529875118BDE4466ACABA22D6E87DF7F854A57CC25D909201229DAB4"
+        },
+        "j03_diagnostics": {
+          "path": "D:\\Users\\admin\\Desktop\\A8-\u56db\u65cb\u7ffc\u65e0\u4eba\u673a\u4f4d\u59ff\u63a7\u5236\u7cfb\u7edf\u8bbe\u8ba1\u4f18\u5316\\A8\u51b3\u8d5b\u9636\u6bb5\u5347\u7ea7\u7814\u53d1\\73_v936_ardg1_joint_parameter_optimization\\03_results\\lhs8_v2_20260814\\v936-ARDG1-J03\\BODY_PITCH_NEG\\output\\ardg1_diagnostics.csv",
+          "sha256": "F201F2DC15E89B142DB37173D2605BE7D330159654A022EF746C2529604AB600",
+          "rows": 5001,
+          "columns": 11,
+          "schema_sha256": "F030DD83CB804375A713B5184B645D65EBDA81BD494803DE75A8D8078564C0B5"
+        },
+        "candidate": {
+          "status": {
+            "path": "D:\\Users\\admin\\Desktop\\A8-\u56db\u65cb\u7ffc\u65e0\u4eba\u673a\u4f4d\u59ff\u63a7\u5236\u7cfb\u7edf\u8bbe\u8ba1\u4f18\u5316\\A8\u51b3\u8d5b\u9636\u6bb5\u5347\u7ea7\u7814\u53d1\\74_v936_ardg1_final_local_search\\03_results\\local8_retry_20260814T113552Z\\v936-ARDG1-L06\\BODY_PITCH_NEG\\output\\execution_status.json",
+            "sha256": "1D98AF185AC22C3A39BBFF7780DEED24EEC3BC524B70F95180DE0CF7B447E2DF",
+            "bytes": 1850
+          },
+          "raw": {
+            "path": "D:\\Users\\admin\\Desktop\\A8-\u56db\u65cb\u7ffc\u65e0\u4eba\u673a\u4f4d\u59ff\u63a7\u5236\u7cfb\u7edf\u8bbe\u8ba1\u4f18\u5316\\A8\u51b3\u8d5b\u9636\u6bb5\u5347\u7ea7\u7814\u53d1\\74_v936_ardg1_final_local_search\\03_results\\local8_retry_20260814T113552Z\\v936-ARDG1-L06\\BODY_PITCH_NEG\\output\\raw.csv",
+            "sha256": "4676CE73F6D85405B3E4E2EA88190C1BD79941B5F2F79872D752E62838CB6AF5",
+            "rows": 5001,
+            "columns": 67,
+            "schema_sha256": "A22850BC529875118BDE4466ACABA22D6E87DF7F854A57CC25D909201229DAB4"
+          },
+          "diagnostics": {
+            "path": "D:\\Users\\admin\\Desktop\\A8-\u56db\u65cb\u7ffc\u65e0\u4eba\u673a\u4f4d\u59ff\u63a7\u5236\u7cfb\u7edf\u8bbe\u8ba1\u4f18\u5316\\A8\u51b3\u8d5b\u9636\u6bb5\u5347\u7ea7\u7814\u53d1\\74_v936_ardg1_final_local_search\\03_results\\local8_retry_20260814T113552Z\\v936-ARDG1-L06\\BODY_PITCH_NEG\\output\\ardg1_diagnostics.csv",
+            "sha256": "B032D120587C6324622B1EAED180C653CF30D5C3184F125FEBCEAA609ADC83B6",
+            "rows": 5001,
+            "columns": 11,
+            "schema_sha256": "F030DD83CB804375A713B5184B645D65EBDA81BD494803DE75A8D8078564C0B5"
+          }
+        }
+      }
+    }
+  ],
+  "aggregate": {
+    "hard_passed": true,
+    "v914": {
+      "attitude_iae": 0.04904251673295205,
+      "motor_tv_full": 16.505880206307395,
+      "motor_tv_event": 1.3072324109477034,
+      "worst_attitude_peak_rad": 0.029292043097732822
+    },
+    "v936-ARDG1-J03": {
+      "attitude_iae": 0.02783450830696583,
+      "motor_tv_full": 17.051614367751995,
+      "motor_tv_event": 1.8530826850425264,
+      "worst_attitude_peak_rad": 0.018194070596005592
+    },
+    "v936-ARDG1-L06": {
+      "attitude_iae": 0.02780630639003493,
+      "motor_tv_full": 17.051278407119874,
+      "motor_tv_event": 1.852746877211299,
+      "worst_attitude_peak_rad": 0.018157513719114095
+    },
+    "direct_effect_percent": {
+      "attitude_iae_vs_v914": 43.30163245608548,
+      "attitude_iae_vs_j03": 0.10131997526193061,
+      "motor_tv_full_vs_j03": 0.0019702570376944825,
+      "motor_tv_event_vs_j03": 0.01812157838060718
+    }
+  },
+  "objectives": {
+    "attitude_iae": 0.02780630639003493,
+    "motor_tv_full": 17.051278407119874,
+    "motor_tv_event": 1.852746877211299,
+    "worst_scene_attitude_degradation_vs_j03_percent": -0.10131747732826288
+  },
+  "champion_objectives": {
+    "attitude_iae": 0.02783450830696583,
+    "motor_tv_full": 17.051614367751995,
+    "motor_tv_event": 1.8530826850425264,
+    "worst_scene_attitude_degradation_vs_j03_percent": 0.0
+  }
+}

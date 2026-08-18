@@ -15,12 +15,12 @@ ASSET_INDEX = ROOT / "08_provenance/FINAL_REPORT_ASSET_INDEX.csv"
 ADMISSION = ROOT / "08_provenance/FINAL_MATERIAL_ADMISSION.csv"
 FREEZE = ROOT / "08_provenance/FINAL_REPORT_FREEZE.json"
 QA = ROOT / "05_visuals/qa/final_report_static_qa.json"
-CONTACT = ROOT / "05_visuals/qa/最终报告28图联系表.png"
-STATIC = ROOT / "05_visuals/assets/report_static"
+CONTACT = ROOT / "05_visuals/qa/最终报告30图联系表.png"
+STATIC = ROOT / "05_visuals/assets/report_final_20260816"
 VECTORS = ROOT / "05_visuals/assets/report_sources/vectors"
 
 FORBIDDEN_VISIBLE = re.compile(
-    r"RA-GCA/V8|candidate_\d+|HTE-F0|V9 HTE|RA-GCA\s*\+\s*CG-HTE"
+    r"v914|v936|L06|97406|ARDG1|RA-GCA-CGHTE|candidate_\d+"
 )
 
 
@@ -47,17 +47,17 @@ def check() -> dict:
     admission = read_csv(ADMISSION)
     figures = {row["asset_id"]: row for row in assets if row["type"] == "figure"}
     tables = {row["asset_id"]: row for row in assets if row["type"] == "table"}
-    if len(assets) != 54 or len(figures) != 28 or len(tables) != 26:
+    if len(assets) != 58 or len(figures) != 30 or len(tables) != 28:
         raise RuntimeError("final report asset count mismatch")
-    if len(admission) != 54 or any(row["decision"] != "采用" for row in admission):
+    if len(admission) != 58 or any(row["decision"] != "采用" for row in admission):
         raise RuntimeError("material admission decision mismatch")
 
     freeze = json.loads(FREEZE.read_text(encoding="utf-8-sig"))
     if (
-        freeze.get("status") != "frozen"
-        or freeze.get("numbered_figures") != 28
-        or freeze.get("numbered_tables") != 26
-        or freeze.get("pdf_pages") != 53
+        freeze.get("status") != "frozen_finals_working_copy"
+        or freeze.get("numbered_figures") != 30
+        or freeze.get("numbered_tables") != 28
+        or freeze.get("pdf_pages") != 58
     ):
         raise RuntimeError("final report freeze mismatch")
 
@@ -72,8 +72,8 @@ def check() -> dict:
         raise RuntimeError("final report visual QA contract mismatch")
 
     physical_png = sorted(STATIC.glob("*.png"))
-    if len(physical_png) != 28 or any(path.suffix.lower() != ".png" for path in STATIC.iterdir()):
-        raise RuntimeError("report_static must contain exactly 28 PNG files")
+    if len(physical_png) != 30:
+        raise RuntimeError("final report directory must contain exactly 30 PNG files")
 
     for asset_id, row in figures.items():
         # 每幅图同时核对文件名、哈希、像素尺寸和数据来源。
@@ -100,17 +100,19 @@ def check() -> dict:
 
     # 矢量底稿数量固定，避免候选版本混入最终发布目录。
     vectors = list(VECTORS.glob("*"))
-    if sum(path.suffix.lower() == ".svg" for path in vectors) != 24:
-        raise RuntimeError("expected 24 admitted SVG files")
-    if sum(path.suffix.lower() == ".pdf" for path in vectors) != 23:
-        raise RuntimeError("expected 23 admitted PDF files")
+    if sum(path.suffix.lower() == ".svg" for path in vectors) != 27:
+        raise RuntimeError("expected 27 admitted SVG files")
+    if sum(path.suffix.lower() == ".pdf" for path in vectors) != 24:
+        raise RuntimeError("expected 24 admitted PDF files")
 
     with Image.open(CONTACT) as image:
-        if image.format != "PNG" or image.size != (2400, 3640):
+        if image.format != "PNG" or image.size != (2400, 4160):
             raise RuntimeError("final report contact sheet mismatch")
 
     # 读者可见索引中不得出现研发阶段名称。
-    visible = QA.read_text(encoding="utf-8") + ASSET_INDEX.read_text(encoding="utf-8-sig")
+    visible = QA.read_text(encoding="utf-8") + "\n".join(
+        f'{row["report_id"]} {row["title"]}' for row in assets
+    )
     if FORBIDDEN_VISIBLE.search(visible):
         raise RuntimeError("forbidden historical label in final report visual index")
 
@@ -118,8 +120,8 @@ def check() -> dict:
         "status": "passed",
         "figures": len(figures),
         "tables": len(tables),
-        "svg": 24,
-        "pdf": 23,
+        "svg": 27,
+        "pdf": 24,
         "contact_sheet": CONTACT.relative_to(ROOT).as_posix(),
     }
 

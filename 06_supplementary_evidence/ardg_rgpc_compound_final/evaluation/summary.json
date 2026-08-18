@@ -1,0 +1,26 @@
+{
+  "schema_version": "ardg_rgpc_public_compound_summary_v1",
+  "algorithm": "ARDG-RGPC",
+  "case_count": 6,
+  "all_physical_pass": true,
+  "tracking_rmse_m": {
+    "min": 0.1906811607891593,
+    "max": 0.3154057068482338
+  },
+  "tracking_peak_m": {
+    "min": 1.0034730579781062,
+    "max": 1.3787183271734298
+  },
+  "disturbance_recovery_s": {
+    "min": 1.5599999999999987,
+    "max": 1.7399999999999984
+  },
+  "ardg_active_fraction": {
+    "min": 0.0619896683886019,
+    "max": 0.1239586804398533
+  },
+  "metrics_file": "compound_metrics.csv",
+  "metrics_source_sha256": "7FA711C92E22302627AD3FE5FA5D3CEA0D12E58BEFDC5E74DCE21C11C5CEF4FE",
+  "metrics_public_sha256": "7FA711C92E22302627AD3FE5FA5D3CEA0D12E58BEFDC5E74DCE21C11C5CEF4FE",
+  "source_summary_sha256": "4D5701D4EC364F2787875FA7539867B659F7C955E0715543C6F43E15871343B2"
+}

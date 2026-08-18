@@ -1,59 +1,47 @@
-# RA-GCA-CGHTE可视化素材
+# ARDG-RGPC可视化素材生成与验收
 
 ## 资产范围
 
 | 类型 | 数量 | 位置 | 用途 |
 |---|---:|---|---|
-| 发布静态图 | 3 | `assets/static` | 快速展示典型任务、参数鲁棒性和编队安全 |
-| 单主题GIF | 6 | `assets/gif` | 动态展示推力估计、队形变换和PP-CBF作用 |
-| 最终报告图 | 28 | `assets/report_static` | 与正式仿真报告图号逐项对应 |
-| 图件底稿 | 47 | `assets/report_sources/vectors` | 24张SVG和23张PDF |
+| 发布静态图 | 3 | `assets/static` | 典型任务、参数统计和编队安全展示 |
+| 单主题GIF | 6 | `assets/gif` | 参数响应、推力尺度、队形变换和PP-CBF动态展示 |
+| 最终报告图 | 30 | `assets/report_final_20260816` | 与正式仿真报告图号逐项对应 |
+| 图件底稿 | 51 | `assets/report_sources/vectors` | 27张SVG和24张PDF |
 
-最终报告另有26张编号表。表格数据或模型来源与28幅图统一登记在`08_provenance/FINAL_REPORT_ASSET_INDEX.csv`，不保存表格截图。
+最终报告另有28张编号表。图表数据或模型来源统一登记在`../08_provenance/FINAL_REPORT_ASSET_INDEX.csv`，不保存表格截图。
 
 ## 数据口径
 
-- 正式主算法32项raw：`06_supplementary_evidence/ra_gca_cg_hte_32_raw`。
-- 历史回归raw：`06_supplementary_evidence/ra_gca_v8_32_raw`，仅用于补充核对和工程回滚。
-- 报告结构化证据：`04_results/report_evidence`。
+- 正式主算法：`ARDG-RGPC`。
+- 报告结构化证据：`../04_results/report_evidence`。
+- 最终直接原始证据：`../06_supplementary_evidence`中的`ardg_rgpc_*_final`目录。
 - 最终图派生数据：`assets/report_sources/data`。
-- 正式算法身份：`MAIN_ALGORITHM.json`。
+- 正式算法身份：`../MAIN_ALGORITHM.json`。
 
-发布静态图和GIF由`generate_visuals.js`离线生成；最终报告图按冻结原图集中准入，不从Word嵌入媒体反向提取。Sysblock和Sysplorer结构图采用实际模型导出。
-
-## 生成环境
-
-生成器优先读取`A8_PYTHON`，其次读取`MWORKS_PYTHON`，随后查询Sysplorer 2026a注册表、标准安装目录和`PATH`。Python必须能够导入Pillow。Node依赖优先使用`PLAYWRIGHT_CORE_PATH`和`PNGJS_PATH`，也支持当前项目、`NODE_PATH`和全局npm目录；浏览器可通过`CHROME_PATH`指定。
-
-```powershell
-$env:A8_SOURCE_PACKAGE_ROOT = (Resolve-Path '..').Path
-$env:A8_PYTHON = '<可导入Pillow的python.exe完整路径>'
-node .\generate_visuals.js
-```
-
-尖括号内容需替换为本机实际路径。生成结果只写入隔离暂存区，不直接覆盖正式资产。
+所有公开主算法图件必须来自最终算法直接证据。官方PID、几何控制基线、CAP-ADRC和CP-INDI只在已登记的同场景比较中使用，不外推到未运行场景。
 
 ## 只读验收
 
 ```powershell
-$env:A8_SOURCE_PACKAGE_ROOT = (Resolve-Path '..').Path
-node .\verify_assets.js
-
-$Python = $env:MWORKS_PYTHON
+. ..\02_scripts\powershell\A8RuntimeResolver.ps1
+$Python = Resolve-A8MWorksPython
 & $Python -B .\verify_final_report_assets.py --check
+..\RUN_ALL.ps1 -Mode Precheck
 ```
 
 验收内容包括：
 
-- 3张发布静态图、6个GIF和28张最终报告图的数量与SHA256；
-- 28张报告图的尺寸、来源、生成入口和最终图号；
-- 64份raw的来源哈希；
-- GIF帧数、帧延迟和首中末帧；
-- 图件文字、裁切、遮挡和正式算法名称。
+- 3张发布静态图、6个GIF和30张最终报告图的数量、尺寸与SHA256；
+- 6个GIF的1280 x 720画布和36帧合同；
+- 30张报告图的来源、生成入口和最终图号；
+- 30幅图、28张表与58页报告冻结口径；
+- 对外算法名称、路径卫生和直接证据边界。
 
 ## QA文件
 
-- `qa/qa_report.json`：发布静态图和GIF验收结果。
-- `qa/pillow_encoding_report.json`：GIF编码与逐帧重读结果。
-- `qa/final_report_static_qa.json`：28张最终报告图的机器可读记录。
-- `qa/最终报告28图联系表.png`：最终报告图缩略总览。
+- `FINALS_VISUAL_REVISION_MANIFEST_20260816.json`：静态图、GIF、关键报告图及源数据的决赛生成与验收记录。
+- `qa/静态图联系表.png`：3张发布静态图总览。
+- `qa/GIF首中末帧联系表.png`：6个GIF的首帧、中帧和末帧总览。
+- `qa/final_report_static_qa.json`：30张最终报告图的机器可读记录。
+- `qa/最终报告30图联系表.png`：最终报告图缩略总览。

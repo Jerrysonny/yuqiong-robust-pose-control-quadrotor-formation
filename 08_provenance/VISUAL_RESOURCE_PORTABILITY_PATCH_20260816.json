@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "recorded_utc": "2026-08-16T09:07:10.4390073Z",
+  "reason": "Sysplorer simulation completed, but the 3D animation could not resolve bare STL and HSF file names outside the original development environment.",
+  "scope": "Visualization resource addressing only; controller, physical parameters, equations, scenarios, solver settings, and numerical evidence are unchanged.",
+  "official_model_sha256_before": "B39A8B23665A3B05CF3FAD406744021F0E65541A02D1EF052D2BD10BA7E76352",
+  "official_model_sha256_after": "E16DECED48CFFB9196AB014491C2BB27E7BE864A388E169EF4B775877B4B6658",
+  "changes": {
+    "portable_uri_references": 8,
+    "unique_mesh_files": 5,
+    "uri_prefix": "modelica://QuadrotorModel/Resources/Visualization/"
+  },
+  "resources": [
+    "DroneBlade.stl",
+    "Jichang1.stl",
+    "jijia.stl",
+    "QuadBody.hsf",
+    "QuadPropeller.hsf"
+  ],
+  "verification": {
+    "all_references_use_modelica_uri": true,
+    "all_referenced_files_exist_in_package": true,
+    "package_precheck_required_after_manifest_refresh": true
+  }
+}

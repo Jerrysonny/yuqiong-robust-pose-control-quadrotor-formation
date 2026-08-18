@@ -1,8 +1,7 @@
-algorithm_id,formal_name,role,default,controller_or_component,direct_evidence_boundary
-RA_GCA_CG_HTE,RA-GCA-CGHTE,formal_main_controller,true,A8FormalRAGCACGHTE_20260715,32 project regression scenes and 6 clean-session representatives
-OFFICIAL_PID,Official QuadrotorModel PID,official_baseline,false,QuadrotorModel.Blocks.Controller,official model plus independent standard-step wrappers
-RA_GCA_V8,RA-GCA/V8,comparison_and_rollback_only,false,A8FormalSO3V8PX4AllocV1A_20260712,32 paired project regression scenes
-RA_GCA_BASE,RA-GCA/Base,auxiliary_ablation,false,A8FormalSO3V1F_20260711,4 directly verified public scenes
-CAP_ADRC,CAP-ADRC,auxiliary_comparator,false,A8FormalADRCV11PX4AllocV1A_20260712,5 directly verified public single-UAV scenes
-CP_INDI,CP-INDI,auxiliary_comparator,false,A8FormalINDICommandProxyV1A_20260712,5 directly verified public single-UAV scenes
-PP_CBF,PP-CBF,independent_formation_safety_supervisor,false,A8FormalFormationPredictiveCBFV5C_20260712,three-UAV formation and close-crossing on/off comparison
+role,display_name,type,use
+main,ARDG-RGPC,proposed controller,formal submission algorithm
+baseline,Official PID,official controller,primary reference
+comparator,几何控制基线,geometric controller,method comparison
+comparator,CAP-ADRC,disturbance-rejection controller,method comparison
+comparator,CP-INDI,incremental controller,method comparison
+safety,PP-CBF,upper-level safety supervisor,formation safety

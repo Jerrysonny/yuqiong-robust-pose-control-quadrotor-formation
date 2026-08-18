@@ -1,0 +1,277 @@
+{
+  "schema_version": "ardg_rgpc_final_shared_assets_v1",
+  "public_algorithm_name": "ARDG-RGPC",
+  "figures": [
+    {
+      "figure_id": "A",
+      "outputs": [
+        "png/FIG_A_ARDG_RGPC_architecture.png",
+        "pdf/FIG_A_ARDG_RGPC_architecture.pdf"
+      ],
+      "metrics": {
+        "claim": "角残差判别、滞回守卫、受限补偿和安全旁路构成结构增量。"
+      }
+    },
+    {
+      "figure_id": "B",
+      "outputs": [
+        "png/FIG_B_angular_disturbance_comparison.png",
+        "pdf/FIG_B_angular_disturbance_comparison.pdf"
+      ],
+      "metrics": {
+        "window_s": [
+          8.0,
+          12.25
+        ],
+        "disturbance_window_s": [
+          8.0,
+          8.25
+        ],
+        "roll_iae_baseline_rad_s": 0.02452125755168331,
+        "roll_iae_ardg_rgpc_rad_s": 0.013903151030139074,
+        "roll_improvement_percent": 43.301639400689446,
+        "pitch_iae_baseline_rad_s": 0.024521259181268736,
+        "pitch_iae_ardg_rgpc_rad_s": 0.013903155359895855,
+        "pitch_improvement_percent": 43.30162551148199,
+        "average_improvement_percent": 43.30163245608571
+      }
+    },
+    {
+      "figure_id": "C",
+      "outputs": [
+        "png/FIG_C_scene06b_position_recovery.png",
+        "pdf/FIG_C_scene06b_position_recovery.pdf"
+      ],
+      "metrics": {
+        "window_s": [
+          0.0,
+          30.0
+        ],
+        "disturbance_windows_s": [
+          [
+            8.0,
+            8.5
+          ],
+          [
+            14.0,
+            15.0
+          ],
+          [
+            20.0,
+            22.0
+          ]
+        ],
+        "baseline_rmse_m": 0.29490376147342406,
+        "ardg_rgpc_rmse_m": 0.26947620491298047,
+        "improvement_percent": 8.622323578851693
+      }
+    },
+    {
+      "figure_id": "D",
+      "outputs": [
+        "png/FIG_D_regression18_summary.png",
+        "pdf/FIG_D_regression18_summary.pdf"
+      ],
+      "metrics": {
+        "improved": 1,
+        "degraded": 0,
+        "equivalent": 17,
+        "aggregate_motor_tv_improvement_percent": 0.3157795041931733,
+        "hard_gates_passed": true
+      }
+    },
+    {
+      "figure_id": "E",
+      "outputs": [
+        "png/FIG_E_parameter_optimization.png",
+        "pdf/FIG_E_parameter_optimization.pdf"
+      ],
+      "metrics": {
+        "joint_candidates": 14,
+        "local_candidates": 8,
+        "core_screening_runs": 44,
+        "final_parameters": {
+          "Kc": 0.8989438715289305,
+          "Cmax_nm": 0.0003295328449663131,
+          "Rmax_nm_per_sample": 4.195751028483854e-05
+        },
+        "weighted_sum_used": false,
+        "global_optimum_claimed": false
+      }
+    },
+    {
+      "figure_id": "F",
+      "outputs": [
+        "png/FIG_F_engineering_validation.png",
+        "pdf/FIG_F_engineering_validation.pdf"
+      ],
+      "metrics": {
+        "generated_files": 11,
+        "warmup_iterations": 10000,
+        "measured_iterations": 1000000,
+        "p99_ms": 0.0002,
+        "maximum_ms": 0.1476,
+        "dynamic_allocation_count": 0,
+        "safety_cases_passed": true
+      }
+    }
+  ],
+  "sources": [
+    {
+      "copy": "data/BODY_ROLL_POS_baseline.csv",
+      "bytes": 4966573,
+      "sha256": "EA407EE723481D88107427B9F913E3430C4C1D15C3C2D0AC3F9C0FE517071F44"
+    },
+    {
+      "copy": "data/BODY_ROLL_POS_ARDG-RGPC.csv",
+      "bytes": 4996523,
+      "sha256": "AD25944A278599263417CDCECFB3CC25A8CC999C7A364D6B5969841E70FD9531"
+    },
+    {
+      "copy": "data/BODY_ROLL_POS_ARDG-RGPC_diagnostics.csv",
+      "bytes": 610398,
+      "sha256": "894CC4B6115358F46B205E108E443FA2FEE67B10225844182EA741B4A8B5B3C7"
+    },
+    {
+      "copy": "data/BODY_PITCH_NEG_baseline.csv",
+      "bytes": 4890397,
+      "sha256": "11EDA83B12CD1E80AB0A177D443D5ACAF3F5A30ED0F82884314B151CCDB1E4BA"
+    },
+    {
+      "copy": "data/BODY_PITCH_NEG_ARDG-RGPC.csv",
+      "bytes": 4932675,
+      "sha256": "4676CE73F6D85405B3E4E2EA88190C1BD79941B5F2F79872D752E62838CB6AF5"
+    },
+    {
+      "copy": "data/BODY_PITCH_NEG_ARDG-RGPC_diagnostics.csv",
+      "bytes": 610749,
+      "sha256": "B032D120587C6324622B1EAED180C653CF30D5C3184F125FEBCEAA609ADC83B6"
+    },
+    {
+      "copy": "data/Scene06b_baseline.csv",
+      "bytes": 2676320,
+      "sha256": "BF89CBD3AE9BDDE4BB6A991C87A98853B1D310A79787B6E2F19668BC3FA02A1F"
+    },
+    {
+      "copy": "data/Scene06b_ARDG-RGPC.csv",
+      "bytes": 2692911,
+      "sha256": "88E7B506C55BDED8024F5C389FFC86282315FD0387534473B4831DAC7586332C"
+    },
+    {
+      "copy": "data/regression18_analysis.json",
+      "bytes": 77525,
+      "sha256": "4A146CF5D8BFEAF582866974849D24869DAC8E68CEABBADD844229132106B2CB"
+    },
+    {
+      "copy": "data/screen_analysis.json",
+      "bytes": 17523,
+      "sha256": "DA7A6A344C4844E39F95ECE86B88FF38B7AD85D69EC036D391EBBDD19DD6EC25"
+    },
+    {
+      "copy": "data/screen_summary.json",
+      "bytes": 14894,
+      "sha256": "9FA31C5FA8F93ED31724C456B878086AB1BB9F5CC9150749251D85377CABCC49"
+    },
+    {
+      "copy": "data/stage_a_campaign_summary.json",
+      "bytes": 21260,
+      "sha256": "BA51760801351B78C746B118A9035149317038C3C3222070A62EAA5FF8626C55"
+    },
+    {
+      "copy": "data/formal_wcet_adjudication.json",
+      "bytes": 3279,
+      "sha256": "2FB2DD2BA1E2B219BAC759C6C744FF4AB89D967187E16615AB062A95B3A28DD4"
+    },
+    {
+      "copy": "data/static_integration_adjudication.json",
+      "bytes": 3912,
+      "sha256": "2F8550F8CE0E4E6ABB0DFD271C1E7397A794F60949C25B7BF9F989E5FBF6B282"
+    },
+    {
+      "copy": "data/codegen_completion.json",
+      "bytes": 4852,
+      "sha256": "8B395BF491EC211382258124CD0D94E77AD0E7D3559FAC933A615D578941DCB6"
+    }
+  ],
+  "outputs": [
+    {
+      "figure_id": "A",
+      "path": "png/FIG_A_ARDG_RGPC_architecture.png",
+      "bytes": 309092,
+      "sha256": "DBA6841DA298809F30E42E5FE31165F6ECD827CDBE541E49002AA86FB451B414"
+    },
+    {
+      "figure_id": "A",
+      "path": "pdf/FIG_A_ARDG_RGPC_architecture.pdf",
+      "bytes": 74293,
+      "sha256": "3BE19BB88A13C98B44860F9E0A44CD428D19E7653C5E93FC4B82805434D8C716"
+    },
+    {
+      "figure_id": "B",
+      "path": "png/FIG_B_angular_disturbance_comparison.png",
+      "bytes": 294078,
+      "sha256": "139909D2B9170BAC7BE0690C8E1DC5F5C8DCAB878977CE8A1B643320CC9A3142"
+    },
+    {
+      "figure_id": "B",
+      "path": "pdf/FIG_B_angular_disturbance_comparison.pdf",
+      "bytes": 52672,
+      "sha256": "F0EC078C420C36D0ACCEC50B4A698ADF1D36CCF9315912613B4E89E81AF5A95B"
+    },
+    {
+      "figure_id": "C",
+      "path": "png/FIG_C_scene06b_position_recovery.png",
+      "bytes": 201556,
+      "sha256": "1A92635F7BAC415CB62F01058911CF5A967196D152CE9378D3B638DA97CA5DAD"
+    },
+    {
+      "figure_id": "C",
+      "path": "pdf/FIG_C_scene06b_position_recovery.pdf",
+      "bytes": 33735,
+      "sha256": "FDA261384052F06FDED697E93C3A7367ED643854B7FA6016798FA2349C8F340A"
+    },
+    {
+      "figure_id": "D",
+      "path": "png/FIG_D_regression18_summary.png",
+      "bytes": 93941,
+      "sha256": "910FDE499AFA31DB2C6EFE2C370A53C84BC37F0C0D3F76392DB8470464BB6E1D"
+    },
+    {
+      "figure_id": "D",
+      "path": "pdf/FIG_D_regression18_summary.pdf",
+      "bytes": 29087,
+      "sha256": "62FF4C88329FB102E8983E09261D955F5BCCFA481D8CEF596AAE01B847F16F97"
+    },
+    {
+      "figure_id": "E",
+      "path": "png/FIG_E_parameter_optimization.png",
+      "bytes": 265768,
+      "sha256": "152740202B9428164F9B894634B35AD2FFA51A232F437C9BF57B9C7CEB75C319"
+    },
+    {
+      "figure_id": "E",
+      "path": "pdf/FIG_E_parameter_optimization.pdf",
+      "bytes": 43315,
+      "sha256": "38953769E8B6802F2415E182EF505F9EA220433BB577C89F8158F5FC419C2FB9"
+    },
+    {
+      "figure_id": "F",
+      "path": "png/FIG_F_engineering_validation.png",
+      "bytes": 268098,
+      "sha256": "16761560CF9C6D28476C98F7A4BF226B2986A4AD2F509E8B92DC1503DBA47CE6"
+    },
+    {
+      "figure_id": "F",
+      "path": "pdf/FIG_F_engineering_validation.pdf",
+      "bytes": 70140,
+      "sha256": "FA23DCF30E03F47C18DCD96949539970F8758147707BB9F5C98365C9BD126A5E"
+    },
+    {
+      "figure_id": "QA",
+      "path": "qa/FIG_A_F_contact_sheet.png",
+      "bytes": 465017,
+      "sha256": "D9F4A59D6186E9DF0303D0AE29C10917C680B9AA4F36132BE702E6709FABC1CD"
+    }
+  ],
+  "usage_rule": "Reports, developer documentation, slides and videos must reuse these outputs and must not recalculate public metrics independently."
+}

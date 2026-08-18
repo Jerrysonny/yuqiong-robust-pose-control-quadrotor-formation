@@ -1,0 +1,88 @@
+{
+  "schema_version": 1,
+  "role": "finals report round-2 figure revision",
+  "public_algorithm": "ARDG-RGPC",
+  "source_root": "驭穹稳控_决赛提交包候选_20260816",
+  "outputs": [
+    {
+      "path": "FIG_3-1.png",
+      "sha256": "A94D76DD0195DD8DC69450C695CF96E5A0E4D7A12E4858EE9301A40EBBF47FB7",
+      "bytes": 415762
+    },
+    {
+      "path": "FIG_3-1.pdf",
+      "sha256": "123899F530D857236422A0BD80269C8A79E3BE97BA7AD684369F216C7D39C180",
+      "bytes": 84870
+    },
+    {
+      "path": "FIG_3-1.svg",
+      "sha256": "D5963E64499643EF7619DBEE111FD066E2819CF60CD5F1DC84D8292303A2C246",
+      "bytes": 24811
+    },
+    {
+      "path": "FIG_4-1.png",
+      "sha256": "83C25AFCE1781A27D0C63814C2BB9805AD40DE1E7058760FEC709A7628D68944",
+      "bytes": 362476
+    },
+    {
+      "path": "FIG_4-1.pdf",
+      "sha256": "FB0D12600D48D0074BF7691BA653B2C0DC7276F6EE974F9F5B2A0C38B7C9E844",
+      "bytes": 56051
+    },
+    {
+      "path": "FIG_4-1.svg",
+      "sha256": "3DCD6DA5125ED946B1FF46A1C73EF2A8DD81C4484695D945A0F66EF8CAB457D0",
+      "bytes": 23415
+    },
+    {
+      "path": "FIG_6-5.png",
+      "sha256": "76B6FDEC8C4C7A7460D22036DF590EF110B0AF36FE9C7C47F60BF83757B94097",
+      "bytes": 397462
+    },
+    {
+      "path": "FIG_6-5.pdf",
+      "sha256": "329EB0B6105451FEF069F87D31FA878164D844E250138D7412BEB34E0E4A53B6",
+      "bytes": 56918
+    },
+    {
+      "path": "FIG_6-5.svg",
+      "sha256": "7906AB5B72E4112C9C38C5DBBE537532211B177A26B5AE9863B2D7BA9E7959DE",
+      "bytes": 61634
+    },
+    {
+      "path": "FIG_6-5__paired_peak_results.csv",
+      "sha256": "8E5A92CB46DEC874048DEF736AF02BCF43974615908883313EEE5DFB876897F2",
+      "bytes": 3770
+    },
+    {
+      "path": "FIG_C-1.png",
+      "sha256": "A8CBD89625528ECC112F20B3218D1304D9D62D26C5F196E1D12FEB5DF5254506",
+      "bytes": 271317
+    },
+    {
+      "path": "FIG_C-1.pdf",
+      "sha256": "ED2484031CE0F8EB86120DAA0C41DF6D46F67C04669D467014996C035FC1AF8F",
+      "bytes": 69287
+    },
+    {
+      "path": "FIG_C-1.svg",
+      "sha256": "DDAF806CA5E001DD6F6397CF496DC01C3DE16B5FB465FD13E1E82C362ACB222A",
+      "bytes": 13050
+    },
+    {
+      "path": "FIG_C-2.png",
+      "sha256": "6EBB76067DBE4FCC8686EDE402EC90E720AFC71EE5E9ECC6CE4758ADA519F892",
+      "bytes": 333984
+    },
+    {
+      "path": "FIG_C-2.pdf",
+      "sha256": "3B866EB27D3B69948342423E1D463B75CABB1B5FDCBC3C3DBBA784E08E3E93DB",
+      "bytes": 72247
+    },
+    {
+      "path": "FIG_C-2.svg",
+      "sha256": "DE269511CACF0AF47815222A69A76ADCD55E19F22751590510F8036213B846E1",
+      "bytes": 15553
+    }
+  ]
+}

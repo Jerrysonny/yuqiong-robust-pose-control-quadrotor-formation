@@ -1,9 +1,13 @@
 {
-  "schema_version": 1,
-  "root_name": "A8比赛作品完整源文件_20260716_可移植增强版",
-  "formal_algorithm": "RA-GCA-CGHTE",
-  "file_count_observed": 316,
-  "manifest_verified": true,
-  "pass": true,
-  "errors": []
+  "schema_version": 2,
+  "generated_utc": "2026-08-17T05:58:47Z",
+  "status": "passed",
+  "algorithm": "ARDG-RGPC",
+  "report_hashes_verified": true,
+  "public_assets_verified": true,
+  "direct_evidence_packaged": true,
+  "visual_resource_uris_verified": true,
+  "manual_gui_scene_times_verified": true,
+  "historical_working_directories_excluded": true,
+  "user_manual_packaged": true
 }

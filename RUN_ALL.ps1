@@ -4,6 +4,8 @@ param(
     [string]$Mode = 'Precheck',
     [int]$Port = 49152,
     [string[]]$Scene = @(),
+    [ValidateSet('finals_core', 'regression18', 'supplementary', 'full_registered')]
+    [string]$Suite = 'finals_core',
     [string]$Output
 )
 
@@ -37,7 +39,7 @@ function Resolve-ExternalOutput {
 }
 
 function Invoke-Simulate([string]$Python, [string]$OutputPath) {
-    # 场景参数逐项转发，未指定时由主运行器展开默认回归集。
+    # 显式场景优先；未指定时运行经批准的20项决赛核心套件。
     $arguments = @(
         '-B',
         (Join-Path $Root '02_scripts/sysplorer/run_main_controller.py'),
@@ -47,6 +49,9 @@ function Invoke-Simulate([string]$Python, [string]$OutputPath) {
     )
     foreach ($item in $Scene) {
         $arguments += @('--scene', $item)
+    }
+    if ($Scene.Count -eq 0) {
+        $arguments += @('--scene', $Suite)
     }
     & $Python @arguments
     if ($LASTEXITCODE -ne 0) { throw 'main-controller simulation failed' }

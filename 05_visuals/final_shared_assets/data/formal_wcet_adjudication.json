@@ -1,0 +1,79 @@
+{
+  "schema_version": "v936_ardg1_l06_t109_qpc_adjudication_result_v1",
+  "candidate_id": "v936-ARDG1-L06",
+  "formal_alias_if_approved": "v936-ARDG1-FINAL",
+  "numeric_identity": 97406,
+  "status": "FORMAL_PASS",
+  "adjudication_type": "CORRECTED_BOOLEAN_POLARITY_OVER_IMMUTABLE_T108_RAW_EVIDENCE",
+  "source_run": "T108",
+  "source_run_status_retained": "FORMAL_FAIL",
+  "qpc_rerun": false,
+  "clock": {
+    "name": "QueryPerformanceCounter",
+    "frequency_hz": 10000000
+  },
+  "warmup_iterations": 10000,
+  "measured_iterations": 1000000,
+  "nonpositive_sample_count": 0,
+  "statistics": {
+    "minimum_ms": 0.0001,
+    "p50_ms": 0.0001,
+    "p95_ms": 0.0002,
+    "p99_ms": 0.0002,
+    "maximum_ms": 0.1476
+  },
+  "dynamic_allocation_count": 0,
+  "output_checksum": 9410272592740688630,
+  "checks": {
+    "contract_identity": true,
+    "input_manifest_integrity": true,
+    "build_manifest_integrity": true,
+    "clock": true,
+    "frequency_positive": true,
+    "step_symbol": true,
+    "warmup_iterations": true,
+    "measured_iterations": true,
+    "all_samples_positive": true,
+    "output_checksum_equal": true,
+    "zero_dynamic_allocation": true,
+    "p99_within_contract": true,
+    "maximum_within_contract": true,
+    "frozen_inputs_unchanged": true,
+    "validation_set_untouched": true,
+    "holdout_set_untouched": true,
+    "closed_loop_scenarios_not_run": true,
+    "legacy_steady_clock_preserved": true,
+    "t108_failure_is_exact_polarity_bug": true,
+    "t108_preserved": true,
+    "qpc_not_rerun": true
+  },
+  "t108_false_check_keys": [
+    "frozen_inputs_modified",
+    "holdout_set_touched",
+    "validation_set_touched"
+  ],
+  "identity": {
+    "contract_sha256": "F5956F491128545F4BE155EF5D7D3F4BBEDBAB5F5E640C587B60FD490107AEA9",
+    "analyzer_sha256": "E4B122320B67CE6FCFDA64BCAE49A25DD38019D8623A28A3D4077ABEDEAC2D91",
+    "t108_contract_sha256": "641113D190D9566981788B87CD04412FA2D3291C859296F7E38E32FDD4CF2E02",
+    "t108_input_manifest_sha256": "7C9AD431DA7CE0ABC0D7B0ADA990E982E47657851BE926EEBC02DB24AC2BD577",
+    "t108_build_manifest_sha256": "1160254C564459360477A105F069B22168FD06E6FF68B85E5AEBE5C75B254AF1",
+    "t108_execution_metadata_sha256": "CCD606342F6BB7A84F474538C95F5E8BF9754419C52E877DF276833A1B571103",
+    "t108_qpc_samples_sha256": "2E3F73B0E7755019909A1507C295AE4A556791868BBA45377D99DE4EBAD701FA",
+    "t108_qpc_runtime_sha256": "5F159180E3726A194527187F659575879C1C3F3A1ED28CE3549907EF39668F85",
+    "t108_allocation_samples_sha256": "158881F8B2095C54E07700FC6320154E7E9B4919104476E8B98928F20A1895DF",
+    "t108_allocation_runtime_sha256": "15E3D73F980CD24ABD3018E6C6707223788DED054ED1781DB11C1DE638B48CDB",
+    "t108_failed_result_sha256": "89077F503ADC1A3133126E047DF2680B94596C0D43D040FC63AA09B9D2CA92C8",
+    "t108_failure_record_sha256": "CF8A42AE3792FBEA96FCE6AE4EC051CF07B0C02257BCB8F63CE418E4362AD470"
+  },
+  "boundaries": {
+    "t108_overwritten": false,
+    "parameters_changed": false,
+    "stage73_modified": false,
+    "closed_loop_scenarios_run": false,
+    "validation_set_touched": false,
+    "holdout_set_touched": false,
+    "legacy_steady_clock_status": "INCOMPLETE"
+  },
+  "formal_replacement_decision_may_proceed": true
+}

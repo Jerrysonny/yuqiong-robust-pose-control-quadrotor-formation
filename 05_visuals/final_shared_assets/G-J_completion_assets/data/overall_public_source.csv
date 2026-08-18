@@ -1,0 +1,7 @@
+metric,value_percent
+random_parameter_rmse,87.63445093354689
+angular_attitude_iae,43.30163245608571
+scene06b_position_rmse,8.622323578851693
+angular_full_tv,3.304266079697249
+angular_event_tv,41.73048814388822
+regression18_aggregate_tv,-0.3157795041931733

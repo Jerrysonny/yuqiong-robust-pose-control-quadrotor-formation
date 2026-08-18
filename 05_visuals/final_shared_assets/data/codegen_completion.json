@@ -1,0 +1,121 @@
+{
+  "schema_version": "v936_ardg1_l06_codegen_completion_v1",
+  "task_id": "T107",
+  "completed_utc": "2026-08-14T12:06:34.370454Z",
+  "status": "PASS",
+  "candidate_id": "v936-ARDG1-L06",
+  "formal_alias_if_approved": "v936-ARDG1-FINAL",
+  "numeric_identity": 97406,
+  "parameters": {
+    "Kc": 0.8989438715289305,
+    "Cmax_nm": 0.0003295328449663131,
+    "Rmax_nm_per_sample": 0.00004195751028483854
+  },
+  "inputs": {
+    "contract_path": "00_protocol/l06_final_double_codegen_contract_v1.json",
+    "contract_sha256": "1E7169520AE312642562CE2164540C26D1A89FB8AE88EA4FB307D7626DFC417B",
+    "executor_path": "02_scripts/execute_l06_final_double_codegen.py",
+    "executor_sha256": "8201278365A792F40A12C31A9F1D090494D7844EA9D8EF01C29B4C0BA145B767",
+    "registrar_path": "02_scripts/register_l06_codegen_contract.py",
+    "registrar_sha256": "54E2163363E14BA691B544C17ACDF589C4BF08825EAE461133B118C4E55B223E",
+    "frozen_model_path": "01_models/sysblock_sameclass/v936-ARDG1-L06/A8FormalRAGCACGHTE_20260715.mo",
+    "frozen_model_sha256": "9C0E784EEA14687C26F9CAE9BC3FBDC9F546492659C56CF12E49BA2C80F7FE0F"
+  },
+  "execution": {
+    "status_path": "03_results/t106_l06_codegen_20260814T120624Z/execution_status.json",
+    "status_sha256": "92E21DEA0B80E70AB08C7E7BFE51A5A7C0F7DFDA3876C75E8C58AAF46BD4C59F",
+    "stdout_log_path": "05_evidence/T106_l06_codegen_20260814T120624Z.stdout.log",
+    "stdout_log_sha256": "C43C07380CEECAFC6F7E7326D1171A28215D80A6C18D2D7B4D6C3E048172AE4A",
+    "stderr_log_path": "05_evidence/T106_l06_codegen_20260814T120624Z.stderr.log",
+    "stderr_log_sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+    "official_api": "mworks.sysplorer",
+    "generated_real_as_float": false,
+    "original_real_as_float": true,
+    "options_restored": true,
+    "task_class_unloaded": true,
+    "session_pid_before": 5908,
+    "session_pid_after": 5908,
+    "session_retained": true,
+    "generated_source_file_count": 3,
+    "generated_header_file_count": 5,
+    "generated_file_count": 11
+  },
+  "snapshot_audit": {
+    "canonical_source_pre_sha256": "9C0E784EEA14687C26F9CAE9BC3FBDC9F546492659C56CF12E49BA2C80F7FE0F",
+    "canonical_source_post_sha256": "9C0E784EEA14687C26F9CAE9BC3FBDC9F546492659C56CF12E49BA2C80F7FE0F",
+    "disposable_snapshot_post_sha256": "CDC06F7F5BB52B2A1523CE87D9BDA259B1DF175BC0B674D2E96D473A5CA8EB3F",
+    "changed_line_numbers": [
+      6
+    ],
+    "classification": "OFFICIAL_CODEGEN_ANNOTATION_SERIALIZATION_ONLY",
+    "accepted": true
+  },
+  "generated_root": "03_results/t106_l06_codegen_20260814T120624Z/generated/V936_ARDG1_L06_FINAL_DOUBLE_V1/A8FormalRAGCACGHTE_20260715",
+  "generated_files": [
+    {
+      "name": "A8FormalRAGCACGHTE_20260715.c",
+      "bytes": 70125,
+      "sha256": "7033E7E59C62F305D4F0E9951CC85352DC8D9A4888145D756113EA1EDAB53E4C"
+    },
+    {
+      "name": "A8FormalRAGCACGHTE_20260715.h",
+      "bytes": 1744,
+      "sha256": "EDF6DD72EB53EBD74F4413E9C225FA38D6DD3E5B97AAD5A8E699FA8D65A3E9A8"
+    },
+    {
+      "name": "A8FormalRAGCACGHTE_20260715_data.c",
+      "bytes": 1015,
+      "sha256": "B7B858E8B556C9922D5802F6CDD8162F6FABC1A8CB1B194091CED60599961278"
+    },
+    {
+      "name": "A8FormalRAGCACGHTE_20260715_extern_include.h",
+      "bytes": 860,
+      "sha256": "8A33E008336C52D7204517FCB54A4008842C7B7EDA768E09CFAB2E865AD5D1C5"
+    },
+    {
+      "name": "A8FormalRAGCACGHTE_20260715_private.h",
+      "bytes": 18503,
+      "sha256": "A09414D8BE7CA78C9596379AD821E084A50CFE51FEBEB296EBC745702D0D24E6"
+    },
+    {
+      "name": "ExternalCResource.json",
+      "bytes": 122,
+      "sha256": "449013D35720E489E35DED33FB9BE9678388C140D2F8C17593375ABD1811DFBB"
+    },
+    {
+      "name": "ExternalResources.xml",
+      "bytes": 314,
+      "sha256": "3427008985BF73B85CA22503D77A5D11F5CE5F9FC0579EA7F89B004F53A01CC5"
+    },
+    {
+      "name": "motrace.json",
+      "bytes": 1930876,
+      "sha256": "83821FB82017D52094682165CB1A703F72AEF6830CBD99CA8F94F517642162AE"
+    },
+    {
+      "name": "mwb_main.c",
+      "bytes": 2035,
+      "sha256": "BAE03295363BD19801F953D79CDFFF031183145597533F08756081BD062C552B"
+    },
+    {
+      "name": "mwb_runtime.h",
+      "bytes": 842,
+      "sha256": "E657050F984927BFC673511999B7E2B08D5121AD703027AF2567C8C0F210EEBB"
+    },
+    {
+      "name": "mwb_types.h",
+      "bytes": 1874,
+      "sha256": "A9DF533E93495721DD830F1E0961B0B2A6EEEAB76563B84A37ECD89B2E7603EE"
+    }
+  ],
+  "boundaries": {
+    "closed_loop_scenarios_run": false,
+    "parameters_changed": false,
+    "stage73_modified": false,
+    "validation_set_touched": false,
+    "holdout_set_touched": false,
+    "wcet_claimed": false,
+    "zero_allocation_claimed": false
+  },
+  "next_action": "Prospectively register and execute QPC WCET and measured-step zero-allocation checks for the exact T106 generated L06 Step function."
+}

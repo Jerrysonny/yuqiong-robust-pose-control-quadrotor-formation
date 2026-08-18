@@ -7,7 +7,7 @@ function usage(stream=stdout)
     println(stream, "usage: julia-ty run_campaign_evaluation.jl \\")
     println(stream, "  --v8-root PATH --formal-root PATH --output ABSOLUTE_PATH \\")
     println(stream, "  [--config PATH] [--formal-controller-id ID] \\")
-    println(stream, "  [--formal-diagnostic-version 914] [--case CASE] [--allow-partial]")
+    println(stream, "  [--formal-diagnostic-version 97406] [--case CASE] [--allow-partial]")
 end
 
 function require_value(arguments, index, option)
@@ -22,7 +22,7 @@ function parse_arguments(arguments)
     workspace = dirname(dirname(@__DIR__))
     options = Dict{String,Any}(
         "config" => joinpath(workspace, "config", "campaign.toml"),
-        "hte_controller_id" => "RA-GCA-CGHTE", "hte_version" => 914,
+        "hte_controller_id" => "ARDG-RGPC", "hte_version" => 97406,
         "cases" => String[], "allow_partial" => false, "help" => false,
     )
     index = 1

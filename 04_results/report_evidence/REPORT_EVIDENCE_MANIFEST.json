@@ -1,137 +1,271 @@
 {
-  "schema_version": 1,
-  "formal_algorithm": "RA-GCA-CGHTE",
-  "scope": "report_evidence_layer",
-  "generated_file_count_excluding_manifest": 13,
-  "manifest_self_hash_included": false,
-  "verified_raw_sha256_count": 64,
-  "inputs": [
-    {
-      "path": "00_START_HERE/ALGORITHM_REGISTRY.csv",
-      "sha256": "6EE8A7C55E6DE4544C4F18ABAB8ED95E23BDBEB97F909F3A878941750ED8E5F1"
-    },
-    {
-      "path": "00_START_HERE/SCENE_INDEX.csv",
-      "sha256": "9FAF2A4749AA0700EFE7E31F1476C676A1CC689A6990380024C56F89404445B3"
-    },
-    {
-      "path": "02_scripts/evaluation/build_report_evidence.py",
-      "sha256": "9BCFCE0ECF26989E7F569BD0D2193BCF9F3D1C108FFC6D70F77C4A3EFBBACE10"
-    },
-    {
-      "path": "06_supplementary_evidence/RAW_MANIFEST.json",
-      "sha256": "94294D1749D3F5C80C93CEF67DFA7A15EAC3EECC0911137B0568B68C352F782D"
-    },
-    {
-      "path": "06_supplementary_evidence/campaign_cases.csv",
-      "sha256": "1D92A601936059D281834CB1A23689F4B31F8CD4C42F299882089B063E7BBBAF"
-    },
-    {
-      "path": "06_supplementary_evidence/campaign_gates.csv",
-      "sha256": "C762582251608D2A63514553FDA0965E0181B50BA33F12AE9C2C8A5A9DFB5E85"
-    },
-    {
-      "path": "06_supplementary_evidence/campaign_pairs.csv",
-      "sha256": "4AD23C57B025024862075E1F86A97BC56D7072294FC0AD8E37B08DF41013A49F"
-    },
-    {
-      "path": "RECOMPUTE_REPORT_EVIDENCE.ps1",
-      "sha256": "658F45425273208AE67EE93B7617A93C89E987AF716F16977CE7E2451BF4F01B"
-    },
-    {
-      "path": "04_results/report_evidence/source_snapshots/chapter6_metrics_normalized.json",
-      "sha256": "23C060D7E9EDC2E8712D3B3DFC13FF745F72E3973A383EA50F2682CDEC6183BF"
-    },
-    {
-      "path": "04_results/report_evidence/source_snapshots/compound_stress_formal_algorithm.csv",
-      "sha256": "027E3C2F62887DEA965D8809EE1AD3862984ED8A2AD95B2897CE26C5DAB22FF4"
-    }
-  ],
-  "files": [
+  "schema_version": 3,
+  "formal_algorithm": "ARDG-RGPC",
+  "status": "frozen_finals_public_report_evidence",
+  "scope": "finals_report_and_shared_materials",
+  "generated_files": [
     {
       "path": "01_five_controller_scene_coverage.csv",
-      "size": 1731,
-      "sha256": "090B052D56E29A4D81EFB92B8191CE7C4434E70538AF72363A7E73A6EDC929DB"
+      "bytes": 1149,
+      "sha256": "26C66E1E432F400FD30A17DA49D50763BBB7B711F49304BF8FD318C9248E4DEB"
     },
     {
       "path": "02_standard_step_pid_vs_main.csv",
-      "size": 827,
-      "sha256": "4139CD3B2D59417A57357C57788E6F64A831F4A3B51562A1517759DFCC88F81C"
+      "bytes": 1183,
+      "sha256": "CE7996FF76749E4DE10A7F717736D040DE68BE1FCFB99C61CD5DE46B61C71EF6"
     },
     {
       "path": "03_five_controller_common_scenes.csv",
-      "size": 3009,
-      "sha256": "9A1CE6B8E6EB24F709BEEFF1EC518E150CE9C976A955B79FB57FE058FCB2F933"
+      "bytes": 4234,
+      "sha256": "1B3C773C7D3A81D98C3BE0F059DF6D13C81A96A05E24BC0323DB528A5C68D0E4"
     },
     {
-      "path": "04_algorithm_evolution_ablation.csv",
-      "size": 2223,
-      "sha256": "8F982590302A0F5C20EB04D08E88389402A020F605361017EA85C0815763FCDD"
+      "path": "04_parameter_optimization_summary.csv",
+      "bytes": 1104,
+      "sha256": "E60F850EEBDDBEBC04ADEE376FB6D1B1318027386F9DD35096730CB3333EA5FF"
     },
     {
-      "path": "05_parameter_11_paired.csv",
-      "size": 4543,
-      "sha256": "E634E9C08E8A83D20099D35ADCDEE7F5FF5867D095E2A12B7021E090D47B61CF"
+      "path": "05_parameter_11_robustness.csv",
+      "bytes": 2815,
+      "sha256": "FFFDF13B9B0A0EE915B99FC7FA1D900068408A901A8312C0001E81E1A0A7D340"
     },
     {
-      "path": "06_project_regression_32_summary.json",
-      "size": 1625,
-      "sha256": "1E55A65407E87FFCE39382E8E91C4508935CF3AA21B1D40E6D6436EE3EE2F8FF"
+      "path": "06_regression18_metrics.csv",
+      "bytes": 4159,
+      "sha256": "6EAED39E602E1E66FFC47FF5D7E306290123A277761E276F11D91444A2E4D7D2"
     },
     {
-      "path": "07_disturbance_tradeoff.csv",
-      "size": 791,
-      "sha256": "F979BB16840F278D589A3B8597085E13AD8CD26B061098AB9A8E766B6ED2FD3D"
+      "path": "06_regression18_summary.json",
+      "bytes": 538,
+      "sha256": "021254E9D527C99BF4D1CC49DFFACE20B24573815FB46E226B542F7178FD7B21"
     },
     {
-      "path": "08_compound_stress_tradeoff.csv",
-      "size": 2179,
-      "sha256": "E937D4BA3E399DFC244F8E0EB1797DDDE3679FC559B560D514FF1CD91407C7DE"
+      "path": "07_scene06b_pid_comparison.csv",
+      "bytes": 601,
+      "sha256": "B6A2CEF75CC74FF74A95250BFC22C305248629442A34C73FB3CCA55DF27F2076"
+    },
+    {
+      "path": "08_angular_disturbance_response.csv",
+      "bytes": 1638,
+      "sha256": "A7CCEBDC40953A015090079FBA081557A0AC3EBCCF58E6C6E4B6051F54B3A500"
     },
     {
       "path": "09_formation_pp_cbf.csv",
-      "size": 1137,
-      "sha256": "4FEE3DBD92BA567557FC8B9FB08703327477218EC5D437C099D87200FE491AAB"
+      "bytes": 959,
+      "sha256": "6C2D6AE0F7A0CD06EE8D30A86CAF463A1FC344C6DD1D91420F874DBCA2B359E7"
     },
     {
       "path": "10_claim_evidence_index.csv",
-      "size": 3911,
-      "sha256": "BD4BE1B9833CF06A6CE32702BFDE79A942AEDB0EAE5562DDB82324CE18EB0EC0"
+      "bytes": 3669,
+      "sha256": "F02563F4DA4FC16F17C240B4AB62148A959C47273507724576CAD7513DEB5478"
+    },
+    {
+      "path": "10_compound_stress_final.csv",
+      "bytes": 2632,
+      "sha256": "D81BD4405FAB5D0645D7078577D8E39BA1A6620A927732F6DEC9B9F2C5883A94"
     },
     {
       "path": "README_报告证据使用边界.md",
-      "size": 2537,
-      "sha256": "1A66F3E0072B5F243DF70655A56DA2C6D6E7032EB83852650AE90BBE2469BFAF"
-    },
-    {
-      "path": "source_snapshots/chapter6_metrics_normalized.json",
-      "size": 4057,
-      "sha256": "23C060D7E9EDC2E8712D3B3DFC13FF745F72E3973A383EA50F2682CDEC6183BF"
-    },
-    {
-      "path": "source_snapshots/compound_stress_formal_algorithm.csv",
-      "size": 2890,
-      "sha256": "027E3C2F62887DEA965D8809EE1AD3862984ED8A2AD95B2897CE26C5DAB22FF4"
+      "bytes": 1332,
+      "sha256": "8548E8BDB28CC959EFE8A58DD5DF0C4ABFF48A6241CB5C0AE8C3FBACB5C13885"
     }
   ],
-  "final_report_usage": {
-    "status": "frozen_reference",
-    "report_docx_sha256": "BB70BAF844C0172B997E0E04FDC7906D2F09E163A3FE8D88BDA2B01E53CA6D10",
-    "referenced_files": [
-      "01_five_controller_scene_coverage.csv",
-      "02_standard_step_pid_vs_main.csv",
-      "03_five_controller_common_scenes.csv",
-      "05_parameter_11_paired.csv",
-      "07_disturbance_tradeoff.csv",
-      "08_compound_stress_tradeoff.csv",
-      "09_formation_pp_cbf.csv",
-      "10_claim_evidence_index.csv"
-    ],
-    "supplementary_only_files": [
-      "04_algorithm_evolution_ablation.csv",
-      "06_project_regression_32_summary.json"
-    ],
-    "numbered_figures": 28,
-    "numbered_tables": 26
+  "source_files": [
+    {
+      "path": "04_results/report_evidence/official_pid_angular/BODY_PITCH_NEG/raw.csv",
+      "bytes": 1608524,
+      "sha256": "86BA83CF331EBE3267029B096B31EACF6D81CA077C0AFEF03C0EB399F25C0166"
+    },
+    {
+      "path": "04_results/report_evidence/official_pid_angular/BODY_ROLL_POS/raw.csv",
+      "bytes": 1607747,
+      "sha256": "0C928F75CDE03B6228A6365994C1A46D667C335E22D5DB0C1192DE4E314236A6"
+    },
+    {
+      "path": "04_results/report_evidence/official_pid_scene06b/raw.csv",
+      "bytes": 1913724,
+      "sha256": "4FC6715CAE0C79EFEB8E8A2A1200D736F73E0AD95A77E39BA96DB3787CAC94E2"
+    },
+    {
+      "path": "04_results/report_evidence/parameter11_ardg_rgpc_final/parameter11_final_paired.csv",
+      "bytes": 2613,
+      "sha256": "BB83D82CACA74EACCD8A1AB8215CB27DEC9562EC5A43B30331A0697F85D2F518"
+    },
+    {
+      "path": "04_results/report_evidence/parameter_random20_ardg_rgpc_final/statistical_summary.json",
+      "bytes": 2203,
+      "sha256": "6082D9756664F37CCCF343960D39AD2AB5BA72A6594B633D14E56D7F03CFA638"
+    },
+    {
+      "path": "05_visuals/final_shared_assets/FINAL_ASSET_INDEX.json",
+      "bytes": 8666,
+      "sha256": "8326962EF553A310575C85E96209C0187C4E278165EA166A16F7C0CE0B7C7E46"
+    },
+    {
+      "path": "05_visuals/final_shared_assets/data/BODY_PITCH_NEG_ARDG-RGPC.csv",
+      "bytes": 4932675,
+      "sha256": "4676CE73F6D85405B3E4E2EA88190C1BD79941B5F2F79872D752E62838CB6AF5"
+    },
+    {
+      "path": "05_visuals/final_shared_assets/data/BODY_ROLL_POS_ARDG-RGPC.csv",
+      "bytes": 4996523,
+      "sha256": "AD25944A278599263417CDCECFB3CC25A8CC999C7A364D6B5969841E70FD9531"
+    },
+    {
+      "path": "06_supplementary_evidence/ardg_rgpc_compound_final/cases/D_C01/raw.csv",
+      "bytes": 3261051,
+      "sha256": "E1C8FA364D1891977C408AB06637DEE1340038C91CD00104C4B1817D7859A4AA"
+    },
+    {
+      "path": "06_supplementary_evidence/ardg_rgpc_compound_final/cases/D_C02/raw.csv",
+      "bytes": 5460521,
+      "sha256": "1B077864B5C80DF2BD8425E5632C0CA287DEE25397F085F281FE20ABAD3F0619"
+    },
+    {
+      "path": "06_supplementary_evidence/ardg_rgpc_compound_final/cases/D_C03/raw.csv",
+      "bytes": 5613258,
+      "sha256": "03D017E15A0B1EEEFDE44FB07F5A0BF14FA8CAC46549E90A87EA111864A655AB"
+    },
+    {
+      "path": "06_supplementary_evidence/ardg_rgpc_compound_final/cases/D_C04/raw.csv",
+      "bytes": 6894529,
+      "sha256": "F802E8F42A14EADDF08283867ACF5BD4B2AE386705F7A17810B43C8C84F35DDA"
+    },
+    {
+      "path": "06_supplementary_evidence/ardg_rgpc_compound_final/cases/D_C05/raw.csv",
+      "bytes": 5758637,
+      "sha256": "4E6EB83B044E4E1D86042C2B3D843570BC987B0D7C37BCAD3C7114BBC765C54E"
+    },
+    {
+      "path": "06_supplementary_evidence/ardg_rgpc_compound_final/cases/D_C06/raw.csv",
+      "bytes": 5362712,
+      "sha256": "A6D1C8F479185797F13D438090D29B4AA77B14711EBD33EC8BD4AC9250A40ED9"
+    },
+    {
+      "path": "06_supplementary_evidence/ardg_rgpc_compound_final/evaluation/compound_metrics.csv",
+      "bytes": 2246,
+      "sha256": "7FA711C92E22302627AD3FE5FA5D3CEA0D12E58BEFDC5E74DCE21C11C5CEF4FE"
+    },
+    {
+      "path": "06_supplementary_evidence/ardg_rgpc_formation_final/raw/Scene07B.csv",
+      "bytes": 18789798,
+      "sha256": "6AE3A2EE275338294D18FD6A61EA332AD35F1476F174564AC90B9EC7779691CD"
+    },
+    {
+      "path": "06_supplementary_evidence/ardg_rgpc_formation_final/raw/Scene07COff.csv",
+      "bytes": 12447583,
+      "sha256": "8F56C30F00789D79CC06C2E13635B4493EA4ED586D64BB8E9EE36A01A22B957A"
+    },
+    {
+      "path": "06_supplementary_evidence/ardg_rgpc_formation_final/raw/Scene07COnPredictiveV5C.csv",
+      "bytes": 12446438,
+      "sha256": "B27BC7EAEE58B6F2D6C1BD50AFE8C0096175A89004CE24C43A069332A18C708A"
+    },
+    {
+      "path": "06_supplementary_evidence/ardg_rgpc_regression18_final/execution_status.json",
+      "bytes": 12369,
+      "sha256": "0DE70031FB67C3D444CA558D1D265F3F78F5911E5BFE464EC37B74A1B3C6CD59"
+    },
+    {
+      "path": "06_supplementary_evidence/ardg_rgpc_regression18_final/raw/Scene01.csv",
+      "bytes": 4333894,
+      "sha256": "061C136D4A2ACBDE47459E4983377728B09FA7369FB736C656221265A29D0D08"
+    },
+    {
+      "path": "06_supplementary_evidence/ardg_rgpc_regression18_final/raw/Scene01S_X.csv",
+      "bytes": 2601500,
+      "sha256": "B6B14F50DC98F14E735F7F60A07A1B3CDC45241AE7C80FE4B2405413E7FA1A54"
+    },
+    {
+      "path": "06_supplementary_evidence/ardg_rgpc_regression18_final/raw/Scene01S_Y.csv",
+      "bytes": 2602222,
+      "sha256": "5880D36FBAE0BFD61FC6D1FCAA2480137C1F2667B98892BD96F9BB9D1FC08791"
+    },
+    {
+      "path": "06_supplementary_evidence/ardg_rgpc_regression18_final/raw/Scene01S_Z.csv",
+      "bytes": 2606645,
+      "sha256": "5B6CD19D522D13ED2AC6BC09A34604F7C69449F7000E470DB10F8C177DA6CBE5"
+    },
+    {
+      "path": "06_supplementary_evidence/ardg_rgpc_regression18_final/raw/Scene02.csv",
+      "bytes": 4697851,
+      "sha256": "4AB9B32E00C1896D5DD321DC9B8EAD8E18ED5F5E21AC001285FC6B73832C4BF9"
+    },
+    {
+      "path": "06_supplementary_evidence/ardg_rgpc_regression18_final/raw/Scene03.csv",
+      "bytes": 11132514,
+      "sha256": "FDAD5B4909F97C712689321B8689E9BBECB6D42211F5845580F6BE1C9F856307"
+    },
+    {
+      "path": "06_supplementary_evidence/ardg_rgpc_regression18_final/raw/Scene04.csv",
+      "bytes": 2623209,
+      "sha256": "53EFD487DEA4799434F634EF58B3EFDFEA7576B65E3893722FF97EDDC904C8EC"
+    },
+    {
+      "path": "06_supplementary_evidence/ardg_rgpc_regression18_final/raw/Scene06b.csv",
+      "bytes": 2611933,
+      "sha256": "82C57F8C2B4938D6907BC6F82B765851270C5C524C8B93FC84A3EC1D024DF511"
+    },
+    {
+      "path": "06_supplementary_evidence/ardg_rgpc_regression18_final/raw/Scene08_P0.csv",
+      "bytes": 4366785,
+      "sha256": "89603FD2320ACD28DAD1E79A9F3B98F2A10B778F0688415BE78282B20B04C5EA"
+    },
+    {
+      "path": "06_supplementary_evidence/ardg_rgpc_regression18_final/raw/Scene08_P1.csv",
+      "bytes": 4344428,
+      "sha256": "C77B4ADC4C1FFDF0941F8AF72E8B7F1E8103E04C0130CD162DD07F7344B21819"
+    },
+    {
+      "path": "06_supplementary_evidence/ardg_rgpc_regression18_final/raw/Scene08_P2.csv",
+      "bytes": 4344878,
+      "sha256": "B62C17EF2B6F7DAB41FD83FFEDF1AAD71951239DD0DBE5DD283A40B54C9FE25A"
+    },
+    {
+      "path": "06_supplementary_evidence/ardg_rgpc_regression18_final/raw/Scene08_P3.csv",
+      "bytes": 4355546,
+      "sha256": "E7E7010665399562FC3B802295A6C297C4E45A6354C0ADD06A1493EA8B3C86E3"
+    },
+    {
+      "path": "06_supplementary_evidence/ardg_rgpc_regression18_final/raw/Scene08_P4.csv",
+      "bytes": 4349307,
+      "sha256": "F023D7E8030DC359BB496F5E7A9F827D7653AB42CF58E414FAB6475E7BD5981D"
+    },
+    {
+      "path": "06_supplementary_evidence/ardg_rgpc_regression18_final/raw/Scene10_P0.csv",
+      "bytes": 4524789,
+      "sha256": "BF83A94EDFAA9717101D7406D3C96886A00CA9DE832C907D485F6B3AB4DDB6F6"
+    },
+    {
+      "path": "06_supplementary_evidence/ardg_rgpc_regression18_final/raw/Scene10_P1.csv",
+      "bytes": 4525332,
+      "sha256": "B08A75A9183004D75F6A72FAD332ED38891EAEB6A68CAF117434506FD2B64BC5"
+    },
+    {
+      "path": "06_supplementary_evidence/ardg_rgpc_regression18_final/raw/Scene10_P2.csv",
+      "bytes": 4525281,
+      "sha256": "847310E171284A0A3B540789A942648DC8A7D4E6F23FF99240B88BE2BE8203BA"
+    },
+    {
+      "path": "06_supplementary_evidence/ardg_rgpc_regression18_final/raw/Scene10_P3.csv",
+      "bytes": 4524679,
+      "sha256": "1199F5AEBB099DA07F63F0B18DB5C26A0E71DF5B9B684D3FD60707DD35133980"
+    },
+    {
+      "path": "06_supplementary_evidence/ardg_rgpc_regression18_final/raw/Scene10_P4.csv",
+      "bytes": 4525666,
+      "sha256": "096E98FE402F84732F3791A28C060381F5936C832C48A2E36813EAA2614F02A1"
+    },
+    {
+      "path": "config/finals_report_evidence_contract.json",
+      "bytes": 10622,
+      "sha256": "1861FD60CF74C64EA980F43648855CD83F56E080EA398B63C91D8015C0A207A3"
+    }
+  ],
+  "public_boundaries": {
+    "main_algorithm_claims": "final_algorithm_direct_evidence_required",
+    "compound_stress": "six_direct_final_cases",
+    "angular_pid_comparison": "direct_same_scene_comparison",
+    "absolute_user_paths": "excluded_from_generated_files"
   }
 }

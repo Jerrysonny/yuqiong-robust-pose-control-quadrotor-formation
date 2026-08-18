@@ -1,0 +1,13 @@
+{
+  "schema_version": "ardg_rgpc_public_identity_v2",
+  "algorithm_name_zh": "角残差驱动守卫型鲁棒几何位姿控制",
+  "algorithm_name_en": "Angular-Residual-Driven Guarded Robust Geometric Pose Control",
+  "acronym": "ARDG-RGPC",
+  "control_scope": "位置及滚转、俯仰约化姿态控制",
+  "yaw_control": "无独立偏航力矩跟踪通道",
+  "controller_model": "01_models/sysblock/A8FormalRAGCACGHTE_20260715.mo",
+  "sample_time_s": 0.01,
+  "registered_scene_count": 34,
+  "default_suite": "finals_core",
+  "default_suite_scene_count": 20
+}

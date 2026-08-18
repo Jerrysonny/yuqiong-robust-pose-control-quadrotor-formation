@@ -3,7 +3,7 @@ model A8FormalRAGCACGHTE_20260715
   import SysplorerEmbeddedCoder.Types.*;
   import BaseWorkspace.*;
   // 正式主控制器：约化姿态几何控制、CGHTE估计和约束感知分配共用0.01 s采样周期。
-  annotation(__MWORKS(version="26.3.0",PortArrangement(Left(reference, state, allocator_limit), Right(motor_cmd, diagnostics)),modelType=Control,BlockSystem(blockKind=BlockKind.userModel,SampleTime(auto=true),OutputInterval=0.01),SysblockVersion="1.0"),Icon(coordinateSystem(preserveAspectRatio=false)),experiment(Algorithm=Euler,Interval=-1));
+  annotation(__MWORKS(version="26.3.0",PortArrangement(Left(reference, state, allocator_limit, ardg1_rotor_speed, ardg1_enable, ardg1_time), Right(motor_cmd, diagnostics)),modelType=Control,BlockSystem(blockKind=BlockKind.userModel,SampleTime(auto=true),OutputInterval=0.01),SysblockVersion="1.0"),Icon(coordinateSystem(preserveAspectRatio=false)),experiment(Algorithm=Euler,Interval=-1));
   // 固定接口为11维参考、18维状态、2维分配边界、4路电机命令和16维诊断。
   SysplorerEmbeddedCoder.Port.Inport reference 
     annotation (Placement(transformation(origin = {-180, 60}, extent = {{-10, -10}, {10, 10}})),__MWORKS(BlockSystem(Dimension(dimensionType=DimensionType.none)=[11],SampleTime(auto=false)=0.01,Type(inherit=InheritType.none,ref="double"))));
@@ -262,11 +262,213 @@ model A8FormalRAGCACGHTE_20260715
     annotation (Placement(transformation(origin = {100, -120}, extent = {{-10, -10}, {10, 10}})));
   SysplorerEmbeddedCoder.Sources.Constant zero(k=0) 
     annotation (Placement(transformation(origin = {120, -135}, extent = {{-10, -10}, {10, 10}})),__MWORKS(BlockSystem(SampleTime(auto=false)=0.01,Instance(y(Type(inherit=InheritType.none,ref="double"))))));
-  SysplorerEmbeddedCoder.Sources.Constant version_code(k=914) 
+  SysplorerEmbeddedCoder.Sources.Constant version_code(k=97406) 
     annotation (Placement(transformation(origin = {120, -150}, extent = {{-10, -10}, {10, 10}})),__MWORKS(BlockSystem(SampleTime(auto=false)=0.01,Instance(y(Type(inherit=InheritType.none,ref="double"))))));
   // 诊断11至16依次为估计尺度、应用尺度、融合标志、创新量、分配上界和版本码。
   SysplorerEmbeddedCoder.SignalRouting.VectorConcatenate diag_mux(Mode=SysplorerEmbeddedCoder.SignalRouting.VectorConcatenate.ConnectionMode.Vector,NumInputs=16) 
     annotation (Placement(transformation(origin = {180, -110}, extent = {{-10, -10}, {10, 10}})),__MWORKS(BlockSystem(Instance(u(u1,u2,u3,u4,u5,u6,u7,u8,u9,u10,u11,u12,u13,u14,u15,u16)))));
+  SysplorerEmbeddedCoder.Port.Inport ardg1_rotor_speed 
+    annotation (Placement(transformation(origin = {-360, -210}, extent = {{-10, -10}, {10, 10}})),__MWORKS(BlockSystem(Dimension(dimensionType=DimensionType.none)=[4],SampleTime(auto=false)=0.01,Type(inherit=InheritType.none,ref="double"))));
+  SysplorerEmbeddedCoder.Port.Inport ardg1_enable 
+    annotation (Placement(transformation(origin = {-360, -260}, extent = {{-10, -10}, {10, 10}})),__MWORKS(BlockSystem(Dimension(dimensionType=DimensionType.none)=[1],SampleTime(auto=false)=0.01,Type(inherit=InheritType.none,ref="double"))));
+  SysplorerEmbeddedCoder.Port.Inport ardg1_time 
+    annotation (Placement(transformation(origin = {-360, -290}, extent = {{-10, -10}, {10, 10}})),__MWORKS(BlockSystem(Dimension(dimensionType=DimensionType.none)=[1],SampleTime(auto=false)=0.01,Type(inherit=InheritType.none,ref="double"))));
+  SysplorerEmbeddedCoder.SignalRouting.DeMux ardg1_rotor_speed_demux(portNumber=4) 
+    annotation (Placement(transformation(origin = {-330, -210}, extent = {{-10, -10}, {10, 10}})),__MWORKS(BlockSystem(Instance(y(y1,y2,y3,y4)))));
+  SysplorerEmbeddedCoder.Utilities.Fcn ardg1_q_1(y=if abs(u)<1e9 then u^2 else 0) 
+    annotation (Placement(transformation(origin = {-300, -198}, extent = {{-10, -10}, {10, 10}})));
+  SysplorerEmbeddedCoder.Utilities.Fcn ardg1_q_2(y=if abs(u)<1e9 then u^2 else 0) 
+    annotation (Placement(transformation(origin = {-300, -216}, extent = {{-10, -10}, {10, 10}})));
+  SysplorerEmbeddedCoder.Utilities.Fcn ardg1_q_3(y=if abs(u)<1e9 then u^2 else 0) 
+    annotation (Placement(transformation(origin = {-300, -234}, extent = {{-10, -10}, {10, 10}})));
+  SysplorerEmbeddedCoder.Utilities.Fcn ardg1_q_4(y=if abs(u)<1e9 then u^2 else 0) 
+    annotation (Placement(transformation(origin = {-300, -252}, extent = {{-10, -10}, {10, 10}})));
+  SysplorerEmbeddedCoder.SignalRouting.Mux ardg1_tau_x_mux(portNumber=4) 
+    annotation (Placement(transformation(origin = {-250, -180}, extent = {{-10, -10}, {10, 10}})),__MWORKS(BlockSystem(Instance(u(u1,u2,u3,u4)))));
+  SysplorerEmbeddedCoder.Utilities.Fcn ardg1_actual_tau_x(y=0.002*0.04243*(-u[1]+u[2]+u[3]-u[4])) 
+    annotation (Placement(transformation(origin = {-225, -180}, extent = {{-10, -10}, {10, 10}})));
+  SysplorerEmbeddedCoder.SignalRouting.Mux ardg1_tau_y_mux(portNumber=4) 
+    annotation (Placement(transformation(origin = {-250, -270}, extent = {{-10, -10}, {10, 10}})),__MWORKS(BlockSystem(Instance(u(u1,u2,u3,u4)))));
+  SysplorerEmbeddedCoder.Utilities.Fcn ardg1_actual_tau_y(y=0.002*0.04243*(-u[1]-u[2]+u[3]+u[4])) 
+    annotation (Placement(transformation(origin = {-225, -270}, extent = {{-10, -10}, {10, 10}})));
+  SysplorerEmbeddedCoder.Discrete.UnitDelay ardg1_actual_tau_x_delay(initCond=0) 
+    annotation (Placement(transformation(origin = {-195, -180}, extent = {{-10, -10}, {10, 10}})),__MWORKS(BlockSystem(SampleTime(auto=false)=0.01)));
+  SysplorerEmbeddedCoder.Discrete.UnitDelay ardg1_actual_tau_y_delay(initCond=0) 
+    annotation (Placement(transformation(origin = {-195, -270}, extent = {{-10, -10}, {10, 10}})),__MWORKS(BlockSystem(SampleTime(auto=false)=0.01)));
+  SysplorerEmbeddedCoder.SignalRouting.Mux ardg1_q_sum_mux(portNumber=4) 
+    annotation (Placement(transformation(origin = {-250, -225}, extent = {{-10, -10}, {10, 10}})),__MWORKS(BlockSystem(Instance(u(u1,u2,u3,u4)))));
+  SysplorerEmbeddedCoder.Utilities.Fcn ardg1_q_sum(y=u[1]+u[2]+u[3]+u[4]) 
+    annotation (Placement(transformation(origin = {-225, -225}, extent = {{-10, -10}, {10, 10}})));
+  SysplorerEmbeddedCoder.Discrete.UnitDelay ardg1_q_sum_delay(initCond=0) 
+    annotation (Placement(transformation(origin = {-195, -225}, extent = {{-10, -10}, {10, 10}})),__MWORKS(BlockSystem(SampleTime(auto=false)=0.01)));
+  SysplorerEmbeddedCoder.Discrete.UnitDelay ardg1_omega_x_delay(initCond=0) 
+    annotation (Placement(transformation(origin = {40, -40}, extent = {{-10, -10}, {10, 10}})),__MWORKS(BlockSystem(SampleTime(auto=false)=0.01)));
+  SysplorerEmbeddedCoder.Discrete.UnitDelay ardg1_alpha_x_delay(initCond=0) 
+    annotation (Placement(transformation(origin = {40, -58}, extent = {{-10, -10}, {10, 10}})),__MWORKS(BlockSystem(SampleTime(auto=false)=0.01)));
+  SysplorerEmbeddedCoder.SignalRouting.Mux ardg1_observer_x_mux(portNumber=3) 
+    annotation (Placement(transformation(origin = {65, -40}, extent = {{-10, -10}, {10, 10}})),__MWORKS(BlockSystem(Instance(u(u1,u2,u3)))));
+  SysplorerEmbeddedCoder.Utilities.Fcn ardg1_innovation_x(y=u[1]-(u[2]+0.01*u[3])) 
+    annotation (Placement(transformation(origin = {90, -40}, extent = {{-10, -10}, {10, 10}})));
+  SysplorerEmbeddedCoder.Utilities.Fcn ardg1_innovation_limit_x(y=if abs(u)<1e9 then max(min(u,2),-2) else 0) 
+    annotation (Placement(transformation(origin = {115, -40}, extent = {{-10, -10}, {10, 10}})));
+  SysplorerEmbeddedCoder.SignalRouting.Mux ardg1_omega_next_x_mux(portNumber=3) 
+    annotation (Placement(transformation(origin = {140, -40}, extent = {{-10, -10}, {10, 10}})),__MWORKS(BlockSystem(Instance(u(u1,u2,u3)))));
+  SysplorerEmbeddedCoder.Utilities.Fcn ardg1_omega_next_x(y=if abs(u[1])<1e9 and abs(u[2])<1e9 and abs(u[3])<1e9 then u[1]+0.01*u[2]+0.64*u[3] else 0) 
+    annotation (Placement(transformation(origin = {165, -40}, extent = {{-10, -10}, {10, 10}})));
+  SysplorerEmbeddedCoder.SignalRouting.Mux ardg1_alpha_next_x_mux(portNumber=2) 
+    annotation (Placement(transformation(origin = {140, -64}, extent = {{-10, -10}, {10, 10}})),__MWORKS(BlockSystem(Instance(u(u1,u2)))));
+  SysplorerEmbeddedCoder.Utilities.Fcn ardg1_alpha_next_x(y=if abs(u[1])<1e9 and abs(u[2])<1e9 then max(min(u[1]+16*u[2],150),-150) else 0) 
+    annotation (Placement(transformation(origin = {165, -64}, extent = {{-10, -10}, {10, 10}})));
+  SysplorerEmbeddedCoder.SignalRouting.Mux ardg1_residual_x_mux(portNumber=2) 
+    annotation (Placement(transformation(origin = {195, -40}, extent = {{-10, -10}, {10, 10}})),__MWORKS(BlockSystem(Instance(u(u1,u2)))));
+  SysplorerEmbeddedCoder.Utilities.Fcn ardg1_residual_x(y=u[1]/8595.05449458058-u[2]) 
+    annotation (Placement(transformation(origin = {220, -40}, extent = {{-10, -10}, {10, 10}})));
+  SysplorerEmbeddedCoder.Discrete.UnitDelay ardg1_omega_y_delay(initCond=0) 
+    annotation (Placement(transformation(origin = {40, -100}, extent = {{-10, -10}, {10, 10}})),__MWORKS(BlockSystem(SampleTime(auto=false)=0.01)));
+  SysplorerEmbeddedCoder.Discrete.UnitDelay ardg1_alpha_y_delay(initCond=0) 
+    annotation (Placement(transformation(origin = {40, -118}, extent = {{-10, -10}, {10, 10}})),__MWORKS(BlockSystem(SampleTime(auto=false)=0.01)));
+  SysplorerEmbeddedCoder.SignalRouting.Mux ardg1_observer_y_mux(portNumber=3) 
+    annotation (Placement(transformation(origin = {65, -100}, extent = {{-10, -10}, {10, 10}})),__MWORKS(BlockSystem(Instance(u(u1,u2,u3)))));
+  SysplorerEmbeddedCoder.Utilities.Fcn ardg1_innovation_y(y=u[1]-(u[2]+0.01*u[3])) 
+    annotation (Placement(transformation(origin = {90, -100}, extent = {{-10, -10}, {10, 10}})));
+  SysplorerEmbeddedCoder.Utilities.Fcn ardg1_innovation_limit_y(y=if abs(u)<1e9 then max(min(u,2),-2) else 0) 
+    annotation (Placement(transformation(origin = {115, -100}, extent = {{-10, -10}, {10, 10}})));
+  SysplorerEmbeddedCoder.SignalRouting.Mux ardg1_omega_next_y_mux(portNumber=3) 
+    annotation (Placement(transformation(origin = {140, -100}, extent = {{-10, -10}, {10, 10}})),__MWORKS(BlockSystem(Instance(u(u1,u2,u3)))));
+  SysplorerEmbeddedCoder.Utilities.Fcn ardg1_omega_next_y(y=if abs(u[1])<1e9 and abs(u[2])<1e9 and abs(u[3])<1e9 then u[1]+0.01*u[2]+0.64*u[3] else 0) 
+    annotation (Placement(transformation(origin = {165, -100}, extent = {{-10, -10}, {10, 10}})));
+  SysplorerEmbeddedCoder.SignalRouting.Mux ardg1_alpha_next_y_mux(portNumber=2) 
+    annotation (Placement(transformation(origin = {140, -124}, extent = {{-10, -10}, {10, 10}})),__MWORKS(BlockSystem(Instance(u(u1,u2)))));
+  SysplorerEmbeddedCoder.Utilities.Fcn ardg1_alpha_next_y(y=if abs(u[1])<1e9 and abs(u[2])<1e9 then max(min(u[1]+16*u[2],150),-150) else 0) 
+    annotation (Placement(transformation(origin = {165, -124}, extent = {{-10, -10}, {10, 10}})));
+  SysplorerEmbeddedCoder.SignalRouting.Mux ardg1_residual_y_mux(portNumber=2) 
+    annotation (Placement(transformation(origin = {195, -100}, extent = {{-10, -10}, {10, 10}})),__MWORKS(BlockSystem(Instance(u(u1,u2)))));
+  SysplorerEmbeddedCoder.Utilities.Fcn ardg1_residual_y(y=u[1]/8595.11317201388-u[2]) 
+    annotation (Placement(transformation(origin = {220, -100}, extent = {{-10, -10}, {10, 10}})));
+  SysplorerEmbeddedCoder.SignalRouting.Mux ardg1_trigger_mux(portNumber=3) 
+    annotation (Placement(transformation(origin = {250, -70}, extent = {{-10, -10}, {10, 10}})),__MWORKS(BlockSystem(Instance(u(u1,u2,u3)))));
+  SysplorerEmbeddedCoder.Utilities.Fcn ardg1_angular_on(y=if max(abs(u[1]),abs(u[2]))/1e-5>=8*max(1,u[3]) then 1 else 0) 
+    annotation (Placement(transformation(origin = {275, -70}, extent = {{-10, -10}, {10, 10}})));
+  SysplorerEmbeddedCoder.Utilities.Fcn ardg1_angular_hold(y=if max(abs(u[1]),abs(u[2]))>=5e-6 and max(abs(u[1]),abs(u[2]))/1e-5>=4*max(1,u[3]) then 1 else 0) 
+    annotation (Placement(transformation(origin = {275, -90}, extent = {{-10, -10}, {10, 10}})));
+  SysplorerEmbeddedCoder.Discrete.UnitDelay ardg1_vx_delay(initCond=0) 
+    annotation (Placement(transformation(origin = {40, -170}, extent = {{-10, -10}, {10, 10}})),__MWORKS(BlockSystem(SampleTime(auto=false)=0.01)));
+  SysplorerEmbeddedCoder.Discrete.UnitDelay ardg1_vy_delay(initCond=0) 
+    annotation (Placement(transformation(origin = {40, -190}, extent = {{-10, -10}, {10, 10}})),__MWORKS(BlockSystem(SampleTime(auto=false)=0.01)));
+  SysplorerEmbeddedCoder.Utilities.Fcn ardg1_vx_safe(y=if abs(u)<1e9 then u else 0) 
+    annotation (Placement(transformation(origin = {15, -170}, extent = {{-10, -10}, {10, 10}})));
+  SysplorerEmbeddedCoder.Utilities.Fcn ardg1_vy_safe(y=if abs(u)<1e9 then u else 0) 
+    annotation (Placement(transformation(origin = {15, -190}, extent = {{-10, -10}, {10, 10}})));
+  SysplorerEmbeddedCoder.SignalRouting.Mux ardg1_vx_accel_mux(portNumber=2) 
+    annotation (Placement(transformation(origin = {65, -170}, extent = {{-10, -10}, {10, 10}})),__MWORKS(BlockSystem(Instance(u(u1,u2)))));
+  SysplorerEmbeddedCoder.SignalRouting.Mux ardg1_vy_accel_mux(portNumber=2) 
+    annotation (Placement(transformation(origin = {65, -190}, extent = {{-10, -10}, {10, 10}})),__MWORKS(BlockSystem(Instance(u(u1,u2)))));
+  SysplorerEmbeddedCoder.Utilities.Fcn ardg1_vx_accel(y=(u[1]-u[2])/0.01) 
+    annotation (Placement(transformation(origin = {90, -170}, extent = {{-10, -10}, {10, 10}})));
+  SysplorerEmbeddedCoder.Utilities.Fcn ardg1_vy_accel(y=(u[1]-u[2])/0.01) 
+    annotation (Placement(transformation(origin = {90, -190}, extent = {{-10, -10}, {10, 10}})));
+  SysplorerEmbeddedCoder.SignalRouting.Mux ardg1_trans_residual_mux(portNumber=5) 
+    annotation (Placement(transformation(origin = {115, -170}, extent = {{-10, -10}, {10, 10}})),__MWORKS(BlockSystem(Instance(u(u1,u2,u3,u4,u5)))));
+  SysplorerEmbeddedCoder.Utilities.Fcn ardg1_trans_residual_norm(y=sqrt((0.163156684*u[1]-0.002*u[3]*u[4])^2+(0.163156684*u[2]-0.002*u[3]*u[5])^2)) 
+    annotation (Placement(transformation(origin = {140, -170}, extent = {{-10, -10}, {10, 10}})));
+  SysplorerEmbeddedCoder.Utilities.Fcn ardg1_trans_score(y=max(u,0)/0.005) 
+    annotation (Placement(transformation(origin = {165, -170}, extent = {{-10, -10}, {10, 10}})));
+  SysplorerEmbeddedCoder.Discrete.UnitDelay ardg1_clip_delay(initCond=0) 
+    annotation (Placement(transformation(origin = {185, -190}, extent = {{-10, -10}, {10, 10}})),__MWORKS(BlockSystem(SampleTime(auto=false)=0.01)));
+  SysplorerEmbeddedCoder.Discrete.UnitDelay ardg1_alloc_delay(initCond=0) 
+    annotation (Placement(transformation(origin = {185, -210}, extent = {{-10, -10}, {10, 10}})),__MWORKS(BlockSystem(SampleTime(auto=false)=0.01)));
+  SysplorerEmbeddedCoder.Discrete.UnitDelay ardg1_time_delay(initCond=0) 
+    annotation (Placement(transformation(origin = {185, -230}, extent = {{-10, -10}, {10, 10}})),__MWORKS(BlockSystem(SampleTime(auto=false)=0.01)));
+  SysplorerEmbeddedCoder.SignalRouting.Mux ardg1_time_valid_mux(portNumber=2) 
+    annotation (Placement(transformation(origin = {210, -230}, extent = {{-10, -10}, {10, 10}})),__MWORKS(BlockSystem(Instance(u(u1,u2)))));
+  SysplorerEmbeddedCoder.Utilities.Fcn ardg1_time_valid(y=if u[2]<=0.010001 or abs((u[2]-u[1])-0.01)<=1e-6 then 1 else 0) 
+    annotation (Placement(transformation(origin = {235, -230}, extent = {{-10, -10}, {10, 10}})));
+  SysplorerEmbeddedCoder.SignalRouting.Mux ardg1_finite_mux(portNumber=16) 
+    annotation (Placement(transformation(origin = {260, -220}, extent = {{-10, -10}, {10, 10}})),__MWORKS(BlockSystem(Instance(u(u1,u2,u3,u4,u5,u6,u7,u8,u9,u10,u11,u12,u13,u14,u15,u16)))));
+  SysplorerEmbeddedCoder.Utilities.Fcn ardg1_finite(y=if abs(u[1])<1e9 and abs(u[2])<1e9 and abs(u[3])<1e9 and abs(u[4])<1e9 and abs(u[5])<1e9 and abs(u[6])<1e9 and abs(u[7])<1e9 and abs(u[8])<1e9 and abs(u[9])<1e9 and abs(u[10])<1e9 and abs(u[11])<1e9 and abs(u[12])<1e9 and abs(u[13])<1e9 and abs(u[14])<1e9 and abs(u[15])<1e9 and abs(u[16])<1e9 then 1 else 0) 
+    annotation (Placement(transformation(origin = {285, -220}, extent = {{-10, -10}, {10, 10}})));
+  SysplorerEmbeddedCoder.SignalRouting.Mux ardg1_safety_mux(portNumber=5) 
+    annotation (Placement(transformation(origin = {300, -220}, extent = {{-10, -10}, {10, 10}})),__MWORKS(BlockSystem(Instance(u(u1,u2,u3,u4,u5)))));
+  SysplorerEmbeddedCoder.Utilities.Fcn ardg1_safety_valid(y=if u[1]>=0.5 and u[2]<0.5 and u[3]<=1e-9 and u[4]>=0.5 and u[5]>=0.5 then 1 else 0) 
+    annotation (Placement(transformation(origin = {325, -220}, extent = {{-10, -10}, {10, 10}})));
+  SysplorerEmbeddedCoder.SignalRouting.Mux ardg1_enter_valid_mux(portNumber=2) 
+    annotation (Placement(transformation(origin = {300, -70}, extent = {{-10, -10}, {10, 10}})),__MWORKS(BlockSystem(Instance(u(u1,u2)))));
+  SysplorerEmbeddedCoder.Utilities.Fcn ardg1_enter_valid(y=if u[1]>=0.5 and u[2]>=0.5 then 1 else 0) 
+    annotation (Placement(transformation(origin = {325, -70}, extent = {{-10, -10}, {10, 10}})));
+  SysplorerEmbeddedCoder.SignalRouting.Mux ardg1_hold_valid_mux(portNumber=2) 
+    annotation (Placement(transformation(origin = {300, -90}, extent = {{-10, -10}, {10, 10}})),__MWORKS(BlockSystem(Instance(u(u1,u2)))));
+  SysplorerEmbeddedCoder.Utilities.Fcn ardg1_hold_valid(y=if u[1]>=0.5 and u[2]>=0.5 then 1 else 0) 
+    annotation (Placement(transformation(origin = {325, -90}, extent = {{-10, -10}, {10, 10}})));
+  SysplorerEmbeddedCoder.Discrete.UnitDelay ardg1_enter_timer_delay(initCond=0) 
+    annotation (Placement(transformation(origin = {350, -70}, extent = {{-10, -10}, {10, 10}})),__MWORKS(BlockSystem(SampleTime(auto=false)=0.01)));
+  SysplorerEmbeddedCoder.SignalRouting.Mux ardg1_enter_timer_mux(portNumber=2) 
+    annotation (Placement(transformation(origin = {375, -70}, extent = {{-10, -10}, {10, 10}})),__MWORKS(BlockSystem(Instance(u(u1,u2)))));
+  SysplorerEmbeddedCoder.Utilities.Fcn ardg1_enter_timer_next(y=if u[2]>=0.5 then min(u[1]+0.01,0.05) else 0) 
+    annotation (Placement(transformation(origin = {400, -70}, extent = {{-10, -10}, {10, 10}})));
+  SysplorerEmbeddedCoder.Discrete.UnitDelay ardg1_exit_timer_delay(initCond=0) 
+    annotation (Placement(transformation(origin = {350, -95}, extent = {{-10, -10}, {10, 10}})),__MWORKS(BlockSystem(SampleTime(auto=false)=0.01)));
+  SysplorerEmbeddedCoder.SignalRouting.Mux ardg1_exit_timer_mux(portNumber=3) 
+    annotation (Placement(transformation(origin = {375, -95}, extent = {{-10, -10}, {10, 10}})),__MWORKS(BlockSystem(Instance(u(u1,u2,u3)))));
+  SysplorerEmbeddedCoder.Utilities.Fcn ardg1_exit_timer_next(y=if u[3]>=0.5 and u[2]<0.5 then min(u[1]+0.01,0.1) else 0) 
+    annotation (Placement(transformation(origin = {400, -95}, extent = {{-10, -10}, {10, 10}})));
+  SysplorerEmbeddedCoder.Discrete.UnitDelay ardg1_active_delay(initCond=0) 
+    annotation (Placement(transformation(origin = {425, -70}, extent = {{-10, -10}, {10, 10}})),__MWORKS(BlockSystem(SampleTime(auto=false)=0.01)));
+  SysplorerEmbeddedCoder.SignalRouting.Mux ardg1_active_mux(portNumber=4) 
+    annotation (Placement(transformation(origin = {450, -70}, extent = {{-10, -10}, {10, 10}})),__MWORKS(BlockSystem(Instance(u(u1,u2,u3,u4)))));
+  SysplorerEmbeddedCoder.Utilities.Fcn ardg1_active_next(y=if u[4]<0.5 or u[3]>=0.099999 then 0 else if u[1]>=0.5 or u[2]>=0.049999 then 1 else 0) 
+    annotation (Placement(transformation(origin = {475, -70}, extent = {{-10, -10}, {10, 10}})));
+  SysplorerEmbeddedCoder.Discrete.UnitDelay ardg1_blend_delay(initCond=0) 
+    annotation (Placement(transformation(origin = {425, -110}, extent = {{-10, -10}, {10, 10}})),__MWORKS(BlockSystem(SampleTime(auto=false)=0.01)));
+  SysplorerEmbeddedCoder.SignalRouting.Mux ardg1_blend_mux(portNumber=3) 
+    annotation (Placement(transformation(origin = {450, -110}, extent = {{-10, -10}, {10, 10}})),__MWORKS(BlockSystem(Instance(u(u1,u2,u3)))));
+  SysplorerEmbeddedCoder.Utilities.Fcn ardg1_blend_next(y=if u[3]<0.5 then 0 else if u[2]>=0.5 then min(u[1]+0.1,1) else max(u[1]-0.1,0)) 
+    annotation (Placement(transformation(origin = {475, -110}, extent = {{-10, -10}, {10, 10}})));
+  SysplorerEmbeddedCoder.SignalRouting.Mux ardg1_target_x_mux(portNumber=4) 
+    annotation (Placement(transformation(origin = {500, -10}, extent = {{-10, -10}, {10, 10}})),__MWORKS(BlockSystem(Instance(u(u1,u2,u3,u4)))));
+  SysplorerEmbeddedCoder.Utilities.Fcn ardg1_target_x(y=if u[4]<0.5 then 0 else max(min(-0.89894387*u[3]*u[2]*u[1],0.0003295328),-0.0003295328)) 
+    annotation (Placement(transformation(origin = {525, -10}, extent = {{-10, -10}, {10, 10}})));
+  SysplorerEmbeddedCoder.Discrete.UnitDelay ardg1_correction_x_delay(initCond=0) 
+    annotation (Placement(transformation(origin = {550, -10}, extent = {{-10, -10}, {10, 10}})),__MWORKS(BlockSystem(SampleTime(auto=false)=0.01)));
+  SysplorerEmbeddedCoder.SignalRouting.Mux ardg1_correction_x_mux(portNumber=3) 
+    annotation (Placement(transformation(origin = {575, -10}, extent = {{-10, -10}, {10, 10}})),__MWORKS(BlockSystem(Instance(u(u1,u2,u3)))));
+  SysplorerEmbeddedCoder.Utilities.Fcn ardg1_correction_x_next(y=if u[3]<0.5 then 0 else u[2]+max(min(u[1]-u[2],0.00004195751),-0.00004195751)) 
+    annotation (Placement(transformation(origin = {600, -10}, extent = {{-10, -10}, {10, 10}})));
+  SysplorerEmbeddedCoder.SignalRouting.Mux ardg1_final_x_mux(portNumber=5) 
+    annotation (Placement(transformation(origin = {625, -10}, extent = {{-10, -10}, {10, 10}})),__MWORKS(BlockSystem(Instance(u(u1,u2,u3,u4,u5)))));
+  SysplorerEmbeddedCoder.Utilities.Fcn ardg1_final_x(y=if u[3]<0.5 or u[4]<0.5 or u[5]<0.5 then u[1] else max(min(u[1]+u[2],0.0045),-0.0045)) 
+    annotation (Placement(transformation(origin = {650, -10}, extent = {{-10, -10}, {10, 10}})));
+  SysplorerEmbeddedCoder.SignalRouting.Mux ardg1_target_y_mux(portNumber=4) 
+    annotation (Placement(transformation(origin = {500, -45}, extent = {{-10, -10}, {10, 10}})),__MWORKS(BlockSystem(Instance(u(u1,u2,u3,u4)))));
+  SysplorerEmbeddedCoder.Utilities.Fcn ardg1_target_y(y=if u[4]<0.5 then 0 else max(min(-0.89894387*u[3]*u[2]*u[1],0.0003295328),-0.0003295328)) 
+    annotation (Placement(transformation(origin = {525, -45}, extent = {{-10, -10}, {10, 10}})));
+  SysplorerEmbeddedCoder.Discrete.UnitDelay ardg1_correction_y_delay(initCond=0) 
+    annotation (Placement(transformation(origin = {550, -45}, extent = {{-10, -10}, {10, 10}})),__MWORKS(BlockSystem(SampleTime(auto=false)=0.01)));
+  SysplorerEmbeddedCoder.SignalRouting.Mux ardg1_correction_y_mux(portNumber=3) 
+    annotation (Placement(transformation(origin = {575, -45}, extent = {{-10, -10}, {10, 10}})),__MWORKS(BlockSystem(Instance(u(u1,u2,u3)))));
+  SysplorerEmbeddedCoder.Utilities.Fcn ardg1_correction_y_next(y=if u[3]<0.5 then 0 else u[2]+max(min(u[1]-u[2],0.00004195751),-0.00004195751)) 
+    annotation (Placement(transformation(origin = {600, -45}, extent = {{-10, -10}, {10, 10}})));
+  SysplorerEmbeddedCoder.SignalRouting.Mux ardg1_final_y_mux(portNumber=5) 
+    annotation (Placement(transformation(origin = {625, -45}, extent = {{-10, -10}, {10, 10}})),__MWORKS(BlockSystem(Instance(u(u1,u2,u3,u4,u5)))));
+  SysplorerEmbeddedCoder.Utilities.Fcn ardg1_final_y(y=if u[3]<0.5 or u[4]<0.5 or u[5]<0.5 then u[1] else max(min(u[1]+u[2],0.0045),-0.0045)) 
+    annotation (Placement(transformation(origin = {650, -45}, extent = {{-10, -10}, {10, 10}})));
+  SysplorerEmbeddedCoder.Utilities.Fcn ardg1_r31_safe(y=if abs(u)<1e9 then u else 0) 
+    annotation (Placement(transformation(origin = {90, -135}, extent = {{-10, -10}, {10, 10}})));
+  SysplorerEmbeddedCoder.Utilities.Fcn ardg1_r32_safe(y=if abs(u)<1e9 then u else 0) 
+    annotation (Placement(transformation(origin = {90, -215}, extent = {{-10, -10}, {10, 10}})));
+  SysplorerEmbeddedCoder.Utilities.Fcn ardg1_torque_mode(y=if u>=0.5 then 1 else 0) 
+    annotation (Placement(transformation(origin = {500, -135}, extent = {{-10, -10}, {10, 10}})));
+  SysplorerEmbeddedCoder.Discrete.UnitDelay ardg1_ax_lpf_delay(initCond=0) 
+    annotation (Placement(transformation(origin = {110, -150}, extent = {{-10, -10}, {10, 10}})),__MWORKS(BlockSystem(SampleTime(auto=false)=0.01)));
+  SysplorerEmbeddedCoder.SignalRouting.Mux ardg1_ax_lpf_mux(portNumber=2) 
+    annotation (Placement(transformation(origin = {130, -150}, extent = {{-10, -10}, {10, 10}})),__MWORKS(BlockSystem(Instance(u(u1,u2)))));
+  SysplorerEmbeddedCoder.Utilities.Fcn ardg1_ax_lpf_next(y=0.11808862170182366*u[1]+0.8819113782981763*u[2]) 
+    annotation (Placement(transformation(origin = {150, -150}, extent = {{-10, -10}, {10, 10}})));
+  SysplorerEmbeddedCoder.Discrete.UnitDelay ardg1_ay_lpf_delay(initCond=0) 
+    annotation (Placement(transformation(origin = {110, -210}, extent = {{-10, -10}, {10, 10}})),__MWORKS(BlockSystem(SampleTime(auto=false)=0.01)));
+  SysplorerEmbeddedCoder.SignalRouting.Mux ardg1_ay_lpf_mux(portNumber=2) 
+    annotation (Placement(transformation(origin = {130, -210}, extent = {{-10, -10}, {10, 10}})),__MWORKS(BlockSystem(Instance(u(u1,u2)))));
+  SysplorerEmbeddedCoder.Utilities.Fcn ardg1_ay_lpf_next(y=0.11808862170182366*u[1]+0.8819113782981763*u[2]) 
+    annotation (Placement(transformation(origin = {150, -210}, extent = {{-10, -10}, {10, 10}})));
   model ModelWorkspace
     annotation(__MWORKS(hide = true,BlockSystem(blockKind=BlockKind.modelWorkspace)));
   end ModelWorkspace;
@@ -394,10 +596,6 @@ equation
   connect(thrust_scale_mux.y, thrust_managed.u) 
     annotation(Line(origin = {0.0, 0.0}, points = {{0, 0}, {0, 0}}));
   connect(thrust_managed.y, control_mux.u1) 
-    annotation(Line(origin = {0.0, 0.0}, points = {{0, 0}, {0, 0}}));
-  connect(tau_x.y, control_mux.u2) 
-    annotation(Line(origin = {0.0, 0.0}, points = {{0, 0}, {0, 0}}));
-  connect(tau_y.y, control_mux.u3) 
     annotation(Line(origin = {0.0, 0.0}, points = {{0, 0}, {0, 0}}));
   connect(control_mux.y, q_raw_1.u) 
     annotation(Line(origin = {0.0, 0.0}, points = {{0, 0}, {0, 0}}));
@@ -751,10 +949,6 @@ equation
     annotation(Line(origin = {0.0, 0.0}, points = {{0, 0}, {0, 0}}));
   connect(thrust_managed.y, allocation_mux.u1) 
     annotation(Line(origin = {0.0, 0.0}, points = {{0, 0}, {0, 0}}));
-  connect(tau_x.y, allocation_mux.u2) 
-    annotation(Line(origin = {0.0, 0.0}, points = {{0, 0}, {0, 0}}));
-  connect(tau_y.y, allocation_mux.u3) 
-    annotation(Line(origin = {0.0, 0.0}, points = {{0, 0}, {0, 0}}));
   connect(q_final_1.y, allocation_mux.u4) 
     annotation(Line(origin = {0.0, 0.0}, points = {{0, 0}, {0, 0}}));
   connect(q_final_2.y, allocation_mux.u5) 
@@ -779,10 +973,6 @@ equation
     annotation(Line(origin = {0.0, 0.0}, points = {{0, 0}, {0, 0}}));
   connect(force_z.y, diag_mux.u3) 
     annotation(Line(origin = {0.0, 0.0}, points = {{0, 0}, {0, 0}}));
-  connect(tau_x.y, diag_mux.u4) 
-    annotation(Line(origin = {0.0, 0.0}, points = {{0, 0}, {0, 0}}));
-  connect(tau_y.y, diag_mux.u5) 
-    annotation(Line(origin = {0.0, 0.0}, points = {{0, 0}, {0, 0}}));
   connect(zero.y, diag_mux.u6) 
     annotation(Line(origin = {0.0, 0.0}, points = {{0, 0}, {0, 0}}));
   connect(allocation_residual.y, diag_mux.u7) 
@@ -806,6 +996,372 @@ equation
   connect(version_code.y, diag_mux.u16) 
     annotation(Line(origin = {0.0, 0.0}, points = {{0, 0}, {0, 0}}));
   connect(diag_mux.y, diagnostics) 
+    annotation(Line(origin = {0.0, 0.0}, points = {{0, 0}, {0, 0}}));
+  connect(ardg1_rotor_speed, ardg1_rotor_speed_demux.u) 
+    annotation(Line(origin = {0.0, 0.0}, points = {{0, 0}, {0, 0}}));
+  connect(ardg1_rotor_speed_demux.y1, ardg1_q_1.u) 
+    annotation(Line(origin = {0.0, 0.0}, points = {{0, 0}, {0, 0}}));
+  connect(ardg1_q_1.y, ardg1_tau_x_mux.u1) 
+    annotation(Line(origin = {0.0, 0.0}, points = {{0, 0}, {0, 0}}));
+  connect(ardg1_q_1.y, ardg1_tau_y_mux.u1) 
+    annotation(Line(origin = {0.0, 0.0}, points = {{0, 0}, {0, 0}}));
+  connect(ardg1_q_1.y, ardg1_q_sum_mux.u1) 
+    annotation(Line(origin = {0.0, 0.0}, points = {{0, 0}, {0, 0}}));
+  connect(ardg1_rotor_speed_demux.y1, ardg1_finite_mux.u1) 
+    annotation(Line(origin = {0.0, 0.0}, points = {{0, 0}, {0, 0}}));
+  connect(ardg1_rotor_speed_demux.y2, ardg1_q_2.u) 
+    annotation(Line(origin = {0.0, 0.0}, points = {{0, 0}, {0, 0}}));
+  connect(ardg1_q_2.y, ardg1_tau_x_mux.u2) 
+    annotation(Line(origin = {0.0, 0.0}, points = {{0, 0}, {0, 0}}));
+  connect(ardg1_q_2.y, ardg1_tau_y_mux.u2) 
+    annotation(Line(origin = {0.0, 0.0}, points = {{0, 0}, {0, 0}}));
+  connect(ardg1_q_2.y, ardg1_q_sum_mux.u2) 
+    annotation(Line(origin = {0.0, 0.0}, points = {{0, 0}, {0, 0}}));
+  connect(ardg1_rotor_speed_demux.y2, ardg1_finite_mux.u2) 
+    annotation(Line(origin = {0.0, 0.0}, points = {{0, 0}, {0, 0}}));
+  connect(ardg1_rotor_speed_demux.y3, ardg1_q_3.u) 
+    annotation(Line(origin = {0.0, 0.0}, points = {{0, 0}, {0, 0}}));
+  connect(ardg1_q_3.y, ardg1_tau_x_mux.u3) 
+    annotation(Line(origin = {0.0, 0.0}, points = {{0, 0}, {0, 0}}));
+  connect(ardg1_q_3.y, ardg1_tau_y_mux.u3) 
+    annotation(Line(origin = {0.0, 0.0}, points = {{0, 0}, {0, 0}}));
+  connect(ardg1_q_3.y, ardg1_q_sum_mux.u3) 
+    annotation(Line(origin = {0.0, 0.0}, points = {{0, 0}, {0, 0}}));
+  connect(ardg1_rotor_speed_demux.y3, ardg1_finite_mux.u3) 
+    annotation(Line(origin = {0.0, 0.0}, points = {{0, 0}, {0, 0}}));
+  connect(ardg1_rotor_speed_demux.y4, ardg1_q_4.u) 
+    annotation(Line(origin = {0.0, 0.0}, points = {{0, 0}, {0, 0}}));
+  connect(ardg1_q_4.y, ardg1_tau_x_mux.u4) 
+    annotation(Line(origin = {0.0, 0.0}, points = {{0, 0}, {0, 0}}));
+  connect(ardg1_q_4.y, ardg1_tau_y_mux.u4) 
+    annotation(Line(origin = {0.0, 0.0}, points = {{0, 0}, {0, 0}}));
+  connect(ardg1_q_4.y, ardg1_q_sum_mux.u4) 
+    annotation(Line(origin = {0.0, 0.0}, points = {{0, 0}, {0, 0}}));
+  connect(ardg1_rotor_speed_demux.y4, ardg1_finite_mux.u4) 
+    annotation(Line(origin = {0.0, 0.0}, points = {{0, 0}, {0, 0}}));
+  connect(ardg1_tau_x_mux.y, ardg1_actual_tau_x.u) 
+    annotation(Line(origin = {0.0, 0.0}, points = {{0, 0}, {0, 0}}));
+  connect(ardg1_tau_y_mux.y, ardg1_actual_tau_y.u) 
+    annotation(Line(origin = {0.0, 0.0}, points = {{0, 0}, {0, 0}}));
+  connect(ardg1_actual_tau_x.y, ardg1_actual_tau_x_delay.u1) 
+    annotation(Line(origin = {0.0, 0.0}, points = {{0, 0}, {0, 0}}));
+  connect(ardg1_actual_tau_y.y, ardg1_actual_tau_y_delay.u1) 
+    annotation(Line(origin = {0.0, 0.0}, points = {{0, 0}, {0, 0}}));
+  connect(ardg1_q_sum_mux.y, ardg1_q_sum.u) 
+    annotation(Line(origin = {0.0, 0.0}, points = {{0, 0}, {0, 0}}));
+  connect(ardg1_q_sum.y, ardg1_q_sum_delay.u1) 
+    annotation(Line(origin = {0.0, 0.0}, points = {{0, 0}, {0, 0}}));
+  connect(ardg1_residual_x.y, ardg1_trigger_mux.u1) 
+    annotation(Line(origin = {0.0, 0.0}, points = {{0, 0}, {0, 0}}));
+  connect(ardg1_residual_y.y, ardg1_trigger_mux.u2) 
+    annotation(Line(origin = {0.0, 0.0}, points = {{0, 0}, {0, 0}}));
+  connect(ardg1_trigger_mux.y, ardg1_angular_on.u) 
+    annotation(Line(origin = {0.0, 0.0}, points = {{0, 0}, {0, 0}}));
+  connect(ardg1_trigger_mux.y, ardg1_angular_hold.u) 
+    annotation(Line(origin = {0.0, 0.0}, points = {{0, 0}, {0, 0}}));
+  connect(state_demux.y4, ardg1_vx_safe.u) 
+    annotation(Line(origin = {0.0, 0.0}, points = {{0, 0}, {0, 0}}));
+  connect(ardg1_vx_safe.y, ardg1_vx_accel_mux.u1) 
+    annotation(Line(origin = {0.0, 0.0}, points = {{0, 0}, {0, 0}}));
+  connect(ardg1_vx_delay.y, ardg1_vx_accel_mux.u2) 
+    annotation(Line(origin = {0.0, 0.0}, points = {{0, 0}, {0, 0}}));
+  connect(ardg1_vx_accel_mux.y, ardg1_vx_accel.u) 
+    annotation(Line(origin = {0.0, 0.0}, points = {{0, 0}, {0, 0}}));
+  connect(ardg1_vx_safe.y, ardg1_vx_delay.u1) 
+    annotation(Line(origin = {0.0, 0.0}, points = {{0, 0}, {0, 0}}));
+  connect(state_demux.y5, ardg1_vy_safe.u) 
+    annotation(Line(origin = {0.0, 0.0}, points = {{0, 0}, {0, 0}}));
+  connect(ardg1_vy_safe.y, ardg1_vy_accel_mux.u1) 
+    annotation(Line(origin = {0.0, 0.0}, points = {{0, 0}, {0, 0}}));
+  connect(ardg1_vy_delay.y, ardg1_vy_accel_mux.u2) 
+    annotation(Line(origin = {0.0, 0.0}, points = {{0, 0}, {0, 0}}));
+  connect(ardg1_vy_accel_mux.y, ardg1_vy_accel.u) 
+    annotation(Line(origin = {0.0, 0.0}, points = {{0, 0}, {0, 0}}));
+  connect(ardg1_vy_safe.y, ardg1_vy_delay.u1) 
+    annotation(Line(origin = {0.0, 0.0}, points = {{0, 0}, {0, 0}}));
+  connect(ardg1_ax_lpf_next.y, ardg1_trans_residual_mux.u1) 
+    annotation(Line(origin = {0.0, 0.0}, points = {{0, 0}, {0, 0}}));
+  connect(ardg1_ay_lpf_next.y, ardg1_trans_residual_mux.u2) 
+    annotation(Line(origin = {0.0, 0.0}, points = {{0, 0}, {0, 0}}));
+  connect(ardg1_q_sum_delay.y, ardg1_trans_residual_mux.u3) 
+    annotation(Line(origin = {0.0, 0.0}, points = {{0, 0}, {0, 0}}));
+  connect(ardg1_r31_safe.y, ardg1_trans_residual_mux.u4) 
+    annotation(Line(origin = {0.0, 0.0}, points = {{0, 0}, {0, 0}}));
+  connect(ardg1_r32_safe.y, ardg1_trans_residual_mux.u5) 
+    annotation(Line(origin = {0.0, 0.0}, points = {{0, 0}, {0, 0}}));
+  connect(ardg1_trans_residual_mux.y, ardg1_trans_residual_norm.u) 
+    annotation(Line(origin = {0.0, 0.0}, points = {{0, 0}, {0, 0}}));
+  connect(ardg1_trans_residual_norm.y, ardg1_trans_score.u) 
+    annotation(Line(origin = {0.0, 0.0}, points = {{0, 0}, {0, 0}}));
+  connect(clip_count.y, ardg1_clip_delay.u1) 
+    annotation(Line(origin = {0.0, 0.0}, points = {{0, 0}, {0, 0}}));
+  connect(allocation_residual.y, ardg1_alloc_delay.u1) 
+    annotation(Line(origin = {0.0, 0.0}, points = {{0, 0}, {0, 0}}));
+  connect(ardg1_time, ardg1_time_delay.u1) 
+    annotation(Line(origin = {0.0, 0.0}, points = {{0, 0}, {0, 0}}));
+  connect(ardg1_time_delay.y, ardg1_time_valid_mux.u1) 
+    annotation(Line(origin = {0.0, 0.0}, points = {{0, 0}, {0, 0}}));
+  connect(ardg1_time, ardg1_time_valid_mux.u2) 
+    annotation(Line(origin = {0.0, 0.0}, points = {{0, 0}, {0, 0}}));
+  connect(ardg1_time_valid_mux.y, ardg1_time_valid.u) 
+    annotation(Line(origin = {0.0, 0.0}, points = {{0, 0}, {0, 0}}));
+  connect(state_demux.y4, ardg1_finite_mux.u5) 
+    annotation(Line(origin = {0.0, 0.0}, points = {{0, 0}, {0, 0}}));
+  connect(state_demux.y5, ardg1_finite_mux.u6) 
+    annotation(Line(origin = {0.0, 0.0}, points = {{0, 0}, {0, 0}}));
+  connect(state_demux.y9, ardg1_finite_mux.u7) 
+    annotation(Line(origin = {0.0, 0.0}, points = {{0, 0}, {0, 0}}));
+  connect(state_demux.y12, ardg1_finite_mux.u8) 
+    annotation(Line(origin = {0.0, 0.0}, points = {{0, 0}, {0, 0}}));
+  connect(state_demux.y16, ardg1_finite_mux.u9) 
+    annotation(Line(origin = {0.0, 0.0}, points = {{0, 0}, {0, 0}}));
+  connect(state_demux.y17, ardg1_finite_mux.u10) 
+    annotation(Line(origin = {0.0, 0.0}, points = {{0, 0}, {0, 0}}));
+  connect(tau_x.y, ardg1_finite_mux.u11) 
+    annotation(Line(origin = {0.0, 0.0}, points = {{0, 0}, {0, 0}}));
+  connect(tau_y.y, ardg1_finite_mux.u12) 
+    annotation(Line(origin = {0.0, 0.0}, points = {{0, 0}, {0, 0}}));
+  connect(ardg1_time, ardg1_finite_mux.u13) 
+    annotation(Line(origin = {0.0, 0.0}, points = {{0, 0}, {0, 0}}));
+  connect(ardg1_enable, ardg1_finite_mux.u14) 
+    annotation(Line(origin = {0.0, 0.0}, points = {{0, 0}, {0, 0}}));
+  connect(ardg1_clip_delay.y, ardg1_finite_mux.u15) 
+    annotation(Line(origin = {0.0, 0.0}, points = {{0, 0}, {0, 0}}));
+  connect(ardg1_alloc_delay.y, ardg1_finite_mux.u16) 
+    annotation(Line(origin = {0.0, 0.0}, points = {{0, 0}, {0, 0}}));
+  connect(ardg1_finite_mux.y, ardg1_finite.u) 
+    annotation(Line(origin = {0.0, 0.0}, points = {{0, 0}, {0, 0}}));
+  connect(ardg1_finite.y, ardg1_safety_mux.u1) 
+    annotation(Line(origin = {0.0, 0.0}, points = {{0, 0}, {0, 0}}));
+  connect(ardg1_clip_delay.y, ardg1_safety_mux.u2) 
+    annotation(Line(origin = {0.0, 0.0}, points = {{0, 0}, {0, 0}}));
+  connect(ardg1_alloc_delay.y, ardg1_safety_mux.u3) 
+    annotation(Line(origin = {0.0, 0.0}, points = {{0, 0}, {0, 0}}));
+  connect(ardg1_time_valid.y, ardg1_safety_mux.u4) 
+    annotation(Line(origin = {0.0, 0.0}, points = {{0, 0}, {0, 0}}));
+  connect(ardg1_enable, ardg1_safety_mux.u5) 
+    annotation(Line(origin = {0.0, 0.0}, points = {{0, 0}, {0, 0}}));
+  connect(ardg1_safety_mux.y, ardg1_safety_valid.u) 
+    annotation(Line(origin = {0.0, 0.0}, points = {{0, 0}, {0, 0}}));
+  connect(ardg1_safety_valid.y, ardg1_enter_valid_mux.u1) 
+    annotation(Line(origin = {0.0, 0.0}, points = {{0, 0}, {0, 0}}));
+  connect(ardg1_angular_on.y, ardg1_enter_valid_mux.u2) 
+    annotation(Line(origin = {0.0, 0.0}, points = {{0, 0}, {0, 0}}));
+  connect(ardg1_enter_valid_mux.y, ardg1_enter_valid.u) 
+    annotation(Line(origin = {0.0, 0.0}, points = {{0, 0}, {0, 0}}));
+  connect(ardg1_safety_valid.y, ardg1_hold_valid_mux.u1) 
+    annotation(Line(origin = {0.0, 0.0}, points = {{0, 0}, {0, 0}}));
+  connect(ardg1_angular_hold.y, ardg1_hold_valid_mux.u2) 
+    annotation(Line(origin = {0.0, 0.0}, points = {{0, 0}, {0, 0}}));
+  connect(ardg1_hold_valid_mux.y, ardg1_hold_valid.u) 
+    annotation(Line(origin = {0.0, 0.0}, points = {{0, 0}, {0, 0}}));
+  connect(ardg1_enter_timer_delay.y, ardg1_enter_timer_mux.u1) 
+    annotation(Line(origin = {0.0, 0.0}, points = {{0, 0}, {0, 0}}));
+  connect(ardg1_enter_valid.y, ardg1_enter_timer_mux.u2) 
+    annotation(Line(origin = {0.0, 0.0}, points = {{0, 0}, {0, 0}}));
+  connect(ardg1_enter_timer_mux.y, ardg1_enter_timer_next.u) 
+    annotation(Line(origin = {0.0, 0.0}, points = {{0, 0}, {0, 0}}));
+  connect(ardg1_enter_timer_next.y, ardg1_enter_timer_delay.u1) 
+    annotation(Line(origin = {0.0, 0.0}, points = {{0, 0}, {0, 0}}));
+  connect(ardg1_exit_timer_delay.y, ardg1_exit_timer_mux.u1) 
+    annotation(Line(origin = {0.0, 0.0}, points = {{0, 0}, {0, 0}}));
+  connect(ardg1_hold_valid.y, ardg1_exit_timer_mux.u2) 
+    annotation(Line(origin = {0.0, 0.0}, points = {{0, 0}, {0, 0}}));
+  connect(ardg1_active_delay.y, ardg1_exit_timer_mux.u3) 
+    annotation(Line(origin = {0.0, 0.0}, points = {{0, 0}, {0, 0}}));
+  connect(ardg1_exit_timer_mux.y, ardg1_exit_timer_next.u) 
+    annotation(Line(origin = {0.0, 0.0}, points = {{0, 0}, {0, 0}}));
+  connect(ardg1_exit_timer_next.y, ardg1_exit_timer_delay.u1) 
+    annotation(Line(origin = {0.0, 0.0}, points = {{0, 0}, {0, 0}}));
+  connect(ardg1_active_delay.y, ardg1_active_mux.u1) 
+    annotation(Line(origin = {0.0, 0.0}, points = {{0, 0}, {0, 0}}));
+  connect(ardg1_enter_timer_next.y, ardg1_active_mux.u2) 
+    annotation(Line(origin = {0.0, 0.0}, points = {{0, 0}, {0, 0}}));
+  connect(ardg1_exit_timer_next.y, ardg1_active_mux.u3) 
+    annotation(Line(origin = {0.0, 0.0}, points = {{0, 0}, {0, 0}}));
+  connect(ardg1_safety_valid.y, ardg1_active_mux.u4) 
+    annotation(Line(origin = {0.0, 0.0}, points = {{0, 0}, {0, 0}}));
+  connect(ardg1_active_mux.y, ardg1_active_next.u) 
+    annotation(Line(origin = {0.0, 0.0}, points = {{0, 0}, {0, 0}}));
+  connect(ardg1_active_next.y, ardg1_active_delay.u1) 
+    annotation(Line(origin = {0.0, 0.0}, points = {{0, 0}, {0, 0}}));
+  connect(ardg1_blend_delay.y, ardg1_blend_mux.u1) 
+    annotation(Line(origin = {0.0, 0.0}, points = {{0, 0}, {0, 0}}));
+  connect(ardg1_active_delay.y, ardg1_blend_mux.u2) 
+    annotation(Line(origin = {0.0, 0.0}, points = {{0, 0}, {0, 0}}));
+  connect(ardg1_safety_valid.y, ardg1_blend_mux.u3) 
+    annotation(Line(origin = {0.0, 0.0}, points = {{0, 0}, {0, 0}}));
+  connect(ardg1_blend_mux.y, ardg1_blend_next.u) 
+    annotation(Line(origin = {0.0, 0.0}, points = {{0, 0}, {0, 0}}));
+  connect(ardg1_blend_next.y, ardg1_blend_delay.u1) 
+    annotation(Line(origin = {0.0, 0.0}, points = {{0, 0}, {0, 0}}));
+  connect(state_demux.y16, ardg1_observer_x_mux.u1) 
+    annotation(Line(origin = {0.0, 0.0}, points = {{0, 0}, {0, 0}}));
+  connect(ardg1_omega_x_delay.y, ardg1_observer_x_mux.u2) 
+    annotation(Line(origin = {0.0, 0.0}, points = {{0, 0}, {0, 0}}));
+  connect(ardg1_alpha_x_delay.y, ardg1_observer_x_mux.u3) 
+    annotation(Line(origin = {0.0, 0.0}, points = {{0, 0}, {0, 0}}));
+  connect(ardg1_observer_x_mux.y, ardg1_innovation_x.u) 
+    annotation(Line(origin = {0.0, 0.0}, points = {{0, 0}, {0, 0}}));
+  connect(ardg1_innovation_x.y, ardg1_innovation_limit_x.u) 
+    annotation(Line(origin = {0.0, 0.0}, points = {{0, 0}, {0, 0}}));
+  connect(ardg1_omega_x_delay.y, ardg1_omega_next_x_mux.u1) 
+    annotation(Line(origin = {0.0, 0.0}, points = {{0, 0}, {0, 0}}));
+  connect(ardg1_alpha_x_delay.y, ardg1_omega_next_x_mux.u2) 
+    annotation(Line(origin = {0.0, 0.0}, points = {{0, 0}, {0, 0}}));
+  connect(ardg1_innovation_limit_x.y, ardg1_omega_next_x_mux.u3) 
+    annotation(Line(origin = {0.0, 0.0}, points = {{0, 0}, {0, 0}}));
+  connect(ardg1_omega_next_x_mux.y, ardg1_omega_next_x.u) 
+    annotation(Line(origin = {0.0, 0.0}, points = {{0, 0}, {0, 0}}));
+  connect(ardg1_omega_next_x.y, ardg1_omega_x_delay.u1) 
+    annotation(Line(origin = {0.0, 0.0}, points = {{0, 0}, {0, 0}}));
+  connect(ardg1_alpha_x_delay.y, ardg1_alpha_next_x_mux.u1) 
+    annotation(Line(origin = {0.0, 0.0}, points = {{0, 0}, {0, 0}}));
+  connect(ardg1_innovation_limit_x.y, ardg1_alpha_next_x_mux.u2) 
+    annotation(Line(origin = {0.0, 0.0}, points = {{0, 0}, {0, 0}}));
+  connect(ardg1_alpha_next_x_mux.y, ardg1_alpha_next_x.u) 
+    annotation(Line(origin = {0.0, 0.0}, points = {{0, 0}, {0, 0}}));
+  connect(ardg1_alpha_next_x.y, ardg1_alpha_x_delay.u1) 
+    annotation(Line(origin = {0.0, 0.0}, points = {{0, 0}, {0, 0}}));
+  connect(ardg1_alpha_next_x.y, ardg1_residual_x_mux.u1) 
+    annotation(Line(origin = {0.0, 0.0}, points = {{0, 0}, {0, 0}}));
+  connect(ardg1_actual_tau_x_delay.y, ardg1_residual_x_mux.u2) 
+    annotation(Line(origin = {0.0, 0.0}, points = {{0, 0}, {0, 0}}));
+  connect(ardg1_residual_x_mux.y, ardg1_residual_x.u) 
+    annotation(Line(origin = {0.0, 0.0}, points = {{0, 0}, {0, 0}}));
+  connect(ardg1_residual_x.y, ardg1_target_x_mux.u1) 
+    annotation(Line(origin = {0.0, 0.0}, points = {{0, 0}, {0, 0}}));
+  connect(ardg1_blend_next.y, ardg1_target_x_mux.u2) 
+    annotation(Line(origin = {0.0, 0.0}, points = {{0, 0}, {0, 0}}));
+  connect(ardg1_active_delay.y, ardg1_target_x_mux.u3) 
+    annotation(Line(origin = {0.0, 0.0}, points = {{0, 0}, {0, 0}}));
+  connect(ardg1_safety_valid.y, ardg1_target_x_mux.u4) 
+    annotation(Line(origin = {0.0, 0.0}, points = {{0, 0}, {0, 0}}));
+  connect(ardg1_target_x_mux.y, ardg1_target_x.u) 
+    annotation(Line(origin = {0.0, 0.0}, points = {{0, 0}, {0, 0}}));
+  connect(ardg1_target_x.y, ardg1_correction_x_mux.u1) 
+    annotation(Line(origin = {0.0, 0.0}, points = {{0, 0}, {0, 0}}));
+  connect(ardg1_correction_x_delay.y, ardg1_correction_x_mux.u2) 
+    annotation(Line(origin = {0.0, 0.0}, points = {{0, 0}, {0, 0}}));
+  connect(ardg1_safety_valid.y, ardg1_correction_x_mux.u3) 
+    annotation(Line(origin = {0.0, 0.0}, points = {{0, 0}, {0, 0}}));
+  connect(ardg1_correction_x_mux.y, ardg1_correction_x_next.u) 
+    annotation(Line(origin = {0.0, 0.0}, points = {{0, 0}, {0, 0}}));
+  connect(ardg1_correction_x_next.y, ardg1_correction_x_delay.u1) 
+    annotation(Line(origin = {0.0, 0.0}, points = {{0, 0}, {0, 0}}));
+  connect(tau_x.y, ardg1_final_x_mux.u1) 
+    annotation(Line(origin = {0.0, 0.0}, points = {{0, 0}, {0, 0}}));
+  connect(ardg1_correction_x_next.y, ardg1_final_x_mux.u2) 
+    annotation(Line(origin = {0.0, 0.0}, points = {{0, 0}, {0, 0}}));
+  connect(ardg1_enable, ardg1_final_x_mux.u3) 
+    annotation(Line(origin = {0.0, 0.0}, points = {{0, 0}, {0, 0}}));
+  connect(ardg1_active_delay.y, ardg1_final_x_mux.u4) 
+    annotation(Line(origin = {0.0, 0.0}, points = {{0, 0}, {0, 0}}));
+  connect(ardg1_safety_valid.y, ardg1_final_x_mux.u5) 
+    annotation(Line(origin = {0.0, 0.0}, points = {{0, 0}, {0, 0}}));
+  connect(ardg1_final_x_mux.y, ardg1_final_x.u) 
+    annotation(Line(origin = {0.0, 0.0}, points = {{0, 0}, {0, 0}}));
+  connect(ardg1_final_x.y, control_mux.u2) 
+    annotation(Line(origin = {0.0, 0.0}, points = {{0, 0}, {0, 0}}));
+  connect(ardg1_final_x.y, allocation_mux.u2) 
+    annotation(Line(origin = {0.0, 0.0}, points = {{0, 0}, {0, 0}}));
+  connect(ardg1_final_x.y, diag_mux.u4) 
+    annotation(Line(origin = {0.0, 0.0}, points = {{0, 0}, {0, 0}}));
+  connect(state_demux.y17, ardg1_observer_y_mux.u1) 
+    annotation(Line(origin = {0.0, 0.0}, points = {{0, 0}, {0, 0}}));
+  connect(ardg1_omega_y_delay.y, ardg1_observer_y_mux.u2) 
+    annotation(Line(origin = {0.0, 0.0}, points = {{0, 0}, {0, 0}}));
+  connect(ardg1_alpha_y_delay.y, ardg1_observer_y_mux.u3) 
+    annotation(Line(origin = {0.0, 0.0}, points = {{0, 0}, {0, 0}}));
+  connect(ardg1_observer_y_mux.y, ardg1_innovation_y.u) 
+    annotation(Line(origin = {0.0, 0.0}, points = {{0, 0}, {0, 0}}));
+  connect(ardg1_innovation_y.y, ardg1_innovation_limit_y.u) 
+    annotation(Line(origin = {0.0, 0.0}, points = {{0, 0}, {0, 0}}));
+  connect(ardg1_omega_y_delay.y, ardg1_omega_next_y_mux.u1) 
+    annotation(Line(origin = {0.0, 0.0}, points = {{0, 0}, {0, 0}}));
+  connect(ardg1_alpha_y_delay.y, ardg1_omega_next_y_mux.u2) 
+    annotation(Line(origin = {0.0, 0.0}, points = {{0, 0}, {0, 0}}));
+  connect(ardg1_innovation_limit_y.y, ardg1_omega_next_y_mux.u3) 
+    annotation(Line(origin = {0.0, 0.0}, points = {{0, 0}, {0, 0}}));
+  connect(ardg1_omega_next_y_mux.y, ardg1_omega_next_y.u) 
+    annotation(Line(origin = {0.0, 0.0}, points = {{0, 0}, {0, 0}}));
+  connect(ardg1_omega_next_y.y, ardg1_omega_y_delay.u1) 
+    annotation(Line(origin = {0.0, 0.0}, points = {{0, 0}, {0, 0}}));
+  connect(ardg1_alpha_y_delay.y, ardg1_alpha_next_y_mux.u1) 
+    annotation(Line(origin = {0.0, 0.0}, points = {{0, 0}, {0, 0}}));
+  connect(ardg1_innovation_limit_y.y, ardg1_alpha_next_y_mux.u2) 
+    annotation(Line(origin = {0.0, 0.0}, points = {{0, 0}, {0, 0}}));
+  connect(ardg1_alpha_next_y_mux.y, ardg1_alpha_next_y.u) 
+    annotation(Line(origin = {0.0, 0.0}, points = {{0, 0}, {0, 0}}));
+  connect(ardg1_alpha_next_y.y, ardg1_alpha_y_delay.u1) 
+    annotation(Line(origin = {0.0, 0.0}, points = {{0, 0}, {0, 0}}));
+  connect(ardg1_alpha_next_y.y, ardg1_residual_y_mux.u1) 
+    annotation(Line(origin = {0.0, 0.0}, points = {{0, 0}, {0, 0}}));
+  connect(ardg1_actual_tau_y_delay.y, ardg1_residual_y_mux.u2) 
+    annotation(Line(origin = {0.0, 0.0}, points = {{0, 0}, {0, 0}}));
+  connect(ardg1_residual_y_mux.y, ardg1_residual_y.u) 
+    annotation(Line(origin = {0.0, 0.0}, points = {{0, 0}, {0, 0}}));
+  connect(ardg1_residual_y.y, ardg1_target_y_mux.u1) 
+    annotation(Line(origin = {0.0, 0.0}, points = {{0, 0}, {0, 0}}));
+  connect(ardg1_blend_next.y, ardg1_target_y_mux.u2) 
+    annotation(Line(origin = {0.0, 0.0}, points = {{0, 0}, {0, 0}}));
+  connect(ardg1_active_delay.y, ardg1_target_y_mux.u3) 
+    annotation(Line(origin = {0.0, 0.0}, points = {{0, 0}, {0, 0}}));
+  connect(ardg1_safety_valid.y, ardg1_target_y_mux.u4) 
+    annotation(Line(origin = {0.0, 0.0}, points = {{0, 0}, {0, 0}}));
+  connect(ardg1_target_y_mux.y, ardg1_target_y.u) 
+    annotation(Line(origin = {0.0, 0.0}, points = {{0, 0}, {0, 0}}));
+  connect(ardg1_target_y.y, ardg1_correction_y_mux.u1) 
+    annotation(Line(origin = {0.0, 0.0}, points = {{0, 0}, {0, 0}}));
+  connect(ardg1_correction_y_delay.y, ardg1_correction_y_mux.u2) 
+    annotation(Line(origin = {0.0, 0.0}, points = {{0, 0}, {0, 0}}));
+  connect(ardg1_safety_valid.y, ardg1_correction_y_mux.u3) 
+    annotation(Line(origin = {0.0, 0.0}, points = {{0, 0}, {0, 0}}));
+  connect(ardg1_correction_y_mux.y, ardg1_correction_y_next.u) 
+    annotation(Line(origin = {0.0, 0.0}, points = {{0, 0}, {0, 0}}));
+  connect(ardg1_correction_y_next.y, ardg1_correction_y_delay.u1) 
+    annotation(Line(origin = {0.0, 0.0}, points = {{0, 0}, {0, 0}}));
+  connect(tau_y.y, ardg1_final_y_mux.u1) 
+    annotation(Line(origin = {0.0, 0.0}, points = {{0, 0}, {0, 0}}));
+  connect(ardg1_correction_y_next.y, ardg1_final_y_mux.u2) 
+    annotation(Line(origin = {0.0, 0.0}, points = {{0, 0}, {0, 0}}));
+  connect(ardg1_enable, ardg1_final_y_mux.u3) 
+    annotation(Line(origin = {0.0, 0.0}, points = {{0, 0}, {0, 0}}));
+  connect(ardg1_active_delay.y, ardg1_final_y_mux.u4) 
+    annotation(Line(origin = {0.0, 0.0}, points = {{0, 0}, {0, 0}}));
+  connect(ardg1_safety_valid.y, ardg1_final_y_mux.u5) 
+    annotation(Line(origin = {0.0, 0.0}, points = {{0, 0}, {0, 0}}));
+  connect(ardg1_final_y_mux.y, ardg1_final_y.u) 
+    annotation(Line(origin = {0.0, 0.0}, points = {{0, 0}, {0, 0}}));
+  connect(ardg1_final_y.y, control_mux.u3) 
+    annotation(Line(origin = {0.0, 0.0}, points = {{0, 0}, {0, 0}}));
+  connect(ardg1_final_y.y, allocation_mux.u3) 
+    annotation(Line(origin = {0.0, 0.0}, points = {{0, 0}, {0, 0}}));
+  connect(ardg1_final_y.y, diag_mux.u5) 
+    annotation(Line(origin = {0.0, 0.0}, points = {{0, 0}, {0, 0}}));
+  connect(state_demux.y9, ardg1_r31_safe.u) 
+    annotation(Line(origin = {0.0, 0.0}, points = {{0, 0}, {0, 0}}));
+  connect(state_demux.y12, ardg1_r32_safe.u) 
+    annotation(Line(origin = {0.0, 0.0}, points = {{0, 0}, {0, 0}}));
+  connect(ardg1_vx_accel.y, ardg1_ax_lpf_mux.u1) 
+    annotation(Line(origin = {0.0, 0.0}, points = {{0, 0}, {0, 0}}));
+  connect(ardg1_ax_lpf_delay.y, ardg1_ax_lpf_mux.u2) 
+    annotation(Line(origin = {0.0, 0.0}, points = {{0, 0}, {0, 0}}));
+  connect(ardg1_ax_lpf_mux.y, ardg1_ax_lpf_next.u) 
+    annotation(Line(origin = {0.0, 0.0}, points = {{0, 0}, {0, 0}}));
+  connect(ardg1_ax_lpf_next.y, ardg1_ax_lpf_delay.u1) 
+    annotation(Line(origin = {0.0, 0.0}, points = {{0, 0}, {0, 0}}));
+  connect(ardg1_vy_accel.y, ardg1_ay_lpf_mux.u1) 
+    annotation(Line(origin = {0.0, 0.0}, points = {{0, 0}, {0, 0}}));
+  connect(ardg1_ay_lpf_delay.y, ardg1_ay_lpf_mux.u2) 
+    annotation(Line(origin = {0.0, 0.0}, points = {{0, 0}, {0, 0}}));
+  connect(ardg1_ay_lpf_mux.y, ardg1_ay_lpf_next.u) 
+    annotation(Line(origin = {0.0, 0.0}, points = {{0, 0}, {0, 0}}));
+  connect(ardg1_ay_lpf_next.y, ardg1_ay_lpf_delay.u1) 
+    annotation(Line(origin = {0.0, 0.0}, points = {{0, 0}, {0, 0}}));
+  connect(ardg1_trans_score.y, ardg1_trigger_mux.u3) 
+    annotation(Line(origin = {0.0, 0.0}, points = {{0, 0}, {0, 0}}));
+  connect(ardg1_active_next.y, ardg1_torque_mode.u) 
     annotation(Line(origin = {0.0, 0.0}, points = {{0, 0}, {0, 0}}));
 
 end A8FormalRAGCACGHTE_20260715;

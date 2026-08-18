@@ -49,7 +49,7 @@ def main() -> int:
     status = json.loads(status_path.read_text(encoding="utf-8"))
     rows = []
     success = bool(status.get("success"))
-    success = success and status.get("algorithm_id") == "RA-GCA-CGHTE"
+    success = success and status.get("algorithm_id") == "ARDG-RGPC"
     selected = set(status.get("selected_cases", []))
     for case_id in CASES:
         reference = REFERENCE / f"{case_id}.csv"
@@ -71,8 +71,8 @@ def main() -> int:
         success = success and row["selected"] and row["byte_identical"]
     payload = {
         "schema_version": 1,
-        "algorithm_id": "RA-GCA-CGHTE",
-        "release_version": "1.0.0",
+        "algorithm_id": "ARDG-RGPC",
+        "release_id": "ARDG-RGPC-FINAL-20260815",
         "generated_utc": datetime.now(timezone.utc).isoformat().replace("+00:00", "Z"),
         "results": str(results),
         "status_sha256": sha256(status_path),

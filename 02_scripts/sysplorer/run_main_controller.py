@@ -1,4 +1,4 @@
-"""Run the formal RA-GCA-CGHTE main-controller regression suite.
+"""Run the formal ARDG-RGPC finals simulation suites.
 
 This runner never starts, exits, clears, or changes the directory of Sysplorer.
 The promoted controller parameters are fixed and cannot be changed from the CLI.
@@ -22,10 +22,10 @@ import mworks.sysplorer as modeling
 
 # 启动前核对官方模型和正式控制器哈希，防止误加载其他版本。
 EXPECTED_OFFICIAL_SHA256 = (
-    "B39A8B23665A3B05CF3FAD406744021F0E65541A02D1EF052D2BD10BA7E76352"
+    "E16DECED48CFFB9196AB014491C2BB27E7BE864A388E169EF4B775877B4B6658"
 )
 EXPECTED_MAIN_CONTROLLER_SHA256 = (
-    "0BADB8524026CA8EFF93BEC55C56AB91866D2E7363DC69697407C234116E1BCA"
+    "9C0E784EEA14687C26F9CAE9BC3FBDC9F546492659C56CF12E49BA2C80F7FE0F"
 )
 INTERVAL_S = 0.01
 MAIN_CONTROLLER = "A8FormalRAGCACGHTE_20260715"
@@ -33,6 +33,7 @@ MAIN_PLANT = "A8RAGCACGHTEPlant20260715"
 STEP_PLANT = "A8RAGCACGHTEStepPlant20260715"
 PHASE_PLANT = "A8RAGCACGHTEPhaseValidationPlant20260715"
 FORMATION_PLANT = "A8RAGCACGHTEFormationValidationPlant20260715"
+ANGULAR_PLANT = "A8ARDGRGPCFinalScenarios20260815"
 
 ACTIVATION_COVARIANCE_DEFAULT = 0.00253218969247675
 ACTIVATION_COVARIANCE_MIN = 0.00125
@@ -193,6 +194,18 @@ for _bits in ("000", "001", "010", "011", "100", "101", "110", "111"):
 SCENE08_CASES = tuple(f"Scene08_P{index}" for index in range(5))
 SCENE10_CASES = tuple(f"Scene10_P{index}" for index in range(5))
 SCENE07C_CASES = ("Scene07COff", "Scene07COnPredictiveV5C")
+ANGULAR_CASES = ("BODY_ROLL_POS", "BODY_PITCH_NEG")
+REGRESSION18_CASES = (
+    "Scene04", "Scene01", "Scene02", "Scene03", "Scene06b",
+    "Scene01S_X", "Scene01S_Y", "Scene01S_Z",
+    *SCENE08_CASES, *SCENE10_CASES,
+)
+SUPPLEMENTARY_CASES = (
+    "Scene05B_Nominal", *SCENE05B_FOCUS_CASES, *SCENE05B_CASES[1:],
+    "Scene07B", *SCENE07C_CASES,
+)
+FINALS_CORE_CASES = REGRESSION18_CASES + ANGULAR_CASES
+FULL_REGISTERED_CASES = FINALS_CORE_CASES + SUPPLEMENTARY_CASES
 
 
 def utc_now() -> str:
@@ -310,6 +323,111 @@ def write_json(path: Path, value: dict[str, Any]) -> None:
         json.dumps(value, indent=2, ensure_ascii=False) + "\n", encoding="utf-8"
     )
     temporary.replace(path)
+
+
+def write_named_columns(
+    path: Path, columns: list[tuple[str, list[float]]]
+) -> tuple[dict[str, Any], Path | None]:
+    if not columns:
+        raise RuntimeError("empty column contract")
+    row_count = len(columns[0][1])
+    if row_count == 0 or any(
+        len(values) != row_count
+        or any(not math.isfinite(value) for value in values)
+        for _, values in columns
+    ):
+        raise RuntimeError("invalid named-column data")
+    path.parent.mkdir(parents=True, exist_ok=True)
+    backup = backup_existing(path)
+    temporary = path.with_suffix(path.suffix + ".tmp")
+    try:
+        with temporary.open("w", newline="", encoding="utf-8") as stream:
+            writer = csv.writer(stream, lineterminator="\n")
+            writer.writerow([name for name, _ in columns])
+            writer.writerows(zip(*(values for _, values in columns)))
+        temporary.replace(path)
+    except Exception:
+        if backup is not None and not path.exists():
+            backup.replace(path)
+        raise
+    schema = hashlib.sha256(
+        ",".join(name for name, _ in columns).encode("utf-8")
+    ).hexdigest().upper()
+    return ({
+        "path": str(path), "sha256": sha256(path), "rows": row_count,
+        "columns": len(columns), "schema_sha256": schema,
+    }, backup)
+
+
+def export_ardg_result(
+    raw_path: Path, diagnostics_path: Path, stop_time: float
+) -> tuple[dict[str, Any], dict[str, Any], list[Path]]:
+    times = [float(value) for value in flatten_values(modeling.GetVarTimes())]
+    expected_rows = int(round(stop_time / INTERVAL_S)) + 1
+    if len(times) != expected_rows or any(
+        abs(value - index * INTERVAL_S) > 1e-12
+        for index, value in enumerate(times)
+    ):
+        raise RuntimeError(
+            f"invalid ARDG time axis: rows={len(times)}, expected={expected_rows}"
+        )
+
+    prefix = "plant."
+    variables: list[tuple[str, str]] = []
+    variables.extend((f"reference_{i}", f"{prefix}referenceVector[{i}]") for i in range(1, 12))
+    variables.extend((f"position_{axis}_m", f"{prefix}sensors1_1.PosMea[{i}]") for i, axis in enumerate("xyz", 1))
+    variables.extend((f"velocity_{axis}_mps", f"{prefix}quadChassisTest17_1.body.v_0[{i}]") for i, axis in enumerate("xyz", 1))
+    variables.extend((f"angle_{axis}_rad", f"{prefix}sensors1_1.AngleMea[{i}]") for i, axis in enumerate(("roll", "pitch", "yaw"), 1))
+    variables.extend((f"body_rate_{axis}_radps", f"{prefix}quadChassisTest17_1.body.frame_b.R.w[{i}]") for i, axis in enumerate("xyz", 1))
+    variables.extend((f"rotation_{row}{column}", f"{prefix}quadChassisTest17_1.body.frame_b.R.T[{row},{column}]") for row in range(1, 4) for column in range(1, 4))
+    variables.extend((f"motor_command_{i}", f"{prefix}motorCommand[{i}]") for i in range(1, 5))
+    variables.extend((f"rotor_speed_{i}_radps", f"{prefix}speedSensor[{i}].w") for i in range(1, 5))
+    variables.extend((f"controller_diagnostic_{i}", f"controllerDiagnostics[{i}]") for i in range(1, 17))
+    variables.append(("event_code", f"{prefix}eventCode"))
+    variables.extend((f"external_force_world_{axis}_n", f"{prefix}externalForceWorld[{i}]") for i, axis in enumerate("xyz", 1))
+    variables.extend((f"external_torque_body_{axis}_nm", f"{prefix}externalTorqueBody[{i}]") for i, axis in enumerate("xyz", 1))
+
+    columns: list[tuple[str, list[float]]] = [("time_s", times)]
+    columns.extend((name, result_values(source, times)) for name, source in variables)
+    lookup = dict(columns)
+    if sorted(set(lookup["controller_diagnostic_16"])) != [97406.0]:
+        raise RuntimeError("formal ARDG-RGPC controller identity mismatch")
+    for i, axis in enumerate("xyz", 1):
+        columns.append((f"position_error_{axis}_m", [
+            value - reference for value, reference in zip(
+                lookup[f"position_{axis}_m"], lookup[f"reference_{i}"]
+            )
+        ]))
+    raw, raw_backup = write_named_columns(raw_path, columns)
+
+    diagnostic_sources = {
+        "ardg_active": "controller.ardg1_active_next.y",
+        "ardg_blend": "controller.ardg1_blend_next.y",
+        "ardg_correction_x_nm": "controller.ardg1_correction_x_next.y",
+        "ardg_correction_y_nm": "controller.ardg1_correction_y_next.y",
+        "ardg_residual_tau_x_nm": "controller.ardg1_residual_x.y",
+        "ardg_residual_tau_y_nm": "controller.ardg1_residual_y.y",
+        "ardg_translation_residual_n": "controller.ardg1_trans_residual_norm.y",
+        "ardg_torque_mode": "controller.ardg1_torque_mode.y",
+        "ardg_translation_score": "controller.ardg1_trans_score.y",
+        "ardg_safety_valid": "controller.ardg1_safety_valid.y",
+    }
+    diagnostic_columns = [("time_s", times)] + [
+        (name, result_values(source, times)) for name, source in diagnostic_sources.items()
+    ]
+    diagnostics, diagnostics_backup = write_named_columns(diagnostics_path, diagnostic_columns)
+
+    motor_values = [value for i in range(1, 5) for value in lookup[f"motor_command_{i}"]]
+    allocator_values = lookup["controller_diagnostic_15"]
+    raw.update({
+        "start_time_s": times[0], "stop_time_s": times[-1],
+        "max_abs_motor_command": max(abs(value) for value in motor_values),
+        "max_motor_command_q": max(value * value for value in motor_values),
+        "allocator_limit_min": min(allocator_values),
+        "allocator_limit_max": max(allocator_values),
+    })
+    backups = [path for path in (raw_backup, diagnostics_backup) if path is not None]
+    return raw, diagnostics, backups
 
 
 def require_true(label: str, value: Any) -> None:
@@ -597,6 +715,10 @@ def dependency_catalog(workspace: Path) -> dict[str, dict[str, Any]]:
             "path": workspace / "01_models" / "modelica"
             / FORMATION_PLANT / "package.mo",
         },
+        "angular_plant": {
+            "class": ANGULAR_PLANT,
+            "path": workspace / "01_models" / "modelica" / ANGULAR_PLANT / "package.mo",
+        },
     }
 
 
@@ -656,7 +778,6 @@ def case_catalog() -> dict[str, dict[str, Any]]:
     }
     parameter_cases = {
         "Scene05B_Nominal": SCENE05B_SCALES["Scene05B_Nominal"],
-        **SCENE05A_SCALES,
         "Scene05B_LiftMinus10": SCENE05B_SCALES["Scene05B_LiftMinus10"],
         "Scene05B_PayloadPlus10": SCENE05B_SCALES["Scene05B_PayloadPlus10"],
         **{case_id: SCENE05B_SCALES[case_id] for case_id in SCENE05B_CASES[1:]},
@@ -698,6 +819,14 @@ def case_catalog() -> dict[str, dict[str, Any]]:
             "kind": "formation",
             "dependencies": scene07_dependencies + extra + ("formation_plant",),
         }
+    cases["BODY_ROLL_POS"] = {
+        "model": f"{ANGULAR_PLANT}.BodyRollPos", "stop_time": 50.0,
+        "kind": "ardg_angular", "dependencies": dependencies + ("angular_plant",),
+    }
+    cases["BODY_PITCH_NEG"] = {
+        "model": f"{ANGULAR_PLANT}.BodyPitchNeg", "stop_time": 50.0,
+        "kind": "ardg_angular", "dependencies": dependencies + ("angular_plant",),
+    }
     return cases
 
 
@@ -705,23 +834,31 @@ def expand_scenes(requested: list[str]) -> list[str]:
     tokens: list[str] = []
     for item in requested:
         tokens.extend(token.strip() for token in item.split(",") if token.strip())
-    if not tokens or tokens == ["all"]:
-        tokens = list(SCENE_ORDER)
+    if not tokens:
+        tokens = ["finals_core"]
     if "all" in tokens:
-        raise ValueError("all cannot be combined with other scene selections")
+        if tokens != ["all"]:
+            raise ValueError("all cannot be combined with other scene selections")
+        tokens = ["full_registered"]
 
-    supported = (set(SCENE_ORDER) | {"Scene05A", "Scene05B", "Scene08", "Scene10", "Scene07C"}
-                  | set(SCENE05A_CASES) | set(SCENE05B_CASES)
+    supported = (set(SCENE_ORDER) | {"finals_core", "regression18", "supplementary", "full_registered", "Scene05B", "Scene08", "Scene10", "Scene07C"}
+                  | set(SCENE05B_CASES)
                   | set(SCENE05B_FOCUS_CASES) | set(SCENE08_CASES)
-                  | set(SCENE10_CASES) | set(SCENE07C_CASES))
+                  | set(SCENE10_CASES) | set(SCENE07C_CASES) | set(ANGULAR_CASES))
     unknown = [token for token in tokens if token not in supported]
     if unknown:
         raise ValueError(f"unsupported scene selection: {unknown}")
 
     expanded: list[str] = []
     for token in tokens:
-        if token == "Scene05A":
-            members = SCENE05A_CASES
+        if token == "finals_core":
+            members = FINALS_CORE_CASES
+        elif token == "regression18":
+            members = REGRESSION18_CASES
+        elif token == "supplementary":
+            members = SUPPLEMENTARY_CASES
+        elif token == "full_registered":
+            members = FULL_REGISTERED_CASES
         elif token == "Scene05B":
             members = (SCENE05B_CASES[0],) + SCENE05B_FOCUS_CASES + SCENE05B_CASES[1:]
         elif token == "Scene08":
@@ -835,15 +972,15 @@ def run(args: argparse.Namespace) -> dict[str, Any]:
     status: dict[str, Any] = {
         "schema_version": 1,
         "runner": "run_main_controller.py",
-        "algorithm_id": "RA-GCA-CGHTE",
-        "release_version": "1.0.0",
-        "formal_algorithm_id": "RA-GCA-CGHTE",
+        "algorithm_id": "ARDG-RGPC",
+        "release_version": "finals-20260815",
+        "formal_algorithm_id": "ARDG-RGPC",
         "started_utc": utc_now(),
         "finished_utc": None,
         "workspace": str(workspace),
         "output": str(output),
         "port": args.port,
-        "requested_scenes": args.scene or ["all"],
+        "requested_scenes": args.scene or ["finals_core"],
         "selected_cases": selected_cases,
         "success": False,
         "status": "precheck",
@@ -954,10 +1091,15 @@ def run(args: argparse.Namespace) -> dict[str, Any]:
             specification = cases[case_id]
             model = str(specification["model"])
             stop_time = float(specification["stop_time"])
+            is_angular = specification["kind"] == "ardg_angular"
+            flat_angular_output = is_angular and len(selected_cases) == 1
+            case_output = output if flat_angular_output else output / "cases" / case_id
+            case_status_path = None if flat_angular_output else case_output / "execution_status.json"
             row: dict[str, Any] = {
                 "case": case_id,
                 "model": model,
                 "kind": specification["kind"],
+                "output_directory": str(case_output) if is_angular else str(output),
                 "start_time_s": 0.0,
                 "stop_time_s": stop_time,
                 "interval_s": INTERVAL_S,
@@ -969,6 +1111,7 @@ def run(args: argparse.Namespace) -> dict[str, Any]:
                 "simulate": False,
                 "read_result": False,
                 "raw": None,
+                "ardg_diagnostics": None,
                 "parameter_scales": specification.get("parameter_scales"),
                 "parameter_assignments": [],
                 "failure": None,
@@ -1003,11 +1146,22 @@ def run(args: argparse.Namespace) -> dict[str, Any]:
                     ),
                 )
                 row["simulate"] = True
-                raw, backup = export_result(
-                    output / "raw" / f"{case_id}.csv",
-                    variables_for(str(specification["kind"])),
-                    stop_time,
-                )
+                if is_angular:
+                    raw, diagnostics, backups = export_ardg_result(
+                        case_output / "raw.csv",
+                        case_output / "ardg_diagnostics.csv",
+                        stop_time,
+                    )
+                    row["ardg_diagnostics"] = diagnostics
+                    status["backups"].extend(str(path) for path in backups)
+                else:
+                    raw, backup = export_result(
+                        output / "raw" / f"{case_id}.csv",
+                        variables_for(str(specification["kind"])),
+                        stop_time,
+                    )
+                    if backup is not None:
+                        status["backups"].append(str(backup))
                 row["raw"] = raw
                 row["read_result"] = True
                 if raw["allocator_limit_min"] <= 0:
@@ -1025,8 +1179,6 @@ def run(args: argparse.Namespace) -> dict[str, Any]:
                         f"motor limit exceeded in {case_id}: "
                         f"{raw['max_motor_command_q']} > {raw['allocator_limit_max']}"
                     )
-                if backup is not None:
-                    status["backups"].append(str(backup))
                 row["status"] = "execution_pass"
                 row["execution_status"] = "pass"
             except Exception as exc:
@@ -1035,6 +1187,12 @@ def run(args: argparse.Namespace) -> dict[str, Any]:
                 row["failure"] = {"type": type(exc).__name__, "message": str(exc)}
                 raise
             finally:
+                if case_status_path is not None:
+                    write_json(case_status_path, {
+                        "schema_version": "ardg_rgpc_finals_case_v1",
+                        "algorithm": "ARDG-RGPC", "case": row,
+                        "success": row["execution_status"] == "pass",
+                    })
                 write_json(status_path, status)
 
         status["session_directory_after"] = str(modeling.GetDirectory())
@@ -1158,7 +1316,7 @@ def run(args: argparse.Namespace) -> dict[str, Any]:
 
     status["finished_utc"] = utc_now()
     write_json(status_path, status)
-    print("A8_RA_GCA_CG_HTE_MAIN=" + json.dumps(status, ensure_ascii=False))
+    print("A8_ARDG_RGPC_FINALS=" + json.dumps(status, ensure_ascii=False))
     return status
 
 
@@ -1172,8 +1330,8 @@ def parse_args() -> argparse.Namespace:
         action="append",
         default=[],
         help=(
-            "scene/group to run; repeat or use commas. Omit for all. "
-            "Scene05A/Scene05B expand parameter sets; Scene08/Scene10 expand five phases"
+            "scene or suite to run; repeat or use commas. Omit for the 20-case "
+            "finals_core suite. Use full_registered explicitly for all 34 cases."
         ),
     )
     parser.add_argument("--list-scenes", action="store_true")
@@ -1186,8 +1344,12 @@ def main() -> int:
         print(
             json.dumps(
                 {
-                    "scene_order": SCENE_ORDER,
-                    "scene05a_cases": SCENE05A_CASES,
+                    "default_suite": "finals_core",
+                    "finals_core": FINALS_CORE_CASES,
+                    "regression18": REGRESSION18_CASES,
+                    "supplementary": SUPPLEMENTARY_CASES,
+                    "full_registered": FULL_REGISTERED_CASES,
+                    "angular_cases": ANGULAR_CASES,
                     "scene05b_cases": SCENE05B_CASES,
                     "scene08_cases": SCENE08_CASES,
                     "scene10_cases": SCENE10_CASES,

@@ -1,0 +1,833 @@
+{
+  "schema_version": 1,
+  "generated_utc": "2026-08-16T05:15:37.242735Z",
+  "algorithm": "ARDG-RGPC",
+  "files": [
+    {
+      "path": "06_supplementary_evidence/ardg_rgpc_regression18_final/raw/Scene01.csv",
+      "sha256": "C6E4BB86C4057FED5DBFC0A419A15B25631DB12B773515DF210BF3CBE18D60C1",
+      "size_bytes": 4328889,
+      "removed_internal_columns": []
+    },
+    {
+      "path": "06_supplementary_evidence/ardg_rgpc_regression18_final/raw/Scene01S_X.csv",
+      "sha256": "D4AC2B2D6D91315EE9BEFB496983455769BE9EC2BA88EF1ADF9784024A3D5B62",
+      "size_bytes": 2598495,
+      "removed_internal_columns": []
+    },
+    {
+      "path": "06_supplementary_evidence/ardg_rgpc_regression18_final/raw/Scene01S_Y.csv",
+      "sha256": "C5AE246145869E98BAFF45B814E7EA3B81A4EBB57B80FA051CBDDB0C6F8DF095",
+      "size_bytes": 2599217,
+      "removed_internal_columns": []
+    },
+    {
+      "path": "06_supplementary_evidence/ardg_rgpc_regression18_final/raw/Scene01S_Z.csv",
+      "sha256": "43723F8C9F253DDF566369E0E2A86F3ED4823233C324B103EB2E60FC4690C27D",
+      "size_bytes": 2603640,
+      "removed_internal_columns": []
+    },
+    {
+      "path": "06_supplementary_evidence/ardg_rgpc_regression18_final/raw/Scene02.csv",
+      "sha256": "CBB3CD6AACC0899B6A1EBFE138405A2EC4ED0C3D58F2647B960CDB18CF787E81",
+      "size_bytes": 4692846,
+      "removed_internal_columns": []
+    },
+    {
+      "path": "06_supplementary_evidence/ardg_rgpc_regression18_final/raw/Scene03.csv",
+      "sha256": "170A0E716879D24284C5F96AB2B7680CF09B7DE9FBE4852DD8B57D3AF648FC96",
+      "size_bytes": 11120509,
+      "removed_internal_columns": []
+    },
+    {
+      "path": "06_supplementary_evidence/ardg_rgpc_regression18_final/raw/Scene04.csv",
+      "sha256": "61E9F94DFAE9A87751778F118D039E067CE6C83DEED537CC6FC61C1AD71CDF11",
+      "size_bytes": 2620204,
+      "removed_internal_columns": []
+    },
+    {
+      "path": "06_supplementary_evidence/ardg_rgpc_regression18_final/raw/Scene06b.csv",
+      "sha256": "697F44A92CC9E4A9DDE15009CD498B56E7F798C7D5E9AFB0CCB29D2A387EFEA2",
+      "size_bytes": 2608928,
+      "removed_internal_columns": []
+    },
+    {
+      "path": "06_supplementary_evidence/ardg_rgpc_regression18_final/raw/Scene08_P0.csv",
+      "sha256": "3B81A7EF6AB8C9A4F73F1A277B51FEE951E2D805D0C3027C383952AD66B2ADE4",
+      "size_bytes": 4362780,
+      "removed_internal_columns": []
+    },
+    {
+      "path": "06_supplementary_evidence/ardg_rgpc_regression18_final/raw/Scene08_P1.csv",
+      "sha256": "55331856372CA2023DA2C614CF5287740028C939D7C763194B4D8C4545CF2D1F",
+      "size_bytes": 4340423,
+      "removed_internal_columns": []
+    },
+    {
+      "path": "06_supplementary_evidence/ardg_rgpc_regression18_final/raw/Scene08_P2.csv",
+      "sha256": "28B32BC774B3A22CE798A5CDDC7AECB8AAC14C502D28FD2E322D7571B36FC87A",
+      "size_bytes": 4340873,
+      "removed_internal_columns": []
+    },
+    {
+      "path": "06_supplementary_evidence/ardg_rgpc_regression18_final/raw/Scene08_P3.csv",
+      "sha256": "F5ABB9736CD812A91FA8B6B97230B050C5AD2AD38D17BEE5BBA6F591D3BE5069",
+      "size_bytes": 4351541,
+      "removed_internal_columns": []
+    },
+    {
+      "path": "06_supplementary_evidence/ardg_rgpc_regression18_final/raw/Scene08_P4.csv",
+      "sha256": "2FCC865669D941219BCBCFDFCED17A528B0B02B1FCFA7722E7C4B207CA9DB133",
+      "size_bytes": 4345302,
+      "removed_internal_columns": []
+    },
+    {
+      "path": "06_supplementary_evidence/ardg_rgpc_regression18_final/raw/Scene10_P0.csv",
+      "sha256": "9882BA403B4F65FE1EB2564D93FAEC13058FB6C45F6A002876A911A486E0F757",
+      "size_bytes": 4520784,
+      "removed_internal_columns": []
+    },
+    {
+      "path": "06_supplementary_evidence/ardg_rgpc_regression18_final/raw/Scene10_P1.csv",
+      "sha256": "231A8E545EE456BA565F7D2A68AEDFC6EEFD9CD9129E101AEEE2281123B932C2",
+      "size_bytes": 4521327,
+      "removed_internal_columns": []
+    },
+    {
+      "path": "06_supplementary_evidence/ardg_rgpc_regression18_final/raw/Scene10_P2.csv",
+      "sha256": "43732ED1290647794B8455CB9869E74D2314A72074C12A4519343328E80A65CA",
+      "size_bytes": 4521276,
+      "removed_internal_columns": []
+    },
+    {
+      "path": "06_supplementary_evidence/ardg_rgpc_regression18_final/raw/Scene10_P3.csv",
+      "sha256": "85659789B11C7959B07DDF652590B602ABBDE13EBB6D0A2FB2B0D46498ECE20A",
+      "size_bytes": 4520674,
+      "removed_internal_columns": []
+    },
+    {
+      "path": "06_supplementary_evidence/ardg_rgpc_regression18_final/raw/Scene10_P4.csv",
+      "sha256": "7870BA6BC4338679E40644FE469C05978FD7C62F66121F3CA5ED89DE5FCE3E3F",
+      "size_bytes": 4521661,
+      "removed_internal_columns": []
+    },
+    {
+      "path": "06_supplementary_evidence/ardg_rgpc_parameter11_final/cases/Scene05B_C000/ardg_diagnostics.csv",
+      "sha256": "018ED02FF71714235525C7A4601685A0E6887FD5DC3FB1AF39D582C54B188705",
+      "size_bytes": 610623,
+      "removed_internal_columns": [
+        "controller_identity"
+      ]
+    },
+    {
+      "path": "06_supplementary_evidence/ardg_rgpc_parameter11_final/cases/Scene05B_C000/raw.csv",
+      "sha256": "F436E1CE27E520958E021596374F91FE42EF57C9EB163F477F94108910B872CB",
+      "size_bytes": 4870148,
+      "removed_internal_columns": [
+        "controllerDiagnostics[16]"
+      ]
+    },
+    {
+      "path": "06_supplementary_evidence/ardg_rgpc_parameter11_final/cases/Scene05B_C001/ardg_diagnostics.csv",
+      "sha256": "B67BEEA49DD1338AC3BF5941B11707A32878DB14C5684B65D711454A9F03F730",
+      "size_bytes": 610528,
+      "removed_internal_columns": [
+        "controller_identity"
+      ]
+    },
+    {
+      "path": "06_supplementary_evidence/ardg_rgpc_parameter11_final/cases/Scene05B_C001/raw.csv",
+      "sha256": "3FB9B243000AE394D0BFA90844C0BD68C2BEDBE96527C90C8C12811B51701031",
+      "size_bytes": 4883444,
+      "removed_internal_columns": [
+        "controllerDiagnostics[16]"
+      ]
+    },
+    {
+      "path": "06_supplementary_evidence/ardg_rgpc_parameter11_final/cases/Scene05B_C010/ardg_diagnostics.csv",
+      "sha256": "A98321C17C5F4FB98182A227EFE73597F3190CBF4FD0CC3D2723BF9215586F2F",
+      "size_bytes": 609888,
+      "removed_internal_columns": [
+        "controller_identity"
+      ]
+    },
+    {
+      "path": "06_supplementary_evidence/ardg_rgpc_parameter11_final/cases/Scene05B_C010/raw.csv",
+      "sha256": "C8BB8DB05A3BD59DEC31A78E7AB557774FC3E375F698406C92F16DF7A610EAB2",
+      "size_bytes": 4876102,
+      "removed_internal_columns": [
+        "controllerDiagnostics[16]"
+      ]
+    },
+    {
+      "path": "06_supplementary_evidence/ardg_rgpc_parameter11_final/cases/Scene05B_C011/ardg_diagnostics.csv",
+      "sha256": "54143CD9078F3DD77B4EE8E9FAA98528F0D0FC17D23BA66D4DE27D8D0BC23787",
+      "size_bytes": 609804,
+      "removed_internal_columns": [
+        "controller_identity"
+      ]
+    },
+    {
+      "path": "06_supplementary_evidence/ardg_rgpc_parameter11_final/cases/Scene05B_C011/raw.csv",
+      "sha256": "1440A2D2B76BC4F65A8DC3D1CC927981F739CC42397F1E0EFB34F56C58C1FAAC",
+      "size_bytes": 4885449,
+      "removed_internal_columns": [
+        "controllerDiagnostics[16]"
+      ]
+    },
+    {
+      "path": "06_supplementary_evidence/ardg_rgpc_parameter11_final/cases/Scene05B_C100/ardg_diagnostics.csv",
+      "sha256": "F70FC1924E512148EA58D9ABDF1869CE5B50A1F1F887C1083AE2173216D97897",
+      "size_bytes": 609724,
+      "removed_internal_columns": [
+        "controller_identity"
+      ]
+    },
+    {
+      "path": "06_supplementary_evidence/ardg_rgpc_parameter11_final/cases/Scene05B_C100/raw.csv",
+      "sha256": "89B580B8011B20B73B63241B9906BCFD0FFFDD0889E9253385AD3386D68D04A1",
+      "size_bytes": 4879799,
+      "removed_internal_columns": [
+        "controllerDiagnostics[16]"
+      ]
+    },
+    {
+      "path": "06_supplementary_evidence/ardg_rgpc_parameter11_final/cases/Scene05B_C101/ardg_diagnostics.csv",
+      "sha256": "B400FEF124ED0E9C01B395283A0A98C444AB0421DE1096A5AE6DA45D58468C89",
+      "size_bytes": 609970,
+      "removed_internal_columns": [
+        "controller_identity"
+      ]
+    },
+    {
+      "path": "06_supplementary_evidence/ardg_rgpc_parameter11_final/cases/Scene05B_C101/raw.csv",
+      "sha256": "7FDEDAD4FE29E40811B6E1E5C199723B8145573A9738B7EFB7A29CAD3D5BD2DC",
+      "size_bytes": 4912879,
+      "removed_internal_columns": [
+        "controllerDiagnostics[16]"
+      ]
+    },
+    {
+      "path": "06_supplementary_evidence/ardg_rgpc_parameter11_final/cases/Scene05B_C110/ardg_diagnostics.csv",
+      "sha256": "9AF99BCD76206CA4941D5216428D6FCB8588403DA988040F1B8F29CCFE3463C3",
+      "size_bytes": 610103,
+      "removed_internal_columns": [
+        "controller_identity"
+      ]
+    },
+    {
+      "path": "06_supplementary_evidence/ardg_rgpc_parameter11_final/cases/Scene05B_C110/raw.csv",
+      "sha256": "30B200C258B01A708101DCC27ED7075FCB347DBE322ED3611BD5C731BC596B3C",
+      "size_bytes": 4815564,
+      "removed_internal_columns": [
+        "controllerDiagnostics[16]"
+      ]
+    },
+    {
+      "path": "06_supplementary_evidence/ardg_rgpc_parameter11_final/cases/Scene05B_C111/ardg_diagnostics.csv",
+      "sha256": "E95D78BECA4BEC9846575835EBB5D954CE6CCE94A7A727544B9DD1F4872DBD91",
+      "size_bytes": 610137,
+      "removed_internal_columns": [
+        "controller_identity"
+      ]
+    },
+    {
+      "path": "06_supplementary_evidence/ardg_rgpc_parameter11_final/cases/Scene05B_C111/raw.csv",
+      "sha256": "BAE0C9E13A68A8DD9F8076ABB163054B3162466A5FDE5087C2F1501F8B5FB07A",
+      "size_bytes": 4817846,
+      "removed_internal_columns": [
+        "controllerDiagnostics[16]"
+      ]
+    },
+    {
+      "path": "06_supplementary_evidence/ardg_rgpc_parameter11_final/cases/Scene05B_LiftMinus10/ardg_diagnostics.csv",
+      "sha256": "8347EF395DA873F26394FAF3D4373C18DADA5A1352F6DDD7537371CA986BAB70",
+      "size_bytes": 609601,
+      "removed_internal_columns": [
+        "controller_identity"
+      ]
+    },
+    {
+      "path": "06_supplementary_evidence/ardg_rgpc_parameter11_final/cases/Scene05B_LiftMinus10/raw.csv",
+      "sha256": "5068519785FBF5BC979EE8E2916BED94E0AEE3865CA6E2BCB14FC51B4FC76A87",
+      "size_bytes": 4945030,
+      "removed_internal_columns": [
+        "controllerDiagnostics[16]"
+      ]
+    },
+    {
+      "path": "06_supplementary_evidence/ardg_rgpc_parameter11_final/cases/Scene05B_Nominal/ardg_diagnostics.csv",
+      "sha256": "1E31857044EDB8B999A4472C25F2B81D6E9FEAD9816B621ECC4227E8B12DE591",
+      "size_bytes": 610447,
+      "removed_internal_columns": [
+        "controller_identity"
+      ]
+    },
+    {
+      "path": "06_supplementary_evidence/ardg_rgpc_parameter11_final/cases/Scene05B_Nominal/raw.csv",
+      "sha256": "053F9ED97BC092D50B90F175C03BA0572B0F438F3393369CBBB17A26C70CF07B",
+      "size_bytes": 4905373,
+      "removed_internal_columns": [
+        "controllerDiagnostics[16]"
+      ]
+    },
+    {
+      "path": "06_supplementary_evidence/ardg_rgpc_parameter11_final/cases/Scene05B_PayloadPlus10/ardg_diagnostics.csv",
+      "sha256": "11118A27D2097E4A5783F1231C4EFADE8F851BBE8FD1EE2234B80910C47641E2",
+      "size_bytes": 609772,
+      "removed_internal_columns": [
+        "controller_identity"
+      ]
+    },
+    {
+      "path": "06_supplementary_evidence/ardg_rgpc_parameter11_final/cases/Scene05B_PayloadPlus10/raw.csv",
+      "sha256": "C51AD7309D3D49C0B2EB7C790636ED2F48E8B074759E55ADD8B7A1F7CFAED714",
+      "size_bytes": 4972743,
+      "removed_internal_columns": [
+        "controllerDiagnostics[16]"
+      ]
+    },
+    {
+      "path": "06_supplementary_evidence/ardg_rgpc_random20_final/cases/MC20_01/ardg_diagnostics.csv",
+      "sha256": "7ED61ED98455F72C8FF4A74F7AD2464C641F6E8493ECC08663EC0D735CA7AA91",
+      "size_bytes": 609854,
+      "removed_internal_columns": [
+        "controller_identity"
+      ]
+    },
+    {
+      "path": "06_supplementary_evidence/ardg_rgpc_random20_final/cases/MC20_01/raw.csv",
+      "sha256": "6DC8AAA02A57AE7E216C5CB6A35A64FD3FD35998BAA61F77833919595725025E",
+      "size_bytes": 3112748,
+      "removed_internal_columns": [
+        "controller_identity"
+      ]
+    },
+    {
+      "path": "06_supplementary_evidence/ardg_rgpc_random20_final/cases/MC20_02/ardg_diagnostics.csv",
+      "sha256": "09508F486F3F502B88FDD0D66098479C84A3C4F4FDCD6BCD188184F0A8C4E0A0",
+      "size_bytes": 610004,
+      "removed_internal_columns": [
+        "controller_identity"
+      ]
+    },
+    {
+      "path": "06_supplementary_evidence/ardg_rgpc_random20_final/cases/MC20_02/raw.csv",
+      "sha256": "0FB69E27903C7F1B67EB9C9CCF86537C2F0AAAA17EBA0080406400EC42178228",
+      "size_bytes": 3157734,
+      "removed_internal_columns": [
+        "controller_identity"
+      ]
+    },
+    {
+      "path": "06_supplementary_evidence/ardg_rgpc_random20_final/cases/MC20_03/ardg_diagnostics.csv",
+      "sha256": "0496E7DFA6E880AFD6B7C4F02ED9C2D072A97BD8FA277F518DF1076A8A8DB1D6",
+      "size_bytes": 609721,
+      "removed_internal_columns": [
+        "controller_identity"
+      ]
+    },
+    {
+      "path": "06_supplementary_evidence/ardg_rgpc_random20_final/cases/MC20_03/raw.csv",
+      "sha256": "A671BA8A5D5BB6AB3D5EA7B6C653A109458349428850341AF39C89A081AA7A4C",
+      "size_bytes": 3003405,
+      "removed_internal_columns": [
+        "controller_identity"
+      ]
+    },
+    {
+      "path": "06_supplementary_evidence/ardg_rgpc_random20_final/cases/MC20_04/ardg_diagnostics.csv",
+      "sha256": "187032043F9FDB4D09873D15E8A205BB29B0E38A1A38D1DB1712BC9493D15BCA",
+      "size_bytes": 609820,
+      "removed_internal_columns": [
+        "controller_identity"
+      ]
+    },
+    {
+      "path": "06_supplementary_evidence/ardg_rgpc_random20_final/cases/MC20_04/raw.csv",
+      "sha256": "B1F38E690C18BA4F51709C58D58F20FCF6A3E123B739FE3E1428D556329EA1E9",
+      "size_bytes": 3054207,
+      "removed_internal_columns": [
+        "controller_identity"
+      ]
+    },
+    {
+      "path": "06_supplementary_evidence/ardg_rgpc_random20_final/cases/MC20_05/ardg_diagnostics.csv",
+      "sha256": "748B5C25D9E3A6FCEF7C8DDA84754502936E12468E37BB17D9E05F5C67667EEC",
+      "size_bytes": 610729,
+      "removed_internal_columns": [
+        "controller_identity"
+      ]
+    },
+    {
+      "path": "06_supplementary_evidence/ardg_rgpc_random20_final/cases/MC20_05/raw.csv",
+      "sha256": "3421756B62B654895971536AD4B96CC4AFB5C83AB5FBCF0EBC2A8DC63E377D36",
+      "size_bytes": 3090456,
+      "removed_internal_columns": [
+        "controller_identity"
+      ]
+    },
+    {
+      "path": "06_supplementary_evidence/ardg_rgpc_random20_final/cases/MC20_06/ardg_diagnostics.csv",
+      "sha256": "3AC006AE13070E8B82C640F9371C74A2B8EFE4CA957576AC2077FCF91D58C5C4",
+      "size_bytes": 610219,
+      "removed_internal_columns": [
+        "controller_identity"
+      ]
+    },
+    {
+      "path": "06_supplementary_evidence/ardg_rgpc_random20_final/cases/MC20_06/raw.csv",
+      "sha256": "2F9AD8D3C559EF7A3021F4261F2FC487802DEDB55296E364A176F38B6C5D504D",
+      "size_bytes": 3005624,
+      "removed_internal_columns": [
+        "controller_identity"
+      ]
+    },
+    {
+      "path": "06_supplementary_evidence/ardg_rgpc_random20_final/cases/MC20_07/ardg_diagnostics.csv",
+      "sha256": "708FF63FDB37A3C6D0145DA0D9AAE61F71FE04E61B265A701605CA49E54B0111",
+      "size_bytes": 609766,
+      "removed_internal_columns": [
+        "controller_identity"
+      ]
+    },
+    {
+      "path": "06_supplementary_evidence/ardg_rgpc_random20_final/cases/MC20_07/raw.csv",
+      "sha256": "F3F779BB80E3E2D2D8F60128E9909DBD159716B7FECCE6C2CE2227E90F44C2A8",
+      "size_bytes": 3120287,
+      "removed_internal_columns": [
+        "controller_identity"
+      ]
+    },
+    {
+      "path": "06_supplementary_evidence/ardg_rgpc_random20_final/cases/MC20_08/ardg_diagnostics.csv",
+      "sha256": "E275130DCA8A98AA6CC71AA5BCFE639E76B82AD8A8785B13405966D1C7BDCA23",
+      "size_bytes": 610196,
+      "removed_internal_columns": [
+        "controller_identity"
+      ]
+    },
+    {
+      "path": "06_supplementary_evidence/ardg_rgpc_random20_final/cases/MC20_08/raw.csv",
+      "sha256": "C5EE0497627CEFBBAF9876DA55B1EBD31D4049E56F6EE04A54E411978EABEDC7",
+      "size_bytes": 2996218,
+      "removed_internal_columns": [
+        "controller_identity"
+      ]
+    },
+    {
+      "path": "06_supplementary_evidence/ardg_rgpc_random20_final/cases/MC20_09/ardg_diagnostics.csv",
+      "sha256": "AAB1CECE1A1993BCEA7920CAC01F607AF80537336831E3F6585CB27DC70DD156",
+      "size_bytes": 609818,
+      "removed_internal_columns": [
+        "controller_identity"
+      ]
+    },
+    {
+      "path": "06_supplementary_evidence/ardg_rgpc_random20_final/cases/MC20_09/raw.csv",
+      "sha256": "A21BABE836093000DEDF3E4E8FD0A772203D13FC2815A42062010AC1671CCADD",
+      "size_bytes": 3091740,
+      "removed_internal_columns": [
+        "controller_identity"
+      ]
+    },
+    {
+      "path": "06_supplementary_evidence/ardg_rgpc_random20_final/cases/MC20_10/ardg_diagnostics.csv",
+      "sha256": "3FA3EB5060141D6D393493F1401A0111CEDEDCAD91FE876DB963E53CFFAF07F7",
+      "size_bytes": 609925,
+      "removed_internal_columns": [
+        "controller_identity"
+      ]
+    },
+    {
+      "path": "06_supplementary_evidence/ardg_rgpc_random20_final/cases/MC20_10/raw.csv",
+      "sha256": "C5533E6AED33C39D94321EC4557426512DA6375C6B14B4B6BFB97181F7F0B6A3",
+      "size_bytes": 3069248,
+      "removed_internal_columns": [
+        "controller_identity"
+      ]
+    },
+    {
+      "path": "06_supplementary_evidence/ardg_rgpc_random20_final/cases/MC20_11/ardg_diagnostics.csv",
+      "sha256": "330CC7C857154629BCA513F9B9D5D6C5E94758B886D187C8576206E5E11A8EDD",
+      "size_bytes": 609963,
+      "removed_internal_columns": [
+        "controller_identity"
+      ]
+    },
+    {
+      "path": "06_supplementary_evidence/ardg_rgpc_random20_final/cases/MC20_11/raw.csv",
+      "sha256": "691A2A3A5D94A1781A6FE166FCDD5AAC057A220A00BAE7E763436245E7AB8CB7",
+      "size_bytes": 3067124,
+      "removed_internal_columns": [
+        "controller_identity"
+      ]
+    },
+    {
+      "path": "06_supplementary_evidence/ardg_rgpc_random20_final/cases/MC20_12/ardg_diagnostics.csv",
+      "sha256": "B85A7A236EC91E7CB5866782B61A8A3FC7FFBFF3903CE9DCF4DD8CFB4FA29C37",
+      "size_bytes": 609827,
+      "removed_internal_columns": [
+        "controller_identity"
+      ]
+    },
+    {
+      "path": "06_supplementary_evidence/ardg_rgpc_random20_final/cases/MC20_12/raw.csv",
+      "sha256": "490E3B709505F34BDEADA7EC64FE01B0B017C47BDCB26E4F3FE0F5ED3536C52E",
+      "size_bytes": 3088366,
+      "removed_internal_columns": [
+        "controller_identity"
+      ]
+    },
+    {
+      "path": "06_supplementary_evidence/ardg_rgpc_random20_final/cases/MC20_13/ardg_diagnostics.csv",
+      "sha256": "BFD7C4ACD74865366D3592F1C3E845033D18766913665BC280E2C30042179315",
+      "size_bytes": 610032,
+      "removed_internal_columns": [
+        "controller_identity"
+      ]
+    },
+    {
+      "path": "06_supplementary_evidence/ardg_rgpc_random20_final/cases/MC20_13/raw.csv",
+      "sha256": "C6D43AAD2F91DD0159B52DB5B1FED9313E536640B3134370C6B5423D655A66EF",
+      "size_bytes": 3085958,
+      "removed_internal_columns": [
+        "controller_identity"
+      ]
+    },
+    {
+      "path": "06_supplementary_evidence/ardg_rgpc_random20_final/cases/MC20_14/ardg_diagnostics.csv",
+      "sha256": "4E17FE2B9501789012FF9278C188024506A69EE2A90C159A4EEE8E904E2CD998",
+      "size_bytes": 609998,
+      "removed_internal_columns": [
+        "controller_identity"
+      ]
+    },
+    {
+      "path": "06_supplementary_evidence/ardg_rgpc_random20_final/cases/MC20_14/raw.csv",
+      "sha256": "CB1C2E76B30A152DA6B0C654A3597D05080CB7107261078E8AE23E20DB926327",
+      "size_bytes": 3127360,
+      "removed_internal_columns": [
+        "controller_identity"
+      ]
+    },
+    {
+      "path": "06_supplementary_evidence/ardg_rgpc_random20_final/cases/MC20_15/ardg_diagnostics.csv",
+      "sha256": "0B19BF2AA10B74EF4C8F72A1C707BA66DDEB3AC70BA46FDFC81BD9E3F8C0BCF2",
+      "size_bytes": 609874,
+      "removed_internal_columns": [
+        "controller_identity"
+      ]
+    },
+    {
+      "path": "06_supplementary_evidence/ardg_rgpc_random20_final/cases/MC20_15/raw.csv",
+      "sha256": "7CA15788FD2826C6387FB9EFBF00D34D606C82BDB27D28C45D28C86F2F7A6830",
+      "size_bytes": 3061845,
+      "removed_internal_columns": [
+        "controller_identity"
+      ]
+    },
+    {
+      "path": "06_supplementary_evidence/ardg_rgpc_random20_final/cases/MC20_16/ardg_diagnostics.csv",
+      "sha256": "2BA0DDAA5B8B525D017A93CBE58528FE66EA57E653697697C61D7B18C42C3AA4",
+      "size_bytes": 610042,
+      "removed_internal_columns": [
+        "controller_identity"
+      ]
+    },
+    {
+      "path": "06_supplementary_evidence/ardg_rgpc_random20_final/cases/MC20_16/raw.csv",
+      "sha256": "ACAF60D65DF7CF30A4184FDCBE05432C69A2CB830071A6D8534F1B049094EB87",
+      "size_bytes": 3114439,
+      "removed_internal_columns": [
+        "controller_identity"
+      ]
+    },
+    {
+      "path": "06_supplementary_evidence/ardg_rgpc_random20_final/cases/MC20_17/ardg_diagnostics.csv",
+      "sha256": "F39AEEBA203D025E7F8A17C84D137B7D0AE8B3022E50745AE6A9502F40CCEF0C",
+      "size_bytes": 610064,
+      "removed_internal_columns": [
+        "controller_identity"
+      ]
+    },
+    {
+      "path": "06_supplementary_evidence/ardg_rgpc_random20_final/cases/MC20_17/raw.csv",
+      "sha256": "DFC7DEF2149DBCD6951589D734325475D753CE1564C95D4CE557E8513D51BF81",
+      "size_bytes": 3085021,
+      "removed_internal_columns": [
+        "controller_identity"
+      ]
+    },
+    {
+      "path": "06_supplementary_evidence/ardg_rgpc_random20_final/cases/MC20_18/ardg_diagnostics.csv",
+      "sha256": "3C0B64FAAD1450B222D1774920DC3DDB86C4AB399FBF0A81947B6398082B7E7E",
+      "size_bytes": 609863,
+      "removed_internal_columns": [
+        "controller_identity"
+      ]
+    },
+    {
+      "path": "06_supplementary_evidence/ardg_rgpc_random20_final/cases/MC20_18/raw.csv",
+      "sha256": "14491C94244E1C16F1B91EF97DB2483364C35968C8972BB0721CC1B86124A906",
+      "size_bytes": 3003960,
+      "removed_internal_columns": [
+        "controller_identity"
+      ]
+    },
+    {
+      "path": "06_supplementary_evidence/ardg_rgpc_random20_final/cases/MC20_19/ardg_diagnostics.csv",
+      "sha256": "2FF412C263E71A92B8FAF65E3E92EC8192DC4800956BF365789CF3175C838A5D",
+      "size_bytes": 609840,
+      "removed_internal_columns": [
+        "controller_identity"
+      ]
+    },
+    {
+      "path": "06_supplementary_evidence/ardg_rgpc_random20_final/cases/MC20_19/raw.csv",
+      "sha256": "D030206B227799AFD7763930D258B770B004F13948C47F7B2702831C84A0A7AD",
+      "size_bytes": 2996970,
+      "removed_internal_columns": [
+        "controller_identity"
+      ]
+    },
+    {
+      "path": "06_supplementary_evidence/ardg_rgpc_random20_final/cases/MC20_20/ardg_diagnostics.csv",
+      "sha256": "11A6FA08E406D25F9A823EADA3C30F68407FD00A08377360F3A672FE93DA8C01",
+      "size_bytes": 609801,
+      "removed_internal_columns": [
+        "controller_identity"
+      ]
+    },
+    {
+      "path": "06_supplementary_evidence/ardg_rgpc_random20_final/cases/MC20_20/raw.csv",
+      "sha256": "C01A588BBA763F3FA2CF77FC79778C5EB72765067F56C858B9788D704F431BFF",
+      "size_bytes": 3059924,
+      "removed_internal_columns": [
+        "controller_identity"
+      ]
+    },
+    {
+      "path": "06_supplementary_evidence/ardg_rgpc_formation_final/raw/Scene07B.csv",
+      "sha256": "C0A492BEAFC13CAB4E22F79E0D3F8249E4A6B54CEBA0EEF60C7C519CC806A75F",
+      "size_bytes": 18783793,
+      "removed_internal_columns": []
+    },
+    {
+      "path": "06_supplementary_evidence/ardg_rgpc_formation_final/raw/Scene07COff.csv",
+      "sha256": "949966E2738FB944248BF88DE5000D0755AA50EB04DFA173BE3ED3E18BDB8FC9",
+      "size_bytes": 12443578,
+      "removed_internal_columns": []
+    },
+    {
+      "path": "06_supplementary_evidence/ardg_rgpc_formation_final/raw/Scene07COnPredictiveV5C.csv",
+      "sha256": "F1FBD3D406747C58F8784AE5F491A88CCCF93A76D492D314DED30C79BC9DC38D",
+      "size_bytes": 12442433,
+      "removed_internal_columns": []
+    },
+    {
+      "path": "06_supplementary_evidence/ardg_rgpc_compound_final/evaluation/compound_metrics.csv",
+      "sha256": "A59B912569D56C74B7E7FDB0574D906E650692447952FFCCF45A73FADCAAB01F",
+      "size_bytes": 2239,
+      "removed_internal_columns": []
+    },
+    {
+      "path": "06_supplementary_evidence/ardg_rgpc_compound_final/evaluation/summary.json",
+      "sha256": "5B68BF9126ED2889D0C035B8B6D232B30C93EE34FA77787CE8271CFFAA9F869D",
+      "size_bytes": 860,
+      "removed_internal_columns": []
+    },
+    {
+      "path": "06_supplementary_evidence/ardg_rgpc_compound_final/cases/D_C01/ardg_diagnostics.csv",
+      "sha256": "4DD3F0EAAAC692A02DCE0A340EBCD0EB1A5C5CFBA53C00CD4F6E50CA71152484",
+      "size_bytes": 357409,
+      "removed_internal_columns": []
+    },
+    {
+      "path": "06_supplementary_evidence/ardg_rgpc_compound_final/cases/D_C01/raw.csv",
+      "sha256": "5C676DF27B21D7619C35D89D74E9A1FB7D8BB41E62A07570B8067E7A393D32A3",
+      "size_bytes": 3258046,
+      "removed_internal_columns": []
+    },
+    {
+      "path": "06_supplementary_evidence/ardg_rgpc_compound_final/cases/D_C02/ardg_diagnostics.csv",
+      "sha256": "B1EF916ADBF7D493EB0D59F995D5C4EA940088848A12E1480B316472E5318234",
+      "size_bytes": 597543,
+      "removed_internal_columns": []
+    },
+    {
+      "path": "06_supplementary_evidence/ardg_rgpc_compound_final/cases/D_C02/raw.csv",
+      "sha256": "69A3DF164EC2D753FF8A4666536DA2B5858358EFE5C8E8BF0E242D9E5B0B57FB",
+      "size_bytes": 5455516,
+      "removed_internal_columns": []
+    },
+    {
+      "path": "06_supplementary_evidence/ardg_rgpc_compound_final/cases/D_C03/ardg_diagnostics.csv",
+      "sha256": "D5BA3E8A425479979131E4149069BE564373E7E5816B4B72E23679663AFE2ACC",
+      "size_bytes": 582074,
+      "removed_internal_columns": []
+    },
+    {
+      "path": "06_supplementary_evidence/ardg_rgpc_compound_final/cases/D_C03/raw.csv",
+      "sha256": "E1D65C6AC976FF1F78802360445C7C154B5FD56FCD7B9358DF251B57FC3BF8EF",
+      "size_bytes": 5608253,
+      "removed_internal_columns": []
+    },
+    {
+      "path": "06_supplementary_evidence/ardg_rgpc_compound_final/cases/D_C04/ardg_diagnostics.csv",
+      "sha256": "BE672F09AE9E76C7858DA1024ED84AD5D07D29F4C5EF9915199A74888A368B41",
+      "size_bytes": 697991,
+      "removed_internal_columns": []
+    },
+    {
+      "path": "06_supplementary_evidence/ardg_rgpc_compound_final/cases/D_C04/raw.csv",
+      "sha256": "9335CA0B9BC1639927B5DE18B95087F8975479AC565DC8B22512DD1A92B62675",
+      "size_bytes": 6888524,
+      "removed_internal_columns": []
+    },
+    {
+      "path": "06_supplementary_evidence/ardg_rgpc_compound_final/cases/D_C05/ardg_diagnostics.csv",
+      "sha256": "57CBADC1E8C19FC87799C37266DB1CBEC43F86CD3F07DCECD8D004308CF4884F",
+      "size_bytes": 582685,
+      "removed_internal_columns": []
+    },
+    {
+      "path": "06_supplementary_evidence/ardg_rgpc_compound_final/cases/D_C05/raw.csv",
+      "sha256": "3F49E467347A1F9E0E31F98CBDC2A9AB711181ECF4FCB6DECD32AED240410B88",
+      "size_bytes": 5753632,
+      "removed_internal_columns": []
+    },
+    {
+      "path": "06_supplementary_evidence/ardg_rgpc_compound_final/cases/D_C06/ardg_diagnostics.csv",
+      "sha256": "4EF5412F9F759962F715220FC200027F1FB2F7CC1F535720FA02AF11C2840FB3",
+      "size_bytes": 527325,
+      "removed_internal_columns": []
+    },
+    {
+      "path": "06_supplementary_evidence/ardg_rgpc_compound_final/cases/D_C06/raw.csv",
+      "sha256": "A6FAD873B2AB6E7D8D68EC4217144310C1A06360D780474DC6AE29C4E18F619A",
+      "size_bytes": 5358207,
+      "removed_internal_columns": []
+    },
+    {
+      "path": "06_supplementary_evidence/official_pid_random20_raw/MC20_01.csv",
+      "sha256": "F0359280DA0CF455B8FE0FF53DBD4F0B675CBA74EEDDFAE3921A2324B961A18F",
+      "size_bytes": 2611649,
+      "removed_internal_columns": []
+    },
+    {
+      "path": "06_supplementary_evidence/official_pid_random20_raw/MC20_02.csv",
+      "sha256": "EE44301C024FA66EB5FA03EF44D1D7C9DCBD1340D278ECE385F746165856E662",
+      "size_bytes": 2739606,
+      "removed_internal_columns": []
+    },
+    {
+      "path": "06_supplementary_evidence/official_pid_random20_raw/MC20_03.csv",
+      "sha256": "6496F66557505CFAA46A60BBE06BC04943B87897BD4B87B2E1BC17E8AD10F2B7",
+      "size_bytes": 2728342,
+      "removed_internal_columns": []
+    },
+    {
+      "path": "06_supplementary_evidence/official_pid_random20_raw/MC20_04.csv",
+      "sha256": "D3F77E6AD066B7DFB433753F4D2CDC05FDB563EC3F8E062F14A24DC71666B534",
+      "size_bytes": 2693079,
+      "removed_internal_columns": []
+    },
+    {
+      "path": "06_supplementary_evidence/official_pid_random20_raw/MC20_05.csv",
+      "sha256": "472E94F01F3AEA829685456D94D9B9CA5DFA3C657B57EF73BEB0C9C541C596D6",
+      "size_bytes": 2725874,
+      "removed_internal_columns": []
+    },
+    {
+      "path": "06_supplementary_evidence/official_pid_random20_raw/MC20_06.csv",
+      "sha256": "AA8D4A952E3616FBCA2FA1B2B7F913C64F3904F9293A21A37BB9894D599AA68D",
+      "size_bytes": 2717923,
+      "removed_internal_columns": []
+    },
+    {
+      "path": "06_supplementary_evidence/official_pid_random20_raw/MC20_07.csv",
+      "sha256": "498B750BA1E921CCB7F7B32C98E037B2A1E3C234EFE541366A31EC26CCE6B9AC",
+      "size_bytes": 2585459,
+      "removed_internal_columns": []
+    },
+    {
+      "path": "06_supplementary_evidence/official_pid_random20_raw/MC20_08.csv",
+      "sha256": "560EA2C9A76C7B99FC84AAA13B6CCD56441CAD5B75CAB2EA3C71BB60BD7A2CDA",
+      "size_bytes": 2746323,
+      "removed_internal_columns": []
+    },
+    {
+      "path": "06_supplementary_evidence/official_pid_random20_raw/MC20_09.csv",
+      "sha256": "57B28A595532024C9F27942AD3EFFCDAB54F4420B15210DA0C35D82A6403DC67",
+      "size_bytes": 2753009,
+      "removed_internal_columns": []
+    },
+    {
+      "path": "06_supplementary_evidence/official_pid_random20_raw/MC20_10.csv",
+      "sha256": "FA0AD3D2A9B9C83090C7EF95B7FC38E26785DA031DAA855650C4769DBB0ED734",
+      "size_bytes": 2740634,
+      "removed_internal_columns": []
+    },
+    {
+      "path": "06_supplementary_evidence/official_pid_random20_raw/MC20_11.csv",
+      "sha256": "B79713A69949D448A9B7FE044131FE7A39B2565F92D031EDF1FE72A62638BA39",
+      "size_bytes": 2735581,
+      "removed_internal_columns": []
+    },
+    {
+      "path": "06_supplementary_evidence/official_pid_random20_raw/MC20_12.csv",
+      "sha256": "B3FFA9E65B071B27BD7A6B97A640B7B280E80E1C8E330C0A41145F9203C3048C",
+      "size_bytes": 2721303,
+      "removed_internal_columns": []
+    },
+    {
+      "path": "06_supplementary_evidence/official_pid_random20_raw/MC20_13.csv",
+      "sha256": "7B45784065D6E66BDCBC92CE55A3608A57A88D7E72B77377B98495363FD19AB6",
+      "size_bytes": 2722467,
+      "removed_internal_columns": []
+    },
+    {
+      "path": "06_supplementary_evidence/official_pid_random20_raw/MC20_14.csv",
+      "sha256": "5B4964D247A5989D3BE0411FDFADF54CA358EB4FD8A2AE9EECC0903AEDD8F85B",
+      "size_bytes": 2737643,
+      "removed_internal_columns": []
+    },
+    {
+      "path": "06_supplementary_evidence/official_pid_random20_raw/MC20_15.csv",
+      "sha256": "ED88D7BD9AAE512AE5D22AB7E3FF9A5C221E9B52941DB1D43815C0D8005B6793",
+      "size_bytes": 2689608,
+      "removed_internal_columns": []
+    },
+    {
+      "path": "06_supplementary_evidence/official_pid_random20_raw/MC20_16.csv",
+      "sha256": "7F7253414FECCAE8C85A261A45EA980BBC4E06D8AD56C21D163815B0A1FC2C7A",
+      "size_bytes": 2733890,
+      "removed_internal_columns": []
+    },
+    {
+      "path": "06_supplementary_evidence/official_pid_random20_raw/MC20_17.csv",
+      "sha256": "C3AA8BC9F02C94EC9B07A11BA92B2D8F0D77F7560412AE14144C6E7FF9DD12A6",
+      "size_bytes": 2733191,
+      "removed_internal_columns": []
+    },
+    {
+      "path": "06_supplementary_evidence/official_pid_random20_raw/MC20_18.csv",
+      "sha256": "5552FE7396BA539BC7F6CB345F66426E97F15873D4291FED7266E3874C1709A6",
+      "size_bytes": 2713231,
+      "removed_internal_columns": []
+    },
+    {
+      "path": "06_supplementary_evidence/official_pid_random20_raw/MC20_19.csv",
+      "sha256": "3433BA064D15F71BD939BDDCFC12ACADDF5BF43454778D65ED5456EE8B966D1C",
+      "size_bytes": 2721864,
+      "removed_internal_columns": []
+    },
+    {
+      "path": "06_supplementary_evidence/official_pid_random20_raw/MC20_20.csv",
+      "sha256": "5A087E0EBBD3498BAB25AFF4FC93993238737C565822383A50801C9E9FD09379",
+      "size_bytes": 2730422,
+      "removed_internal_columns": []
+    }
+  ]
+}

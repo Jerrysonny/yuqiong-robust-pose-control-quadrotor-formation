@@ -109,7 +109,10 @@ default_config_path() = joinpath(WORKSPACE, "config", "campaign.toml")
 function load_campaign_config(path=default_config_path())
     isfile(path) || error("missing campaign config: $path")
     config = TOML.parsefile(path)
-    get(config, "campaign", "") == "v8_ra_gca_cghte_project_regression" ||
+    get(config, "campaign", "") in (
+        "v8_ra_gca_cghte_project_regression",
+        "finals_ardg_rgpc_project_regression",
+    ) ||
         error("unexpected campaign contract in $path")
     return config
 end
@@ -148,7 +151,8 @@ end
 function validate_hte_version(expected_hte_version)
     expected_hte_version === nothing && return nothing
     version = Int(expected_hte_version)
-    version in (901, 914) || error("expected HTE version must be 901 or 914")
+    version in (901, 914, 97406) ||
+        error("expected formal diagnostic version must be 901, 914, or 97406")
     return version
 end
 
@@ -800,7 +804,7 @@ function aggregate_ratio_gate(pairs, case_ids, limit)
 end
 
 function evaluate_campaign(v8_root, hte_root; config_path=default_config_path(),
-        hte_controller_id="RA-GCA-CGHTE", expected_hte_version=914,
+        hte_controller_id="ARDG-RGPC", expected_hte_version=97406,
         selected_cases=nothing)
     # 全部注册工况完成后再汇总配对门和项目级结论。
     isdir(v8_root) || error("missing V8 result root: $v8_root")

@@ -1,0 +1,44 @@
+{
+  "schema_version": "official_pid_public_angular_status_v1",
+  "case_id": "BODY_PITCH_NEG",
+  "controller": "官方PID",
+  "success": true,
+  "simulation": {
+    "start_time_s": 0.0,
+    "stop_time_s": 50.0,
+    "interval_s": 0.01,
+    "algorithm": "Dassl",
+    "tolerance": 0.0001,
+    "rows": 5001,
+    "finite": true
+  },
+  "disturbance": {
+    "axis": "pitch",
+    "torque_nm": -0.0006,
+    "start_time_s": 8.0,
+    "stop_time_s": 8.25
+  },
+  "metrics": {
+    "analysis_window_s": [
+      8.0,
+      12.25
+    ],
+    "attitude_event_iae_rad_s": 0.0034737652129469988,
+    "peak_attitude_error_rad": 0.004809466896553333,
+    "peak_attitude_error_deg": 0.2755621548803881,
+    "position_rmse_m": 0.004319151582038713,
+    "motor_tv": 0.9509283061606482
+  },
+  "toolchain": {
+    "internal_translate_error": 3005,
+    "external_solver_fallback_success": true,
+    "compiler": "Sysplorer MinGW 4.9.4 x64",
+    "solver": "MWSolver.exe"
+  },
+  "evidence": {
+    "raw_file": "raw.csv",
+    "source_raw_sha256": "EE0DEDC1C53246E6BB4B045078D80531E5B4034A763B99532BB4341AEA2380D4",
+    "public_raw_sha256": "86BA83CF331EBE3267029B096B31EACF6D81CA077C0AFEF03C0EB399F25C0166",
+    "source_execution_status_sha256": "737F762EB7CE6D930147EDB0A6734E6B25F34785F705F7C3BE8DF34DD7BD53FB"
+  }
+}

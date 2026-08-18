@@ -1,0 +1,25 @@
+{
+  "schema_version": "ardg_rgpc_final_shared_assets_qa_v1",
+  "figure_count": 6,
+  "png_count": 6,
+  "pdf_count": 6,
+  "contact_sheet": "qa/FIG_A_F_contact_sheet.png",
+  "claims": {
+    "angular_iae_average_improvement_percent": 43.30163245608571,
+    "scene06b_position_rmse_improvement_percent": 8.622323578851693,
+    "regression18": {
+      "improved": 1,
+      "degraded": 0,
+      "equivalent": 17
+    }
+  },
+  "checks": {
+    "all_source_copies_present": true,
+    "six_png_present": true,
+    "six_pdf_present": true,
+    "angular_claim_matches_43_30": true,
+    "scene06b_claim_matches_8_62": true,
+    "regression_claim_matches": true
+  },
+  "pass": true
+}

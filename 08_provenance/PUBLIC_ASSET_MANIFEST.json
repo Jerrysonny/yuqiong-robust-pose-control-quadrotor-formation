@@ -1,0 +1,201 @@
+{
+  "schema_version": 1,
+  "generated_utc": "2026-08-16T19:11:03Z",
+  "files": [
+    {
+      "path": "05_visuals/assets/report_final_20260816/FIG_1-1.png",
+      "size_bytes": 194848,
+      "sha256": "183640445BCBED1C692FB90B7FBAC15A4B7E27EA71BEE303A111C29CF57632E9"
+    },
+    {
+      "path": "05_visuals/assets/report_final_20260816/FIG_2-1.png",
+      "size_bytes": 10636,
+      "sha256": "A92A180E1556CC60B641DD4373C6B488309255593134A55BA93F594DD5D0CC75"
+    },
+    {
+      "path": "05_visuals/assets/report_final_20260816/FIG_2-2.png",
+      "size_bytes": 23289,
+      "sha256": "28AEE5C9B095E369671760F5A20E853F92FB6EC30D9BA626F0E5FE75D6AC3F62"
+    },
+    {
+      "path": "05_visuals/assets/report_final_20260816/FIG_2-3.png",
+      "size_bytes": 175694,
+      "sha256": "3F51D659357EA21CA4752634755FA601B22F108B7E0F65F1D4D046B7AAF65482"
+    },
+    {
+      "path": "05_visuals/assets/report_final_20260816/FIG_3-1.png",
+      "size_bytes": 312361,
+      "sha256": "F2602C7912F7571B8A66F549C46CD9AFE9A43E41C00FB411A19292BE33C07EA7"
+    },
+    {
+      "path": "05_visuals/assets/report_final_20260816/FIG_3-2.png",
+      "size_bytes": 219573,
+      "sha256": "A80662979CB86D00D80A21C9E4AD47DDDF00BAAE4FB9D78F225801C9B17B83D3"
+    },
+    {
+      "path": "05_visuals/assets/report_final_20260816/FIG_4-1.png",
+      "size_bytes": 362476,
+      "sha256": "83C25AFCE1781A27D0C63814C2BB9805AD40DE1E7058760FEC709A7628D68944"
+    },
+    {
+      "path": "05_visuals/assets/report_final_20260816/FIG_5-1.png",
+      "size_bytes": 518567,
+      "sha256": "6A5997D1CF5033160326890B9E9F23BAB29455BF9BD67523BE7C7111A0DF4F20"
+    },
+    {
+      "path": "05_visuals/assets/report_final_20260816/FIG_5-2.png",
+      "size_bytes": 362868,
+      "sha256": "1204BE5C8FD1D8B8B1A1BA95FB7C9F9F5596F998E578B44B9264FC3691844E98"
+    },
+    {
+      "path": "05_visuals/assets/report_final_20260816/FIG_5-3.png",
+      "size_bytes": 174703,
+      "sha256": "98A1E141C34F8EFD7551BFF254CF8F826F3E1CFDC91D697F50C5A02E796CD153"
+    },
+    {
+      "path": "05_visuals/assets/report_final_20260816/FIG_6-1.png",
+      "size_bytes": 170152,
+      "sha256": "F8EDB4BEA8C655BC2580473D49C87833264B747C403AAE14C81D1FE47AE63B13"
+    },
+    {
+      "path": "05_visuals/assets/report_final_20260816/FIG_6-2.png",
+      "size_bytes": 161554,
+      "sha256": "378BB6CA73550FC4DF73F6F95C7EC22290C41D4006A91600702E71639446A1FA"
+    },
+    {
+      "path": "05_visuals/assets/report_final_20260816/FIG_6-3.png",
+      "size_bytes": 320924,
+      "sha256": "E9EFCE33E652AD404E6E47F53AE67DFFF86D1DDA5EC2CBAFF6F8F4FD48165D56"
+    },
+    {
+      "path": "05_visuals/assets/report_final_20260816/FIG_6-4.png",
+      "size_bytes": 159141,
+      "sha256": "46300F22D7A8BD2203B8C662842E4FC9CB1D1C2C67241A89748D9B7917377760"
+    },
+    {
+      "path": "05_visuals/assets/report_final_20260816/FIG_6-5.png",
+      "size_bytes": 392863,
+      "sha256": "53A9996FF7D41CD95474073B9BF07026851E5E9A33EB61460D57A9EDD80A9800"
+    },
+    {
+      "path": "05_visuals/assets/report_final_20260816/FIG_6-6.png",
+      "size_bytes": 344873,
+      "sha256": "D2A919446E47FDC0C03AA717D3ABE10DFEBAC74DF5A74B8257E81085D28D1E9E"
+    },
+    {
+      "path": "05_visuals/assets/report_final_20260816/FIG_6-7.png",
+      "size_bytes": 190196,
+      "sha256": "929B379D48E03ECB4A51DF5EF08E6D816EC02ED29DFC0B3C4DBDC5AD1620E97E"
+    },
+    {
+      "path": "05_visuals/assets/report_final_20260816/FIG_6-8.png",
+      "size_bytes": 186324,
+      "sha256": "9D1DB67C454EDF0D47EA24E93517E220860C8CB088005D9C6E7808CDF851C6C1"
+    },
+    {
+      "path": "05_visuals/assets/report_final_20260816/FIG_6-9.png",
+      "size_bytes": 173167,
+      "sha256": "7022532239237B336A7A52E68DF2B610228C2034C41B92BBA5BD903D0BDC794B"
+    },
+    {
+      "path": "05_visuals/assets/report_final_20260816/FIG_7-1.png",
+      "size_bytes": 295719,
+      "sha256": "C7C69425B595BD5234E7BF0E4EA992E681F528479EDC319A84E87BF7A5ED430C"
+    },
+    {
+      "path": "05_visuals/assets/report_final_20260816/FIG_7-2.png",
+      "size_bytes": 137927,
+      "sha256": "D962F4C1F21DACDA4F50A4A71D78CE41E8B721DB75A595E53CEA4455F2975413"
+    },
+    {
+      "path": "05_visuals/assets/report_final_20260816/FIG_8-1.png",
+      "size_bytes": 212168,
+      "sha256": "7A9D29C3F916833A67CFE40E5B924D523765EBA2625DE56EB9B5F4CD731E0D14"
+    },
+    {
+      "path": "05_visuals/assets/report_final_20260816/FIG_A-1.png",
+      "size_bytes": 186514,
+      "sha256": "3FB78DE2F5310A2F8F61DCF4D5299CE0F97E4B86340872C897948CD0F7FAC7A5"
+    },
+    {
+      "path": "05_visuals/assets/report_final_20260816/FIG_C-1.png",
+      "size_bytes": 229386,
+      "sha256": "EBB883BE5302C37B5C1189171EB59C483ECDD5F619B429086B643DF1CE9D28A6"
+    },
+    {
+      "path": "05_visuals/assets/report_final_20260816/FIG_C-2.png",
+      "size_bytes": 286552,
+      "sha256": "B445949E7555104DFB8329B259A0490466E0A65CCAFB5BD1E5A92233AB1158D6"
+    },
+    {
+      "path": "05_visuals/assets/report_final_20260816/FIG_C-3.png",
+      "size_bytes": 124523,
+      "sha256": "6AB862DF16E41B156097C2A1ED9545A85C65454BFB6FCA5DA484D235A99C6459"
+    },
+    {
+      "path": "05_visuals/assets/report_final_20260816/FIG_C-4.png",
+      "size_bytes": 190196,
+      "sha256": "929B379D48E03ECB4A51DF5EF08E6D816EC02ED29DFC0B3C4DBDC5AD1620E97E"
+    },
+    {
+      "path": "05_visuals/assets/report_final_20260816/FIG_D-1.png",
+      "size_bytes": 182637,
+      "sha256": "654887B521C128EAC54A778FE48A2BA5294AD635FA241402F7CD739E6292ADDE"
+    },
+    {
+      "path": "05_visuals/assets/report_final_20260816/FIG_D-2.png",
+      "size_bytes": 151831,
+      "sha256": "2E2F1FFFB9B5464BCE41D4A57E588F5F5739556D8105B824F03E90085A9D343D"
+    },
+    {
+      "path": "05_visuals/assets/report_final_20260816/FIG_E-1.png",
+      "size_bytes": 194312,
+      "sha256": "5B3EB4556F50ACEA9E60F76B920342E25E17CDB75FBEFEC12DC275D5B7015750"
+    },
+    {
+      "path": "05_visuals/assets/static/01_典型任务.png",
+      "size_bytes": 118125,
+      "sha256": "E18AD13772138783E76223067B98B0ED196E647C2A35AF3C2FB1AA71D366F400"
+    },
+    {
+      "path": "05_visuals/assets/static/02_参数鲁棒核心优势.png",
+      "size_bytes": 83823,
+      "sha256": "BAD042284880657B75C2E175CE66753CB8AE45021EB0F560BED0178807FD968C"
+    },
+    {
+      "path": "05_visuals/assets/static/03_编队PP-CBF.png",
+      "size_bytes": 75557,
+      "sha256": "D01E589379498E7CA86E34FFB6C986747416CCE88E3B6CC5872503B529448DBC"
+    },
+    {
+      "path": "05_visuals/assets/gif/01_参数_高度跟踪.gif",
+      "size_bytes": 690547,
+      "sha256": "AE66F9867B44D276E5D4498FE442EBDB6E9B179ED2379FC14F3C736D289275C9"
+    },
+    {
+      "path": "05_visuals/assets/gif/02_参数_推力尺度.gif",
+      "size_bytes": 689461,
+      "sha256": "884B17426F30F99E0BB7C1059F8375F2BCEC0078080906785FF9BEFDF939C37E"
+    },
+    {
+      "path": "05_visuals/assets/gif/03_编队_队形变换.gif",
+      "size_bytes": 698631,
+      "sha256": "EB7214A6FD8F01E5B0FCF5479233CD00D69D070C535897E2113DAABEDA25C331"
+    },
+    {
+      "path": "05_visuals/assets/gif/04_编队_最近机间距.gif",
+      "size_bytes": 659430,
+      "sha256": "B7B58DE79977DF3171563C9E4F77ACD2BCC6A69CB6A05A018D4C23B7149B302F"
+    },
+    {
+      "path": "05_visuals/assets/gif/05_PP-CBF_队形安全.gif",
+      "size_bytes": 912261,
+      "sha256": "6E97627843A0ACF9D9695D3590024E9D7FB824C811278030C28C86208EBB6FE2"
+    },
+    {
+      "path": "05_visuals/assets/gif/06_PP-CBF_距离曲线.gif",
+      "size_bytes": 826778,
+      "sha256": "B26551275885F0BDC60813F2F3DD6AFAFFDDAB1B5AF6883A2ADDCBDB821754ED"
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "schema_version": "official_pid_public_angular_status_v1",
+  "case_id": "BODY_ROLL_POS",
+  "controller": "官方PID",
+  "success": true,
+  "simulation": {
+    "start_time_s": 0.0,
+    "stop_time_s": 50.0,
+    "interval_s": 0.01,
+    "algorithm": "Dassl",
+    "tolerance": 0.0001,
+    "rows": 5001,
+    "finite": true
+  },
+  "disturbance": {
+    "axis": "roll",
+    "torque_nm": 0.0006,
+    "start_time_s": 8.0,
+    "stop_time_s": 8.25
+  },
+  "metrics": {
+    "analysis_window_s": [
+      8.0,
+      12.25
+    ],
+    "attitude_event_iae_rad_s": 0.0034801895781540783,
+    "peak_attitude_error_rad": 0.0048096079508419785,
+    "peak_attitude_error_deg": 0.2755702366958097
+  },
+  "toolchain": {
+    "internal_translate_error": 3005,
+    "external_solver_fallback_success": true,
+    "compiler": "Sysplorer MinGW 4.9.4 x64",
+    "solver": "MWSolver.exe"
+  },
+  "evidence": {
+    "raw_file": "raw.csv",
+    "source_raw_sha256": "A7EE48F84A8C159B6A777F060DD9C1657F1E8C9CA401F2AA43D9995404C17C28",
+    "public_raw_sha256": "0C928F75CDE03B6228A6365994C1A46D667C335E22D5DB0C1192DE4E314236A6",
+    "source_execution_status_sha256": "91BD8C347EFA5023AD32A2173E06FF0D779F633861337350DFD84F1420409453"
+  }
+}

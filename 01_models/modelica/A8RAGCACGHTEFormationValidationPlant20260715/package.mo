@@ -39,6 +39,11 @@ package A8RAGCACGHTEFormationValidationPlant20260715
     Modelica.Blocks.Sources.RealExpression stateSource1[18](y=stateVector1);
     Modelica.Blocks.Sources.RealExpression stateSource2[18](y=stateVector2);
     Modelica.Blocks.Sources.RealExpression stateSource3[18](y=stateVector3);
+    Modelica.Blocks.Sources.RealExpression rotorSpeedARDGFormation1[4](y={speedSensor1[1].w,speedSensor1[2].w,speedSensor1[3].w,speedSensor1[4].w});
+    Modelica.Blocks.Sources.RealExpression rotorSpeedARDGFormation2[4](y={speedSensor2[1].w,speedSensor2[2].w,speedSensor2[3].w,speedSensor2[4].w});
+    Modelica.Blocks.Sources.RealExpression rotorSpeedARDGFormation3[4](y={speedSensor3[1].w,speedSensor3[2].w,speedSensor3[3].w,speedSensor3[4].w});
+    Modelica.Blocks.Sources.RealExpression enableARDGFormation[1](y={1});
+    Modelica.Blocks.Sources.RealExpression timeARDGFormation[1](y={time});
   equation
     leaderReference={
       if time<30 then 0 else 2*sin(w*(time-30)),
@@ -74,16 +79,25 @@ package A8RAGCACGHTEFormationValidationPlant20260715
     connect(allocatorLimitSource.y,controller1.allocator_limit);
     connect(controller1.motor_cmd,motorCommand1);
     connect(controller1.diagnostics,controllerDiagnostics1);
+    connect(rotorSpeedARDGFormation1.y,controller1.ardg1_rotor_speed);
+    connect(enableARDGFormation.y,controller1.ardg1_enable);
+    connect(timeARDGFormation.y,controller1.ardg1_time);
     connect(controllerReference2.y,controller2.reference);
     connect(stateSource2.y,controller2.state);
     connect(allocatorLimitSource.y,controller2.allocator_limit);
     connect(controller2.motor_cmd,motorCommand2);
     connect(controller2.diagnostics,controllerDiagnostics2);
+    connect(rotorSpeedARDGFormation2.y,controller2.ardg1_rotor_speed);
+    connect(enableARDGFormation.y,controller2.ardg1_enable);
+    connect(timeARDGFormation.y,controller2.ardg1_time);
     connect(controllerReference3.y,controller3.reference);
     connect(stateSource3.y,controller3.state);
     connect(allocatorLimitSource.y,controller3.allocator_limit);
     connect(controller3.motor_cmd,motorCommand3);
     connect(controller3.diagnostics,controllerDiagnostics3);
+    connect(rotorSpeedARDGFormation3.y,controller3.ardg1_rotor_speed);
+    connect(enableARDGFormation.y,controller3.ardg1_enable);
+    connect(timeARDGFormation.y,controller3.ardg1_time);
     annotation(experiment(Algorithm=Dassl,StartTime=0,StopTime=60,
       Tolerance=0.0001,NumberOfIntervals=6000));
   end Scene07B;
@@ -125,6 +139,11 @@ package A8RAGCACGHTEFormationValidationPlant20260715
     Modelica.Blocks.Sources.RealExpression stateSource1[18](y=stateVector1);
     Modelica.Blocks.Sources.RealExpression stateSource2[18](y=stateVector2);
     Modelica.Blocks.Sources.RealExpression stateSource3[18](y=stateVector3);
+    Modelica.Blocks.Sources.RealExpression rotorSpeedARDGFormation1[4](y={speedSensor1[1].w,speedSensor1[2].w,speedSensor1[3].w,speedSensor1[4].w});
+    Modelica.Blocks.Sources.RealExpression rotorSpeedARDGFormation2[4](y={speedSensor2[1].w,speedSensor2[2].w,speedSensor2[3].w,speedSensor2[4].w});
+    Modelica.Blocks.Sources.RealExpression rotorSpeedARDGFormation3[4](y={speedSensor3[1].w,speedSensor3[2].w,speedSensor3[3].w,speedSensor3[4].w});
+    Modelica.Blocks.Sources.RealExpression enableARDGFormation[1](y={1});
+    Modelica.Blocks.Sources.RealExpression timeARDGFormation[1](y={time});
   equation
     leaderReference={0,0,if time<5 then 0.3*time else 1.5,
       0,0,if time<5 then 0.3 else 0,0,0,0};
@@ -154,16 +173,25 @@ package A8RAGCACGHTEFormationValidationPlant20260715
     connect(allocatorLimitSource.y,controller1.allocator_limit);
     connect(controller1.motor_cmd,motorCommand1);
     connect(controller1.diagnostics,controllerDiagnostics1);
+    connect(rotorSpeedARDGFormation1.y,controller1.ardg1_rotor_speed);
+    connect(enableARDGFormation.y,controller1.ardg1_enable);
+    connect(timeARDGFormation.y,controller1.ardg1_time);
     connect(controllerReference2.y,controller2.reference);
     connect(stateSource2.y,controller2.state);
     connect(allocatorLimitSource.y,controller2.allocator_limit);
     connect(controller2.motor_cmd,motorCommand2);
     connect(controller2.diagnostics,controllerDiagnostics2);
+    connect(rotorSpeedARDGFormation2.y,controller2.ardg1_rotor_speed);
+    connect(enableARDGFormation.y,controller2.ardg1_enable);
+    connect(timeARDGFormation.y,controller2.ardg1_time);
     connect(controllerReference3.y,controller3.reference);
     connect(stateSource3.y,controller3.state);
     connect(allocatorLimitSource.y,controller3.allocator_limit);
     connect(controller3.motor_cmd,motorCommand3);
     connect(controller3.diagnostics,controllerDiagnostics3);
+    connect(rotorSpeedARDGFormation3.y,controller3.ardg1_rotor_speed);
+    connect(enableARDGFormation.y,controller3.ardg1_enable);
+    connect(timeARDGFormation.y,controller3.ardg1_time);
     annotation(experiment(Algorithm=Dassl,StartTime=0,StopTime=40,
       Tolerance=0.0001,NumberOfIntervals=4000));
   end Scene07COff;
@@ -205,6 +233,11 @@ package A8RAGCACGHTEFormationValidationPlant20260715
     Modelica.Blocks.Sources.RealExpression stateSource1[18](y=stateVector1);
     Modelica.Blocks.Sources.RealExpression stateSource2[18](y=stateVector2);
     Modelica.Blocks.Sources.RealExpression stateSource3[18](y=stateVector3);
+    Modelica.Blocks.Sources.RealExpression rotorSpeedARDGFormation1[4](y={speedSensor1[1].w,speedSensor1[2].w,speedSensor1[3].w,speedSensor1[4].w});
+    Modelica.Blocks.Sources.RealExpression rotorSpeedARDGFormation2[4](y={speedSensor2[1].w,speedSensor2[2].w,speedSensor2[3].w,speedSensor2[4].w});
+    Modelica.Blocks.Sources.RealExpression rotorSpeedARDGFormation3[4](y={speedSensor3[1].w,speedSensor3[2].w,speedSensor3[3].w,speedSensor3[4].w});
+    Modelica.Blocks.Sources.RealExpression enableARDGFormation[1](y={1});
+    Modelica.Blocks.Sources.RealExpression timeARDGFormation[1](y={time});
   equation
     leaderReference={0,0,if time<5 then 0.3*time else 1.5,
       0,0,if time<5 then 0.3 else 0,0,0,0};
@@ -234,16 +267,25 @@ package A8RAGCACGHTEFormationValidationPlant20260715
     connect(allocatorLimitSource.y,controller1.allocator_limit);
     connect(controller1.motor_cmd,motorCommand1);
     connect(controller1.diagnostics,controllerDiagnostics1);
+    connect(rotorSpeedARDGFormation1.y,controller1.ardg1_rotor_speed);
+    connect(enableARDGFormation.y,controller1.ardg1_enable);
+    connect(timeARDGFormation.y,controller1.ardg1_time);
     connect(controllerReference2.y,controller2.reference);
     connect(stateSource2.y,controller2.state);
     connect(allocatorLimitSource.y,controller2.allocator_limit);
     connect(controller2.motor_cmd,motorCommand2);
     connect(controller2.diagnostics,controllerDiagnostics2);
+    connect(rotorSpeedARDGFormation2.y,controller2.ardg1_rotor_speed);
+    connect(enableARDGFormation.y,controller2.ardg1_enable);
+    connect(timeARDGFormation.y,controller2.ardg1_time);
     connect(controllerReference3.y,controller3.reference);
     connect(stateSource3.y,controller3.state);
     connect(allocatorLimitSource.y,controller3.allocator_limit);
     connect(controller3.motor_cmd,motorCommand3);
     connect(controller3.diagnostics,controllerDiagnostics3);
+    connect(rotorSpeedARDGFormation3.y,controller3.ardg1_rotor_speed);
+    connect(enableARDGFormation.y,controller3.ardg1_enable);
+    connect(timeARDGFormation.y,controller3.ardg1_time);
     annotation(experiment(Algorithm=Dassl,StartTime=0,StopTime=40,
       Tolerance=0.0001,NumberOfIntervals=4000));
   end Scene07COnPredictiveV5C;

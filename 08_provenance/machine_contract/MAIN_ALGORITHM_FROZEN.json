@@ -1,0 +1,79 @@
+{
+  "schema_version": 3,
+  "release_date": "2026-08-15",
+  "release_status": "finals_working_copy",
+  "algorithm": {
+    "chinese_name": "角残差驱动守卫型鲁棒几何位姿控制",
+    "english_name": "Angular-Residual-Driven Guarded Robust Geometric Pose Control",
+    "short_name": "ARDG-RGPC",
+    "release_id": "ARDG-RGPC-FINAL-20260815",
+    "control_scope": "位置及滚转、俯仰约化姿态控制"
+  },
+  "controller": {
+    "class": "A8FormalRAGCACGHTE_20260715",
+    "path": "01_models/sysblock/A8FormalRAGCACGHTE_20260715.mo",
+    "sha256": "9C0E784EEA14687C26F9CAE9BC3FBDC9F546492659C56CF12E49BA2C80F7FE0F",
+    "diagnostic_version_code": 97406,
+    "sample_time_s": 0.01,
+    "input_dimensions": {
+      "reference": 11,
+      "state": 18,
+      "allocator_limit": 2,
+      "rotor_speed": 4,
+      "enable": 1,
+      "time": 1
+    },
+    "output_dimensions": {
+      "motor_command": 4,
+      "diagnostics": 16
+    }
+  },
+  "runner": {
+    "path": "02_scripts/sysplorer/run_main_controller.py",
+    "sha256": "336CCB25963CD0F2D53D2106F60B8D7D718E657286E7221CE369EC96BD4D27A6",
+    "default_suite": "finals_core",
+    "default_scene_count": 20,
+    "full_suite": "full_registered",
+    "registered_scene_count": 34,
+    "runtime_parameter_override_allowed": false
+  },
+  "final_parameters": {
+    "compensation_gain": 0.8989438715289305,
+    "compensation_limit_nm": 0.0003295328449663131,
+    "rate_limit_nm_per_sample": 4.195751028483854E-05
+  },
+  "evidence_scope": {
+    "new_angular_scenes": 2,
+    "representative_regression_scenes": 18,
+    "parameter_cases": 11,
+    "random_parameter_cases": 20,
+    "wind_phases": 5,
+    "sensor_degradation_phases": 5,
+    "formation_cases": 3
+  },
+  "formation": {
+    "supervisor": "PP-CBF",
+    "relationship": "独立上层安全监督器"
+  },
+  "comparison_scope": {
+    "official_baseline": "Official QuadrotorModel PID",
+    "auxiliary_comparators": ["RA-GCA/Base", "CAP-ADRC", "CP-INDI"],
+    "formation_supervisor": "PP-CBF"
+  },
+  "release_verification": {
+    "status": "finals_package_verified",
+    "tuning_closed": true,
+    "final_package_audit_pending": true,
+    "full_quick_verify": "passed"
+  },
+  "documentation_scope": {
+    "simulation_report_updated": false,
+    "user_manual_updated": false,
+    "code_development_document_updated": false,
+    "presentation_updated": false
+  },
+  "provenance_record": "08_provenance/SOURCE_COPY_MANIFEST.csv",
+  "public_identity": "00_START_HERE/ALGORITHM_IDENTITY.json",
+  "final_report_freeze": "08_provenance/FINAL_REPORT_FREEZE.json",
+  "report_evidence_manifest": "04_results/report_evidence/REPORT_EVIDENCE_MANIFEST.json"
+}

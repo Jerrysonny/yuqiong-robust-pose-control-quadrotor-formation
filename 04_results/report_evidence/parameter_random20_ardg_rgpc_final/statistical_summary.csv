@@ -1,0 +1,12 @@
+﻿metric,value
+sample_count,20.0
+ardg_rgpc_wins,20.0
+official_pid_wins,0.0
+ties,0.0
+median_reduction_percent,87.63445093354689
+mean_reduction_percent,83.3399124744013
+minimum_reduction_percent,33.91313244560252
+maximum_reduction_percent,93.24490060694428
+bootstrap_ci_low_percent,83.7408486007854
+bootstrap_ci_high_percent,90.18645642154547
+sign_test_p_two_sided,1.9073486328125e-06

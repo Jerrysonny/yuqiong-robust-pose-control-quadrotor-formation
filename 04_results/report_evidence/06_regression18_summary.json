@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "formal_algorithm": "ARDG-RGPC",
+  "scene_count": 18,
+  "category_counts": {
+    "main_single": 5,
+    "standard_step": 3,
+    "wind": 5,
+    "sensor": 5
+  },
+  "all_execution_passed": true,
+  "all_values_finite": true,
+  "comparison_policy": "final-algorithm absolute results with registered external comparators only",
+  "source_reference": "06_supplementary_evidence/ardg_rgpc_regression18_final/execution_status.json",
+  "source_sha256": "0DE70031FB67C3D444CA558D1D265F3F78F5911E5BFE464EC37B74A1B3C6CD59"
+}

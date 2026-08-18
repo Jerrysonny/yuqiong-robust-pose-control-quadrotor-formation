@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "experiment_id": "PARAMETER11_ARDG_RGPC_FINAL",
+  "sample_count": 11,
+  "reference": "RA-GCA/Base geometric baseline",
+  "improved_vs_reference": 6,
+  "equivalent_vs_reference": 5,
+  "degraded_vs_reference": 0,
+  "rmse_min_m": 0.014692923890282454,
+  "rmse_max_m": 0.03367800223022429,
+  "worst_case": "Scene05B_C010",
+  "all_ardg_inactive": true,
+  "all_safety_valid": true,
+  "direct_final_algorithm": true,
+  "raw_manifest": "06_supplementary_evidence/ardg_rgpc_parameter11_final/RAW_MANIFEST.json"
+}

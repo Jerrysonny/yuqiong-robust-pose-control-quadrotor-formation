@@ -1,0 +1,305 @@
+{
+  "schema_version": "v936_j03_local_screen_summary_v1",
+  "registry": {
+    "path": "D:\\Users\\admin\\Desktop\\A8-\u56db\u65cb\u7ffc\u65e0\u4eba\u673a\u4f4d\u59ff\u63a7\u5236\u7cfb\u7edf\u8bbe\u8ba1\u4f18\u5316\\A8\u51b3\u8d5b\u9636\u6bb5\u5347\u7ea7\u7814\u53d1\\74_v936_ardg1_final_local_search\\00_protocol\\local8_registry_v1.json",
+    "sha256": "AE85FA101387C8F0C00E28BA6DB0071024E838157786B1419B63A9670B199157",
+    "bytes": 15213
+  },
+  "baseline_id": "v914",
+  "champion_id": "v936-ARDG1-J03",
+  "objective_order": [
+    "attitude_iae",
+    "motor_tv_full",
+    "motor_tv_event",
+    "worst_scene_attitude_degradation_vs_j03_percent"
+  ],
+  "points": {
+    "v936-ARDG1-J03": {
+      "attitude_iae": 0.02783450830696583,
+      "motor_tv_full": 17.051614367751995,
+      "motor_tv_event": 1.8530826850425264,
+      "worst_scene_attitude_degradation_vs_j03_percent": 0.0
+    },
+    "v936-ARDG1-L01": {
+      "attitude_iae": 0.02783413966454863,
+      "motor_tv_full": 17.049925295503805,
+      "motor_tv_event": 1.8513936249282335,
+      "worst_scene_attitude_degradation_vs_j03_percent": -0.0013242000409509436
+    },
+    "v936-ARDG1-L02": {
+      "attitude_iae": 0.027834886999364213,
+      "motor_tv_full": 17.053316625240328,
+      "motor_tv_event": 1.8547849293988925,
+      "worst_scene_attitude_degradation_vs_j03_percent": 0.0013621616944692885
+    },
+    "v936-ARDG1-L03": {
+      "attitude_iae": 0.027859780254765723,
+      "motor_tv_full": 17.05052674385888,
+      "motor_tv_event": 1.8519949945926708,
+      "worst_scene_attitude_degradation_vs_j03_percent": 0.09079431967059942
+    },
+    "v936-ARDG1-L04": {
+      "attitude_iae": 0.027810896662344407,
+      "motor_tv_full": 17.05263288852924,
+      "motor_tv_event": 1.8541012648907795,
+      "worst_scene_attitude_degradation_vs_j03_percent": -0.08482801764818536
+    },
+    "v936-ARDG1-L05": {
+      "attitude_iae": 0.027868768557754355,
+      "motor_tv_full": 17.05647027912025,
+      "motor_tv_event": 1.857938419636529,
+      "worst_scene_attitude_degradation_vs_j03_percent": 0.12308579453422906
+    },
+    "v936-ARDG1-L06": {
+      "attitude_iae": 0.02780630639003493,
+      "motor_tv_full": 17.051278407119874,
+      "motor_tv_event": 1.852746877211299,
+      "worst_scene_attitude_degradation_vs_j03_percent": -0.10131747732826288
+    },
+    "v936-ARDG1-L07": {
+      "attitude_iae": 0.027817409860713835,
+      "motor_tv_full": 17.047711295185486,
+      "motor_tv_event": 1.8491796777097775,
+      "worst_scene_attitude_degradation_vs_j03_percent": -0.061428877669099324
+    },
+    "v936-ARDG1-L08": {
+      "attitude_iae": 0.027821730848461176,
+      "motor_tv_full": 17.053173703514258,
+      "motor_tv_event": 1.8546420352420476,
+      "worst_scene_attitude_degradation_vs_j03_percent": -0.045904329481771325
+    }
+  },
+  "hard_passed": {
+    "v936-ARDG1-J03": true,
+    "v936-ARDG1-L01": true,
+    "v936-ARDG1-L02": true,
+    "v936-ARDG1-L03": true,
+    "v936-ARDG1-L04": true,
+    "v936-ARDG1-L05": true,
+    "v936-ARDG1-L06": true,
+    "v936-ARDG1-L07": true,
+    "v936-ARDG1-L08": true
+  },
+  "pareto_frontier": [
+    "v936-ARDG1-L06",
+    "v936-ARDG1-L07"
+  ],
+  "strict_dominators_of_j03": [
+    "v936-ARDG1-L06",
+    "v936-ARDG1-L07",
+    "v936-ARDG1-L01"
+  ],
+  "stage_b_shortlist": [
+    "v936-ARDG1-L06",
+    "v936-ARDG1-L07"
+  ],
+  "search_decision": "STRICT_DOMINATOR_FOUND",
+  "dominance_policy": {
+    "nonworse_relative_tolerance": 1e-08,
+    "minimum_strict_relative_improvement": 1e-05
+  },
+  "observations": [
+    {
+      "candidate_id": "v936-ARDG1-L01",
+      "parameters": {
+        "Kc": 0.8939438715289305,
+        "Cmax_nm": 0.0003295328449663131,
+        "Rmax_nm_per_sample": 4.145751028483854e-05
+      },
+      "objectives": {
+        "attitude_iae": 0.02783413966454863,
+        "motor_tv_full": 17.049925295503805,
+        "motor_tv_event": 1.8513936249282335,
+        "worst_scene_attitude_degradation_vs_j03_percent": -0.0013242000409509436
+      },
+      "hard_passed": true,
+      "source": {
+        "path": "D:\\Users\\admin\\Desktop\\A8-\u56db\u65cb\u7ffc\u65e0\u4eba\u673a\u4f4d\u59ff\u63a7\u5236\u7cfb\u7edf\u8bbe\u8ba1\u4f18\u5316\\A8\u51b3\u8d5b\u9636\u6bb5\u5347\u7ea7\u7814\u53d1\\74_v936_ardg1_final_local_search\\03_results\\local8_retry_20260814T113552Z\\v936-ARDG1-L01\\screen_analysis.json",
+        "sha256": "7C3EC611AC8B01BD7E779374CB4F71F387A8196859BF8D18597A9B942221D427",
+        "bytes": 17528
+      }
+    },
+    {
+      "candidate_id": "v936-ARDG1-L02",
+      "parameters": {
+        "Kc": 0.9039438715289305,
+        "Cmax_nm": 0.0003295328449663131,
+        "Rmax_nm_per_sample": 4.145751028483854e-05
+      },
+      "objectives": {
+        "attitude_iae": 0.027834886999364213,
+        "motor_tv_full": 17.053316625240328,
+        "motor_tv_event": 1.8547849293988925,
+        "worst_scene_attitude_degradation_vs_j03_percent": 0.0013621616944692885
+      },
+      "hard_passed": true,
+      "source": {
+        "path": "D:\\Users\\admin\\Desktop\\A8-\u56db\u65cb\u7ffc\u65e0\u4eba\u673a\u4f4d\u59ff\u63a7\u5236\u7cfb\u7edf\u8bbe\u8ba1\u4f18\u5316\\A8\u51b3\u8d5b\u9636\u6bb5\u5347\u7ea7\u7814\u53d1\\74_v936_ardg1_final_local_search\\03_results\\local8_retry_20260814T113552Z\\v936-ARDG1-L02\\screen_analysis.json",
+        "sha256": "B15ABDCDB2B7E0F0EFA54B07AE265518742243C4FD6375749160838CBCE2A53C",
+        "bytes": 17538
+      }
+    },
+    {
+      "candidate_id": "v936-ARDG1-L03",
+      "parameters": {
+        "Kc": 0.8989438715289305,
+        "Cmax_nm": 0.0003290328449663131,
+        "Rmax_nm_per_sample": 4.145751028483854e-05
+      },
+      "objectives": {
+        "attitude_iae": 0.027859780254765723,
+        "motor_tv_full": 17.05052674385888,
+        "motor_tv_event": 1.8519949945926708,
+        "worst_scene_attitude_degradation_vs_j03_percent": 0.09079431967059942
+      },
+      "hard_passed": true,
+      "source": {
+        "path": "D:\\Users\\admin\\Desktop\\A8-\u56db\u65cb\u7ffc\u65e0\u4eba\u673a\u4f4d\u59ff\u63a7\u5236\u7cfb\u7edf\u8bbe\u8ba1\u4f18\u5316\\A8\u51b3\u8d5b\u9636\u6bb5\u5347\u7ea7\u7814\u53d1\\74_v936_ardg1_final_local_search\\03_results\\local8_retry_20260814T113552Z\\v936-ARDG1-L03\\screen_analysis.json",
+        "sha256": "0D8FDB123E224E652F005E38DE3BD71B00C6626212B34846DFFC9B21C7464234",
+        "bytes": 17518
+      }
+    },
+    {
+      "candidate_id": "v936-ARDG1-L04",
+      "parameters": {
+        "Kc": 0.8989438715289305,
+        "Cmax_nm": 0.00033,
+        "Rmax_nm_per_sample": 4.145751028483854e-05
+      },
+      "objectives": {
+        "attitude_iae": 0.027810896662344407,
+        "motor_tv_full": 17.05263288852924,
+        "motor_tv_event": 1.8541012648907795,
+        "worst_scene_attitude_degradation_vs_j03_percent": -0.08482801764818536
+      },
+      "hard_passed": true,
+      "source": {
+        "path": "D:\\Users\\admin\\Desktop\\A8-\u56db\u65cb\u7ffc\u65e0\u4eba\u673a\u4f4d\u59ff\u63a7\u5236\u7cfb\u7edf\u8bbe\u8ba1\u4f18\u5316\\A8\u51b3\u8d5b\u9636\u6bb5\u5347\u7ea7\u7814\u53d1\\74_v936_ardg1_final_local_search\\03_results\\local8_retry_20260814T113552Z\\v936-ARDG1-L04\\screen_analysis.json",
+        "sha256": "2CE62654D5D5A38B4544DE21675A0660CDE8B3007773D8F05AD7E465D58A13CB",
+        "bytes": 17500
+      }
+    },
+    {
+      "candidate_id": "v936-ARDG1-L05",
+      "parameters": {
+        "Kc": 0.8989438715289305,
+        "Cmax_nm": 0.0003295328449663131,
+        "Rmax_nm_per_sample": 4.095751028483854e-05
+      },
+      "objectives": {
+        "attitude_iae": 0.027868768557754355,
+        "motor_tv_full": 17.05647027912025,
+        "motor_tv_event": 1.857938419636529,
+        "worst_scene_attitude_degradation_vs_j03_percent": 0.12308579453422906
+      },
+      "hard_passed": true,
+      "source": {
+        "path": "D:\\Users\\admin\\Desktop\\A8-\u56db\u65cb\u7ffc\u65e0\u4eba\u673a\u4f4d\u59ff\u63a7\u5236\u7cfb\u7edf\u8bbe\u8ba1\u4f18\u5316\\A8\u51b3\u8d5b\u9636\u6bb5\u5347\u7ea7\u7814\u53d1\\74_v936_ardg1_final_local_search\\03_results\\local8_retry_20260814T113552Z\\v936-ARDG1-L05\\screen_analysis.json",
+        "sha256": "62EAE2CAFBE8BA8B32973B576A31F543DE0E48382A40874803C4C24217BB808D",
+        "bytes": 17522
+      }
+    },
+    {
+      "candidate_id": "v936-ARDG1-L06",
+      "parameters": {
+        "Kc": 0.8989438715289305,
+        "Cmax_nm": 0.0003295328449663131,
+        "Rmax_nm_per_sample": 4.195751028483854e-05
+      },
+      "objectives": {
+        "attitude_iae": 0.02780630639003493,
+        "motor_tv_full": 17.051278407119874,
+        "motor_tv_event": 1.852746877211299,
+        "worst_scene_attitude_degradation_vs_j03_percent": -0.10131747732826288
+      },
+      "hard_passed": true,
+      "source": {
+        "path": "D:\\Users\\admin\\Desktop\\A8-\u56db\u65cb\u7ffc\u65e0\u4eba\u673a\u4f4d\u59ff\u63a7\u5236\u7cfb\u7edf\u8bbe\u8ba1\u4f18\u5316\\A8\u51b3\u8d5b\u9636\u6bb5\u5347\u7ea7\u7814\u53d1\\74_v936_ardg1_final_local_search\\03_results\\local8_retry_20260814T113552Z\\v936-ARDG1-L06\\screen_analysis.json",
+        "sha256": "DA7A6A344C4844E39F95ECE86B88FF38B7AD85D69EC036D391EBBDD19DD6EC25",
+        "bytes": 17523
+      }
+    },
+    {
+      "candidate_id": "v936-ARDG1-L07",
+      "parameters": {
+        "Kc": 0.8842613840560387,
+        "Cmax_nm": 0.0003299404269942231,
+        "Rmax_nm_per_sample": 4.137561896233008e-05
+      },
+      "objectives": {
+        "attitude_iae": 0.027817409860713835,
+        "motor_tv_full": 17.047711295185486,
+        "motor_tv_event": 1.8491796777097775,
+        "worst_scene_attitude_degradation_vs_j03_percent": -0.061428877669099324
+      },
+      "hard_passed": true,
+      "source": {
+        "path": "D:\\Users\\admin\\Desktop\\A8-\u56db\u65cb\u7ffc\u65e0\u4eba\u673a\u4f4d\u59ff\u63a7\u5236\u7cfb\u7edf\u8bbe\u8ba1\u4f18\u5316\\A8\u51b3\u8d5b\u9636\u6bb5\u5347\u7ea7\u7814\u53d1\\74_v936_ardg1_final_local_search\\03_results\\local8_retry_20260814T113552Z\\v936-ARDG1-L07\\screen_analysis.json",
+        "sha256": "1A3E85234E775ACD6D8B59A9468F484B08AB635E6340A72D93EC20EA74D20BD7",
+        "bytes": 17517
+      }
+    },
+    {
+      "candidate_id": "v936-ARDG1-L08",
+      "parameters": {
+        "Kc": 0.8943790145023685,
+        "Cmax_nm": 0.00032997352003231735,
+        "Rmax_nm_per_sample": 4.128275914838658e-05
+      },
+      "objectives": {
+        "attitude_iae": 0.027821730848461176,
+        "motor_tv_full": 17.053173703514258,
+        "motor_tv_event": 1.8546420352420476,
+        "worst_scene_attitude_degradation_vs_j03_percent": -0.045904329481771325
+      },
+      "hard_passed": true,
+      "source": {
+        "path": "D:\\Users\\admin\\Desktop\\A8-\u56db\u65cb\u7ffc\u65e0\u4eba\u673a\u4f4d\u59ff\u63a7\u5236\u7cfb\u7edf\u8bbe\u8ba1\u4f18\u5316\\A8\u51b3\u8d5b\u9636\u6bb5\u5347\u7ea7\u7814\u53d1\\74_v936_ardg1_final_local_search\\03_results\\local8_retry_20260814T113552Z\\v936-ARDG1-L08\\screen_analysis.json",
+        "sha256": "62996DB4235DAF02D9905DA06FB36C058B8D3F27A3C80CDD164CEBE13929AF2C",
+        "bytes": 17533
+      }
+    }
+  ],
+  "candidate_analysis": {
+    "v936-ARDG1-L01": {
+      "path": "D:\\Users\\admin\\Desktop\\A8-\u56db\u65cb\u7ffc\u65e0\u4eba\u673a\u4f4d\u59ff\u63a7\u5236\u7cfb\u7edf\u8bbe\u8ba1\u4f18\u5316\\A8\u51b3\u8d5b\u9636\u6bb5\u5347\u7ea7\u7814\u53d1\\74_v936_ardg1_final_local_search\\03_results\\local8_retry_20260814T113552Z\\v936-ARDG1-L01\\screen_analysis.json",
+      "sha256": "7C3EC611AC8B01BD7E779374CB4F71F387A8196859BF8D18597A9B942221D427",
+      "bytes": 17528
+    },
+    "v936-ARDG1-L02": {
+      "path": "D:\\Users\\admin\\Desktop\\A8-\u56db\u65cb\u7ffc\u65e0\u4eba\u673a\u4f4d\u59ff\u63a7\u5236\u7cfb\u7edf\u8bbe\u8ba1\u4f18\u5316\\A8\u51b3\u8d5b\u9636\u6bb5\u5347\u7ea7\u7814\u53d1\\74_v936_ardg1_final_local_search\\03_results\\local8_retry_20260814T113552Z\\v936-ARDG1-L02\\screen_analysis.json",
+      "sha256": "B15ABDCDB2B7E0F0EFA54B07AE265518742243C4FD6375749160838CBCE2A53C",
+      "bytes": 17538
+    },
+    "v936-ARDG1-L03": {
+      "path": "D:\\Users\\admin\\Desktop\\A8-\u56db\u65cb\u7ffc\u65e0\u4eba\u673a\u4f4d\u59ff\u63a7\u5236\u7cfb\u7edf\u8bbe\u8ba1\u4f18\u5316\\A8\u51b3\u8d5b\u9636\u6bb5\u5347\u7ea7\u7814\u53d1\\74_v936_ardg1_final_local_search\\03_results\\local8_retry_20260814T113552Z\\v936-ARDG1-L03\\screen_analysis.json",
+      "sha256": "0D8FDB123E224E652F005E38DE3BD71B00C6626212B34846DFFC9B21C7464234",
+      "bytes": 17518
+    },
+    "v936-ARDG1-L04": {
+      "path": "D:\\Users\\admin\\Desktop\\A8-\u56db\u65cb\u7ffc\u65e0\u4eba\u673a\u4f4d\u59ff\u63a7\u5236\u7cfb\u7edf\u8bbe\u8ba1\u4f18\u5316\\A8\u51b3\u8d5b\u9636\u6bb5\u5347\u7ea7\u7814\u53d1\\74_v936_ardg1_final_local_search\\03_results\\local8_retry_20260814T113552Z\\v936-ARDG1-L04\\screen_analysis.json",
+      "sha256": "2CE62654D5D5A38B4544DE21675A0660CDE8B3007773D8F05AD7E465D58A13CB",
+      "bytes": 17500
+    },
+    "v936-ARDG1-L05": {
+      "path": "D:\\Users\\admin\\Desktop\\A8-\u56db\u65cb\u7ffc\u65e0\u4eba\u673a\u4f4d\u59ff\u63a7\u5236\u7cfb\u7edf\u8bbe\u8ba1\u4f18\u5316\\A8\u51b3\u8d5b\u9636\u6bb5\u5347\u7ea7\u7814\u53d1\\74_v936_ardg1_final_local_search\\03_results\\local8_retry_20260814T113552Z\\v936-ARDG1-L05\\screen_analysis.json",
+      "sha256": "62EAE2CAFBE8BA8B32973B576A31F543DE0E48382A40874803C4C24217BB808D",
+      "bytes": 17522
+    },
+    "v936-ARDG1-L06": {
+      "path": "D:\\Users\\admin\\Desktop\\A8-\u56db\u65cb\u7ffc\u65e0\u4eba\u673a\u4f4d\u59ff\u63a7\u5236\u7cfb\u7edf\u8bbe\u8ba1\u4f18\u5316\\A8\u51b3\u8d5b\u9636\u6bb5\u5347\u7ea7\u7814\u53d1\\74_v936_ardg1_final_local_search\\03_results\\local8_retry_20260814T113552Z\\v936-ARDG1-L06\\screen_analysis.json",
+      "sha256": "DA7A6A344C4844E39F95ECE86B88FF38B7AD85D69EC036D391EBBDD19DD6EC25",
+      "bytes": 17523
+    },
+    "v936-ARDG1-L07": {
+      "path": "D:\\Users\\admin\\Desktop\\A8-\u56db\u65cb\u7ffc\u65e0\u4eba\u673a\u4f4d\u59ff\u63a7\u5236\u7cfb\u7edf\u8bbe\u8ba1\u4f18\u5316\\A8\u51b3\u8d5b\u9636\u6bb5\u5347\u7ea7\u7814\u53d1\\74_v936_ardg1_final_local_search\\03_results\\local8_retry_20260814T113552Z\\v936-ARDG1-L07\\screen_analysis.json",
+      "sha256": "1A3E85234E775ACD6D8B59A9468F484B08AB635E6340A72D93EC20EA74D20BD7",
+      "bytes": 17517
+    },
+    "v936-ARDG1-L08": {
+      "path": "D:\\Users\\admin\\Desktop\\A8-\u56db\u65cb\u7ffc\u65e0\u4eba\u673a\u4f4d\u59ff\u63a7\u5236\u7cfb\u7edf\u8bbe\u8ba1\u4f18\u5316\\A8\u51b3\u8d5b\u9636\u6bb5\u5347\u7ea7\u7814\u53d1\\74_v936_ardg1_final_local_search\\03_results\\local8_retry_20260814T113552Z\\v936-ARDG1-L08\\screen_analysis.json",
+      "sha256": "62996DB4235DAF02D9905DA06FB36C058B8D3F27A3C80CDD164CEBE13929AF2C",
+      "bytes": 17533
+    }
+  }
+}

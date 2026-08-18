@@ -1,0 +1,168 @@
+{
+  "schema_version": 2,
+  "role": "finals report round-3 figure and public-label revision",
+  "generated_utc": "2026-08-16T19:11:03Z",
+  "public_algorithm": "ARDG-RGPC",
+  "source_records": [
+    "FIGURE_BUILD_RECORD.json",
+    "PUBLIC_LABEL_BUILD_RECORD.json"
+  ],
+  "outputs": [
+    {
+      "path": "FIG_3-1.png",
+      "sha256": "F2602C7912F7571B8A66F549C46CD9AFE9A43E41C00FB411A19292BE33C07EA7",
+      "bytes": 312361,
+      "package_path": "05_visuals/assets/report_final_20260816/FIG_3-1.png"
+    },
+    {
+      "path": "FIG_3-1.pdf",
+      "sha256": "6F30B015790DE53A59BBB68A9CC3DAC4B8132A464C4E2A2DC8DBE60E74B25984",
+      "bytes": 67633,
+      "package_path": "05_visuals/assets/report_sources/vectors/FIG_3-1.pdf"
+    },
+    {
+      "path": "FIG_3-1.svg",
+      "sha256": "21760E56EC29EFC5E49D9C972238807C19A2F700113B980061BE96E4DDD4CBA3",
+      "bytes": 18307,
+      "package_path": "05_visuals/assets/report_sources/vectors/FIG_3-1.svg"
+    },
+    {
+      "path": "FIG_4-1.png",
+      "sha256": "83C25AFCE1781A27D0C63814C2BB9805AD40DE1E7058760FEC709A7628D68944",
+      "bytes": 362476,
+      "package_path": "05_visuals/assets/report_final_20260816/FIG_4-1.png"
+    },
+    {
+      "path": "FIG_4-1.pdf",
+      "sha256": "7298E86CFCA5700446529BD346555330FC7D48DD52774715B38FC1FBF40E20C8",
+      "bytes": 56051,
+      "package_path": "05_visuals/assets/report_sources/vectors/FIG_4-1.pdf"
+    },
+    {
+      "path": "FIG_4-1.svg",
+      "sha256": "2A711380B61A415311E1097248B69D08015E66859DA07A57DA1848E962B0EF18",
+      "bytes": 23415,
+      "package_path": "05_visuals/assets/report_sources/vectors/FIG_4-1.svg"
+    },
+    {
+      "path": "FIG_6-5.png",
+      "sha256": "53A9996FF7D41CD95474073B9BF07026851E5E9A33EB61460D57A9EDD80A9800",
+      "bytes": 392863,
+      "package_path": "05_visuals/assets/report_final_20260816/FIG_6-5.png"
+    },
+    {
+      "path": "FIG_6-5.pdf",
+      "sha256": "A0D6B90444E3C338793579B3C6A6E22C54DCEE04CB0D78E97C1F6DA9D1A8D489",
+      "bytes": 56890,
+      "package_path": "05_visuals/assets/report_sources/vectors/FIG_6-5.pdf"
+    },
+    {
+      "path": "FIG_6-5.svg",
+      "sha256": "18092EFBCA8092B6B1AB8AC1AADCFA8A2CDAD2F48B2ADFFDB414D8A28F4B3674",
+      "bytes": 61643,
+      "package_path": "05_visuals/assets/report_sources/vectors/FIG_6-5.svg"
+    },
+    {
+      "path": "FIG_6-5__paired_peak_results.csv",
+      "sha256": "8E5A92CB46DEC874048DEF736AF02BCF43974615908883313EEE5DFB876897F2",
+      "bytes": 3770,
+      "package_path": "05_visuals/assets/report_sources/data/FIG_6-5__paired_peak_results.csv"
+    },
+    {
+      "path": "FIG_6-6.png",
+      "sha256": "D2A919446E47FDC0C03AA717D3ABE10DFEBAC74DF5A74B8257E81085D28D1E9E",
+      "bytes": 344873,
+      "package_path": "05_visuals/assets/report_final_20260816/FIG_6-6.png"
+    },
+    {
+      "path": "FIG_6-6.pdf",
+      "sha256": "68A7D1FCB0F636ED015F84615433C61655F07F89BF981E2BC6706C15A9EF6868",
+      "bytes": 51375,
+      "package_path": "05_visuals/assets/report_sources/vectors/FIG_6-6.pdf"
+    },
+    {
+      "path": "FIG_6-6.svg",
+      "sha256": "7E9D7B9ADAF788F5E25F60604645F5279FBF9E6E24373100B80F415F795C3DA1",
+      "bytes": 43259,
+      "package_path": "05_visuals/assets/report_sources/vectors/FIG_6-6.svg"
+    },
+    {
+      "path": "FIG_6-6__parameter_optimization.csv",
+      "sha256": "67A8805DCEC9EA999366C7A8D53355EF502238D72CBB758EC83DA973A16FF9F4",
+      "bytes": 1234,
+      "package_path": "05_visuals/assets/report_sources/data/FIG_6-6__parameter_optimization.csv"
+    },
+    {
+      "path": "FIG_C-1.png",
+      "sha256": "EBB883BE5302C37B5C1189171EB59C483ECDD5F619B429086B643DF1CE9D28A6",
+      "bytes": 229386,
+      "package_path": "05_visuals/assets/report_final_20260816/FIG_C-1.png"
+    },
+    {
+      "path": "FIG_C-1.pdf",
+      "sha256": "7298B941AF8A105A6DF018CCFBC40981E77843375D6A6AA81CBFDE718B967B0F",
+      "bytes": 61565,
+      "package_path": "05_visuals/assets/report_sources/vectors/FIG_C-1.pdf"
+    },
+    {
+      "path": "FIG_C-1.svg",
+      "sha256": "88EBD8E9FF9F5431822309E0D2F0FF2BFE51085D7AA259013D9A4C3D34FCC7BA",
+      "bytes": 11735,
+      "package_path": "05_visuals/assets/report_sources/vectors/FIG_C-1.svg"
+    },
+    {
+      "path": "FIG_C-2.png",
+      "sha256": "B445949E7555104DFB8329B259A0490466E0A65CCAFB5BD1E5A92233AB1158D6",
+      "bytes": 286552,
+      "package_path": "05_visuals/assets/report_final_20260816/FIG_C-2.png"
+    },
+    {
+      "path": "FIG_C-2.pdf",
+      "sha256": "7E3F984BFCA4CEA14B1B349FC362368912720B4153922485759183C09F8CA1F8",
+      "bytes": 62077,
+      "package_path": "05_visuals/assets/report_sources/vectors/FIG_C-2.pdf"
+    },
+    {
+      "path": "FIG_C-2.svg",
+      "sha256": "1FC03234AD4DE4496563DF83D7F543D407C8C87E305C91DCCD637718BFE112A9",
+      "bytes": 13007,
+      "package_path": "05_visuals/assets/report_sources/vectors/FIG_C-2.svg"
+    },
+    {
+      "path": "FIG_6-4.png",
+      "bytes": 159141,
+      "sha256": "46300F22D7A8BD2203B8C662842E4FC9CB1D1C2C67241A89748D9B7917377760",
+      "package_path": "05_visuals/assets/report_final_20260816/FIG_6-4.png"
+    },
+    {
+      "path": "FIG_6-4.pdf",
+      "bytes": 34512,
+      "sha256": "C8F0136D83B1379E2F10DDD3F798AC216C4E8AD0E697AF722B9535F3384DFE5C",
+      "package_path": "05_visuals/assets/report_sources/vectors/FIG_6-4.pdf"
+    },
+    {
+      "path": "FIG_6-4.svg",
+      "bytes": 46350,
+      "sha256": "DA5010572734D979A386273C4F46D1C1C8B32A3285E57B732385179436503CE3",
+      "package_path": "05_visuals/assets/report_sources/vectors/FIG_6-4.svg"
+    },
+    {
+      "path": "FIG_8-1.png",
+      "bytes": 212168,
+      "sha256": "7A9D29C3F916833A67CFE40E5B924D523765EBA2625DE56EB9B5F4CD731E0D14",
+      "package_path": "05_visuals/assets/report_final_20260816/FIG_8-1.png"
+    },
+    {
+      "path": "FIG_8-1.pdf",
+      "bytes": 58231,
+      "sha256": "0D7CECE060B48DFA466A462C02B30AA3EFE598AE76B47463D0BF15D9557FF0E7",
+      "package_path": "05_visuals/assets/report_sources/vectors/FIG_8-1.pdf"
+    },
+    {
+      "path": "FIG_8-1.svg",
+      "bytes": 36765,
+      "sha256": "2D45960CE7717AB8A532255C4A3E6C545C117DC9182D91D2DE8F8D905D0C31F8",
+      "package_path": "05_visuals/assets/report_sources/vectors/FIG_8-1.svg"
+    }
+  ]
+}

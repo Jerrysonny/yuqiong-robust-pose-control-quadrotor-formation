@@ -1,0 +1,1680 @@
+{
+  "schema_version": "v936_j03_local_regression18_comparison_v1",
+  "candidate_id": "v936-ARDG1-L06",
+  "candidate_numeric_identity": 97406,
+  "formal_champion_reference": "v936-ARDG1-J03",
+  "competition_baseline": "v914",
+  "contract": {
+    "path": "D:\\Users\\admin\\Desktop\\A8-\u56db\u65cb\u7ffc\u65e0\u4eba\u673a\u4f4d\u59ff\u63a7\u5236\u7cfb\u7edf\u8bbe\u8ba1\u4f18\u5316\\A8\u51b3\u8d5b\u9636\u6bb5\u5347\u7ea7\u7814\u53d1\\74_v936_ardg1_final_local_search\\00_protocol\\j03_local_regression18_contract_v1.json",
+    "sha256": "63F0AD018FC332E8C82477D88919F753203A981A0ED01E90E18F43C438440937",
+    "bytes": 18827
+  },
+  "execution_status": {
+    "path": "D:\\Users\\admin\\Desktop\\A8-\u56db\u65cb\u7ffc\u65e0\u4eba\u673a\u4f4d\u59ff\u63a7\u5236\u7cfb\u7edf\u8bbe\u8ba1\u4f18\u5316\\A8\u51b3\u8d5b\u9636\u6bb5\u5347\u7ea7\u7814\u53d1\\74_v936_ardg1_final_local_search\\03_results\\l06_regression18_20260814T115638Z\\batch_status.json",
+    "sha256": "78A31E8195F8D187F6142834DCE20A735DBBDD8FDCFBD738818307DF6484C6B9",
+    "bytes": 42020
+  },
+  "raw_bindings": {
+    "Scene04": {
+      "v914": {
+        "path": "D:\\Users\\admin\\Desktop\\A8-\u56db\u65cb\u7ffc\u65e0\u4eba\u673a\u4f4d\u59ff\u63a7\u5236\u7cfb\u7edf\u8bbe\u8ba1\u4f18\u5316\\A8\u8d5b\u9898\u6838\u5fc3\u5de5\u4f5c\u533a\\\u9a6d\u7a79\u7a33\u63a7-\u57fa\u4e8eMWORKS\u7684\u56db\u65cb\u7ffc\u9c81\u68d2\u4f4d\u59ff\u63a7\u5236\u4e0e\u7f16\u961f\u5b89\u5168\u4eff\u771f1\\06_supplementary_evidence\\ra_gca_cg_hte_32_raw\\Scene04.csv",
+        "sha256": "A95BE2B543A3808DA8CF26797CDB44B0B1FEA13DF4786E6F8C273A39FEC4534C"
+      },
+      "v936-ARDG1-J03": {
+        "path": "D:\\Users\\admin\\Desktop\\A8-\u56db\u65cb\u7ffc\u65e0\u4eba\u673a\u4f4d\u59ff\u63a7\u5236\u7cfb\u7edf\u8bbe\u8ba1\u4f18\u5316\\A8\u51b3\u8d5b\u9636\u6bb5\u5347\u7ea7\u7814\u53d1\\73_v936_ardg1_joint_parameter_optimization\\03_results\\j03_regression18_20260814\\candidate\\raw\\Scene04.csv",
+        "sha256": "209D37FAB7FFF0F9B6E2712CE6BA0BDC0EFEA55E95812800A9675B3DB225FFFF",
+        "bytes": 2660134
+      },
+      "candidate": {
+        "path": "D:\\Users\\admin\\Desktop\\A8-\u56db\u65cb\u7ffc\u65e0\u4eba\u673a\u4f4d\u59ff\u63a7\u5236\u7cfb\u7edf\u8bbe\u8ba1\u4f18\u5316\\A8\u51b3\u8d5b\u9636\u6bb5\u5347\u7ea7\u7814\u53d1\\74_v936_ardg1_final_local_search\\03_results\\l06_regression18_20260814T115638Z\\candidate\\raw\\Scene04.csv",
+        "sha256": "F25195E34F3A09982A78630374864346B44FEBB2BF4AEE9D72D47A1DD385C7CE",
+        "bytes": 2660134
+      }
+    },
+    "Scene01": {
+      "v914": {
+        "path": "D:\\Users\\admin\\Desktop\\A8-\u56db\u65cb\u7ffc\u65e0\u4eba\u673a\u4f4d\u59ff\u63a7\u5236\u7cfb\u7edf\u8bbe\u8ba1\u4f18\u5316\\A8\u8d5b\u9898\u6838\u5fc3\u5de5\u4f5c\u533a\\\u9a6d\u7a79\u7a33\u63a7-\u57fa\u4e8eMWORKS\u7684\u56db\u65cb\u7ffc\u9c81\u68d2\u4f4d\u59ff\u63a7\u5236\u4e0e\u7f16\u961f\u5b89\u5168\u4eff\u771f1\\06_supplementary_evidence\\ra_gca_cg_hte_32_raw\\Scene01.csv",
+        "sha256": "D1CB6F64BC2920225629A0C1C5AED867A4C8CBF31F34683D7E1A2835AE327BC1"
+      },
+      "v936-ARDG1-J03": {
+        "path": "D:\\Users\\admin\\Desktop\\A8-\u56db\u65cb\u7ffc\u65e0\u4eba\u673a\u4f4d\u59ff\u63a7\u5236\u7cfb\u7edf\u8bbe\u8ba1\u4f18\u5316\\A8\u51b3\u8d5b\u9636\u6bb5\u5347\u7ea7\u7814\u53d1\\73_v936_ardg1_joint_parameter_optimization\\03_results\\j03_regression18_20260814\\candidate\\raw\\Scene01.csv",
+        "sha256": "DD564A5173802A3B4C844C2348C14FFF1A8477ADBFA455E2BA0A65B91AEE8A0B",
+        "bytes": 4461954
+      },
+      "candidate": {
+        "path": "D:\\Users\\admin\\Desktop\\A8-\u56db\u65cb\u7ffc\u65e0\u4eba\u673a\u4f4d\u59ff\u63a7\u5236\u7cfb\u7edf\u8bbe\u8ba1\u4f18\u5316\\A8\u51b3\u8d5b\u9636\u6bb5\u5347\u7ea7\u7814\u53d1\\74_v936_ardg1_final_local_search\\03_results\\l06_regression18_20260814T115638Z\\candidate\\raw\\Scene01.csv",
+        "sha256": "777BC75EC478A7BB948A2497D35645F3E1DC29F716316E4EF24582E5447E7126",
+        "bytes": 4461954
+      }
+    },
+    "Scene02": {
+      "v914": {
+        "path": "D:\\Users\\admin\\Desktop\\A8-\u56db\u65cb\u7ffc\u65e0\u4eba\u673a\u4f4d\u59ff\u63a7\u5236\u7cfb\u7edf\u8bbe\u8ba1\u4f18\u5316\\A8\u8d5b\u9898\u6838\u5fc3\u5de5\u4f5c\u533a\\\u9a6d\u7a79\u7a33\u63a7-\u57fa\u4e8eMWORKS\u7684\u56db\u65cb\u7ffc\u9c81\u68d2\u4f4d\u59ff\u63a7\u5236\u4e0e\u7f16\u961f\u5b89\u5168\u4eff\u771f1\\06_supplementary_evidence\\ra_gca_cg_hte_32_raw\\Scene02.csv",
+        "sha256": "D0B4937C57656B372C16F2CBF9D864EADCCD06E69DA8EAD0E02732486B0C4B2B"
+      },
+      "v936-ARDG1-J03": {
+        "path": "D:\\Users\\admin\\Desktop\\A8-\u56db\u65cb\u7ffc\u65e0\u4eba\u673a\u4f4d\u59ff\u63a7\u5236\u7cfb\u7edf\u8bbe\u8ba1\u4f18\u5316\\A8\u51b3\u8d5b\u9636\u6bb5\u5347\u7ea7\u7814\u53d1\\73_v936_ardg1_joint_parameter_optimization\\03_results\\j03_regression18_20260814\\candidate\\raw\\Scene02.csv",
+        "sha256": "DB20B57BDA2580CAF72E6144570CF3947669F9461BE62D1BF205459E65F7591B",
+        "bytes": 4898912
+      },
+      "candidate": {
+        "path": "D:\\Users\\admin\\Desktop\\A8-\u56db\u65cb\u7ffc\u65e0\u4eba\u673a\u4f4d\u59ff\u63a7\u5236\u7cfb\u7edf\u8bbe\u8ba1\u4f18\u5316\\A8\u51b3\u8d5b\u9636\u6bb5\u5347\u7ea7\u7814\u53d1\\74_v936_ardg1_final_local_search\\03_results\\l06_regression18_20260814T115638Z\\candidate\\raw\\Scene02.csv",
+        "sha256": "0135AC81A323F210EE5B5E1CCDC3EEA5EE0EBFF1BFD7E486E73A1F22BD65FFC2",
+        "bytes": 4898912
+      }
+    },
+    "Scene03": {
+      "v914": {
+        "path": "D:\\Users\\admin\\Desktop\\A8-\u56db\u65cb\u7ffc\u65e0\u4eba\u673a\u4f4d\u59ff\u63a7\u5236\u7cfb\u7edf\u8bbe\u8ba1\u4f18\u5316\\A8\u8d5b\u9898\u6838\u5fc3\u5de5\u4f5c\u533a\\\u9a6d\u7a79\u7a33\u63a7-\u57fa\u4e8eMWORKS\u7684\u56db\u65cb\u7ffc\u9c81\u68d2\u4f4d\u59ff\u63a7\u5236\u4e0e\u7f16\u961f\u5b89\u5168\u4eff\u771f1\\06_supplementary_evidence\\ra_gca_cg_hte_32_raw\\Scene03.csv",
+        "sha256": "F5EA7FC2F015DE43F2B38D51A7FD30B52D9741970DCF0C1D0E39B00E2635A295"
+      },
+      "v936-ARDG1-J03": {
+        "path": "D:\\Users\\admin\\Desktop\\A8-\u56db\u65cb\u7ffc\u65e0\u4eba\u673a\u4f4d\u59ff\u63a7\u5236\u7cfb\u7edf\u8bbe\u8ba1\u4f18\u5316\\A8\u51b3\u8d5b\u9636\u6bb5\u5347\u7ea7\u7814\u53d1\\73_v936_ardg1_joint_parameter_optimization\\03_results\\j03_regression18_20260814\\candidate\\raw\\Scene03.csv",
+        "sha256": "B76A7CE411A5BDF4BC83C9F4F6410E2B254518F3784250442021B252FF20D24E",
+        "bytes": 11737474
+      },
+      "candidate": {
+        "path": "D:\\Users\\admin\\Desktop\\A8-\u56db\u65cb\u7ffc\u65e0\u4eba\u673a\u4f4d\u59ff\u63a7\u5236\u7cfb\u7edf\u8bbe\u8ba1\u4f18\u5316\\A8\u51b3\u8d5b\u9636\u6bb5\u5347\u7ea7\u7814\u53d1\\74_v936_ardg1_final_local_search\\03_results\\l06_regression18_20260814T115638Z\\candidate\\raw\\Scene03.csv",
+        "sha256": "B513BDFB5F48C166255982C24E9E3E284F13641AFE93A8C562855BF072098A0C",
+        "bytes": 11737474
+      }
+    },
+    "Scene06b": {
+      "v914": {
+        "path": "D:\\Users\\admin\\Desktop\\A8-\u56db\u65cb\u7ffc\u65e0\u4eba\u673a\u4f4d\u59ff\u63a7\u5236\u7cfb\u7edf\u8bbe\u8ba1\u4f18\u5316\\A8\u8d5b\u9898\u6838\u5fc3\u5de5\u4f5c\u533a\\\u9a6d\u7a79\u7a33\u63a7-\u57fa\u4e8eMWORKS\u7684\u56db\u65cb\u7ffc\u9c81\u68d2\u4f4d\u59ff\u63a7\u5236\u4e0e\u7f16\u961f\u5b89\u5168\u4eff\u771f1\\06_supplementary_evidence\\ra_gca_cg_hte_32_raw\\Scene06b.csv",
+        "sha256": "BF89CBD3AE9BDDE4BB6A991C87A98853B1D310A79787B6E2F19668BC3FA02A1F"
+      },
+      "v936-ARDG1-J03": {
+        "path": "D:\\Users\\admin\\Desktop\\A8-\u56db\u65cb\u7ffc\u65e0\u4eba\u673a\u4f4d\u59ff\u63a7\u5236\u7cfb\u7edf\u8bbe\u8ba1\u4f18\u5316\\A8\u51b3\u8d5b\u9636\u6bb5\u5347\u7ea7\u7814\u53d1\\73_v936_ardg1_joint_parameter_optimization\\03_results\\j03_regression18_20260814\\candidate\\raw\\Scene06b.csv",
+        "sha256": "87A3B8761681168119D3C5F7B7C6130816FEFDF3F18CF691B543F78802BDFE23",
+        "bytes": 2693400
+      },
+      "candidate": {
+        "path": "D:\\Users\\admin\\Desktop\\A8-\u56db\u65cb\u7ffc\u65e0\u4eba\u673a\u4f4d\u59ff\u63a7\u5236\u7cfb\u7edf\u8bbe\u8ba1\u4f18\u5316\\A8\u51b3\u8d5b\u9636\u6bb5\u5347\u7ea7\u7814\u53d1\\74_v936_ardg1_final_local_search\\03_results\\l06_regression18_20260814T115638Z\\candidate\\raw\\Scene06b.csv",
+        "sha256": "88E7B506C55BDED8024F5C389FFC86282315FD0387534473B4831DAC7586332C",
+        "bytes": 2692911
+      }
+    },
+    "Scene01S_X": {
+      "v914": {
+        "path": "D:\\Users\\admin\\Desktop\\A8-\u56db\u65cb\u7ffc\u65e0\u4eba\u673a\u4f4d\u59ff\u63a7\u5236\u7cfb\u7edf\u8bbe\u8ba1\u4f18\u5316\\A8\u8d5b\u9898\u6838\u5fc3\u5de5\u4f5c\u533a\\\u9a6d\u7a79\u7a33\u63a7-\u57fa\u4e8eMWORKS\u7684\u56db\u65cb\u7ffc\u9c81\u68d2\u4f4d\u59ff\u63a7\u5236\u4e0e\u7f16\u961f\u5b89\u5168\u4eff\u771f1\\06_supplementary_evidence\\ra_gca_cg_hte_32_raw\\Scene01S_X.csv",
+        "sha256": "E27C24A970455CF8E5E48B5DB46DBB3BAEF65D44894A2B2A45466B3C8E19B43E"
+      },
+      "v936-ARDG1-J03": {
+        "path": "D:\\Users\\admin\\Desktop\\A8-\u56db\u65cb\u7ffc\u65e0\u4eba\u673a\u4f4d\u59ff\u63a7\u5236\u7cfb\u7edf\u8bbe\u8ba1\u4f18\u5316\\A8\u51b3\u8d5b\u9636\u6bb5\u5347\u7ea7\u7814\u53d1\\73_v936_ardg1_joint_parameter_optimization\\03_results\\j03_regression18_20260814\\candidate\\raw\\Scene01S_X.csv",
+        "sha256": "419EEB7AA8BD6A63A2FBF0D0885F907F02333E679ABFBE7B66AB573B768DEAB1",
+        "bytes": 2648465
+      },
+      "candidate": {
+        "path": "D:\\Users\\admin\\Desktop\\A8-\u56db\u65cb\u7ffc\u65e0\u4eba\u673a\u4f4d\u59ff\u63a7\u5236\u7cfb\u7edf\u8bbe\u8ba1\u4f18\u5316\\A8\u51b3\u8d5b\u9636\u6bb5\u5347\u7ea7\u7814\u53d1\\74_v936_ardg1_final_local_search\\03_results\\l06_regression18_20260814T115638Z\\candidate\\raw\\Scene01S_X.csv",
+        "sha256": "0D0F9C7F34BB74ECCB803382D810A2AD73BF509F708BF0E0C8836FA05865E755",
+        "bytes": 2648465
+      }
+    },
+    "Scene01S_Y": {
+      "v914": {
+        "path": "D:\\Users\\admin\\Desktop\\A8-\u56db\u65cb\u7ffc\u65e0\u4eba\u673a\u4f4d\u59ff\u63a7\u5236\u7cfb\u7edf\u8bbe\u8ba1\u4f18\u5316\\A8\u8d5b\u9898\u6838\u5fc3\u5de5\u4f5c\u533a\\\u9a6d\u7a79\u7a33\u63a7-\u57fa\u4e8eMWORKS\u7684\u56db\u65cb\u7ffc\u9c81\u68d2\u4f4d\u59ff\u63a7\u5236\u4e0e\u7f16\u961f\u5b89\u5168\u4eff\u771f1\\06_supplementary_evidence\\ra_gca_cg_hte_32_raw\\Scene01S_Y.csv",
+        "sha256": "ED6858BCEFC4F864DD098E0584917B1613FB55BDE9255802F8E827B1BBBF8B2B"
+      },
+      "v936-ARDG1-J03": {
+        "path": "D:\\Users\\admin\\Desktop\\A8-\u56db\u65cb\u7ffc\u65e0\u4eba\u673a\u4f4d\u59ff\u63a7\u5236\u7cfb\u7edf\u8bbe\u8ba1\u4f18\u5316\\A8\u51b3\u8d5b\u9636\u6bb5\u5347\u7ea7\u7814\u53d1\\73_v936_ardg1_joint_parameter_optimization\\03_results\\j03_regression18_20260814\\candidate\\raw\\Scene01S_Y.csv",
+        "sha256": "DFAE94C989014A762B45838312157DCAE2E99BE22769DF3A9DBD68FB34C73A2B",
+        "bytes": 2649277
+      },
+      "candidate": {
+        "path": "D:\\Users\\admin\\Desktop\\A8-\u56db\u65cb\u7ffc\u65e0\u4eba\u673a\u4f4d\u59ff\u63a7\u5236\u7cfb\u7edf\u8bbe\u8ba1\u4f18\u5316\\A8\u51b3\u8d5b\u9636\u6bb5\u5347\u7ea7\u7814\u53d1\\74_v936_ardg1_final_local_search\\03_results\\l06_regression18_20260814T115638Z\\candidate\\raw\\Scene01S_Y.csv",
+        "sha256": "571C660BA5CD0CEBB3835CFA77A2E9A9216D251BCF73E8B1F2B3E8B19E9EA427",
+        "bytes": 2649277
+      }
+    },
+    "Scene01S_Z": {
+      "v914": {
+        "path": "D:\\Users\\admin\\Desktop\\A8-\u56db\u65cb\u7ffc\u65e0\u4eba\u673a\u4f4d\u59ff\u63a7\u5236\u7cfb\u7edf\u8bbe\u8ba1\u4f18\u5316\\A8\u8d5b\u9898\u6838\u5fc3\u5de5\u4f5c\u533a\\\u9a6d\u7a79\u7a33\u63a7-\u57fa\u4e8eMWORKS\u7684\u56db\u65cb\u7ffc\u9c81\u68d2\u4f4d\u59ff\u63a7\u5236\u4e0e\u7f16\u961f\u5b89\u5168\u4eff\u771f1\\06_supplementary_evidence\\ra_gca_cg_hte_32_raw\\Scene01S_Z.csv",
+        "sha256": "BDEC6D2BF7265D1076698BA5E38369E4B7BA67FF1A7D7831ED911E2BE32A179F"
+      },
+      "v936-ARDG1-J03": {
+        "path": "D:\\Users\\admin\\Desktop\\A8-\u56db\u65cb\u7ffc\u65e0\u4eba\u673a\u4f4d\u59ff\u63a7\u5236\u7cfb\u7edf\u8bbe\u8ba1\u4f18\u5316\\A8\u51b3\u8d5b\u9636\u6bb5\u5347\u7ea7\u7814\u53d1\\73_v936_ardg1_joint_parameter_optimization\\03_results\\j03_regression18_20260814\\candidate\\raw\\Scene01S_Z.csv",
+        "sha256": "1ADDF13C2982BF0E5FD400F30B93E71F8F217B8927BA231917539D73CFEFDCE7",
+        "bytes": 2646746
+      },
+      "candidate": {
+        "path": "D:\\Users\\admin\\Desktop\\A8-\u56db\u65cb\u7ffc\u65e0\u4eba\u673a\u4f4d\u59ff\u63a7\u5236\u7cfb\u7edf\u8bbe\u8ba1\u4f18\u5316\\A8\u51b3\u8d5b\u9636\u6bb5\u5347\u7ea7\u7814\u53d1\\74_v936_ardg1_final_local_search\\03_results\\l06_regression18_20260814T115638Z\\candidate\\raw\\Scene01S_Z.csv",
+        "sha256": "A3DB3DCA87FCBA23AC2AAB38F0871032A82922527314C7853D75651D60E98116",
+        "bytes": 2646746
+      }
+    },
+    "Scene08_P0": {
+      "v914": {
+        "path": "D:\\Users\\admin\\Desktop\\A8-\u56db\u65cb\u7ffc\u65e0\u4eba\u673a\u4f4d\u59ff\u63a7\u5236\u7cfb\u7edf\u8bbe\u8ba1\u4f18\u5316\\A8\u8d5b\u9898\u6838\u5fc3\u5de5\u4f5c\u533a\\\u9a6d\u7a79\u7a33\u63a7-\u57fa\u4e8eMWORKS\u7684\u56db\u65cb\u7ffc\u9c81\u68d2\u4f4d\u59ff\u63a7\u5236\u4e0e\u7f16\u961f\u5b89\u5168\u4eff\u771f1\\06_supplementary_evidence\\ra_gca_cg_hte_32_raw\\Scene08_P0.csv",
+        "sha256": "F2EE4C65706F74DFBA115043ABE16C6E1D3550A7D0E9CB7572B4801739BEBBDB"
+      },
+      "v936-ARDG1-J03": {
+        "path": "D:\\Users\\admin\\Desktop\\A8-\u56db\u65cb\u7ffc\u65e0\u4eba\u673a\u4f4d\u59ff\u63a7\u5236\u7cfb\u7edf\u8bbe\u8ba1\u4f18\u5316\\A8\u51b3\u8d5b\u9636\u6bb5\u5347\u7ea7\u7814\u53d1\\73_v936_ardg1_joint_parameter_optimization\\03_results\\j03_regression18_20260814\\candidate\\raw\\Scene08_P0.csv",
+        "sha256": "49041A75CD9CB703A081DE1CD3418A83C2BFB56D092C93CF33CDA36F8FDDF266",
+        "bytes": 4542685
+      },
+      "candidate": {
+        "path": "D:\\Users\\admin\\Desktop\\A8-\u56db\u65cb\u7ffc\u65e0\u4eba\u673a\u4f4d\u59ff\u63a7\u5236\u7cfb\u7edf\u8bbe\u8ba1\u4f18\u5316\\A8\u51b3\u8d5b\u9636\u6bb5\u5347\u7ea7\u7814\u53d1\\74_v936_ardg1_final_local_search\\03_results\\l06_regression18_20260814T115638Z\\candidate\\raw\\Scene08_P0.csv",
+        "sha256": "7F746C3AA9C9F5B62019CBBF48E430D08C8130E718C845E2259832B29FA4F494",
+        "bytes": 4542685
+      }
+    },
+    "Scene08_P1": {
+      "v914": {
+        "path": "D:\\Users\\admin\\Desktop\\A8-\u56db\u65cb\u7ffc\u65e0\u4eba\u673a\u4f4d\u59ff\u63a7\u5236\u7cfb\u7edf\u8bbe\u8ba1\u4f18\u5316\\A8\u8d5b\u9898\u6838\u5fc3\u5de5\u4f5c\u533a\\\u9a6d\u7a79\u7a33\u63a7-\u57fa\u4e8eMWORKS\u7684\u56db\u65cb\u7ffc\u9c81\u68d2\u4f4d\u59ff\u63a7\u5236\u4e0e\u7f16\u961f\u5b89\u5168\u4eff\u771f1\\06_supplementary_evidence\\ra_gca_cg_hte_32_raw\\Scene08_P1.csv",
+        "sha256": "389B839866574ED35920F73C04C021BEEDFDD201F21C7B632F6B1598DD03DE62"
+      },
+      "v936-ARDG1-J03": {
+        "path": "D:\\Users\\admin\\Desktop\\A8-\u56db\u65cb\u7ffc\u65e0\u4eba\u673a\u4f4d\u59ff\u63a7\u5236\u7cfb\u7edf\u8bbe\u8ba1\u4f18\u5316\\A8\u51b3\u8d5b\u9636\u6bb5\u5347\u7ea7\u7814\u53d1\\73_v936_ardg1_joint_parameter_optimization\\03_results\\j03_regression18_20260814\\candidate\\raw\\Scene08_P1.csv",
+        "sha256": "220B15A592812FF5B6722A480B2A9A20F745D713A8D63902644534444987AEB5",
+        "bytes": 4526731
+      },
+      "candidate": {
+        "path": "D:\\Users\\admin\\Desktop\\A8-\u56db\u65cb\u7ffc\u65e0\u4eba\u673a\u4f4d\u59ff\u63a7\u5236\u7cfb\u7edf\u8bbe\u8ba1\u4f18\u5316\\A8\u51b3\u8d5b\u9636\u6bb5\u5347\u7ea7\u7814\u53d1\\74_v936_ardg1_final_local_search\\03_results\\l06_regression18_20260814T115638Z\\candidate\\raw\\Scene08_P1.csv",
+        "sha256": "8DC1E665BEBF65245EFFEEBC0C8D850FD79C6A08FED47B494567DC76BC5BC5F2",
+        "bytes": 4526731
+      }
+    },
+    "Scene08_P2": {
+      "v914": {
+        "path": "D:\\Users\\admin\\Desktop\\A8-\u56db\u65cb\u7ffc\u65e0\u4eba\u673a\u4f4d\u59ff\u63a7\u5236\u7cfb\u7edf\u8bbe\u8ba1\u4f18\u5316\\A8\u8d5b\u9898\u6838\u5fc3\u5de5\u4f5c\u533a\\\u9a6d\u7a79\u7a33\u63a7-\u57fa\u4e8eMWORKS\u7684\u56db\u65cb\u7ffc\u9c81\u68d2\u4f4d\u59ff\u63a7\u5236\u4e0e\u7f16\u961f\u5b89\u5168\u4eff\u771f1\\06_supplementary_evidence\\ra_gca_cg_hte_32_raw\\Scene08_P2.csv",
+        "sha256": "6A747CA6D7ADC13AC80E627E2817A2A4702283ECB39E4E0659F0E148CDD2BA23"
+      },
+      "v936-ARDG1-J03": {
+        "path": "D:\\Users\\admin\\Desktop\\A8-\u56db\u65cb\u7ffc\u65e0\u4eba\u673a\u4f4d\u59ff\u63a7\u5236\u7cfb\u7edf\u8bbe\u8ba1\u4f18\u5316\\A8\u51b3\u8d5b\u9636\u6bb5\u5347\u7ea7\u7814\u53d1\\73_v936_ardg1_joint_parameter_optimization\\03_results\\j03_regression18_20260814\\candidate\\raw\\Scene08_P2.csv",
+        "sha256": "2FDE08CCAFAC6B25911A8016CC3D376DF10CE905BFEF6C8D7A57A17B50D0B253",
+        "bytes": 4530591
+      },
+      "candidate": {
+        "path": "D:\\Users\\admin\\Desktop\\A8-\u56db\u65cb\u7ffc\u65e0\u4eba\u673a\u4f4d\u59ff\u63a7\u5236\u7cfb\u7edf\u8bbe\u8ba1\u4f18\u5316\\A8\u51b3\u8d5b\u9636\u6bb5\u5347\u7ea7\u7814\u53d1\\74_v936_ardg1_final_local_search\\03_results\\l06_regression18_20260814T115638Z\\candidate\\raw\\Scene08_P2.csv",
+        "sha256": "2EE336AF25905966FA2EE182AD14A0BEC88C7859775E4B83800E5AA07F3A162F",
+        "bytes": 4530591
+      }
+    },
+    "Scene08_P3": {
+      "v914": {
+        "path": "D:\\Users\\admin\\Desktop\\A8-\u56db\u65cb\u7ffc\u65e0\u4eba\u673a\u4f4d\u59ff\u63a7\u5236\u7cfb\u7edf\u8bbe\u8ba1\u4f18\u5316\\A8\u8d5b\u9898\u6838\u5fc3\u5de5\u4f5c\u533a\\\u9a6d\u7a79\u7a33\u63a7-\u57fa\u4e8eMWORKS\u7684\u56db\u65cb\u7ffc\u9c81\u68d2\u4f4d\u59ff\u63a7\u5236\u4e0e\u7f16\u961f\u5b89\u5168\u4eff\u771f1\\06_supplementary_evidence\\ra_gca_cg_hte_32_raw\\Scene08_P3.csv",
+        "sha256": "31E5AADFC409915F614ED71E9C77270D24AD71322E60DBF443169C1D1E5130A6"
+      },
+      "v936-ARDG1-J03": {
+        "path": "D:\\Users\\admin\\Desktop\\A8-\u56db\u65cb\u7ffc\u65e0\u4eba\u673a\u4f4d\u59ff\u63a7\u5236\u7cfb\u7edf\u8bbe\u8ba1\u4f18\u5316\\A8\u51b3\u8d5b\u9636\u6bb5\u5347\u7ea7\u7814\u53d1\\73_v936_ardg1_joint_parameter_optimization\\03_results\\j03_regression18_20260814\\candidate\\raw\\Scene08_P3.csv",
+        "sha256": "6F58E36173C4D3324373A185B9F78720540BC33153E35416749122CB9FD4F7FF",
+        "bytes": 4540497
+      },
+      "candidate": {
+        "path": "D:\\Users\\admin\\Desktop\\A8-\u56db\u65cb\u7ffc\u65e0\u4eba\u673a\u4f4d\u59ff\u63a7\u5236\u7cfb\u7edf\u8bbe\u8ba1\u4f18\u5316\\A8\u51b3\u8d5b\u9636\u6bb5\u5347\u7ea7\u7814\u53d1\\74_v936_ardg1_final_local_search\\03_results\\l06_regression18_20260814T115638Z\\candidate\\raw\\Scene08_P3.csv",
+        "sha256": "13D504D83D73426537DD8674DBB33120F4E678B8128C54B77119E61DA9EE1755",
+        "bytes": 4540497
+      }
+    },
+    "Scene08_P4": {
+      "v914": {
+        "path": "D:\\Users\\admin\\Desktop\\A8-\u56db\u65cb\u7ffc\u65e0\u4eba\u673a\u4f4d\u59ff\u63a7\u5236\u7cfb\u7edf\u8bbe\u8ba1\u4f18\u5316\\A8\u8d5b\u9898\u6838\u5fc3\u5de5\u4f5c\u533a\\\u9a6d\u7a79\u7a33\u63a7-\u57fa\u4e8eMWORKS\u7684\u56db\u65cb\u7ffc\u9c81\u68d2\u4f4d\u59ff\u63a7\u5236\u4e0e\u7f16\u961f\u5b89\u5168\u4eff\u771f1\\06_supplementary_evidence\\ra_gca_cg_hte_32_raw\\Scene08_P4.csv",
+        "sha256": "DDE48C9998E43E0C74EB027988ECCBA82A987CED68CF6A52931801465041097F"
+      },
+      "v936-ARDG1-J03": {
+        "path": "D:\\Users\\admin\\Desktop\\A8-\u56db\u65cb\u7ffc\u65e0\u4eba\u673a\u4f4d\u59ff\u63a7\u5236\u7cfb\u7edf\u8bbe\u8ba1\u4f18\u5316\\A8\u51b3\u8d5b\u9636\u6bb5\u5347\u7ea7\u7814\u53d1\\73_v936_ardg1_joint_parameter_optimization\\03_results\\j03_regression18_20260814\\candidate\\raw\\Scene08_P4.csv",
+        "sha256": "6E2F7F360368B48B8D4C62BA32F4FE157011AB2BF7B98A4A9BC9689F4012D81D",
+        "bytes": 4532173
+      },
+      "candidate": {
+        "path": "D:\\Users\\admin\\Desktop\\A8-\u56db\u65cb\u7ffc\u65e0\u4eba\u673a\u4f4d\u59ff\u63a7\u5236\u7cfb\u7edf\u8bbe\u8ba1\u4f18\u5316\\A8\u51b3\u8d5b\u9636\u6bb5\u5347\u7ea7\u7814\u53d1\\74_v936_ardg1_final_local_search\\03_results\\l06_regression18_20260814T115638Z\\candidate\\raw\\Scene08_P4.csv",
+        "sha256": "D34D4F68D0CD553F5636488EAC9EB93879DCEFF7258A26C326FC3EBDE2C06811",
+        "bytes": 4532173
+      }
+    },
+    "Scene10_P0": {
+      "v914": {
+        "path": "D:\\Users\\admin\\Desktop\\A8-\u56db\u65cb\u7ffc\u65e0\u4eba\u673a\u4f4d\u59ff\u63a7\u5236\u7cfb\u7edf\u8bbe\u8ba1\u4f18\u5316\\A8\u8d5b\u9898\u6838\u5fc3\u5de5\u4f5c\u533a\\\u9a6d\u7a79\u7a33\u63a7-\u57fa\u4e8eMWORKS\u7684\u56db\u65cb\u7ffc\u9c81\u68d2\u4f4d\u59ff\u63a7\u5236\u4e0e\u7f16\u961f\u5b89\u5168\u4eff\u771f1\\06_supplementary_evidence\\ra_gca_cg_hte_32_raw\\Scene10_P0.csv",
+        "sha256": "19F84C1E922576EF77FAA23F222C01495373E52866BDFC2DBC8D0DCB12515451"
+      },
+      "v936-ARDG1-J03": {
+        "path": "D:\\Users\\admin\\Desktop\\A8-\u56db\u65cb\u7ffc\u65e0\u4eba\u673a\u4f4d\u59ff\u63a7\u5236\u7cfb\u7edf\u8bbe\u8ba1\u4f18\u5316\\A8\u51b3\u8d5b\u9636\u6bb5\u5347\u7ea7\u7814\u53d1\\73_v936_ardg1_joint_parameter_optimization\\03_results\\j03_regression18_20260814\\candidate\\raw\\Scene10_P0.csv",
+        "sha256": "FCBF802A6B0B913895204DF8F60524278384A40C35F715B52A00B480CFBE1AC3",
+        "bytes": 4744929
+      },
+      "candidate": {
+        "path": "D:\\Users\\admin\\Desktop\\A8-\u56db\u65cb\u7ffc\u65e0\u4eba\u673a\u4f4d\u59ff\u63a7\u5236\u7cfb\u7edf\u8bbe\u8ba1\u4f18\u5316\\A8\u51b3\u8d5b\u9636\u6bb5\u5347\u7ea7\u7814\u53d1\\74_v936_ardg1_final_local_search\\03_results\\l06_regression18_20260814T115638Z\\candidate\\raw\\Scene10_P0.csv",
+        "sha256": "1EA223F59AE8DBBC4E81AE5C5AB91B86EC18B3734A7A6FE224B0C03067D5351D",
+        "bytes": 4744929
+      }
+    },
+    "Scene10_P1": {
+      "v914": {
+        "path": "D:\\Users\\admin\\Desktop\\A8-\u56db\u65cb\u7ffc\u65e0\u4eba\u673a\u4f4d\u59ff\u63a7\u5236\u7cfb\u7edf\u8bbe\u8ba1\u4f18\u5316\\A8\u8d5b\u9898\u6838\u5fc3\u5de5\u4f5c\u533a\\\u9a6d\u7a79\u7a33\u63a7-\u57fa\u4e8eMWORKS\u7684\u56db\u65cb\u7ffc\u9c81\u68d2\u4f4d\u59ff\u63a7\u5236\u4e0e\u7f16\u961f\u5b89\u5168\u4eff\u771f1\\06_supplementary_evidence\\ra_gca_cg_hte_32_raw\\Scene10_P1.csv",
+        "sha256": "23DA784317D0C31415DEBBD64B88DB7660B91289643761E0765C4A8CC52C5A1E"
+      },
+      "v936-ARDG1-J03": {
+        "path": "D:\\Users\\admin\\Desktop\\A8-\u56db\u65cb\u7ffc\u65e0\u4eba\u673a\u4f4d\u59ff\u63a7\u5236\u7cfb\u7edf\u8bbe\u8ba1\u4f18\u5316\\A8\u51b3\u8d5b\u9636\u6bb5\u5347\u7ea7\u7814\u53d1\\73_v936_ardg1_joint_parameter_optimization\\03_results\\j03_regression18_20260814\\candidate\\raw\\Scene10_P1.csv",
+        "sha256": "17820648AE57749F3D7AB0570AC243274230201C32C513EFE45FBB9D1F1A13F7",
+        "bytes": 4745130
+      },
+      "candidate": {
+        "path": "D:\\Users\\admin\\Desktop\\A8-\u56db\u65cb\u7ffc\u65e0\u4eba\u673a\u4f4d\u59ff\u63a7\u5236\u7cfb\u7edf\u8bbe\u8ba1\u4f18\u5316\\A8\u51b3\u8d5b\u9636\u6bb5\u5347\u7ea7\u7814\u53d1\\74_v936_ardg1_final_local_search\\03_results\\l06_regression18_20260814T115638Z\\candidate\\raw\\Scene10_P1.csv",
+        "sha256": "C035CE8C8D2EB4C32E3309ED4E6C3EAB28F3E891B982BC9BCE8E3FA5D1971133",
+        "bytes": 4745130
+      }
+    },
+    "Scene10_P2": {
+      "v914": {
+        "path": "D:\\Users\\admin\\Desktop\\A8-\u56db\u65cb\u7ffc\u65e0\u4eba\u673a\u4f4d\u59ff\u63a7\u5236\u7cfb\u7edf\u8bbe\u8ba1\u4f18\u5316\\A8\u8d5b\u9898\u6838\u5fc3\u5de5\u4f5c\u533a\\\u9a6d\u7a79\u7a33\u63a7-\u57fa\u4e8eMWORKS\u7684\u56db\u65cb\u7ffc\u9c81\u68d2\u4f4d\u59ff\u63a7\u5236\u4e0e\u7f16\u961f\u5b89\u5168\u4eff\u771f1\\06_supplementary_evidence\\ra_gca_cg_hte_32_raw\\Scene10_P2.csv",
+        "sha256": "F5E544FF2519D4A2B7A460BDDD31FB91EFC3F9D1EDE6CBECB13F3B16AD3BF7DC"
+      },
+      "v936-ARDG1-J03": {
+        "path": "D:\\Users\\admin\\Desktop\\A8-\u56db\u65cb\u7ffc\u65e0\u4eba\u673a\u4f4d\u59ff\u63a7\u5236\u7cfb\u7edf\u8bbe\u8ba1\u4f18\u5316\\A8\u51b3\u8d5b\u9636\u6bb5\u5347\u7ea7\u7814\u53d1\\73_v936_ardg1_joint_parameter_optimization\\03_results\\j03_regression18_20260814\\candidate\\raw\\Scene10_P2.csv",
+        "sha256": "D08260C39B0D23F30F3DFD349848456B99FE40888C16B8223E6F40C9ACE0E54B",
+        "bytes": 4745473
+      },
+      "candidate": {
+        "path": "D:\\Users\\admin\\Desktop\\A8-\u56db\u65cb\u7ffc\u65e0\u4eba\u673a\u4f4d\u59ff\u63a7\u5236\u7cfb\u7edf\u8bbe\u8ba1\u4f18\u5316\\A8\u51b3\u8d5b\u9636\u6bb5\u5347\u7ea7\u7814\u53d1\\74_v936_ardg1_final_local_search\\03_results\\l06_regression18_20260814T115638Z\\candidate\\raw\\Scene10_P2.csv",
+        "sha256": "B8D750954D1BD9EA9A8318CFF002483DEE5B5D0F473110BA203C80B79B6A59AA",
+        "bytes": 4745473
+      }
+    },
+    "Scene10_P3": {
+      "v914": {
+        "path": "D:\\Users\\admin\\Desktop\\A8-\u56db\u65cb\u7ffc\u65e0\u4eba\u673a\u4f4d\u59ff\u63a7\u5236\u7cfb\u7edf\u8bbe\u8ba1\u4f18\u5316\\A8\u8d5b\u9898\u6838\u5fc3\u5de5\u4f5c\u533a\\\u9a6d\u7a79\u7a33\u63a7-\u57fa\u4e8eMWORKS\u7684\u56db\u65cb\u7ffc\u9c81\u68d2\u4f4d\u59ff\u63a7\u5236\u4e0e\u7f16\u961f\u5b89\u5168\u4eff\u771f1\\06_supplementary_evidence\\ra_gca_cg_hte_32_raw\\Scene10_P3.csv",
+        "sha256": "1BC96873FD7DE2DC4856EBE5E50A363CD4EB59048F198750551A37F2F0F837B4"
+      },
+      "v936-ARDG1-J03": {
+        "path": "D:\\Users\\admin\\Desktop\\A8-\u56db\u65cb\u7ffc\u65e0\u4eba\u673a\u4f4d\u59ff\u63a7\u5236\u7cfb\u7edf\u8bbe\u8ba1\u4f18\u5316\\A8\u51b3\u8d5b\u9636\u6bb5\u5347\u7ea7\u7814\u53d1\\73_v936_ardg1_joint_parameter_optimization\\03_results\\j03_regression18_20260814\\candidate\\raw\\Scene10_P3.csv",
+        "sha256": "08815A0B4BF427A9D754AAEDF791746BDDEB6E7D7491431B1085C903C57DDB23",
+        "bytes": 4744885
+      },
+      "candidate": {
+        "path": "D:\\Users\\admin\\Desktop\\A8-\u56db\u65cb\u7ffc\u65e0\u4eba\u673a\u4f4d\u59ff\u63a7\u5236\u7cfb\u7edf\u8bbe\u8ba1\u4f18\u5316\\A8\u51b3\u8d5b\u9636\u6bb5\u5347\u7ea7\u7814\u53d1\\74_v936_ardg1_final_local_search\\03_results\\l06_regression18_20260814T115638Z\\candidate\\raw\\Scene10_P3.csv",
+        "sha256": "628FF3B99C9B548B4BE50F2A6C5B3B2200EB7CB5AF40C9094232F741C612C331",
+        "bytes": 4744885
+      }
+    },
+    "Scene10_P4": {
+      "v914": {
+        "path": "D:\\Users\\admin\\Desktop\\A8-\u56db\u65cb\u7ffc\u65e0\u4eba\u673a\u4f4d\u59ff\u63a7\u5236\u7cfb\u7edf\u8bbe\u8ba1\u4f18\u5316\\A8\u8d5b\u9898\u6838\u5fc3\u5de5\u4f5c\u533a\\\u9a6d\u7a79\u7a33\u63a7-\u57fa\u4e8eMWORKS\u7684\u56db\u65cb\u7ffc\u9c81\u68d2\u4f4d\u59ff\u63a7\u5236\u4e0e\u7f16\u961f\u5b89\u5168\u4eff\u771f1\\06_supplementary_evidence\\ra_gca_cg_hte_32_raw\\Scene10_P4.csv",
+        "sha256": "A20A6DDAC7AE7BA0C7699F080B6F1C3AE14A94DDFA3EA2FE7FB3850A129CA6AC"
+      },
+      "v936-ARDG1-J03": {
+        "path": "D:\\Users\\admin\\Desktop\\A8-\u56db\u65cb\u7ffc\u65e0\u4eba\u673a\u4f4d\u59ff\u63a7\u5236\u7cfb\u7edf\u8bbe\u8ba1\u4f18\u5316\\A8\u51b3\u8d5b\u9636\u6bb5\u5347\u7ea7\u7814\u53d1\\73_v936_ardg1_joint_parameter_optimization\\03_results\\j03_regression18_20260814\\candidate\\raw\\Scene10_P4.csv",
+        "sha256": "71339CDACD5803B41B68C55D4DF86E97288BAA78398781A0C2C1C11DB342EEAE",
+        "bytes": 4745047
+      },
+      "candidate": {
+        "path": "D:\\Users\\admin\\Desktop\\A8-\u56db\u65cb\u7ffc\u65e0\u4eba\u673a\u4f4d\u59ff\u63a7\u5236\u7cfb\u7edf\u8bbe\u8ba1\u4f18\u5316\\A8\u51b3\u8d5b\u9636\u6bb5\u5347\u7ea7\u7814\u53d1\\74_v936_ardg1_final_local_search\\03_results\\l06_regression18_20260814T115638Z\\candidate\\raw\\Scene10_P4.csv",
+        "sha256": "A4D8F336560F2AAA7985B2E0020F884A9065F2561C44AC85C57268B96C298024",
+        "bytes": 4745047
+      }
+    }
+  },
+  "comparison_vs_v914": {
+    "reference": "v914",
+    "candidate_wins": 1,
+    "equivalent_votes": 17,
+    "median_signed_effect_percent": 0.0,
+    "votes": [
+      {
+        "baseline": 0.01896725763003433,
+        "candidate": 0.01896725763003433,
+        "epsilon": 1.896725763003433e-05,
+        "vote": "EQUIVALENT",
+        "symmetric_effect_percent": 0.0,
+        "case_id": "Scene04",
+        "metric_id": "three_dimensional_position_rmse_m",
+        "reference": "v914",
+        "direct_improvement_percent": 0.0
+      },
+      {
+        "baseline": 0.1550402231442399,
+        "candidate": 0.1550402231442399,
+        "epsilon": 0.0001550402231442399,
+        "vote": "EQUIVALENT",
+        "symmetric_effect_percent": 0.0,
+        "case_id": "Scene01",
+        "metric_id": "three_dimensional_position_rmse_m",
+        "reference": "v914",
+        "direct_improvement_percent": 0.0
+      },
+      {
+        "baseline": 0.3654696786017275,
+        "candidate": 0.3654696786017275,
+        "epsilon": 0.00036546967860172754,
+        "vote": "EQUIVALENT",
+        "symmetric_effect_percent": 0.0,
+        "case_id": "Scene02",
+        "metric_id": "three_dimensional_position_rmse_m",
+        "reference": "v914",
+        "direct_improvement_percent": 0.0
+      },
+      {
+        "baseline": 0.05173739958363874,
+        "candidate": 0.05173739958363874,
+        "epsilon": 5.1737399583638736e-05,
+        "vote": "EQUIVALENT",
+        "symmetric_effect_percent": 0.0,
+        "case_id": "Scene03",
+        "metric_id": "three_dimensional_position_rmse_m",
+        "reference": "v914",
+        "direct_improvement_percent": 0.0
+      },
+      {
+        "baseline": 0.29490376147342406,
+        "candidate": 0.2694762049129805,
+        "epsilon": 0.0002949037614734241,
+        "vote": "CANDIDATE_WIN",
+        "symmetric_effect_percent": 9.010793463577508,
+        "case_id": "Scene06b",
+        "metric_id": "three_dimensional_position_rmse_m",
+        "reference": "v914",
+        "direct_improvement_percent": 8.622323578851676
+      },
+      {
+        "baseline": 0.18656222893097368,
+        "candidate": 0.18656222893097368,
+        "epsilon": 0.00018656222893097369,
+        "vote": "EQUIVALENT",
+        "symmetric_effect_percent": 0.0,
+        "case_id": "Scene01S_X",
+        "metric_id": "three_dimensional_position_rmse_m",
+        "reference": "v914",
+        "direct_improvement_percent": 0.0
+      },
+      {
+        "baseline": 0.18656222874117714,
+        "candidate": 0.18656222874117714,
+        "epsilon": 0.00018656222874117716,
+        "vote": "EQUIVALENT",
+        "symmetric_effect_percent": 0.0,
+        "case_id": "Scene01S_Y",
+        "metric_id": "three_dimensional_position_rmse_m",
+        "reference": "v914",
+        "direct_improvement_percent": 0.0
+      },
+      {
+        "baseline": 0.16170511679655325,
+        "candidate": 0.16170511679655325,
+        "epsilon": 0.00016170511679655325,
+        "vote": "EQUIVALENT",
+        "symmetric_effect_percent": 0.0,
+        "case_id": "Scene01S_Z",
+        "metric_id": "three_dimensional_position_rmse_m",
+        "reference": "v914",
+        "direct_improvement_percent": 0.0
+      },
+      {
+        "baseline": 0.032266191074712985,
+        "candidate": 0.032266191074712985,
+        "epsilon": 3.226619107471298e-05,
+        "vote": "EQUIVALENT",
+        "symmetric_effect_percent": 0.0,
+        "case_id": "Scene08_P0",
+        "metric_id": "three_dimensional_position_rmse_m",
+        "reference": "v914",
+        "direct_improvement_percent": 0.0
+      },
+      {
+        "baseline": 0.03196163962760304,
+        "candidate": 0.03196163962760304,
+        "epsilon": 3.196163962760304e-05,
+        "vote": "EQUIVALENT",
+        "symmetric_effect_percent": 0.0,
+        "case_id": "Scene08_P1",
+        "metric_id": "three_dimensional_position_rmse_m",
+        "reference": "v914",
+        "direct_improvement_percent": 0.0
+      },
+      {
+        "baseline": 0.03231371171562792,
+        "candidate": 0.03231371171562792,
+        "epsilon": 3.231371171562792e-05,
+        "vote": "EQUIVALENT",
+        "symmetric_effect_percent": 0.0,
+        "case_id": "Scene08_P2",
+        "metric_id": "three_dimensional_position_rmse_m",
+        "reference": "v914",
+        "direct_improvement_percent": 0.0
+      },
+      {
+        "baseline": 0.03231226237707863,
+        "candidate": 0.03231226237707863,
+        "epsilon": 3.2312262377078626e-05,
+        "vote": "EQUIVALENT",
+        "symmetric_effect_percent": 0.0,
+        "case_id": "Scene08_P3",
+        "metric_id": "three_dimensional_position_rmse_m",
+        "reference": "v914",
+        "direct_improvement_percent": 0.0
+      },
+      {
+        "baseline": 0.03196673404747663,
+        "candidate": 0.03196673404747663,
+        "epsilon": 3.196673404747663e-05,
+        "vote": "EQUIVALENT",
+        "symmetric_effect_percent": 0.0,
+        "case_id": "Scene08_P4",
+        "metric_id": "three_dimensional_position_rmse_m",
+        "reference": "v914",
+        "direct_improvement_percent": 0.0
+      },
+      {
+        "baseline": 0.018668077069636985,
+        "candidate": 0.018668077069636985,
+        "epsilon": 1.8668077069636986e-05,
+        "vote": "EQUIVALENT",
+        "symmetric_effect_percent": 0.0,
+        "case_id": "Scene10_P0",
+        "metric_id": "three_dimensional_position_rmse_m",
+        "reference": "v914",
+        "direct_improvement_percent": 0.0
+      },
+      {
+        "baseline": 0.01865699631424351,
+        "candidate": 0.01865699631424351,
+        "epsilon": 1.8656996314243508e-05,
+        "vote": "EQUIVALENT",
+        "symmetric_effect_percent": 0.0,
+        "case_id": "Scene10_P1",
+        "metric_id": "three_dimensional_position_rmse_m",
+        "reference": "v914",
+        "direct_improvement_percent": 0.0
+      },
+      {
+        "baseline": 0.018665725937843245,
+        "candidate": 0.018665725937843245,
+        "epsilon": 1.8665725937843246e-05,
+        "vote": "EQUIVALENT",
+        "symmetric_effect_percent": 0.0,
+        "case_id": "Scene10_P2",
+        "metric_id": "three_dimensional_position_rmse_m",
+        "reference": "v914",
+        "direct_improvement_percent": 0.0
+      },
+      {
+        "baseline": 0.018660398087373582,
+        "candidate": 0.018660398087373582,
+        "epsilon": 1.8660398087373583e-05,
+        "vote": "EQUIVALENT",
+        "symmetric_effect_percent": 0.0,
+        "case_id": "Scene10_P3",
+        "metric_id": "three_dimensional_position_rmse_m",
+        "reference": "v914",
+        "direct_improvement_percent": 0.0
+      },
+      {
+        "baseline": 0.018659323615068512,
+        "candidate": 0.018659323615068512,
+        "epsilon": 1.865932361506851e-05,
+        "vote": "EQUIVALENT",
+        "symmetric_effect_percent": 0.0,
+        "case_id": "Scene10_P4",
+        "metric_id": "three_dimensional_position_rmse_m",
+        "reference": "v914",
+        "direct_improvement_percent": 0.0
+      }
+    ],
+    "baseline_wins": 0
+  },
+  "comparison_vs_j03": {
+    "reference": "v936-ARDG1-J03",
+    "candidate_wins": 0,
+    "equivalent_votes": 18,
+    "median_signed_effect_percent": 0.0,
+    "votes": [
+      {
+        "baseline": 0.01896725763003433,
+        "candidate": 0.01896725763003433,
+        "epsilon": 1.896725763003433e-05,
+        "vote": "EQUIVALENT",
+        "symmetric_effect_percent": 0.0,
+        "case_id": "Scene04",
+        "metric_id": "three_dimensional_position_rmse_m",
+        "reference": "v936-ARDG1-J03",
+        "direct_improvement_percent": 0.0
+      },
+      {
+        "baseline": 0.1550402231442399,
+        "candidate": 0.1550402231442399,
+        "epsilon": 0.0001550402231442399,
+        "vote": "EQUIVALENT",
+        "symmetric_effect_percent": 0.0,
+        "case_id": "Scene01",
+        "metric_id": "three_dimensional_position_rmse_m",
+        "reference": "v936-ARDG1-J03",
+        "direct_improvement_percent": 0.0
+      },
+      {
+        "baseline": 0.3654696786017275,
+        "candidate": 0.3654696786017275,
+        "epsilon": 0.00036546967860172754,
+        "vote": "EQUIVALENT",
+        "symmetric_effect_percent": 0.0,
+        "case_id": "Scene02",
+        "metric_id": "three_dimensional_position_rmse_m",
+        "reference": "v936-ARDG1-J03",
+        "direct_improvement_percent": 0.0
+      },
+      {
+        "baseline": 0.05173739958363874,
+        "candidate": 0.05173739958363874,
+        "epsilon": 5.1737399583638736e-05,
+        "vote": "EQUIVALENT",
+        "symmetric_effect_percent": 0.0,
+        "case_id": "Scene03",
+        "metric_id": "three_dimensional_position_rmse_m",
+        "reference": "v936-ARDG1-J03",
+        "direct_improvement_percent": 0.0
+      },
+      {
+        "baseline": 0.2694764364094875,
+        "candidate": 0.2694762049129805,
+        "epsilon": 0.0002694764364094875,
+        "vote": "EQUIVALENT",
+        "symmetric_effect_percent": 8.590606640161085e-05,
+        "case_id": "Scene06b",
+        "metric_id": "three_dimensional_position_rmse_m",
+        "reference": "v936-ARDG1-J03",
+        "direct_improvement_percent": 8.590602950236549e-05
+      },
+      {
+        "baseline": 0.18656222893097368,
+        "candidate": 0.18656222893097368,
+        "epsilon": 0.00018656222893097369,
+        "vote": "EQUIVALENT",
+        "symmetric_effect_percent": 0.0,
+        "case_id": "Scene01S_X",
+        "metric_id": "three_dimensional_position_rmse_m",
+        "reference": "v936-ARDG1-J03",
+        "direct_improvement_percent": 0.0
+      },
+      {
+        "baseline": 0.18656222874117714,
+        "candidate": 0.18656222874117714,
+        "epsilon": 0.00018656222874117716,
+        "vote": "EQUIVALENT",
+        "symmetric_effect_percent": 0.0,
+        "case_id": "Scene01S_Y",
+        "metric_id": "three_dimensional_position_rmse_m",
+        "reference": "v936-ARDG1-J03",
+        "direct_improvement_percent": 0.0
+      },
+      {
+        "baseline": 0.16170511679655325,
+        "candidate": 0.16170511679655325,
+        "epsilon": 0.00016170511679655325,
+        "vote": "EQUIVALENT",
+        "symmetric_effect_percent": 0.0,
+        "case_id": "Scene01S_Z",
+        "metric_id": "three_dimensional_position_rmse_m",
+        "reference": "v936-ARDG1-J03",
+        "direct_improvement_percent": 0.0
+      },
+      {
+        "baseline": 0.032266191074712985,
+        "candidate": 0.032266191074712985,
+        "epsilon": 3.226619107471298e-05,
+        "vote": "EQUIVALENT",
+        "symmetric_effect_percent": 0.0,
+        "case_id": "Scene08_P0",
+        "metric_id": "three_dimensional_position_rmse_m",
+        "reference": "v936-ARDG1-J03",
+        "direct_improvement_percent": 0.0
+      },
+      {
+        "baseline": 0.03196163962760304,
+        "candidate": 0.03196163962760304,
+        "epsilon": 3.196163962760304e-05,
+        "vote": "EQUIVALENT",
+        "symmetric_effect_percent": 0.0,
+        "case_id": "Scene08_P1",
+        "metric_id": "three_dimensional_position_rmse_m",
+        "reference": "v936-ARDG1-J03",
+        "direct_improvement_percent": 0.0
+      },
+      {
+        "baseline": 0.03231371171562792,
+        "candidate": 0.03231371171562792,
+        "epsilon": 3.231371171562792e-05,
+        "vote": "EQUIVALENT",
+        "symmetric_effect_percent": 0.0,
+        "case_id": "Scene08_P2",
+        "metric_id": "three_dimensional_position_rmse_m",
+        "reference": "v936-ARDG1-J03",
+        "direct_improvement_percent": 0.0
+      },
+      {
+        "baseline": 0.03231226237707863,
+        "candidate": 0.03231226237707863,
+        "epsilon": 3.2312262377078626e-05,
+        "vote": "EQUIVALENT",
+        "symmetric_effect_percent": 0.0,
+        "case_id": "Scene08_P3",
+        "metric_id": "three_dimensional_position_rmse_m",
+        "reference": "v936-ARDG1-J03",
+        "direct_improvement_percent": 0.0
+      },
+      {
+        "baseline": 0.03196673404747663,
+        "candidate": 0.03196673404747663,
+        "epsilon": 3.196673404747663e-05,
+        "vote": "EQUIVALENT",
+        "symmetric_effect_percent": 0.0,
+        "case_id": "Scene08_P4",
+        "metric_id": "three_dimensional_position_rmse_m",
+        "reference": "v936-ARDG1-J03",
+        "direct_improvement_percent": 0.0
+      },
+      {
+        "baseline": 0.018668077069636985,
+        "candidate": 0.018668077069636985,
+        "epsilon": 1.8668077069636986e-05,
+        "vote": "EQUIVALENT",
+        "symmetric_effect_percent": 0.0,
+        "case_id": "Scene10_P0",
+        "metric_id": "three_dimensional_position_rmse_m",
+        "reference": "v936-ARDG1-J03",
+        "direct_improvement_percent": 0.0
+      },
+      {
+        "baseline": 0.01865699631424351,
+        "candidate": 0.01865699631424351,
+        "epsilon": 1.8656996314243508e-05,
+        "vote": "EQUIVALENT",
+        "symmetric_effect_percent": 0.0,
+        "case_id": "Scene10_P1",
+        "metric_id": "three_dimensional_position_rmse_m",
+        "reference": "v936-ARDG1-J03",
+        "direct_improvement_percent": 0.0
+      },
+      {
+        "baseline": 0.018665725937843245,
+        "candidate": 0.018665725937843245,
+        "epsilon": 1.8665725937843246e-05,
+        "vote": "EQUIVALENT",
+        "symmetric_effect_percent": 0.0,
+        "case_id": "Scene10_P2",
+        "metric_id": "three_dimensional_position_rmse_m",
+        "reference": "v936-ARDG1-J03",
+        "direct_improvement_percent": 0.0
+      },
+      {
+        "baseline": 0.018660398087373582,
+        "candidate": 0.018660398087373582,
+        "epsilon": 1.8660398087373583e-05,
+        "vote": "EQUIVALENT",
+        "symmetric_effect_percent": 0.0,
+        "case_id": "Scene10_P3",
+        "metric_id": "three_dimensional_position_rmse_m",
+        "reference": "v936-ARDG1-J03",
+        "direct_improvement_percent": 0.0
+      },
+      {
+        "baseline": 0.018659323615068512,
+        "candidate": 0.018659323615068512,
+        "epsilon": 1.865932361506851e-05,
+        "vote": "EQUIVALENT",
+        "symmetric_effect_percent": 0.0,
+        "case_id": "Scene10_P4",
+        "metric_id": "three_dimensional_position_rmse_m",
+        "reference": "v936-ARDG1-J03",
+        "direct_improvement_percent": 0.0
+      }
+    ],
+    "j03_wins": 0
+  },
+  "aggregate_control_activity": {
+    "v914": {
+      "baseline": 384.6713592920581,
+      "candidate": 383.4566459809125,
+      "epsilon": 0.38467135929205815,
+      "vote": "CANDIDATE_WIN",
+      "symmetric_effect_percent": 0.3162788761266235,
+      "metric_id": "four_motor_total_variation",
+      "scope": "SUM_ACROSS_18_SCENES",
+      "reference": "v914",
+      "direct_improvement_percent": 0.3157795041931733,
+      "reference_value": 384.6713592920581,
+      "candidate_value": 383.4566459809125
+    },
+    "v936-ARDG1-J03": {
+      "baseline": 383.4436743686389,
+      "candidate": 383.4566459809125,
+      "epsilon": 0.38345664598091256,
+      "vote": "EQUIVALENT",
+      "symmetric_effect_percent": -0.0033828678719896674,
+      "metric_id": "four_motor_total_variation",
+      "scope": "SUM_ACROSS_18_SCENES",
+      "reference": "v936-ARDG1-J03",
+      "direct_improvement_percent": -0.0033829250919327016,
+      "reference_value": 383.4436743686389,
+      "candidate_value": 383.4566459809125
+    }
+  },
+  "common_hard_gates": {
+    "Scene04": {
+      "v914": {
+        "passed": true,
+        "classification": "PASS",
+        "checks": {
+          "identity": true,
+          "feasibility_encoding": true,
+          "allocation_residual_on_feasible": true,
+          "torque_request_bounds": true,
+          "motor_abs_bound": true,
+          "motor_q_bound": true,
+          "motor_step_physical_boundary": true
+        },
+        "feasible_samples": 3001,
+        "allocation_residual_abs_max": 2.221422052826528e-16,
+        "maximum_motor_step": 0.596511505190982,
+        "motor_q_excess": -3383.0572217953677
+      },
+      "candidate": {
+        "passed": true,
+        "classification": "PASS",
+        "checks": {
+          "identity": true,
+          "feasibility_encoding": true,
+          "allocation_residual_on_feasible": true,
+          "torque_request_bounds": true,
+          "motor_abs_bound": true,
+          "motor_q_bound": true,
+          "motor_step_physical_boundary": true
+        },
+        "feasible_samples": 3001,
+        "allocation_residual_abs_max": 2.221422052826528e-16,
+        "maximum_motor_step": 0.596511505190982,
+        "motor_q_excess": -3383.0572217953677
+      },
+      "torque_reference_diagnostic": {
+        "reference_limit_nm": 0.0045,
+        "reference_tolerance_nm": 1e-12,
+        "classification": "REFERENCE_WITHIN_BOUND_OR_NOT_EXEMPT",
+        "baseline_abs_max_nm": 5.755069173147396e-11,
+        "candidate_abs_max_nm": 5.755069173147396e-11,
+        "pointwise_max_delta_nm": 0.0,
+        "candidate_extra_beyond_shared_envelope_nm": -0.004499999942449308,
+        "same_sample_count": true,
+        "finite": true,
+        "all_non_torque_hard_gates_pass": true,
+        "candidate_does_not_increase_shared_envelope": true,
+        "decision_sensitive": false
+      },
+      "passed": true
+    },
+    "Scene01": {
+      "v914": {
+        "passed": true,
+        "classification": "PASS",
+        "checks": {
+          "identity": true,
+          "feasibility_encoding": true,
+          "allocation_residual_on_feasible": true,
+          "torque_request_bounds": true,
+          "motor_abs_bound": true,
+          "motor_q_bound": true,
+          "motor_step_physical_boundary": true
+        },
+        "feasible_samples": 5001,
+        "allocation_residual_abs_max": 4.213987590643258e-13,
+        "maximum_motor_step": 4.659092710795695,
+        "motor_q_excess": -3287.1937365954864
+      },
+      "candidate": {
+        "passed": true,
+        "classification": "PASS",
+        "checks": {
+          "identity": true,
+          "feasibility_encoding": true,
+          "allocation_residual_on_feasible": true,
+          "torque_request_bounds": true,
+          "motor_abs_bound": true,
+          "motor_q_bound": true,
+          "motor_step_physical_boundary": true
+        },
+        "feasible_samples": 5001,
+        "allocation_residual_abs_max": 4.213987590643258e-13,
+        "maximum_motor_step": 4.659092710795695,
+        "motor_q_excess": -3287.1937365954864
+      },
+      "torque_reference_diagnostic": {
+        "reference_limit_nm": 0.0045,
+        "reference_tolerance_nm": 1e-12,
+        "classification": "REFERENCE_WITHIN_BOUND_OR_NOT_EXEMPT",
+        "baseline_abs_max_nm": 0.0038017376780173093,
+        "candidate_abs_max_nm": 0.0038017376780173093,
+        "pointwise_max_delta_nm": 0.0,
+        "candidate_extra_beyond_shared_envelope_nm": -0.0006982623219826904,
+        "same_sample_count": true,
+        "finite": true,
+        "all_non_torque_hard_gates_pass": true,
+        "candidate_does_not_increase_shared_envelope": true,
+        "decision_sensitive": false
+      },
+      "passed": true
+    },
+    "Scene02": {
+      "v914": {
+        "passed": true,
+        "classification": "PASS_WITH_SHARED_LEGACY_REFERENCE",
+        "checks": {
+          "identity": true,
+          "feasibility_encoding": true,
+          "allocation_residual_on_feasible": true,
+          "torque_request_bounds": false,
+          "motor_abs_bound": true,
+          "motor_q_bound": true,
+          "motor_step_physical_boundary": true
+        },
+        "feasible_samples": 5001,
+        "allocation_residual_abs_max": 7.351165047497469e-13,
+        "maximum_motor_step": 1.2623518886178626,
+        "motor_q_excess": -3355.4999958976955
+      },
+      "candidate": {
+        "passed": true,
+        "classification": "PASS_WITH_SHARED_LEGACY_REFERENCE",
+        "checks": {
+          "identity": true,
+          "feasibility_encoding": true,
+          "allocation_residual_on_feasible": true,
+          "torque_request_bounds": false,
+          "motor_abs_bound": true,
+          "motor_q_bound": true,
+          "motor_step_physical_boundary": true
+        },
+        "feasible_samples": 5001,
+        "allocation_residual_abs_max": 7.351165047497469e-13,
+        "maximum_motor_step": 1.2623518886178626,
+        "motor_q_excess": -3355.4999958976955
+      },
+      "torque_reference_diagnostic": {
+        "reference_limit_nm": 0.0045,
+        "reference_tolerance_nm": 1e-12,
+        "classification": "SHARED_LEGACY_REFERENCE_EXCEEDANCE_NO_CANDIDATE_INCREMENT",
+        "baseline_abs_max_nm": 0.008430591595980549,
+        "candidate_abs_max_nm": 0.008430591595980549,
+        "pointwise_max_delta_nm": 0.0,
+        "candidate_extra_beyond_shared_envelope_nm": 0.0,
+        "same_sample_count": true,
+        "finite": true,
+        "all_non_torque_hard_gates_pass": true,
+        "candidate_does_not_increase_shared_envelope": true,
+        "decision_sensitive": true
+      },
+      "passed": true
+    },
+    "Scene03": {
+      "v914": {
+        "passed": true,
+        "classification": "PASS_WITH_SHARED_LEGACY_REFERENCE",
+        "checks": {
+          "identity": true,
+          "feasibility_encoding": true,
+          "allocation_residual_on_feasible": true,
+          "torque_request_bounds": false,
+          "motor_abs_bound": true,
+          "motor_q_bound": true,
+          "motor_step_physical_boundary": true
+        },
+        "feasible_samples": 12001,
+        "allocation_residual_abs_max": 5.554460415724263e-13,
+        "maximum_motor_step": 2.1028183674427883,
+        "motor_q_excess": -3343.654882609342
+      },
+      "candidate": {
+        "passed": true,
+        "classification": "PASS_WITH_SHARED_LEGACY_REFERENCE",
+        "checks": {
+          "identity": true,
+          "feasibility_encoding": true,
+          "allocation_residual_on_feasible": true,
+          "torque_request_bounds": false,
+          "motor_abs_bound": true,
+          "motor_q_bound": true,
+          "motor_step_physical_boundary": true
+        },
+        "feasible_samples": 12001,
+        "allocation_residual_abs_max": 5.554460415724263e-13,
+        "maximum_motor_step": 2.1028183674427883,
+        "motor_q_excess": -3343.654882609342
+      },
+      "torque_reference_diagnostic": {
+        "reference_limit_nm": 0.0045,
+        "reference_tolerance_nm": 1e-12,
+        "classification": "SHARED_LEGACY_REFERENCE_EXCEEDANCE_NO_CANDIDATE_INCREMENT",
+        "baseline_abs_max_nm": 0.006013555864413674,
+        "candidate_abs_max_nm": 0.006013555864413674,
+        "pointwise_max_delta_nm": 0.0,
+        "candidate_extra_beyond_shared_envelope_nm": 0.0,
+        "same_sample_count": true,
+        "finite": true,
+        "all_non_torque_hard_gates_pass": true,
+        "candidate_does_not_increase_shared_envelope": true,
+        "decision_sensitive": true
+      },
+      "passed": true
+    },
+    "Scene06b": {
+      "v914": {
+        "passed": true,
+        "classification": "PASS",
+        "checks": {
+          "identity": true,
+          "feasibility_encoding": true,
+          "allocation_residual_on_feasible": true,
+          "torque_request_bounds": true,
+          "motor_abs_bound": true,
+          "motor_q_bound": true,
+          "motor_step_physical_boundary": true
+        },
+        "feasible_samples": 3001,
+        "allocation_residual_abs_max": 3.542522178477811e-13,
+        "maximum_motor_step": 0.5965115047152985,
+        "motor_q_excess": -3375.3783245649615
+      },
+      "candidate": {
+        "passed": true,
+        "classification": "PASS",
+        "checks": {
+          "identity": true,
+          "feasibility_encoding": true,
+          "allocation_residual_on_feasible": true,
+          "torque_request_bounds": true,
+          "motor_abs_bound": true,
+          "motor_q_bound": true,
+          "motor_step_physical_boundary": true
+        },
+        "feasible_samples": 3001,
+        "allocation_residual_abs_max": 3.6046426262549593e-13,
+        "maximum_motor_step": 0.5965115047152985,
+        "motor_q_excess": -3377.31689717628
+      },
+      "torque_reference_diagnostic": {
+        "reference_limit_nm": 0.0045,
+        "reference_tolerance_nm": 1e-12,
+        "classification": "REFERENCE_WITHIN_BOUND_OR_NOT_EXEMPT",
+        "baseline_abs_max_nm": 0.004337139911846127,
+        "candidate_abs_max_nm": 0.0044131054511410495,
+        "pointwise_max_delta_nm": 0.00014938062258909704,
+        "candidate_extra_beyond_shared_envelope_nm": -8.689454885895016e-05,
+        "same_sample_count": true,
+        "finite": true,
+        "all_non_torque_hard_gates_pass": true,
+        "candidate_does_not_increase_shared_envelope": true,
+        "decision_sensitive": false
+      },
+      "passed": true
+    },
+    "Scene01S_X": {
+      "v914": {
+        "passed": true,
+        "classification": "PASS",
+        "checks": {
+          "identity": true,
+          "feasibility_encoding": true,
+          "allocation_residual_on_feasible": true,
+          "torque_request_bounds": true,
+          "motor_abs_bound": true,
+          "motor_q_bound": true,
+          "motor_step_physical_boundary": true
+        },
+        "feasible_samples": 3001,
+        "allocation_residual_abs_max": 3.1993331595485e-13,
+        "maximum_motor_step": 0.4139556537572755,
+        "motor_q_excess": -3388.3759258226373
+      },
+      "candidate": {
+        "passed": true,
+        "classification": "PASS",
+        "checks": {
+          "identity": true,
+          "feasibility_encoding": true,
+          "allocation_residual_on_feasible": true,
+          "torque_request_bounds": true,
+          "motor_abs_bound": true,
+          "motor_q_bound": true,
+          "motor_step_physical_boundary": true
+        },
+        "feasible_samples": 3001,
+        "allocation_residual_abs_max": 3.1993331595485e-13,
+        "maximum_motor_step": 0.4139556537572755,
+        "motor_q_excess": -3388.3759258226373
+      },
+      "torque_reference_diagnostic": {
+        "reference_limit_nm": 0.0045,
+        "reference_tolerance_nm": 1e-12,
+        "classification": "REFERENCE_WITHIN_BOUND_OR_NOT_EXEMPT",
+        "baseline_abs_max_nm": 0.003916878281722973,
+        "candidate_abs_max_nm": 0.003916878281722973,
+        "pointwise_max_delta_nm": 0.0,
+        "candidate_extra_beyond_shared_envelope_nm": -0.0005831217182770271,
+        "same_sample_count": true,
+        "finite": true,
+        "all_non_torque_hard_gates_pass": true,
+        "candidate_does_not_increase_shared_envelope": true,
+        "decision_sensitive": false
+      },
+      "passed": true
+    },
+    "Scene01S_Y": {
+      "v914": {
+        "passed": true,
+        "classification": "PASS",
+        "checks": {
+          "identity": true,
+          "feasibility_encoding": true,
+          "allocation_residual_on_feasible": true,
+          "torque_request_bounds": true,
+          "motor_abs_bound": true,
+          "motor_q_bound": true,
+          "motor_step_physical_boundary": true
+        },
+        "feasible_samples": 3001,
+        "allocation_residual_abs_max": 3.199289791425333e-13,
+        "maximum_motor_step": 0.41395565362028286,
+        "motor_q_excess": -3388.375925817998
+      },
+      "candidate": {
+        "passed": true,
+        "classification": "PASS",
+        "checks": {
+          "identity": true,
+          "feasibility_encoding": true,
+          "allocation_residual_on_feasible": true,
+          "torque_request_bounds": true,
+          "motor_abs_bound": true,
+          "motor_q_bound": true,
+          "motor_step_physical_boundary": true
+        },
+        "feasible_samples": 3001,
+        "allocation_residual_abs_max": 3.199289791425333e-13,
+        "maximum_motor_step": 0.41395565362028286,
+        "motor_q_excess": -3388.375925817998
+      },
+      "torque_reference_diagnostic": {
+        "reference_limit_nm": 0.0045,
+        "reference_tolerance_nm": 1e-12,
+        "classification": "REFERENCE_WITHIN_BOUND_OR_NOT_EXEMPT",
+        "baseline_abs_max_nm": 0.003916878281392495,
+        "candidate_abs_max_nm": 0.003916878281392495,
+        "pointwise_max_delta_nm": 0.0,
+        "candidate_extra_beyond_shared_envelope_nm": -0.0005831217186075049,
+        "same_sample_count": true,
+        "finite": true,
+        "all_non_torque_hard_gates_pass": true,
+        "candidate_does_not_increase_shared_envelope": true,
+        "decision_sensitive": false
+      },
+      "passed": true
+    },
+    "Scene01S_Z": {
+      "v914": {
+        "passed": true,
+        "classification": "PASS",
+        "checks": {
+          "identity": true,
+          "feasibility_encoding": true,
+          "allocation_residual_on_feasible": true,
+          "torque_request_bounds": true,
+          "motor_abs_bound": true,
+          "motor_q_bound": true,
+          "motor_step_physical_boundary": true
+        },
+        "feasible_samples": 3001,
+        "allocation_residual_abs_max": 2.2214670743116017e-16,
+        "maximum_motor_step": 2.018683011298302,
+        "motor_q_excess": -3338.73605542285
+      },
+      "candidate": {
+        "passed": true,
+        "classification": "PASS",
+        "checks": {
+          "identity": true,
+          "feasibility_encoding": true,
+          "allocation_residual_on_feasible": true,
+          "torque_request_bounds": true,
+          "motor_abs_bound": true,
+          "motor_q_bound": true,
+          "motor_step_physical_boundary": true
+        },
+        "feasible_samples": 3001,
+        "allocation_residual_abs_max": 2.2214670743116017e-16,
+        "maximum_motor_step": 2.018683011298302,
+        "motor_q_excess": -3338.73605542285
+      },
+      "torque_reference_diagnostic": {
+        "reference_limit_nm": 0.0045,
+        "reference_tolerance_nm": 1e-12,
+        "classification": "REFERENCE_WITHIN_BOUND_OR_NOT_EXEMPT",
+        "baseline_abs_max_nm": 5.383051067859908e-11,
+        "candidate_abs_max_nm": 5.383051067859908e-11,
+        "pointwise_max_delta_nm": 0.0,
+        "candidate_extra_beyond_shared_envelope_nm": -0.004499999946169489,
+        "same_sample_count": true,
+        "finite": true,
+        "all_non_torque_hard_gates_pass": true,
+        "candidate_does_not_increase_shared_envelope": true,
+        "decision_sensitive": false
+      },
+      "passed": true
+    },
+    "Scene08_P0": {
+      "v914": {
+        "passed": true,
+        "classification": "PASS",
+        "checks": {
+          "identity": true,
+          "feasibility_encoding": true,
+          "allocation_residual_on_feasible": true,
+          "torque_request_bounds": true,
+          "motor_abs_bound": true,
+          "motor_q_bound": true,
+          "motor_step_physical_boundary": true
+        },
+        "feasible_samples": 4001,
+        "allocation_residual_abs_max": 1.707923884297827e-14,
+        "maximum_motor_step": 0.5963004141276951,
+        "motor_q_excess": -3383.057221795305
+      },
+      "candidate": {
+        "passed": true,
+        "classification": "PASS",
+        "checks": {
+          "identity": true,
+          "feasibility_encoding": true,
+          "allocation_residual_on_feasible": true,
+          "torque_request_bounds": true,
+          "motor_abs_bound": true,
+          "motor_q_bound": true,
+          "motor_step_physical_boundary": true
+        },
+        "feasible_samples": 4001,
+        "allocation_residual_abs_max": 1.707923884297827e-14,
+        "maximum_motor_step": 0.5963004141276951,
+        "motor_q_excess": -3383.057221795305
+      },
+      "torque_reference_diagnostic": {
+        "reference_limit_nm": 0.0045,
+        "reference_tolerance_nm": 1e-12,
+        "classification": "REFERENCE_WITHIN_BOUND_OR_NOT_EXEMPT",
+        "baseline_abs_max_nm": 0.00014898462346122173,
+        "candidate_abs_max_nm": 0.00014898462346122173,
+        "pointwise_max_delta_nm": 0.0,
+        "candidate_extra_beyond_shared_envelope_nm": -0.004351015376538778,
+        "same_sample_count": true,
+        "finite": true,
+        "all_non_torque_hard_gates_pass": true,
+        "candidate_does_not_increase_shared_envelope": true,
+        "decision_sensitive": false
+      },
+      "passed": true
+    },
+    "Scene08_P1": {
+      "v914": {
+        "passed": true,
+        "classification": "PASS",
+        "checks": {
+          "identity": true,
+          "feasibility_encoding": true,
+          "allocation_residual_on_feasible": true,
+          "torque_request_bounds": true,
+          "motor_abs_bound": true,
+          "motor_q_bound": true,
+          "motor_step_physical_boundary": true
+        },
+        "feasible_samples": 4001,
+        "allocation_residual_abs_max": 1.720689075806213e-14,
+        "maximum_motor_step": 0.5963004141276951,
+        "motor_q_excess": -3383.057221795305
+      },
+      "candidate": {
+        "passed": true,
+        "classification": "PASS",
+        "checks": {
+          "identity": true,
+          "feasibility_encoding": true,
+          "allocation_residual_on_feasible": true,
+          "torque_request_bounds": true,
+          "motor_abs_bound": true,
+          "motor_q_bound": true,
+          "motor_step_physical_boundary": true
+        },
+        "feasible_samples": 4001,
+        "allocation_residual_abs_max": 1.720689075806213e-14,
+        "maximum_motor_step": 0.5963004141276951,
+        "motor_q_excess": -3383.057221795305
+      },
+      "torque_reference_diagnostic": {
+        "reference_limit_nm": 0.0045,
+        "reference_tolerance_nm": 1e-12,
+        "classification": "REFERENCE_WITHIN_BOUND_OR_NOT_EXEMPT",
+        "baseline_abs_max_nm": 0.00015067962118662967,
+        "candidate_abs_max_nm": 0.00015067962118662967,
+        "pointwise_max_delta_nm": 0.0,
+        "candidate_extra_beyond_shared_envelope_nm": -0.00434932037881337,
+        "same_sample_count": true,
+        "finite": true,
+        "all_non_torque_hard_gates_pass": true,
+        "candidate_does_not_increase_shared_envelope": true,
+        "decision_sensitive": false
+      },
+      "passed": true
+    },
+    "Scene08_P2": {
+      "v914": {
+        "passed": true,
+        "classification": "PASS",
+        "checks": {
+          "identity": true,
+          "feasibility_encoding": true,
+          "allocation_residual_on_feasible": true,
+          "torque_request_bounds": true,
+          "motor_abs_bound": true,
+          "motor_q_bound": true,
+          "motor_step_physical_boundary": true
+        },
+        "feasible_samples": 4001,
+        "allocation_residual_abs_max": 1.7058405106997858e-14,
+        "maximum_motor_step": 0.5963004141276951,
+        "motor_q_excess": -3383.057221795305
+      },
+      "candidate": {
+        "passed": true,
+        "classification": "PASS",
+        "checks": {
+          "identity": true,
+          "feasibility_encoding": true,
+          "allocation_residual_on_feasible": true,
+          "torque_request_bounds": true,
+          "motor_abs_bound": true,
+          "motor_q_bound": true,
+          "motor_step_physical_boundary": true
+        },
+        "feasible_samples": 4001,
+        "allocation_residual_abs_max": 1.7058405106997858e-14,
+        "maximum_motor_step": 0.5963004141276951,
+        "motor_q_excess": -3383.057221795305
+      },
+      "torque_reference_diagnostic": {
+        "reference_limit_nm": 0.0045,
+        "reference_tolerance_nm": 1e-12,
+        "classification": "REFERENCE_WITHIN_BOUND_OR_NOT_EXEMPT",
+        "baseline_abs_max_nm": 0.00014891550774032603,
+        "candidate_abs_max_nm": 0.00014891550774032603,
+        "pointwise_max_delta_nm": 0.0,
+        "candidate_extra_beyond_shared_envelope_nm": -0.004351084492259674,
+        "same_sample_count": true,
+        "finite": true,
+        "all_non_torque_hard_gates_pass": true,
+        "candidate_does_not_increase_shared_envelope": true,
+        "decision_sensitive": false
+      },
+      "passed": true
+    },
+    "Scene08_P3": {
+      "v914": {
+        "passed": true,
+        "classification": "PASS",
+        "checks": {
+          "identity": true,
+          "feasibility_encoding": true,
+          "allocation_residual_on_feasible": true,
+          "torque_request_bounds": true,
+          "motor_abs_bound": true,
+          "motor_q_bound": true,
+          "motor_step_physical_boundary": true
+        },
+        "feasible_samples": 4001,
+        "allocation_residual_abs_max": 1.7144936110650065e-14,
+        "maximum_motor_step": 0.5963004141276951,
+        "motor_q_excess": -3383.057221795305
+      },
+      "candidate": {
+        "passed": true,
+        "classification": "PASS",
+        "checks": {
+          "identity": true,
+          "feasibility_encoding": true,
+          "allocation_residual_on_feasible": true,
+          "torque_request_bounds": true,
+          "motor_abs_bound": true,
+          "motor_q_bound": true,
+          "motor_step_physical_boundary": true
+        },
+        "feasible_samples": 4001,
+        "allocation_residual_abs_max": 1.7144936110650065e-14,
+        "maximum_motor_step": 0.5963004141276951,
+        "motor_q_excess": -3383.057221795305
+      },
+      "torque_reference_diagnostic": {
+        "reference_limit_nm": 0.0045,
+        "reference_tolerance_nm": 1e-12,
+        "classification": "REFERENCE_WITHIN_BOUND_OR_NOT_EXEMPT",
+        "baseline_abs_max_nm": 0.00014885438626690797,
+        "candidate_abs_max_nm": 0.00014885438626690797,
+        "pointwise_max_delta_nm": 0.0,
+        "candidate_extra_beyond_shared_envelope_nm": -0.004351145613733092,
+        "same_sample_count": true,
+        "finite": true,
+        "all_non_torque_hard_gates_pass": true,
+        "candidate_does_not_increase_shared_envelope": true,
+        "decision_sensitive": false
+      },
+      "passed": true
+    },
+    "Scene08_P4": {
+      "v914": {
+        "passed": true,
+        "classification": "PASS",
+        "checks": {
+          "identity": true,
+          "feasibility_encoding": true,
+          "allocation_residual_on_feasible": true,
+          "torque_request_bounds": true,
+          "motor_abs_bound": true,
+          "motor_q_bound": true,
+          "motor_step_physical_boundary": true
+        },
+        "feasible_samples": 4001,
+        "allocation_residual_abs_max": 1.7045592677026574e-14,
+        "maximum_motor_step": 0.5963004141276951,
+        "motor_q_excess": -3383.057221795305
+      },
+      "candidate": {
+        "passed": true,
+        "classification": "PASS",
+        "checks": {
+          "identity": true,
+          "feasibility_encoding": true,
+          "allocation_residual_on_feasible": true,
+          "torque_request_bounds": true,
+          "motor_abs_bound": true,
+          "motor_q_bound": true,
+          "motor_step_physical_boundary": true
+        },
+        "feasible_samples": 4001,
+        "allocation_residual_abs_max": 1.7045592677026574e-14,
+        "maximum_motor_step": 0.5963004141276951,
+        "motor_q_excess": -3383.057221795305
+      },
+      "torque_reference_diagnostic": {
+        "reference_limit_nm": 0.0045,
+        "reference_tolerance_nm": 1e-12,
+        "classification": "REFERENCE_WITHIN_BOUND_OR_NOT_EXEMPT",
+        "baseline_abs_max_nm": 0.00014814409287475596,
+        "candidate_abs_max_nm": 0.00014814409287475596,
+        "pointwise_max_delta_nm": 0.0,
+        "candidate_extra_beyond_shared_envelope_nm": -0.004351855907125244,
+        "same_sample_count": true,
+        "finite": true,
+        "all_non_torque_hard_gates_pass": true,
+        "candidate_does_not_increase_shared_envelope": true,
+        "decision_sensitive": false
+      },
+      "passed": true
+    },
+    "Scene10_P0": {
+      "v914": {
+        "passed": true,
+        "classification": "PASS",
+        "checks": {
+          "identity": true,
+          "feasibility_encoding": true,
+          "allocation_residual_on_feasible": true,
+          "torque_request_bounds": true,
+          "motor_abs_bound": true,
+          "motor_q_bound": true,
+          "motor_step_physical_boundary": true
+        },
+        "feasible_samples": 4001,
+        "allocation_residual_abs_max": 5.480000976019006e-15,
+        "maximum_motor_step": 0.5963004141276951,
+        "motor_q_excess": -3383.057221795305
+      },
+      "candidate": {
+        "passed": true,
+        "classification": "PASS",
+        "checks": {
+          "identity": true,
+          "feasibility_encoding": true,
+          "allocation_residual_on_feasible": true,
+          "torque_request_bounds": true,
+          "motor_abs_bound": true,
+          "motor_q_bound": true,
+          "motor_step_physical_boundary": true
+        },
+        "feasible_samples": 4001,
+        "allocation_residual_abs_max": 5.480000976019006e-15,
+        "maximum_motor_step": 0.5963004141276951,
+        "motor_q_excess": -3383.057221795305
+      },
+      "torque_reference_diagnostic": {
+        "reference_limit_nm": 0.0045,
+        "reference_tolerance_nm": 1e-12,
+        "classification": "REFERENCE_WITHIN_BOUND_OR_NOT_EXEMPT",
+        "baseline_abs_max_nm": 5.379992782917394e-05,
+        "candidate_abs_max_nm": 5.379992782917394e-05,
+        "pointwise_max_delta_nm": 0.0,
+        "candidate_extra_beyond_shared_envelope_nm": -0.004446200072170826,
+        "same_sample_count": true,
+        "finite": true,
+        "all_non_torque_hard_gates_pass": true,
+        "candidate_does_not_increase_shared_envelope": true,
+        "decision_sensitive": false
+      },
+      "passed": true
+    },
+    "Scene10_P1": {
+      "v914": {
+        "passed": true,
+        "classification": "PASS",
+        "checks": {
+          "identity": true,
+          "feasibility_encoding": true,
+          "allocation_residual_on_feasible": true,
+          "torque_request_bounds": true,
+          "motor_abs_bound": true,
+          "motor_q_bound": true,
+          "motor_step_physical_boundary": true
+        },
+        "feasible_samples": 4001,
+        "allocation_residual_abs_max": 5.4642663484469764e-15,
+        "maximum_motor_step": 0.5963004141276951,
+        "motor_q_excess": -3383.057221795305
+      },
+      "candidate": {
+        "passed": true,
+        "classification": "PASS",
+        "checks": {
+          "identity": true,
+          "feasibility_encoding": true,
+          "allocation_residual_on_feasible": true,
+          "torque_request_bounds": true,
+          "motor_abs_bound": true,
+          "motor_q_bound": true,
+          "motor_step_physical_boundary": true
+        },
+        "feasible_samples": 4001,
+        "allocation_residual_abs_max": 5.4642663484469764e-15,
+        "maximum_motor_step": 0.5963004141276951,
+        "motor_q_excess": -3383.057221795305
+      },
+      "torque_reference_diagnostic": {
+        "reference_limit_nm": 0.0045,
+        "reference_tolerance_nm": 1e-12,
+        "classification": "REFERENCE_WITHIN_BOUND_OR_NOT_EXEMPT",
+        "baseline_abs_max_nm": 5.386268391823398e-05,
+        "candidate_abs_max_nm": 5.386268391823398e-05,
+        "pointwise_max_delta_nm": 0.0,
+        "candidate_extra_beyond_shared_envelope_nm": -0.004446137316081766,
+        "same_sample_count": true,
+        "finite": true,
+        "all_non_torque_hard_gates_pass": true,
+        "candidate_does_not_increase_shared_envelope": true,
+        "decision_sensitive": false
+      },
+      "passed": true
+    },
+    "Scene10_P2": {
+      "v914": {
+        "passed": true,
+        "classification": "PASS",
+        "checks": {
+          "identity": true,
+          "feasibility_encoding": true,
+          "allocation_residual_on_feasible": true,
+          "torque_request_bounds": true,
+          "motor_abs_bound": true,
+          "motor_q_bound": true,
+          "motor_step_physical_boundary": true
+        },
+        "feasible_samples": 4001,
+        "allocation_residual_abs_max": 5.445339717098502e-15,
+        "maximum_motor_step": 0.5963004141276951,
+        "motor_q_excess": -3383.057221795305
+      },
+      "candidate": {
+        "passed": true,
+        "classification": "PASS",
+        "checks": {
+          "identity": true,
+          "feasibility_encoding": true,
+          "allocation_residual_on_feasible": true,
+          "torque_request_bounds": true,
+          "motor_abs_bound": true,
+          "motor_q_bound": true,
+          "motor_step_physical_boundary": true
+        },
+        "feasible_samples": 4001,
+        "allocation_residual_abs_max": 5.445339717098502e-15,
+        "maximum_motor_step": 0.5963004141276951,
+        "motor_q_excess": -3383.057221795305
+      },
+      "torque_reference_diagnostic": {
+        "reference_limit_nm": 0.0045,
+        "reference_tolerance_nm": 1e-12,
+        "classification": "REFERENCE_WITHIN_BOUND_OR_NOT_EXEMPT",
+        "baseline_abs_max_nm": 5.3747706205910684e-05,
+        "candidate_abs_max_nm": 5.3747706205910684e-05,
+        "pointwise_max_delta_nm": 0.0,
+        "candidate_extra_beyond_shared_envelope_nm": -0.004446252293794089,
+        "same_sample_count": true,
+        "finite": true,
+        "all_non_torque_hard_gates_pass": true,
+        "candidate_does_not_increase_shared_envelope": true,
+        "decision_sensitive": false
+      },
+      "passed": true
+    },
+    "Scene10_P3": {
+      "v914": {
+        "passed": true,
+        "classification": "PASS",
+        "checks": {
+          "identity": true,
+          "feasibility_encoding": true,
+          "allocation_residual_on_feasible": true,
+          "torque_request_bounds": true,
+          "motor_abs_bound": true,
+          "motor_q_bound": true,
+          "motor_step_physical_boundary": true
+        },
+        "feasible_samples": 4001,
+        "allocation_residual_abs_max": 5.4823074566550225e-15,
+        "maximum_motor_step": 0.5963004141276951,
+        "motor_q_excess": -3383.057221795305
+      },
+      "candidate": {
+        "passed": true,
+        "classification": "PASS",
+        "checks": {
+          "identity": true,
+          "feasibility_encoding": true,
+          "allocation_residual_on_feasible": true,
+          "torque_request_bounds": true,
+          "motor_abs_bound": true,
+          "motor_q_bound": true,
+          "motor_step_physical_boundary": true
+        },
+        "feasible_samples": 4001,
+        "allocation_residual_abs_max": 5.4823074566550225e-15,
+        "maximum_motor_step": 0.5963004141276951,
+        "motor_q_excess": -3383.057221795305
+      },
+      "torque_reference_diagnostic": {
+        "reference_limit_nm": 0.0045,
+        "reference_tolerance_nm": 1e-12,
+        "classification": "REFERENCE_WITHIN_BOUND_OR_NOT_EXEMPT",
+        "baseline_abs_max_nm": 5.341775598712592e-05,
+        "candidate_abs_max_nm": 5.341775598712592e-05,
+        "pointwise_max_delta_nm": 0.0,
+        "candidate_extra_beyond_shared_envelope_nm": -0.004446582244012873,
+        "same_sample_count": true,
+        "finite": true,
+        "all_non_torque_hard_gates_pass": true,
+        "candidate_does_not_increase_shared_envelope": true,
+        "decision_sensitive": false
+      },
+      "passed": true
+    },
+    "Scene10_P4": {
+      "v914": {
+        "passed": true,
+        "classification": "PASS",
+        "checks": {
+          "identity": true,
+          "feasibility_encoding": true,
+          "allocation_residual_on_feasible": true,
+          "torque_request_bounds": true,
+          "motor_abs_bound": true,
+          "motor_q_bound": true,
+          "motor_step_physical_boundary": true
+        },
+        "feasible_samples": 4001,
+        "allocation_residual_abs_max": 5.379128306202182e-15,
+        "maximum_motor_step": 0.5963004141276951,
+        "motor_q_excess": -3383.057221795305
+      },
+      "candidate": {
+        "passed": true,
+        "classification": "PASS",
+        "checks": {
+          "identity": true,
+          "feasibility_encoding": true,
+          "allocation_residual_on_feasible": true,
+          "torque_request_bounds": true,
+          "motor_abs_bound": true,
+          "motor_q_bound": true,
+          "motor_step_physical_boundary": true
+        },
+        "feasible_samples": 4001,
+        "allocation_residual_abs_max": 5.379128306202182e-15,
+        "maximum_motor_step": 0.5963004141276951,
+        "motor_q_excess": -3383.057221795305
+      },
+      "torque_reference_diagnostic": {
+        "reference_limit_nm": 0.0045,
+        "reference_tolerance_nm": 1e-12,
+        "classification": "REFERENCE_WITHIN_BOUND_OR_NOT_EXEMPT",
+        "baseline_abs_max_nm": 5.354783196132048e-05,
+        "candidate_abs_max_nm": 5.354783196132048e-05,
+        "pointwise_max_delta_nm": 0.0,
+        "candidate_extra_beyond_shared_envelope_nm": -0.004446452168038679,
+        "same_sample_count": true,
+        "finite": true,
+        "all_non_torque_hard_gates_pass": true,
+        "candidate_does_not_increase_shared_envelope": true,
+        "decision_sensitive": false
+      },
+      "passed": true
+    }
+  },
+  "hard_gates_passed": true,
+  "formal_replacement_eligible": true,
+  "decision": "NO_REGRESSION_VS_J03_STAGE_A_GAIN_RETAINED",
+  "decision_sensitivity": {
+    "classification": "DECISION_SENSITIVE_SHARED_LEGACY_TORQUE_REFERENCE",
+    "affected_cases": [
+      "Scene02",
+      "Scene03"
+    ],
+    "rule_applied_prospectively": true
+  }
+}

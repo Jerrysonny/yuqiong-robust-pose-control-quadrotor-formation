@@ -1,0 +1,123 @@
+{
+  "schema_version": "stage77_completion_asset_static_qa_v1",
+  "asset_dir": "D:\\Users\\admin\\Desktop\\A8-四旋翼无人机位姿控制系统设计优化\\A8决赛阶段升级研发\\77_finals_report_evidence_completion\\05_visuals\\stage77_completion_r2",
+  "status": "pass",
+  "file_count_checked": 17,
+  "files": {
+    "png/FIG_G_parameter_robustness_statistics.png": {
+      "bytes": 326934,
+      "sha256": "4531302f30aeb72c04ce2df9f84f4ea95913db0ae8de24cc85db3b7bd3875bc3",
+      "width": 3711,
+      "height": 2030,
+      "nonwhite_channels": 3,
+      "mean_rgb": [
+        218.946,
+        232.578,
+        233.232
+      ],
+      "valid": true
+    },
+    "pdf/FIG_G_parameter_robustness_statistics.pdf": {
+      "bytes": 50030,
+      "sha256": "39b456095f0a4f9e6e4b16457581562c6ecc9ad83fb832d1738504653bab3586"
+    },
+    "svg/FIG_G_parameter_robustness_statistics.svg": {
+      "bytes": 125653,
+      "sha256": "42141bf87355d70d4cb05fcc6c3ddae13659c66c9d0edac104d0952da71fb18c"
+    },
+    "png/FIG_H_environment_generalization.png": {
+      "bytes": 253872,
+      "sha256": "550911cd6970e3f8b8775bb5668de819e750d7488ce0022b7f8a9aaa1554805c",
+      "width": 3636,
+      "height": 1294,
+      "nonwhite_channels": 3,
+      "mean_rgb": [
+        248.087,
+        249.485,
+        249.583
+      ],
+      "valid": true
+    },
+    "pdf/FIG_H_environment_generalization.pdf": {
+      "bytes": 30769,
+      "sha256": "9ef48f8e2e4c6276f34bbe179671c8ea332397cbec93905cb240af257d6cebb8"
+    },
+    "svg/FIG_H_environment_generalization.svg": {
+      "bytes": 66988,
+      "sha256": "75f18125f5ec21f16ac225189f79f6ccb79432082be05ebf37026afabf5a0dc4"
+    },
+    "png/FIG_I_ardg_diagnostic_trace.png": {
+      "bytes": 235029,
+      "sha256": "3e3067d156aefab3fda1ef30930781c70d87f248f4e1e528b7df0706a5174343",
+      "width": 3538,
+      "height": 2183,
+      "nonwhite_channels": 3,
+      "mean_rgb": [
+        248.298,
+        249.448,
+        249.041
+      ],
+      "valid": true
+    },
+    "pdf/FIG_I_ardg_diagnostic_trace.pdf": {
+      "bytes": 49168,
+      "sha256": "8bc1bbd0784c16cef9bbb6cdfedae1f62a93c8f0898ee0c7c379376b3965094e"
+    },
+    "svg/FIG_I_ardg_diagnostic_trace.svg": {
+      "bytes": 202121,
+      "sha256": "6bf86f1b7c55f21db61ff4c6c3cc2e5c73efa2ba756c2fafd90a42968fa9e7c6"
+    },
+    "png/FIG_J_overall_performance_summary.png": {
+      "bytes": 328924,
+      "sha256": "5f69d56defb34f73798e71045dd062eb5ca7955569500dfaeebce8fa3f819a8a",
+      "width": 3662,
+      "height": 2051,
+      "nonwhite_channels": 3,
+      "mean_rgb": [
+        233.249,
+        236.642,
+        233.474
+      ],
+      "valid": true
+    },
+    "pdf/FIG_J_overall_performance_summary.pdf": {
+      "bytes": 63986,
+      "sha256": "6e54c90bb6403f798959a33858083e0e482f076cf50ff2a3597696f47256ba53"
+    },
+    "svg/FIG_J_overall_performance_summary.svg": {
+      "bytes": 146579,
+      "sha256": "3f789147be5244036acbb9cb6aedd9e4832dba7cda8845dcab8adda1a3b38a24"
+    },
+    "data/parameter11_public_source.csv": {
+      "bytes": 1049,
+      "sha256": "589f1e949ab768137f1346bdc273ec5d1dc7dd2b98d1f47f85367bb812e66f98"
+    },
+    "data/random20_public_source.csv": {
+      "bytes": 1936,
+      "sha256": "5b5f7c435b769bf456b7b8e67d30ad83f1c63d6d1adf6432b10e73498e7f5879"
+    },
+    "data/environment_public_source.csv": {
+      "bytes": 1137,
+      "sha256": "ea296705844dafb35b5c028a7c125d2cd9699cec4a1ec89a5a93423c26602011"
+    },
+    "data/overall_public_source.csv": {
+      "bytes": 256,
+      "sha256": "3800b2f6e4dcf9b7ebc258b474df0ff9caa40a3637c4ce034930c7370a728f9c"
+    },
+    "qa/FIG_G_J_contact_sheet.png": {
+      "width": 1860,
+      "height": 1167,
+      "nonwhite_channels": 3,
+      "mean_rgb": [
+        239.474,
+        243.525,
+        242.925
+      ],
+      "valid": true,
+      "bytes": 351891,
+      "sha256": "8e44a5a98a3e00e8d327ebdf7fb04f220f8a217357066fd1c939fd0fd240831b"
+    }
+  },
+  "forbidden_hits": [],
+  "failures": []
+}

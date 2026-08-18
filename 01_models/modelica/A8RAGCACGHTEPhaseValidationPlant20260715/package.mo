@@ -203,7 +203,13 @@ package A8RAGCACGHTEPhaseValidationPlant20260715
   model Scene08_P0
     extends Scene08PhaseBase(phaseOffset=0);
     A8FormalRAGCACGHTE_20260715 controller annotation(__MWORKS(SECInstance=true));
+    Modelica.Blocks.Sources.RealExpression rotorSpeedARDG1Regression[4](y={speedSensor[1].w,speedSensor[2].w,speedSensor[3].w,speedSensor[4].w});
+    Modelica.Blocks.Sources.RealExpression enableARDG1Regression[1](y={1});
+    Modelica.Blocks.Sources.RealExpression timeARDG1Regression[1](y={time});
   equation
+    connect(rotorSpeedARDG1Regression.y,controller.ardg1_rotor_speed);
+    connect(enableARDG1Regression.y,controller.ardg1_enable);
+    connect(timeARDG1Regression.y,controller.ardg1_time);
     connect(referenceSource.y,controller.reference);
     connect(stateSource.y,controller.state);
     connect(allocatorLimit.y,controller.allocator_limit);
@@ -214,7 +220,13 @@ package A8RAGCACGHTEPhaseValidationPlant20260715
   model Scene08_P1
     extends Scene08PhaseBase(phaseOffset=1.2566370614359172);
     A8FormalRAGCACGHTE_20260715 controller annotation(__MWORKS(SECInstance=true));
+    Modelica.Blocks.Sources.RealExpression rotorSpeedARDG1Regression[4](y={speedSensor[1].w,speedSensor[2].w,speedSensor[3].w,speedSensor[4].w});
+    Modelica.Blocks.Sources.RealExpression enableARDG1Regression[1](y={1});
+    Modelica.Blocks.Sources.RealExpression timeARDG1Regression[1](y={time});
   equation
+    connect(rotorSpeedARDG1Regression.y,controller.ardg1_rotor_speed);
+    connect(enableARDG1Regression.y,controller.ardg1_enable);
+    connect(timeARDG1Regression.y,controller.ardg1_time);
     connect(referenceSource.y,controller.reference);
     connect(stateSource.y,controller.state);
     connect(allocatorLimit.y,controller.allocator_limit);
@@ -225,7 +237,13 @@ package A8RAGCACGHTEPhaseValidationPlant20260715
   model Scene08_P2
     extends Scene08PhaseBase(phaseOffset=2.5132741228718345);
     A8FormalRAGCACGHTE_20260715 controller annotation(__MWORKS(SECInstance=true));
+    Modelica.Blocks.Sources.RealExpression rotorSpeedARDG1Regression[4](y={speedSensor[1].w,speedSensor[2].w,speedSensor[3].w,speedSensor[4].w});
+    Modelica.Blocks.Sources.RealExpression enableARDG1Regression[1](y={1});
+    Modelica.Blocks.Sources.RealExpression timeARDG1Regression[1](y={time});
   equation
+    connect(rotorSpeedARDG1Regression.y,controller.ardg1_rotor_speed);
+    connect(enableARDG1Regression.y,controller.ardg1_enable);
+    connect(timeARDG1Regression.y,controller.ardg1_time);
     connect(referenceSource.y,controller.reference);
     connect(stateSource.y,controller.state);
     connect(allocatorLimit.y,controller.allocator_limit);
@@ -236,7 +254,13 @@ package A8RAGCACGHTEPhaseValidationPlant20260715
   model Scene08_P3
     extends Scene08PhaseBase(phaseOffset=3.7699111843077517);
     A8FormalRAGCACGHTE_20260715 controller annotation(__MWORKS(SECInstance=true));
+    Modelica.Blocks.Sources.RealExpression rotorSpeedARDG1Regression[4](y={speedSensor[1].w,speedSensor[2].w,speedSensor[3].w,speedSensor[4].w});
+    Modelica.Blocks.Sources.RealExpression enableARDG1Regression[1](y={1});
+    Modelica.Blocks.Sources.RealExpression timeARDG1Regression[1](y={time});
   equation
+    connect(rotorSpeedARDG1Regression.y,controller.ardg1_rotor_speed);
+    connect(enableARDG1Regression.y,controller.ardg1_enable);
+    connect(timeARDG1Regression.y,controller.ardg1_time);
     connect(referenceSource.y,controller.reference);
     connect(stateSource.y,controller.state);
     connect(allocatorLimit.y,controller.allocator_limit);
@@ -247,7 +271,13 @@ package A8RAGCACGHTEPhaseValidationPlant20260715
   model Scene08_P4
     extends Scene08PhaseBase(phaseOffset=5.026548245743669);
     A8FormalRAGCACGHTE_20260715 controller annotation(__MWORKS(SECInstance=true));
+    Modelica.Blocks.Sources.RealExpression rotorSpeedARDG1Regression[4](y={speedSensor[1].w,speedSensor[2].w,speedSensor[3].w,speedSensor[4].w});
+    Modelica.Blocks.Sources.RealExpression enableARDG1Regression[1](y={1});
+    Modelica.Blocks.Sources.RealExpression timeARDG1Regression[1](y={time});
   equation
+    connect(rotorSpeedARDG1Regression.y,controller.ardg1_rotor_speed);
+    connect(enableARDG1Regression.y,controller.ardg1_enable);
+    connect(timeARDG1Regression.y,controller.ardg1_time);
     connect(referenceSource.y,controller.reference);
     connect(stateSource.y,controller.state);
     connect(allocatorLimit.y,controller.allocator_limit);
@@ -259,7 +289,13 @@ package A8RAGCACGHTEPhaseValidationPlant20260715
   model Scene10_P0
     extends Scene10PhaseBase(phaseOffset=0);
     A8FormalRAGCACGHTE_20260715 controller annotation(__MWORKS(SECInstance=true));
+    Modelica.Blocks.Sources.RealExpression rotorSpeedARDG1Regression[4](y={speedSensor[1].w,speedSensor[2].w,speedSensor[3].w,speedSensor[4].w});
+    Modelica.Blocks.Sources.RealExpression enableARDG1Regression[1](y={1});
+    Modelica.Blocks.Sources.RealExpression timeARDG1Regression[1](y={time});
   equation
+    connect(rotorSpeedARDG1Regression.y,controller.ardg1_rotor_speed);
+    connect(enableARDG1Regression.y,controller.ardg1_enable);
+    connect(timeARDG1Regression.y,controller.ardg1_time);
     connect(referenceSource.y,controller.reference);
     connect(stateSource.y,controller.state);
     connect(allocatorLimit.y,controller.allocator_limit);
@@ -270,7 +306,13 @@ package A8RAGCACGHTEPhaseValidationPlant20260715
   model Scene10_P1
     extends Scene10PhaseBase(phaseOffset=1.2566370614359172);
     A8FormalRAGCACGHTE_20260715 controller annotation(__MWORKS(SECInstance=true));
+    Modelica.Blocks.Sources.RealExpression rotorSpeedARDG1Regression[4](y={speedSensor[1].w,speedSensor[2].w,speedSensor[3].w,speedSensor[4].w});
+    Modelica.Blocks.Sources.RealExpression enableARDG1Regression[1](y={1});
+    Modelica.Blocks.Sources.RealExpression timeARDG1Regression[1](y={time});
   equation
+    connect(rotorSpeedARDG1Regression.y,controller.ardg1_rotor_speed);
+    connect(enableARDG1Regression.y,controller.ardg1_enable);
+    connect(timeARDG1Regression.y,controller.ardg1_time);
     connect(referenceSource.y,controller.reference);
     connect(stateSource.y,controller.state);
     connect(allocatorLimit.y,controller.allocator_limit);
@@ -281,7 +323,13 @@ package A8RAGCACGHTEPhaseValidationPlant20260715
   model Scene10_P2
     extends Scene10PhaseBase(phaseOffset=2.5132741228718345);
     A8FormalRAGCACGHTE_20260715 controller annotation(__MWORKS(SECInstance=true));
+    Modelica.Blocks.Sources.RealExpression rotorSpeedARDG1Regression[4](y={speedSensor[1].w,speedSensor[2].w,speedSensor[3].w,speedSensor[4].w});
+    Modelica.Blocks.Sources.RealExpression enableARDG1Regression[1](y={1});
+    Modelica.Blocks.Sources.RealExpression timeARDG1Regression[1](y={time});
   equation
+    connect(rotorSpeedARDG1Regression.y,controller.ardg1_rotor_speed);
+    connect(enableARDG1Regression.y,controller.ardg1_enable);
+    connect(timeARDG1Regression.y,controller.ardg1_time);
     connect(referenceSource.y,controller.reference);
     connect(stateSource.y,controller.state);
     connect(allocatorLimit.y,controller.allocator_limit);
@@ -292,7 +340,13 @@ package A8RAGCACGHTEPhaseValidationPlant20260715
   model Scene10_P3
     extends Scene10PhaseBase(phaseOffset=3.7699111843077517);
     A8FormalRAGCACGHTE_20260715 controller annotation(__MWORKS(SECInstance=true));
+    Modelica.Blocks.Sources.RealExpression rotorSpeedARDG1Regression[4](y={speedSensor[1].w,speedSensor[2].w,speedSensor[3].w,speedSensor[4].w});
+    Modelica.Blocks.Sources.RealExpression enableARDG1Regression[1](y={1});
+    Modelica.Blocks.Sources.RealExpression timeARDG1Regression[1](y={time});
   equation
+    connect(rotorSpeedARDG1Regression.y,controller.ardg1_rotor_speed);
+    connect(enableARDG1Regression.y,controller.ardg1_enable);
+    connect(timeARDG1Regression.y,controller.ardg1_time);
     connect(referenceSource.y,controller.reference);
     connect(stateSource.y,controller.state);
     connect(allocatorLimit.y,controller.allocator_limit);
@@ -303,7 +357,13 @@ package A8RAGCACGHTEPhaseValidationPlant20260715
   model Scene10_P4
     extends Scene10PhaseBase(phaseOffset=5.026548245743669);
     A8FormalRAGCACGHTE_20260715 controller annotation(__MWORKS(SECInstance=true));
+    Modelica.Blocks.Sources.RealExpression rotorSpeedARDG1Regression[4](y={speedSensor[1].w,speedSensor[2].w,speedSensor[3].w,speedSensor[4].w});
+    Modelica.Blocks.Sources.RealExpression enableARDG1Regression[1](y={1});
+    Modelica.Blocks.Sources.RealExpression timeARDG1Regression[1](y={time});
   equation
+    connect(rotorSpeedARDG1Regression.y,controller.ardg1_rotor_speed);
+    connect(enableARDG1Regression.y,controller.ardg1_enable);
+    connect(timeARDG1Regression.y,controller.ardg1_time);
     connect(referenceSource.y,controller.reference);
     connect(stateSource.y,controller.state);
     connect(allocatorLimit.y,controller.allocator_limit);

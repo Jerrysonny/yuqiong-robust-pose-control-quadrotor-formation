@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "recorded_utc": "2026-08-16T09:45:00Z",
+  "reason": "Sysplorer manual GUI simulation used its one-second default because the experiment annotation was declared only on a partial base class.",
+  "scope": "Manual GUI experiment metadata only; controller, physical equations, disturbance definitions, solver family and numerical evidence are unchanged.",
+  "scenes": [
+    "A8ARDGRGPCFinalScenarios20260815.BodyRollPos",
+    "A8ARDGRGPCFinalScenarios20260815.BodyPitchNeg"
+  ],
+  "direct_experiment_settings": {
+    "algorithm": "Dassl",
+    "start_time_s": 0,
+    "stop_time_s": 50,
+    "tolerance": 0.0001,
+    "number_of_intervals": 5000,
+    "output_interval_s": 0.01
+  },
+  "verification": {
+    "concrete_scene_annotations_required": true,
+    "package_precheck_enforces_settings": true
+  }
+}

@@ -69,7 +69,13 @@ package A8RAGCACGHTEPlant20260715
       annotation(Placement(transformation(origin={-15,0},extent={{-15,-15},{15,15}})),__MWORKS(SECInstance=true));
     Modelica.Blocks.Interfaces.RealOutput controllerDiagnostics[16] 
       annotation(Placement(transformation(origin={5,-35},extent={{-5,-5},{5,5}})));
+    Modelica.Blocks.Sources.RealExpression rotorSpeedARDG1Regression[4](y={speedSensor[1].w,speedSensor[2].w,speedSensor[3].w,speedSensor[4].w});
+    Modelica.Blocks.Sources.RealExpression enableARDG1Regression[1](y={1});
+    Modelica.Blocks.Sources.RealExpression timeARDG1Regression[1](y={time});
   equation
+    connect(rotorSpeedARDG1Regression.y,controller.ardg1_rotor_speed);
+    connect(enableARDG1Regression.y,controller.ardg1_enable);
+    connect(timeARDG1Regression.y,controller.ardg1_time);
     connect(referenceSource.y,controller.reference) 
       annotation(Line(points={{-44,35},{-30,35},{-30,8}},color={0,0,127}));
     connect(stateSource.y,controller.state) 
@@ -89,7 +95,13 @@ package A8RAGCACGHTEPlant20260715
       annotation(Placement(transformation(origin={-15,0},extent={{-15,-15},{15,15}})),__MWORKS(SECInstance=true));
     Modelica.Blocks.Interfaces.RealOutput controllerDiagnostics[16] 
       annotation(Placement(transformation(origin={5,-35},extent={{-5,-5},{5,5}})));
+    Modelica.Blocks.Sources.RealExpression rotorSpeedARDG1Regression[4](y={speedSensor[1].w,speedSensor[2].w,speedSensor[3].w,speedSensor[4].w});
+    Modelica.Blocks.Sources.RealExpression enableARDG1Regression[1](y={1});
+    Modelica.Blocks.Sources.RealExpression timeARDG1Regression[1](y={time});
   equation
+    connect(rotorSpeedARDG1Regression.y,controller.ardg1_rotor_speed);
+    connect(enableARDG1Regression.y,controller.ardg1_enable);
+    connect(timeARDG1Regression.y,controller.ardg1_time);
     connect(referenceSource.y,controller.reference) 
       annotation(Line(points={{-44,35},{-30,35},{-30,8}},color={0,0,127}));
     connect(stateSource.y,controller.state) 
@@ -112,7 +124,13 @@ package A8RAGCACGHTEPlant20260715
       annotation(Placement(transformation(origin={-15,0},extent={{-15,-15},{15,15}})),__MWORKS(SECInstance=true));
     Modelica.Blocks.Interfaces.RealOutput controllerDiagnostics[16] 
       annotation(Placement(transformation(origin={5,-35},extent={{-5,-5},{5,5}})));
+    Modelica.Blocks.Sources.RealExpression rotorSpeedARDG1Regression[4](y={speedSensor[1].w,speedSensor[2].w,speedSensor[3].w,speedSensor[4].w});
+    Modelica.Blocks.Sources.RealExpression enableARDG1Regression[1](y={1});
+    Modelica.Blocks.Sources.RealExpression timeARDG1Regression[1](y={time});
   equation
+    connect(rotorSpeedARDG1Regression.y,controller.ardg1_rotor_speed);
+    connect(enableARDG1Regression.y,controller.ardg1_enable);
+    connect(timeARDG1Regression.y,controller.ardg1_time);
     connect(referenceSource.y,controller.reference) 
       annotation(Line(points={{-44,35},{-30,35},{-30,8}},color={0,0,127}));
     connect(stateSource.y,controller.state) 
@@ -138,7 +156,13 @@ package A8RAGCACGHTEPlant20260715
       annotation(Placement(transformation(origin={-15,0},extent={{-15,-15},{15,15}})),__MWORKS(SECInstance=true));
     Modelica.Blocks.Interfaces.RealOutput controllerDiagnostics[16] 
       annotation(Placement(transformation(origin={5,-35},extent={{-5,-5},{5,5}})));
+    Modelica.Blocks.Sources.RealExpression rotorSpeedARDG1Regression[4](y={speedSensor[1].w,speedSensor[2].w,speedSensor[3].w,speedSensor[4].w});
+    Modelica.Blocks.Sources.RealExpression enableARDG1Regression[1](y={1});
+    Modelica.Blocks.Sources.RealExpression timeARDG1Regression[1](y={time});
   equation
+    connect(rotorSpeedARDG1Regression.y,controller.ardg1_rotor_speed);
+    connect(enableARDG1Regression.y,controller.ardg1_enable);
+    connect(timeARDG1Regression.y,controller.ardg1_time);
     connect(referenceSource.y,controller.reference) 
       annotation(Line(points={{-44,35},{-30,35},{-30,8}},color={0,0,127}));
     connect(stateSource.y,controller.state) 
@@ -226,7 +250,13 @@ package A8RAGCACGHTEPlant20260715
       annotation(Placement(transformation(origin={-15,0},extent={{-15,-15},{15,15}})),__MWORKS(SECInstance=true));
     Modelica.Blocks.Interfaces.RealOutput controllerDiagnostics[16] 
       annotation(Placement(transformation(origin={5,-35},extent={{-5,-5},{5,5}})));
+    Modelica.Blocks.Sources.RealExpression rotorSpeedARDG1Regression[4](y={speedSensor[1].w,speedSensor[2].w,speedSensor[3].w,speedSensor[4].w});
+    Modelica.Blocks.Sources.RealExpression enableARDG1Regression[1](y={1});
+    Modelica.Blocks.Sources.RealExpression timeARDG1Regression[1](y={time});
   equation
+    connect(rotorSpeedARDG1Regression.y,controller.ardg1_rotor_speed);
+    connect(enableARDG1Regression.y,controller.ardg1_enable);
+    connect(timeARDG1Regression.y,controller.ardg1_time);
     connect(referenceSource.y,controller.reference);
     connect(stateSource.y,controller.state);
     connect(allocatorLimit.y,controller.allocator_limit);

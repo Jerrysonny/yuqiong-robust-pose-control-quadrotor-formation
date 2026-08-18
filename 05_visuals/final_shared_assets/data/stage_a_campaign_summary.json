@@ -1,0 +1,444 @@
+{
+  "schema_version": "v936_joint_stage_a_campaign_summary_v1",
+  "created_utc": "2026-08-14T06:08:01.187370Z",
+  "contract": {
+    "path": "D:\\Users\\admin\\Desktop\\A8-\u56db\u65cb\u7ffc\u65e0\u4eba\u673a\u4f4d\u59ff\u63a7\u5236\u7cfb\u7edf\u8bbe\u8ba1\u4f18\u5316\\A8\u51b3\u8d5b\u9636\u6bb5\u5347\u7ea7\u7814\u53d1\\73_v936_ardg1_joint_parameter_optimization\\00_protocol\\joint_optimization_contract_v2.json",
+    "sha256": "F4F9DAB6F1035035796F4622173FE398F024219102571FB409774A415497D7CB",
+    "bytes": 33768
+  },
+  "input_summaries": [
+    {
+      "path": "D:\\Users\\admin\\Desktop\\A8-\u56db\u65cb\u7ffc\u65e0\u4eba\u673a\u4f4d\u59ff\u63a7\u5236\u7cfb\u7edf\u8bbe\u8ba1\u4f18\u5316\\A8\u51b3\u8d5b\u9636\u6bb5\u5347\u7ea7\u7814\u53d1\\73_v936_ardg1_joint_parameter_optimization\\03_results\\lhs8_v2_20260814\\screen_summary.json",
+      "sha256": "29F178C2C0EAFC75973BEF03623F5B49FF13B71858FDBED5A21141E16CC727CF",
+      "bytes": 14588
+    },
+    {
+      "path": "D:\\Users\\admin\\Desktop\\A8-\u56db\u65cb\u7ffc\u65e0\u4eba\u673a\u4f4d\u59ff\u63a7\u5236\u7cfb\u7edf\u8bbe\u8ba1\u4f18\u5316\\A8\u51b3\u8d5b\u9636\u6bb5\u5347\u7ea7\u7814\u53d1\\73_v936_ardg1_joint_parameter_optimization\\03_results\\cehvi_round01\\screen_summary.json",
+      "sha256": "F7C413DCBE3CEAD92F0C917DBC6C22A7D6744D3D9B1753647B26908E93D0EB07",
+      "bytes": 2798
+    },
+    {
+      "path": "D:\\Users\\admin\\Desktop\\A8-\u56db\u65cb\u7ffc\u65e0\u4eba\u673a\u4f4d\u59ff\u63a7\u5236\u7cfb\u7edf\u8bbe\u8ba1\u4f18\u5316\\A8\u51b3\u8d5b\u9636\u6bb5\u5347\u7ea7\u7814\u53d1\\73_v936_ardg1_joint_parameter_optimization\\03_results\\cehvi_round02\\screen_summary.json",
+      "sha256": "C398EA8A842B2A1AA2A1641D88E996046FC53044ECBBF083C948181364BAC6F0",
+      "bytes": 2825
+    },
+    {
+      "path": "D:\\Users\\admin\\Desktop\\A8-\u56db\u65cb\u7ffc\u65e0\u4eba\u673a\u4f4d\u59ff\u63a7\u5236\u7cfb\u7edf\u8bbe\u8ba1\u4f18\u5316\\A8\u51b3\u8d5b\u9636\u6bb5\u5347\u7ea7\u7814\u53d1\\73_v936_ardg1_joint_parameter_optimization\\03_results\\cehvi_round03\\screen_summary.json",
+      "sha256": "82AE691DD0FCC62C4BC1FF5F39AE5EAD9B032F04B9A4E7236F8B0D5E2B15DA7B",
+      "bytes": 2805
+    },
+    {
+      "path": "D:\\Users\\admin\\Desktop\\A8-\u56db\u65cb\u7ffc\u65e0\u4eba\u673a\u4f4d\u59ff\u63a7\u5236\u7cfb\u7edf\u8bbe\u8ba1\u4f18\u5316\\A8\u51b3\u8d5b\u9636\u6bb5\u5347\u7ea7\u7814\u53d1\\73_v936_ardg1_joint_parameter_optimization\\03_results\\cehvi_round04\\screen_summary.json",
+      "sha256": "C10A08B452BCA1E2C4E5DEB4262BD48D02907BFF38112370F646AB9F821AC7B7",
+      "bytes": 2824
+    },
+    {
+      "path": "D:\\Users\\admin\\Desktop\\A8-\u56db\u65cb\u7ffc\u65e0\u4eba\u673a\u4f4d\u59ff\u63a7\u5236\u7cfb\u7edf\u8bbe\u8ba1\u4f18\u5316\\A8\u51b3\u8d5b\u9636\u6bb5\u5347\u7ea7\u7814\u53d1\\73_v936_ardg1_joint_parameter_optimization\\03_results\\cehvi_round05\\screen_summary.json",
+      "sha256": "E121FE26A60A7B453EDF3E356973FB78E6C76C8A707A3C5E330FBB63DD69F11B",
+      "bytes": 2822
+    },
+    {
+      "path": "D:\\Users\\admin\\Desktop\\A8-\u56db\u65cb\u7ffc\u65e0\u4eba\u673a\u4f4d\u59ff\u63a7\u5236\u7cfb\u7edf\u8bbe\u8ba1\u4f18\u5316\\A8\u51b3\u8d5b\u9636\u6bb5\u5347\u7ea7\u7814\u53d1\\73_v936_ardg1_joint_parameter_optimization\\03_results\\cehvi_round06\\screen_summary.json",
+      "sha256": "0000DA4963F9AE1DEC27C3B865220C31C70D60E031CBC3A1BBB1A5E33BAC24FC",
+      "bytes": 2803
+    }
+  ],
+  "candidate_count": 14,
+  "all_hard_passed": true,
+  "objective_order": [
+    "attitude_iae",
+    "motor_tv_full",
+    "motor_tv_event",
+    "worst_scene_attitude_degradation_vs_r7_percent"
+  ],
+  "r7_objectives": {
+    "attitude_iae": 0.029442488557072204,
+    "motor_tv_full": 16.99096990337023,
+    "motor_tv_event": 1.7924335263415117,
+    "worst_scene_attitude_degradation_vs_r7_percent": 0.0
+  },
+  "global_pareto_frontier": [
+    "v936-ARDG1-J03",
+    "v936-ARDG1-J09",
+    "v936-ARDG1-J11",
+    "v936-ARDG1-J12",
+    "v936-ARDG1-J13",
+    "v936-ARDG1-J14"
+  ],
+  "candidate_records": {
+    "v936-ARDG1-J01": {
+      "parameters": {
+        "Kc": 0.7839499732980101,
+        "Cmax_nm": 0.00030730969600382453,
+        "Rmax_nm_per_sample": 4.0659241227022974e-05
+      },
+      "objectives": {
+        "attitude_iae": 0.029018055136343975,
+        "motor_tv_full": 16.97995056987565,
+        "motor_tv_event": 1.781415741644862,
+        "worst_scene_attitude_degradation_vs_r7_percent": -1.4415673042351238
+      },
+      "hard_passed": true,
+      "dominates_r7": true,
+      "direct_effect_percent": {
+        "attitude_iae_vs_v914": 40.830819726577126,
+        "attitude_iae_vs_r7": 1.4415677530297546,
+        "motor_tv_full_vs_r7": 0.06485405810997744,
+        "motor_tv_event_vs_r7": 0.6146830292299776
+      },
+      "analysis": {
+        "path": "D:\\Users\\admin\\Desktop\\A8-\u56db\u65cb\u7ffc\u65e0\u4eba\u673a\u4f4d\u59ff\u63a7\u5236\u7cfb\u7edf\u8bbe\u8ba1\u4f18\u5316\\A8\u51b3\u8d5b\u9636\u6bb5\u5347\u7ea7\u7814\u53d1\\73_v936_ardg1_joint_parameter_optimization\\03_results\\lhs8_v2_20260814\\v936-ARDG1-J01\\screen_analysis.json",
+        "sha256": "4309920A6197A7FBD4AF057CC9AFC4796FDAE7EA2CAFAD1194EBC1A0AAC38CCC",
+        "bytes": 17451
+      }
+    },
+    "v936-ARDG1-J02": {
+      "parameters": {
+        "Kc": 0.7987891419595445,
+        "Cmax_nm": 0.0003148933686225202,
+        "Rmax_nm_per_sample": 4.577976892347193e-05
+      },
+      "objectives": {
+        "attitude_iae": 0.028393789081525875,
+        "motor_tv_full": 17.071239205572347,
+        "motor_tv_event": 1.8727073497649869,
+        "worst_scene_attitude_degradation_vs_r7_percent": -3.561855626888918
+      },
+      "hard_passed": true,
+      "dominates_r7": false,
+      "direct_effect_percent": {
+        "attitude_iae_vs_v914": 42.103727595921136,
+        "attitude_iae_vs_r7": 3.561857461584803,
+        "motor_tv_full_vs_r7": -0.4724233087258515,
+        "motor_tv_event_vs_r7": -4.478482590499185
+      },
+      "analysis": {
+        "path": "D:\\Users\\admin\\Desktop\\A8-\u56db\u65cb\u7ffc\u65e0\u4eba\u673a\u4f4d\u59ff\u63a7\u5236\u7cfb\u7edf\u8bbe\u8ba1\u4f18\u5316\\A8\u51b3\u8d5b\u9636\u6bb5\u5347\u7ea7\u7814\u53d1\\73_v936_ardg1_joint_parameter_optimization\\03_results\\lhs8_v2_20260814\\v936-ARDG1-J02\\screen_analysis.json",
+        "sha256": "DC870AB99DB46D6AFCAA4CCA7C531223009D51AB695DD4352C60CE8641C9DB1B",
+        "bytes": 17456
+      }
+    },
+    "v936-ARDG1-J03": {
+      "parameters": {
+        "Kc": 0.8989438715289305,
+        "Cmax_nm": 0.0003295328449663131,
+        "Rmax_nm_per_sample": 4.145751028483854e-05
+      },
+      "objectives": {
+        "attitude_iae": 0.02783450830696583,
+        "motor_tv_full": 17.051614367751995,
+        "motor_tv_event": 1.8530826850425264,
+        "worst_scene_attitude_degradation_vs_r7_percent": -5.461426362467695
+      },
+      "hard_passed": true,
+      "dominates_r7": false,
+      "direct_effect_percent": {
+        "attitude_iae_vs_v914": 43.244127420027766,
+        "attitude_iae_vs_r7": 5.461427783148893,
+        "motor_tv_full_vs_r7": -0.3569217338777941,
+        "motor_tv_event_vs_r7": -3.383621083276885
+      },
+      "analysis": {
+        "path": "D:\\Users\\admin\\Desktop\\A8-\u56db\u65cb\u7ffc\u65e0\u4eba\u673a\u4f4d\u59ff\u63a7\u5236\u7cfb\u7edf\u8bbe\u8ba1\u4f18\u5316\\A8\u51b3\u8d5b\u9636\u6bb5\u5347\u7ea7\u7814\u53d1\\73_v936_ardg1_joint_parameter_optimization\\03_results\\lhs8_v2_20260814\\v936-ARDG1-J03\\screen_analysis.json",
+        "sha256": "F74F4E451BD992FB3E127107D69F8FB469388812734813737917274A539020A8",
+        "bytes": 17453
+      }
+    },
+    "v936-ARDG1-J04": {
+      "parameters": {
+        "Kc": 0.8565789205859667,
+        "Cmax_nm": 0.00031587268085262555,
+        "Rmax_nm_per_sample": 4.2511716276354554e-05
+      },
+      "objectives": {
+        "attitude_iae": 0.028472777179785698,
+        "motor_tv_full": 17.03417129729008,
+        "motor_tv_event": 1.8356381593526496,
+        "worst_scene_attitude_degradation_vs_r7_percent": -3.2935761509686174
+      },
+      "hard_passed": true,
+      "dominates_r7": false,
+      "direct_effect_percent": {
+        "attitude_iae_vs_v914": 41.9426671456797,
+        "attitude_iae_vs_r7": 3.2935781749792925,
+        "motor_tv_full_vs_r7": -0.25426090544294644,
+        "motor_tv_event_vs_r7": -2.410389695138196
+      },
+      "analysis": {
+        "path": "D:\\Users\\admin\\Desktop\\A8-\u56db\u65cb\u7ffc\u65e0\u4eba\u673a\u4f4d\u59ff\u63a7\u5236\u7cfb\u7edf\u8bbe\u8ba1\u4f18\u5316\\A8\u51b3\u8d5b\u9636\u6bb5\u5347\u7ea7\u7814\u53d1\\73_v936_ardg1_joint_parameter_optimization\\03_results\\lhs8_v2_20260814\\v936-ARDG1-J04\\screen_analysis.json",
+        "sha256": "5E64EB88BD4A22856589263233F2067C31387981765175C36D55003F733CEC68",
+        "bytes": 17462
+      }
+    },
+    "v936-ARDG1-J05": {
+      "parameters": {
+        "Kc": 0.8791563557160689,
+        "Cmax_nm": 0.0003024734002578166,
+        "Rmax_nm_per_sample": 3.918370693429219e-05
+      },
+      "objectives": {
+        "attitude_iae": 0.029350348751039732,
+        "motor_tv_full": 16.996072769884414,
+        "motor_tv_event": 1.7975364886031144,
+        "worst_scene_attitude_degradation_vs_r7_percent": -0.31294711869506586
+      },
+      "hard_passed": true,
+      "dominates_r7": false,
+      "direct_effect_percent": {
+        "attitude_iae_vs_v914": 40.153257405489136,
+        "attitude_iae_vs_r7": 0.3129484311554197,
+        "motor_tv_full_vs_r7": -0.030032814743377007,
+        "motor_tv_event_vs_r7": -0.2846946448283806
+      },
+      "analysis": {
+        "path": "D:\\Users\\admin\\Desktop\\A8-\u56db\u65cb\u7ffc\u65e0\u4eba\u673a\u4f4d\u59ff\u63a7\u5236\u7cfb\u7edf\u8bbe\u8ba1\u4f18\u5316\\A8\u51b3\u8d5b\u9636\u6bb5\u5347\u7ea7\u7814\u53d1\\73_v936_ardg1_joint_parameter_optimization\\03_results\\lhs8_v2_20260814\\v936-ARDG1-J05\\screen_analysis.json",
+        "sha256": "8B4162772FA35C164C0BA9822988D0534E8E59A2050D82F3B65F0DD3F17C950A",
+        "bytes": 17471
+      }
+    },
+    "v936-ARDG1-J06": {
+      "parameters": {
+        "Kc": 0.8217372681848298,
+        "Cmax_nm": 0.00032028837843703183,
+        "Rmax_nm_per_sample": 3.810893762105927e-05
+      },
+      "objectives": {
+        "attitude_iae": 0.02852115465061262,
+        "motor_tv_full": 16.99747711497566,
+        "motor_tv_event": 1.7989430839109417,
+        "worst_scene_attitude_degradation_vs_r7_percent": -3.1292619515423166
+      },
+      "hard_passed": true,
+      "dominates_r7": false,
+      "direct_effect_percent": {
+        "attitude_iae_vs_v914": 41.84402320558514,
+        "attitude_iae_vs_r7": 3.129266416028805,
+        "motor_tv_full_vs_r7": -0.038298058571316226,
+        "motor_tv_event_vs_r7": -0.3631687018662579
+      },
+      "analysis": {
+        "path": "D:\\Users\\admin\\Desktop\\A8-\u56db\u65cb\u7ffc\u65e0\u4eba\u673a\u4f4d\u59ff\u63a7\u5236\u7cfb\u7edf\u8bbe\u8ba1\u4f18\u5316\\A8\u51b3\u8d5b\u9636\u6bb5\u5347\u7ea7\u7814\u53d1\\73_v936_ardg1_joint_parameter_optimization\\03_results\\lhs8_v2_20260814\\v936-ARDG1-J06\\screen_analysis.json",
+        "sha256": "BFBBA343B0B9C3CD3ADC904B4B0E87BD190145F889011B44EE4EBDB222DBDF7A",
+        "bytes": 17461
+      }
+    },
+    "v936-ARDG1-J07": {
+      "parameters": {
+        "Kc": 0.8362656461561272,
+        "Cmax_nm": 0.0002972048856226216,
+        "Rmax_nm_per_sample": 4.456754698521259e-05
+      },
+      "objectives": {
+        "attitude_iae": 0.029445069774118406,
+        "motor_tv_full": 17.05034047848409,
+        "motor_tv_event": 1.8518051936471664,
+        "worst_scene_attitude_degradation_vs_r7_percent": 0.008768364436573394
+      },
+      "hard_passed": true,
+      "dominates_r7": false,
+      "direct_effect_percent": {
+        "attitude_iae_vs_v914": 39.960116781009255,
+        "attitude_iae_vs_r7": -0.008766979873995525,
+        "motor_tv_full_vs_r7": -0.3494242850850063,
+        "motor_tv_event_vs_r7": -3.312349743135899
+      },
+      "analysis": {
+        "path": "D:\\Users\\admin\\Desktop\\A8-\u56db\u65cb\u7ffc\u65e0\u4eba\u673a\u4f4d\u59ff\u63a7\u5236\u7cfb\u7edf\u8bbe\u8ba1\u4f18\u5316\\A8\u51b3\u8d5b\u9636\u6bb5\u5347\u7ea7\u7814\u53d1\\73_v936_ardg1_joint_parameter_optimization\\03_results\\lhs8_v2_20260814\\v936-ARDG1-J07\\screen_analysis.json",
+        "sha256": "04F1AF0A8F9BF11606E510A63DB46BBE3FB9CB6403091D770A68AE4D09B9AC9E",
+        "bytes": 17468
+      }
+    },
+    "v936-ARDG1-J08": {
+      "parameters": {
+        "Kc": 0.9160460685642731,
+        "Cmax_nm": 0.00029366660068853336,
+        "Rmax_nm_per_sample": 4.349571777021127e-05
+      },
+      "objectives": {
+        "attitude_iae": 0.029687451151060175,
+        "motor_tv_full": 17.05106482107994,
+        "motor_tv_event": 1.8525281850086674,
+        "worst_scene_attitude_degradation_vs_r7_percent": 0.8320044417806469
+      },
+      "hard_passed": true,
+      "dominates_r7": false,
+      "direct_effect_percent": {
+        "attitude_iae_vs_v914": 39.46588974477946,
+        "attitude_iae_vs_r7": -0.8320036993922182,
+        "motor_tv_full_vs_r7": -0.35368738836850305,
+        "motor_tv_event_vs_r7": -3.352685485068638
+      },
+      "analysis": {
+        "path": "D:\\Users\\admin\\Desktop\\A8-\u56db\u65cb\u7ffc\u65e0\u4eba\u673a\u4f4d\u59ff\u63a7\u5236\u7cfb\u7edf\u8bbe\u8ba1\u4f18\u5316\\A8\u51b3\u8d5b\u9636\u6bb5\u5347\u7ea7\u7814\u53d1\\73_v936_ardg1_joint_parameter_optimization\\03_results\\lhs8_v2_20260814\\v936-ARDG1-J08\\screen_analysis.json",
+        "sha256": "89660551E72600DCC49BAB809AACACA4214CC9997DA3ACF25873964443BB807D",
+        "bytes": 17460
+      }
+    },
+    "v936-ARDG1-J09": {
+      "parameters": {
+        "Kc": 0.7819803131558001,
+        "Cmax_nm": 0.0003296656961366534,
+        "Rmax_nm_per_sample": 3.984330988675356e-05
+      },
+      "objectives": {
+        "attitude_iae": 0.028184786714711682,
+        "motor_tv_full": 16.9863884708175,
+        "motor_tv_event": 1.7878562162549638,
+        "worst_scene_attitude_degradation_vs_r7_percent": -4.271696912096099
+      },
+      "hard_passed": true,
+      "dominates_r7": true,
+      "direct_effect_percent": {
+        "attitude_iae_vs_v914": 42.52989325938466,
+        "attitude_iae_vs_r7": 4.271723974427482,
+        "motor_tv_full_vs_r7": 0.0269639260076871,
+        "motor_tv_event_vs_r7": 0.25536847081244074
+      },
+      "analysis": {
+        "path": "D:\\Users\\admin\\Desktop\\A8-\u56db\u65cb\u7ffc\u65e0\u4eba\u673a\u4f4d\u59ff\u63a7\u5236\u7cfb\u7edf\u8bbe\u8ba1\u4f18\u5316\\A8\u51b3\u8d5b\u9636\u6bb5\u5347\u7ea7\u7814\u53d1\\73_v936_ardg1_joint_parameter_optimization\\03_results\\cehvi_round01\\v936-ARDG1-J09\\screen_analysis.json",
+        "sha256": "24128AFA656372553753090D9CAB7B1066F9D1C3F7AD1925EDA1C5E7445CE903",
+        "bytes": 17434
+      }
+    },
+    "v936-ARDG1-J10": {
+      "parameters": {
+        "Kc": 0.854325456507504,
+        "Cmax_nm": 0.00032952960800379516,
+        "Rmax_nm_per_sample": 3.9852932274341585e-05
+      },
+      "objectives": {
+        "attitude_iae": 0.027953705713040004,
+        "motor_tv_full": 17.034482558817178,
+        "motor_tv_event": 1.8359503363446397,
+        "worst_scene_attitude_degradation_vs_r7_percent": -5.056574725863901
+      },
+      "hard_passed": true,
+      "dominates_r7": false,
+      "direct_effect_percent": {
+        "attitude_iae_vs_v914": 43.00107829854153,
+        "attitude_iae_vs_r7": 5.056579511430557,
+        "motor_tv_full_vs_r7": -0.2560928286872861,
+        "motor_tv_event_vs_r7": -2.427806072783576
+      },
+      "analysis": {
+        "path": "D:\\Users\\admin\\Desktop\\A8-\u56db\u65cb\u7ffc\u65e0\u4eba\u673a\u4f4d\u59ff\u63a7\u5236\u7cfb\u7edf\u8bbe\u8ba1\u4f18\u5316\\A8\u51b3\u8d5b\u9636\u6bb5\u5347\u7ea7\u7814\u53d1\\73_v936_ardg1_joint_parameter_optimization\\03_results\\cehvi_round02\\v936-ARDG1-J10\\screen_analysis.json",
+        "sha256": "E0C27F1FE8D6585F6D29EF120A0FBB8D95583EB7EB8887649090A20E8B24E8FB",
+        "bytes": 17439
+      }
+    },
+    "v936-ARDG1-J11": {
+      "parameters": {
+        "Kc": 0.7812970337644219,
+        "Cmax_nm": 0.00031553456872701645,
+        "Rmax_nm_per_sample": 3.859401696920395e-05
+      },
+      "objectives": {
+        "attitude_iae": 0.028783450775395944,
+        "motor_tv_full": 16.976797768526765,
+        "motor_tv_event": 1.7782633513354469,
+        "worst_scene_attitude_degradation_vs_r7_percent": -2.2383564524356894
+      },
+      "hard_passed": true,
+      "dominates_r7": true,
+      "direct_effect_percent": {
+        "attitude_iae_vs_v914": 41.30918906113943,
+        "attitude_iae_vs_r7": 2.238390210796078,
+        "motor_tv_full_vs_r7": 0.08340980487909265,
+        "motor_tv_event_vs_r7": 0.7905551194965168
+      },
+      "analysis": {
+        "path": "D:\\Users\\admin\\Desktop\\A8-\u56db\u65cb\u7ffc\u65e0\u4eba\u673a\u4f4d\u59ff\u63a7\u5236\u7cfb\u7edf\u8bbe\u8ba1\u4f18\u5316\\A8\u51b3\u8d5b\u9636\u6bb5\u5347\u7ea7\u7814\u53d1\\73_v936_ardg1_joint_parameter_optimization\\03_results\\cehvi_round03\\v936-ARDG1-J11\\screen_analysis.json",
+        "sha256": "F1C25EFD9133A9A14CBD6E1D881C89C0A32D4C8322C43054B1B38DE7FB7DD869",
+        "bytes": 17440
+      }
+    },
+    "v936-ARDG1-J12": {
+      "parameters": {
+        "Kc": 0.8119416646845639,
+        "Cmax_nm": 0.0003299970086663961,
+        "Rmax_nm_per_sample": 4.109793351590634e-05
+      },
+      "objectives": {
+        "attitude_iae": 0.027922803621069022,
+        "motor_tv_full": 17.018893409554682,
+        "motor_tv_event": 1.8203617906499208,
+        "worst_scene_attitude_degradation_vs_r7_percent": -5.161510022108315
+      },
+      "hard_passed": true,
+      "dominates_r7": false,
+      "direct_effect_percent": {
+        "attitude_iae_vs_v914": 43.06408911860049,
+        "attitude_iae_vs_r7": 5.161536984407343,
+        "motor_tv_full_vs_r7": -0.1643432149150681,
+        "motor_tv_event_vs_r7": -1.558119946875394
+      },
+      "analysis": {
+        "path": "D:\\Users\\admin\\Desktop\\A8-\u56db\u65cb\u7ffc\u65e0\u4eba\u673a\u4f4d\u59ff\u63a7\u5236\u7cfb\u7edf\u8bbe\u8ba1\u4f18\u5316\\A8\u51b3\u8d5b\u9636\u6bb5\u5347\u7ea7\u7814\u53d1\\73_v936_ardg1_joint_parameter_optimization\\03_results\\cehvi_round04\\v936-ARDG1-J12\\screen_analysis.json",
+        "sha256": "47D261DDA0DFC1540240C6CF798DC9345199D2EB31AFB2490577508351B19E5E",
+        "bytes": 17429
+      }
+    },
+    "v936-ARDG1-J13": {
+      "parameters": {
+        "Kc": 0.7924153907597066,
+        "Cmax_nm": 0.0003298959947749972,
+        "Rmax_nm_per_sample": 4.058240316808224e-05
+      },
+      "objectives": {
+        "attitude_iae": 0.028064335895016446,
+        "motor_tv_full": 16.99895043525896,
+        "motor_tv_event": 1.8004185511452118,
+        "worst_scene_attitude_degradation_vs_r7_percent": -4.680803062324418
+      },
+      "hard_passed": true,
+      "dominates_r7": false,
+      "direct_effect_percent": {
+        "attitude_iae_vs_v914": 42.775498150241134,
+        "attitude_iae_vs_r7": 4.680829405382312,
+        "motor_tv_full_vs_r7": -0.046969254457591286,
+        "motor_tv_event_vs_r7": -0.44548512881245506
+      },
+      "analysis": {
+        "path": "D:\\Users\\admin\\Desktop\\A8-\u56db\u65cb\u7ffc\u65e0\u4eba\u673a\u4f4d\u59ff\u63a7\u5236\u7cfb\u7edf\u8bbe\u8ba1\u4f18\u5316\\A8\u51b3\u8d5b\u9636\u6bb5\u5347\u7ea7\u7814\u53d1\\73_v936_ardg1_joint_parameter_optimization\\03_results\\cehvi_round05\\v936-ARDG1-J13\\screen_analysis.json",
+        "sha256": "162852AF328C724EFB946D2743929B0F642021730CF91D5F5C2DDCB9A817E4D9",
+        "bytes": 17442
+      }
+    },
+    "v936-ARDG1-J14": {
+      "parameters": {
+        "Kc": 0.7816829364188016,
+        "Cmax_nm": 0.0003058001497015357,
+        "Rmax_nm_per_sample": 3.9255664840340614e-05
+      },
+      "objectives": {
+        "attitude_iae": 0.02916454130040221,
+        "motor_tv_full": 16.968473239134287,
+        "motor_tv_event": 1.7699377294510406,
+        "worst_scene_attitude_degradation_vs_r7_percent": -0.9440315891609348
+      },
+      "hard_passed": true,
+      "dominates_r7": true,
+      "direct_effect_percent": {
+        "attitude_iae_vs_v914": 40.53212754310725,
+        "attitude_iae_vs_r7": 0.944034523886164,
+        "motor_tv_full_vs_r7": 0.13240364949079483,
+        "motor_tv_event_vs_r7": 1.2550421848215856
+      },
+      "analysis": {
+        "path": "D:\\Users\\admin\\Desktop\\A8-\u56db\u65cb\u7ffc\u65e0\u4eba\u673a\u4f4d\u59ff\u63a7\u5236\u7cfb\u7edf\u8bbe\u8ba1\u4f18\u5316\\A8\u51b3\u8d5b\u9636\u6bb5\u5347\u7ea7\u7814\u53d1\\73_v936_ardg1_joint_parameter_optimization\\03_results\\cehvi_round06\\v936-ARDG1-J14\\screen_analysis.json",
+        "sha256": "EED340EA3926348B9D07101431761BC774F6D092B1610AFED8DEF6CFFCA45A3D",
+        "bytes": 17438
+      }
+    }
+  },
+  "stage_b_shortlist": [
+    "v936-ARDG1-J03",
+    "v936-ARDG1-J14"
+  ],
+  "selection_rule": {
+    "attitude_endpoint": "v936-ARDG1-J03",
+    "activity_endpoint": "v936-ARDG1-J14",
+    "weighted_sum_used": false,
+    "post_hoc_threshold_added": false
+  }
+}

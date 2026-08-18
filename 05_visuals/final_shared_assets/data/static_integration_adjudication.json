@@ -1,0 +1,100 @@
+{
+  "schema_version": "v936_ardg1_l06_t112_static_adjudication_result_v1",
+  "candidate_id": "v936-ARDG1-L06",
+  "formal_alias_if_approved": "v936-ARDG1-FINAL",
+  "numeric_identity": 97406,
+  "status": "PASS",
+  "completed_utc": "2026-08-14T12:33:29.567361+00:00",
+  "adjudication_type": "SAFETY_AWARE_SLEW_SCOPE_OVER_IMMUTABLE_T111_EVIDENCE",
+  "source_run": "T111",
+  "source_run_status_retained": "FAIL",
+  "rebuild": false,
+  "rerun": false,
+  "cases": {
+    "CLIP_SAFETY_BYPASS": {
+      "case_id": "CLIP_SAFETY_BYPASS",
+      "row_count": 5001,
+      "unsafe_sample_count": 1,
+      "bypass_sample_count": 1,
+      "safe_pair_count": 4998,
+      "safety_transition_pair_count": 2,
+      "maximum_correction_nm": 0.0003295328,
+      "maximum_safe_path_slew_nm_per_sample": 4.1957510000000014e-05,
+      "maximum_safety_transition_nm": 0.00025174506,
+      "maximum_final_torque_nm": 0.0008189036385892775,
+      "checks": {
+        "finite": true,
+        "unsafe_observed": true,
+        "safety_bypass_observed": true,
+        "correction_within_cmax": true,
+        "safe_path_slew_within_rmax": true,
+        "safety_transition_present": true,
+        "final_torque_within_limit": true
+      },
+      "passed": true
+    },
+    "INFEASIBLE_SAFETY_BYPASS": {
+      "case_id": "INFEASIBLE_SAFETY_BYPASS",
+      "row_count": 5001,
+      "unsafe_sample_count": 1,
+      "bypass_sample_count": 1,
+      "safe_pair_count": 4998,
+      "safety_transition_pair_count": 2,
+      "maximum_correction_nm": 0.0003295328,
+      "maximum_safe_path_slew_nm_per_sample": 4.1957510000000014e-05,
+      "maximum_safety_transition_nm": 0.00025174506,
+      "maximum_final_torque_nm": 0.0008189036385892775,
+      "checks": {
+        "finite": true,
+        "unsafe_observed": true,
+        "safety_bypass_observed": true,
+        "correction_within_cmax": true,
+        "safe_path_slew_within_rmax": true,
+        "safety_transition_present": true,
+        "final_torque_within_limit": true
+      },
+      "passed": true
+    }
+  },
+  "generated_code_difference": {
+    "classification": "EXPECTED_TIMESTAMP_RMAX_AND_NUMERIC_IDENTITY_ONLY",
+    "expected_only": true,
+    "replacement_counts": {
+      "generation_timestamp": 1,
+      "rmax_literal": 4,
+      "numeric_identity": 1
+    }
+  },
+  "checks": {
+    "t111_input_manifest_integrity": true,
+    "t111_binary_integrity": true,
+    "t111_failure_is_exact_slew_scope_bug": true,
+    "clip_safety_pass": true,
+    "infeasible_safety_pass": true,
+    "generated_diff_expected_only": true,
+    "t109_wcet_pass": true,
+    "t111_preserved": true,
+    "no_rebuild": true,
+    "no_rerun": true
+  },
+  "identity": {
+    "contract_sha256": "2931C477DBEF32520EA3811BC7D8ACC2E4A122A64083EF929B96E422ABE86663",
+    "analyzer_sha256": "130830051EE2225B8BF3FB10EFC433219F16EAA86A21EDB300DEF2B3EDE5877C",
+    "t111_contract_sha256": "461D84C9D101C9BD587EEC366DBC5DBE551EAB34487A3F586A783FA329CE5A55",
+    "t111_input_manifest_sha256": "FF772C456F3E2C95C6E8F94D902670EE7B9A5B4434894486A4EB9AF7EF5423EE",
+    "t111_build_manifest_sha256": "BADBFBDD49816C152EB3BC4CCFEBD9544761766E5ED24AA07C22ED2B2C33ED1E",
+    "t111_binary_sha256": "CE4BAADEDE7C2E3B41E633B0455944466F2141536045B288ADB118ADCD01C0DD",
+    "t111_clip_csv_sha256": "96C1A04E357BE2260DDB563AE07FEBC8A5A8E2B4364B42DEA0B879795BA51F9C",
+    "t111_infeasible_csv_sha256": "D4156731EAF98565FFAC141CE7C558C781B06C0146D34127BE12C5F03EA5557F",
+    "t111_failed_result_sha256": "0B51F7023E443BFA139638F739B02D2ABB59696BA7AEE22DDCFFFB8152D2DF43"
+  },
+  "boundaries": {
+    "t111_overwritten": false,
+    "parameters_changed": false,
+    "stage73_modified": false,
+    "closed_loop_scenarios_run": false,
+    "validation_set_touched": false,
+    "holdout_set_touched": false
+  },
+  "formal_replacement_decision_may_proceed": true
+}
